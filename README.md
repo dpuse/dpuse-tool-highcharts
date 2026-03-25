@@ -1,7 +1,9 @@
 # Data Positioning Highcharts Tool
 
-<span><!-- OWASP_BADGE_START -->[![OWASP](https://img.shields.io/badge/OWASP-passed-4CAF50)](https://data-positioning.github.io/datapos-tool-highcharts/dependency-check-reports/dependency-check-report.html)<!-- OWASP_BADGE_END --></span>
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
+<span><!-- OWASP_BADGES_START -->
+[![OWASP](https://img.shields.io/badge/OWASP-passed-4CAF50)](https://dpuse.github.io/dpuse-tool-highcharts/dependency-check-reports/dependency-check-report.html)
+<!-- OWASP_BADGES_END --></span>
 
 A TypeScript wrapper for Highcharts that implements the Data Positioning chart-rendering interface. It improves browser memory efficiency by sharing a single Highcharts instance shared across all presenters and loading optional modules on demand.
 
@@ -14,12 +16,12 @@ There’s no need to install this tool manually. Once released, it’s uploaded 
 Basic usage example with no error handling.
 
 ```typescript
-import type { HighchartsTool, HighchartsView } from '@datapos/datapos-tool-highcharts';
+import type { HighchartsTool, HighchartsView } from '@dpuse/dpuse-tool-highcharts';
 
 async function loadHighchartsTool(version: string): Promise<HighchartsTool> {
     if (highchartsTool) return highchartsTool;
 
-    const URL = `https://engine-eu.datapos.app/tools/highcharts_v${version}/datapos-tool-highcharts.es.js`;
+    const URL = `https://engine-eu.dpuse.app/tools/highcharts_v${version}/dpuse-tool-highcharts.es.js`;
     const HighchartsTool = (await import(/* @vite-ignore */ URL)).HighchartsTool as new () => HighchartsTool;
     return new HighchartsTool();
 }
@@ -37,17 +39,18 @@ const rangeChart: HighchartsView = await highchartsTool.renderRangeChart(/* argu
 
 The OWASP Dependency Check Report identifies known vulnerabilities in project dependencies. It is generated automatically on each release using the npm package `owasp-dependency-check`. We also rely on GitHub Dependabot to continuously check for vulnerabilities across all dependencies.
 
-[View the OWASP Dependency Check Report](https://data-positioning.github.io/datapos-tool-highcharts/dependency-check-reports/dependency-check-report.html)
+[View the OWASP Dependency Check Report](https://dpuse.github.io/dpuse-tool-highcharts/dependency-check-reports/dependency-check-report.html)
 
 ### Dependency Licenses
 
 The following table lists top-level production and peer dependencies. All these dependencies (including transitive ones) have been recursively verified to use Apache-2.0, CC0-1.0, or MIT—commercially friendly licenses with minimal restrictions. Developers cloning this repository should independently verify dev and optional dependencies; users of the uploaded library are covered by these checks.
 
 <!-- DEPENDENCY_LICENSES_START -->
-| Name                    |                Type                | Installed | Latest  | Latest Modified          |
-| :---------------------- | :--------------------------------: | :-------: | :-----: | :----------------------- |
-| @datapos/datapos-shared |                MIT                 |  0.3.252  | 0.3.252 | 2025-11-25T16:48:28.532Z |
-| highcharts              | https://www.highcharts.com/license |  12.4.0   | 12.4.0  | 2025-09-08T08:04:35.549Z |
+|Name|Type|Installed|Latest|Latest Released|Deps|Document|
+|:-|:-|:-:|:-:|:-|-:|:-|
+|@dpuse/dpuse-shared|MIT|0.3.595|0.3.595|this month: 2026-03-23|0|[LICENSE](https://raw.githubusercontent.com/dpuse/dpuse-shared/main/LICENSE)|
+|highcharts|https://www.highcharts.com/license|12.5.0|12.5.0|2 months ago: 2026-01-12|2|[LICENSE.txt](https://raw.githubusercontent.com/highcharts/highcharts-dist/master/LICENSE.txt)|
+
 <!-- DEPENDENCY_LICENSES_END -->
 
 **Installed dependencies are kept up-to-date with latest releases.**
@@ -56,7 +59,7 @@ The following table lists top-level production and peer dependencies. All these 
 
 The Bundle Analysis Report provides a detailed breakdown of the bundle's composition and module sizes, helping to identify which modules contribute most to the final build. It is generated automatically on each release using the npm package `rollup-plugin-visualizer`.
 
-[View the Bundle Analysis Report](https://data-positioning.github.io/datapos-tool-highcharts/stats/index.html)
+[View the Bundle Analysis Report](https://dpuse.github.io/dpuse-tool-highcharts/stats/index.html)
 
 ## Repository Management Commands
 

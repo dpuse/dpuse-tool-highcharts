@@ -16,7 +16,7 @@ import 'highcharts/modules/accessibility';
 import 'highcharts/modules/pattern-fill';
 
 // Dependencies - Framework.
-import type { PresentationCartesianTypeId, PresentationPolarTypeId, PresentationRangeTypeId, PresentationView, PresentationVisualContentConfig } from '@datapos/datapos-shared';
+import type { PresentationCartesianTypeId, PresentationPolarTypeId, PresentationRangeTypeId, PresentationView, PresentationVisualContentConfig } from '@dpuse/dpuse-shared';
 
 // Types/Interfaces - Highcharts.
 interface HighchartsView extends PresentationView {
