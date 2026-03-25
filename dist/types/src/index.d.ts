@@ -1,5 +1,5 @@
 import { default as Highcharts, Chart, Options } from 'highcharts';
-import { PresentationCartesianTypeId, PresentationPolarTypeId, PresentationRangeTypeId, PresentationView, PresentationVisualContentConfig } from '@datapos/datapos-shared';
+import { PresentationCartesianTypeId, PresentationPolarTypeId, PresentationRangeTypeId, PresentationView, PresentationVisualContentConfig } from '@dpuse/dpuse-shared';
 interface HighchartsView extends PresentationView {
     chart: Chart;
 }
