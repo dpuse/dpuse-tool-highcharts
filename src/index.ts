@@ -16,10 +16,16 @@ import 'highcharts/modules/accessibility';
 import 'highcharts/modules/pattern-fill';
 
 // Dependencies - Framework.
-import type { PresentationCartesianTypeId, PresentationPolarTypeId, PresentationRangeTypeId, PresentationView, PresentationVisualContentConfig } from '@dpuse/dpuse-shared';
+import type {
+    PresentationCartesianTypeId,
+    PresentationPolarTypeId,
+    PresentationRangeTypeId,
+    PresentationView,
+    PresentationVisualContentConfig
+} from '@dpuse/dpuse-shared/component/module/presenter/presentation';
 
 // Types/Interfaces - Highcharts.
-interface HighchartsView extends PresentationView {
+export interface HighchartsView extends PresentationView {
     chart: Chart;
 }
 
@@ -55,16 +61,9 @@ let highchartsMoreLoaded = false;
 let streamgraphModuleLoaded = false;
 
 // Classes - Highcharts tool.
-class HighchartsTool {
-    constructor() {}
-
+export class HighchartsTool {
     // Operations - Render cartesian chart.
-    async renderCartesianChart(
-        typeId: PresentationCartesianTypeId,
-        contentConfig: PresentationVisualContentConfig,
-        renderTo: HTMLElement,
-        callback?: () => void
-    ): Promise<HighchartsView> {
+    renderCartesianChart(typeId: PresentationCartesianTypeId, contentConfig: PresentationVisualContentConfig, renderTo: HTMLElement, callback?: () => void): HighchartsView {
         const type = CARTESIAN_SERIES_TYPE_MAP[typeId];
         const series: SeriesOptionsType[] = [];
         for (const measure of contentConfig.data.measures) {
@@ -75,7 +74,7 @@ class HighchartsTool {
             plotOptions: { series: { borderColor: '#333' } },
             series,
             title: { text: contentConfig.title.text },
-            xAxis: { categories: contentConfig.data.dimension.values.map((value) => value.label?.text ?? undefined) },
+            xAxis: { categories: contentConfig.data.dimension.values.map((value) => value.label?.text ?? '') },
             yAxis: { title: { text: contentConfig.title?.text ?? undefined } }
         };
         const chart = Highcharts.chart(renderTo, options, callback);
@@ -83,16 +82,16 @@ class HighchartsTool {
     }
 
     // Operations - Render.
-    async render(options: Options, renderTo: HTMLElement, callback?: () => void) {
-        await Promise.all([this.loadHighchartsMore()]);
+    async render(options: Options, renderTo: HTMLElement, callback?: () => void): Promise<unknown> {
+        await this.loadHighchartsMore();
 
-        const chart = Highcharts!.chart(renderTo, options, callback);
+        const chart = Highcharts.chart(renderTo, options, callback);
         return { chart, resize: () => chart.reflow(), vendorId: HIGHCHARTS_ID };
     }
 
     // Operations - Render period flow & boundaries chart.
-    async renderPeriodFlowBoundaries(contentConfig: PresentationVisualContentConfig, renderTo: HTMLElement, callback?: () => void) {
-        await Promise.all([this.loadHighchartsMore()]);
+    async renderPeriodFlowBoundaries(contentConfig: PresentationVisualContentConfig, renderTo: HTMLElement, callback?: () => void): Promise<unknown> {
+        await this.loadHighchartsMore();
 
         const series: SeriesOptionsType[] = [];
         for (const measure of contentConfig.data.measures) {
@@ -111,17 +110,17 @@ class HighchartsTool {
             plotOptions: { series: { borderColor: '#333' } },
             series,
             title: { text: contentConfig.title.text },
-            xAxis: { categories: contentConfig.data.dimension.values.map((value) => value.label?.text ?? undefined) },
+            xAxis: { categories: contentConfig.data.dimension.values.map((value) => value.label?.text ?? '') },
             yAxis: { title: { text: contentConfig.title?.text ?? undefined } }
         };
 
-        const chart = Highcharts!.chart(renderTo, options, callback);
+        const chart = Highcharts.chart(renderTo, options, callback);
         return { chart, resize: () => chart.reflow(), vendorId: HIGHCHARTS_ID };
     }
 
     // Operations - Render polar chart.
     async renderPolarChart(typeId: PresentationPolarTypeId, contentConfig: PresentationVisualContentConfig, renderTo: HTMLElement, callback?: () => void): Promise<HighchartsView> {
-        await Promise.all([this.loadHighchartsMore()]);
+        await this.loadHighchartsMore();
 
         const type = POLAR_SERIES_TYPE_MAP[typeId];
         const series: SeriesOptionsType[] = [];
@@ -134,23 +133,23 @@ class HighchartsTool {
             plotOptions: { series: { borderColor: '#333' } },
             series,
             title: { text: contentConfig.title.text },
-            xAxis: { categories: contentConfig.data.dimension.values.map((value) => value.label?.text ?? undefined) },
+            xAxis: { categories: contentConfig.data.dimension.values.map((value) => value.label?.text ?? '') },
             yAxis: { title: { text: contentConfig.title?.text ?? undefined } }
         };
 
-        const chart = Highcharts!.chart(renderTo, options, callback);
+        const chart = Highcharts.chart(renderTo, options, callback);
         return { chart, resize: () => chart.reflow(), vendorId: HIGHCHARTS_ID };
     }
 
     // Operations - Render range chart.
     async renderRangeChart(typeId: PresentationRangeTypeId, contentConfig: PresentationVisualContentConfig, renderTo: HTMLElement, callback?: () => void): Promise<HighchartsView> {
-        await Promise.all([this.loadHighchartsMore()]);
+        await this.loadHighchartsMore();
 
         const type = RANGE_SERIES_TYPE_MAP[typeId];
         const series: SeriesOptionsType[] = [];
         const data = [];
         for (let index = 0; index < contentConfig.data.dimension.values.length; index++) {
-            data.push([contentConfig.data.measures[0].values[index][0], contentConfig.data.measures[1].values[index][0]]);
+            data.push([contentConfig.data.measures[0]?.values[index]?.[0] ?? 0, contentConfig.data.measures[1]?.values[index]?.[0] ?? 0]);
         }
         series.push({ type, name: 'Unknown', data });
 
@@ -159,11 +158,11 @@ class HighchartsTool {
             plotOptions: { series: { borderColor: '#333' } },
             series,
             title: { text: contentConfig.title.text },
-            xAxis: { categories: contentConfig.data.dimension.values.map((value) => value.label?.text ?? undefined) },
+            xAxis: { categories: contentConfig.data.dimension.values.map((value) => value.label?.text ?? '') },
             yAxis: { title: { text: contentConfig.title?.text ?? undefined } }
         };
 
-        const chart = Highcharts!.chart(renderTo, options, callback);
+        const chart = Highcharts.chart(renderTo, options, callback);
         return { chart, resize: () => chart.reflow(), vendorId: HIGHCHARTS_ID };
     }
 
@@ -191,5 +190,3 @@ class HighchartsTool {
         streamgraphModuleLoaded = true;
     }
 }
-
-export { HighchartsTool, HighchartsView };

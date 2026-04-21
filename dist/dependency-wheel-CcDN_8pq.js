@@ -1,4 +1,4 @@
-import { t as e } from "./chunk-efA98nb6.js";
+import { t as e } from "./chunk-C_CI6nMA.js";
 //#region node_modules/highcharts/modules/dependency-wheel.js
 var t = /* @__PURE__ */ e(((e, t) => {
 	(function(n, r) {
@@ -33,34 +33,118 @@ var t = /* @__PURE__ */ e(((e, t) => {
 			});
 		}, o.o = (e, t) => Object.prototype.hasOwnProperty.call(e, t);
 		var s = {};
-		o.d(s, { default: () => V });
+		o.d(s, { default: () => L });
 		var c = o(944), l = o.n(c), u = o(512), d = o.n(u);
-		let { sankey: { prototype: { pointClass: f } } } = d().seriesTypes, { pInt: p, wrap: m } = l(), h = class extends f {
+		let { doc: f, win: p } = l();
+		function m(e, t, n, r = {}) {
+			let i = typeof e == "function" && e.prototype || e;
+			Object.hasOwnProperty.call(i, "hcEvents") || (i.hcEvents = {});
+			let a = i.hcEvents;
+			l().Point && e instanceof l().Point && e.series && e.series.chart && (e.series.chart.runTrackerClick = !0);
+			let o = e.addEventListener;
+			o && o.call(e, t, n, !!l().supportsPassiveEvents && {
+				passive: r.passive === void 0 ? t.indexOf("touch") !== -1 : r.passive,
+				capture: !1
+			}), a[t] || (a[t] = []);
+			let s = {
+				fn: n,
+				order: typeof r.order == "number" ? r.order : Infinity
+			};
+			return a[t].push(s), a[t].sort((e, t) => e.order - t.order), function() {
+				(function(e, t, n) {
+					function r(t, n) {
+						let r = e.removeEventListener;
+						r && r.call(e, t, n, !1);
+					}
+					function i(n) {
+						let i, a;
+						e.nodeName && (t ? (i = {})[t] = !0 : i = n, y(i, function(e, t) {
+							if (n[t]) for (a = n[t].length; a--;) r(t, n[t][a].fn);
+						}));
+					}
+					let a = typeof e == "function" && e.prototype || e;
+					if (Object.hasOwnProperty.call(a, "hcEvents")) {
+						let e = a.hcEvents;
+						if (t) {
+							let a = e[t] || [];
+							n ? (e[t] = a.filter(function(e) {
+								return n !== e.fn;
+							}), r(t, n)) : (i(e), e[t] = []);
+						} else i(e), delete a.hcEvents;
+					}
+				})(e, t, n);
+			};
+		}
+		function h(e, t) {
+			let n;
+			for (n in e ||= {}, t) e[n] = t[n];
+			return e;
+		}
+		function g(e) {
+			return _(e) && typeof e.nodeType == "number";
+		}
+		function _(e, t) {
+			let n;
+			return !!e && typeof e == "object" && (!t || (n = Object.prototype.toString.call(e)) !== "[object Array]" && n !== "[object Array Iterator]");
+		}
+		function v(e, ...t) {
+			let n, r = [e, ...t], i = {}, a = function(e, t) {
+				return typeof e != "object" && (e = {}), y(t, function(n, r) {
+					if (r !== "__proto__" && r !== "constructor") {
+						let i;
+						!_(n, !0) || (i = n?.constructor, _(n, !0) && !g(n) && i?.name && i.name !== "Object") || g(n) ? e[r] = t[r] : e[r] = a(e[r] || {}, n);
+					}
+				}), e;
+			};
+			!0 === e && (i = r[1], r = Array.prototype.slice.call(r, 2));
+			let o = r.length;
+			for (n = 0; n < o; n++) i = a(i, r[n]);
+			return i;
+		}
+		function y(e, t, n) {
+			for (let r in e) Object.hasOwnProperty.call(e, r) && t.call(n || e[r], e[r], r, e);
+		}
+		function b(e, t, n) {
+			return /%$/.test(e) ? t * parseFloat(e) / 100 + (n || 0) : parseFloat(e);
+		}
+		Array.prototype.find;
+		let { sankey: { prototype: { pointClass: x } } } = d().seriesTypes, S = class extends x {
 			getDataLabelPath(e) {
-				let t = this, n = t.series.chart.renderer, r = t.shapeArgs, i = t.angle < 0 || t.angle > Math.PI, a = r.start || 0, o = r.end || 0;
-				return t.dataLabelPath ? (t.dataLabelPath = t.dataLabelPath.destroy(), delete t.dataLabelPath) : m(e, "destroy", function(e) {
-					return t.dataLabelPath &&= t.dataLabelPath.destroy(), e.call(this);
-				}), t.dataLabelPath = n.arc({
+				var t;
+				let n = this, r = n.series.chart.renderer, i = n.shapeArgs, a = n.angle < 0 || n.angle > Math.PI, o = i.start || 0, s = i.end || 0;
+				if (n.dataLabelPath) n.dataLabelPath = n.dataLabelPath.destroy(), delete n.dataLabelPath;
+				else {
+					let r;
+					t = function(e) {
+						return n.dataLabelPath &&= n.dataLabelPath.destroy(), e.call(this);
+					}, r = e.destroy, e.destroy = function() {
+						let e = arguments, n = this;
+						return t.apply(this, [function() {
+							return r.apply(n, arguments.length ? arguments : e);
+						}].concat([].slice.call(arguments)));
+					};
+				}
+				return n.dataLabelPath = r.arc({
 					open: !0,
-					longArc: Math.abs(Math.abs(a) - Math.abs(o)) < Math.PI ? 0 : 1
+					longArc: Math.abs(Math.abs(o) - Math.abs(s)) < Math.PI ? 0 : 1
 				}).attr({
-					x: r.x,
-					y: r.y,
-					r: (r.r || 0) + p(e.options?.distance || 0),
-					start: i ? a : o,
-					end: i ? o : a,
-					clockwise: +i
-				}).add(n.defs), t.dataLabelPath;
+					x: i.x,
+					y: i.y,
+					r: (i.r || 0) + parseInt(e.options?.distance || 0, 10),
+					start: a ? o : s,
+					end: a ? s : o,
+					clockwise: +a
+				}).add(r.defs), n.dataLabelPath;
 			}
 			isValid() {
 				return !0;
 			}
-		}, { defined: g, getAlignFactor: _, relativeLength: v } = l();
-		var y = r ||= {};
-		y.compose = function(e, t) {
-			return e.sankeyColumn = new b(e, t), e;
 		};
-		class b {
+		var C = r ||= {};
+		C.compose = function(e, t) {
+			return e.sankeyColumn = new w(e, t), e;
+		};
+		class w {
 			constructor(e, t) {
 				this.points = e, this.series = t;
 			}
@@ -75,7 +159,12 @@ var t = /* @__PURE__ */ e(((e, t) => {
 			}
 			top(e) {
 				let t = this.series, n = t.nodePadding, r = this.points.reduce((r, i) => (r > 0 && (r += n), r += Math.max(i.getSum() * e, t.options.minLinkWidth || 0)), 0);
-				return _(t.options.nodeAlignment || "center") * ((t.chart.plotSizeY || 0) - r);
+				return ((e = "") => ({
+					center: .5,
+					right: 1,
+					middle: .5,
+					bottom: 1
+				})[e] || 0)(t.options.nodeAlignment || "center") * ((t.chart.plotSizeY || 0) - r);
 			}
 			left(e) {
 				let t = this.series, n = t.chart, r = t.options.equalNodes, i = n.inverted ? n.plotHeight : n.plotWidth, a = t.nodePadding, o = this.points.reduce((n, o) => (n > 0 && (n += a), n += r ? i / o.series.nodes.length - a : Math.max(o.getSum() * e, t.options.minLinkWidth || 0)), 0);
@@ -89,17 +178,17 @@ var t = /* @__PURE__ */ e(((e, t) => {
 				if (r.is("organization") && e.hangsFrom) return { absoluteTop: e.hangsFrom.nodeY };
 				for (let s = 0; s < n.length; s++) {
 					let c = n[s].getSum(), l = Math.max(c * t, r.options.minLinkWidth || 0), u = e.options[r.chart.inverted ? "offsetHorizontal" : "offsetVertical"], d = e.options.offset || 0;
-					if (o = c ? l + i : 0, n[s] === e) return { relativeTop: a + (g(u) ? v(u, l) : v(d, o)) };
+					if (o = c ? l + i : 0, n[s] === e) return { relativeTop: a + (u == null ? b(d, o) : b(u, l)) };
 					a += o;
 				}
 			}
 		}
-		y.SankeyColumnAdditions = b;
-		let x = r;
-		var S = o(28), C = o.n(S);
-		let { deg2rad: w } = l(), { addEvent: T, merge: E, uniqueKey: D, defined: O, extend: k } = l();
-		function A(e, t) {
-			t = E(!0, {
+		C.SankeyColumnAdditions = w;
+		let T = r;
+		var E = o(28), D = o.n(E);
+		let { deg2rad: O } = l();
+		function k(e, t) {
+			t = v(!0, {
 				enabled: !0,
 				attributes: {
 					dy: -5,
@@ -109,19 +198,19 @@ var t = /* @__PURE__ */ e(((e, t) => {
 			}, t);
 			let n = this.renderer.url, r = this.text || this, i = r.textPath, { attributes: a, enabled: o } = t;
 			if (e ||= i && i.path, i && i.undo(), e && o) {
-				let t = T(r, "afterModifyTree", (t) => {
+				let t = m(r, "afterModifyTree", (t) => {
 					if (e && o) {
 						let i = e.attr("id");
-						i || e.attr("id", i = D());
+						i || e.attr("id", i = (0, c.uniqueKey)());
 						let o = {
 							x: 0,
 							y: 0
 						};
-						O(a.dx) && (o.dx = a.dx, delete a.dx), O(a.dy) && (o.dy = a.dy, delete a.dy), r.attr(o), this.attr({ transform: "" }), this.box &&= this.box.destroy();
+						a.dx != null && (o.dx = a.dx, delete a.dx), a.dy != null && (o.dy = a.dy, delete a.dy), r.attr(o), this.attr({ transform: "" }), this.box &&= this.box.destroy();
 						let s = t.nodes.slice(0);
 						t.nodes.length = 0, t.nodes[0] = {
 							tagName: "textPath",
-							attributes: k(a, {
+							attributes: h(a, {
 								"text-anchor": a.textAnchor,
 								href: `${n}#${i}`
 							}),
@@ -139,11 +228,11 @@ var t = /* @__PURE__ */ e(((e, t) => {
 			}), delete r.textPath;
 			return this.added && (r.textCache = "", this.renderer.buildText(r)), this;
 		}
-		function j(e) {
+		function A(e) {
 			let t = e.bBox, n = this.element?.querySelector("textPath");
 			if (n) {
 				let e = [], { b: r, h: i } = this.renderer.fontMetrics(this.element), a = i - r, o = RegExp("(<tspan>|<tspan(?!\\sclass=\"highcharts-br\")[^>]*>|<\\/tspan>)", "g"), s = n.innerHTML.replace(o, "").split(/<tspan class="highcharts-br"[^>]*>/), c = s.length, l = (e, t) => {
-					let { x: i, y: o } = t, s = (n.getRotationOfChar(e) - 90) * w, c = Math.cos(s), l = Math.sin(s);
+					let { x: i, y: o } = t, s = (n.getRotationOfChar(e) - 90) * O, c = Math.cos(s), l = Math.sin(s);
 					return [[i - a * c, o - a * l], [i + r * c, o + r * l]];
 				};
 				for (let t = 0, r = 0; r < c; r++) {
@@ -166,20 +255,20 @@ var t = /* @__PURE__ */ e(((e, t) => {
 			}
 			return t;
 		}
-		function M(e) {
+		function j(e) {
 			let t = e.labelOptions, n = e.point, r = t[n.formatPrefix + "TextPath"] || t.textPath;
 			r && !t.useHTML && (this.setTextPath(n.getDataLabelPath?.(this) || n.graphic, r), n.dataLabelPath && !r.enabled && (n.dataLabelPath = n.dataLabelPath.destroy()));
 		}
-		let { animObject: N } = l(), { deg2rad: P } = l(), { pie: F, sankey: I } = d().seriesTypes, { extend: L, merge: R, relativeLength: z } = l();
+		let { animObject: M } = l(), { deg2rad: N } = l(), { pie: P, sankey: F } = d().seriesTypes;
 		({ compose: function(e) {
-			T(e, "afterGetBBox", j), T(e, "beforeAddingDataLabel", M);
+			m(e, "afterGetBBox", A), m(e, "beforeAddingDataLabel", j);
 			let t = e.prototype;
-			t.setTextPath ||= A;
-		} }).compose(C());
-		class B extends I {
+			t.setTextPath ||= k;
+		} }).compose(D());
+		class I extends F {
 			animate(e) {
 				if (!e) {
-					let e = N(this.options.animation).duration / 2 / this.nodes.length, t = 0;
+					let e = M(this.options.animation).duration / 2 / this.nodes.length, t = 0;
 					for (let n of this.nodes) {
 						let r = n.graphic;
 						r && (r.attr({ opacity: 0 }), setTimeout(() => {
@@ -209,7 +298,7 @@ var t = /* @__PURE__ */ e(((e, t) => {
 				}, t;
 			}
 			createNodeColumns() {
-				let e = [x.compose([], this)];
+				let e = [T.compose([], this)];
 				for (let t of this.nodes) t.column = 0, e[0].push(t);
 				return e;
 			}
@@ -217,9 +306,9 @@ var t = /* @__PURE__ */ e(((e, t) => {
 				return this.options.nodePadding / Math.PI;
 			}
 			translate() {
-				let e = this.options, t = 2 * Math.PI / (this.chart.plotHeight + this.getNodePadding()), n = this.getCenter(), r = (e.startAngle - 90) * P, i = e.borderRadius, a = typeof i == "object" ? i.radius : i;
+				let e = this.options, t = 2 * Math.PI / (this.chart.plotHeight + this.getNodePadding()), n = this.getCenter(), r = (e.startAngle - 90) * N, i = e.borderRadius, a = typeof i == "object" ? i.radius : i;
 				for (let i of (super.translate(), this.nodeColumns[0])) if (i.sum) {
-					let o = i.shapeArgs, s = n[0], c = n[1], l = n[2] / 2, u = l - z((e.nodeWidth === "auto" ? 20 : e.nodeWidth) || 0, l), d = r + t * (o.y || 0), f = r + t * ((o.y || 0) + (o.height || 0));
+					let o = i.shapeArgs, s = n[0], c = n[1], l = n[2] / 2, u = l - b((e.nodeWidth === "auto" ? 20 : e.nodeWidth) || 0, l), d = r + t * (o.y || 0), f = r + t * ((o.y || 0) + (o.height || 0));
 					for (let n of (i.angle = d + (f - d) / 2, i.shapeType = "arc", i.shapeArgs = {
 						x: s,
 						y: c,
@@ -292,7 +381,7 @@ var t = /* @__PURE__ */ e(((e, t) => {
 				}
 			}
 		}
-		B.defaultOptions = R(I.defaultOptions, {
+		I.defaultOptions = v(F.defaultOptions, {
 			center: [null, null],
 			curveFactor: .6,
 			startAngle: 0,
@@ -300,11 +389,11 @@ var t = /* @__PURE__ */ e(((e, t) => {
 				enabled: !1,
 				attributes: { dy: 5 }
 			} }
-		}), L(B.prototype, {
+		}), h(I.prototype, {
 			orderNodes: !1,
-			getCenter: F.prototype.getCenter
-		}), B.prototype.pointClass = h, d().registerSeriesType("dependencywheel", B);
-		let V = l();
+			getCenter: P.prototype.getCenter
+		}), I.prototype.pointClass = S, d().registerSeriesType("dependencywheel", I);
+		let L = l();
 		return s.default;
 	})());
 }));

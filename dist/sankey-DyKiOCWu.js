@@ -1,4 +1,4 @@
-import { t as e } from "./chunk-efA98nb6.js";
+import { t as e } from "./chunk-C_CI6nMA.js";
 //#region node_modules/highcharts/modules/sankey.js
 var t = /* @__PURE__ */ e(((e, t) => {
 	(function(n, r) {
@@ -39,39 +39,137 @@ var t = /* @__PURE__ */ e(((e, t) => {
 			});
 		}, l.o = (e, t) => Object.prototype.hasOwnProperty.call(e, t);
 		var u = {};
-		l.d(u, { default: () => me });
+		l.d(u, { default: () => ee });
 		var d = l(944), f = l.n(d), p = l(512), m = l.n(p);
-		let { series: { prototype: h, prototype: { pointClass: { prototype: g } } } } = m(), { defined: _, extend: v, find: y, merge: b, pick: x } = f();
+		let { doc: h, win: g } = f();
+		function _(e, t, n, r = {}) {
+			let i = typeof e == "function" && e.prototype || e;
+			Object.hasOwnProperty.call(i, "hcEvents") || (i.hcEvents = {});
+			let a = i.hcEvents;
+			f().Point && e instanceof f().Point && e.series && e.series.chart && (e.series.chart.runTrackerClick = !0);
+			let o = e.addEventListener;
+			o && o.call(e, t, n, !!f().supportsPassiveEvents && {
+				passive: r.passive === void 0 ? t.indexOf("touch") !== -1 : r.passive,
+				capture: !1
+			}), a[t] || (a[t] = []);
+			let s = {
+				fn: n,
+				order: typeof r.order == "number" ? r.order : Infinity
+			};
+			return a[t].push(s), a[t].sort((e, t) => e.order - t.order), function() {
+				(function(e, t, n) {
+					function r(t, n) {
+						let r = e.removeEventListener;
+						r && r.call(e, t, n, !1);
+					}
+					function i(n) {
+						let i, a;
+						e.nodeName && (t ? (i = {})[t] = !0 : i = n, D(i, function(e, t) {
+							if (n[t]) for (a = n[t].length; a--;) r(t, n[t][a].fn);
+						}));
+					}
+					let a = typeof e == "function" && e.prototype || e;
+					if (Object.hasOwnProperty.call(a, "hcEvents")) {
+						let e = a.hcEvents;
+						if (t) {
+							let a = e[t] || [];
+							n ? (e[t] = a.filter(function(e) {
+								return n !== e.fn;
+							}), r(t, n)) : (i(e), e[t] = []);
+						} else i(e), delete a.hcEvents;
+					}
+				})(e, t, n);
+			};
+		}
+		function v(e, t = 0, n) {
+			let r = t % 2 / 2, i = n ? -1 : 1;
+			return (Math.round(e * i - r) + r) * i;
+		}
+		function y(e) {
+			return e != null;
+		}
+		function b(e, t) {
+			let n;
+			for (n in e ||= {}, t) e[n] = t[n];
+			return e;
+		}
+		let x = Array.prototype.find ? function(e, t) {
+			return e.find(t);
+		} : function(e, t) {
+			let n, r = e.length;
+			for (n = 0; n < r; n++) if (t(e[n], n)) return e[n];
+		};
+		function S(e) {
+			return T(e) && typeof e.nodeType == "number";
+		}
+		function C(e) {
+			return typeof e == "number" && !isNaN(e) && e < Infinity && e > -Infinity;
+		}
+		function w(e) {
+			let t = Object.prototype.toString.call(e);
+			return t === "[object Array]" || t === "[object Array Iterator]";
+		}
+		function T(e, t) {
+			return !!e && typeof e == "object" && (!t || !w(e));
+		}
+		function E(e, ...t) {
+			let n, r = [e, ...t], i = {}, a = function(e, t) {
+				return typeof e != "object" && (e = {}), D(t, function(n, r) {
+					if (r !== "__proto__" && r !== "constructor") {
+						let i;
+						!T(n, !0) || (i = n?.constructor, T(n, !0) && !S(n) && i?.name && i.name !== "Object") || S(n) ? e[r] = t[r] : e[r] = a(e[r] || {}, n);
+					}
+				}), e;
+			};
+			!0 === e && (i = r[1], r = Array.prototype.slice.call(r, 2));
+			let o = r.length;
+			for (n = 0; n < o; n++) i = a(i, r[n]);
+			return i;
+		}
+		function D(e, t, n) {
+			for (let r in e) Object.hasOwnProperty.call(e, r) && t.call(n || e[r], e[r], r, e);
+		}
+		function O() {
+			let e = arguments, t = e.length;
+			for (let n = 0; n < t; n++) {
+				let t = e[n];
+				if (t != null) return t;
+			}
+		}
+		function k(e, t, n) {
+			return /%$/.test(e) ? t * parseFloat(e) / 100 + (n || 0) : parseFloat(e);
+		}
+		let { series: { prototype: A, prototype: { pointClass: { prototype: j } } } } = m();
 		(function(e) {
 			function t() {
-				return this.data = [].concat(this.points || [], this.nodes), h.destroy.apply(this, arguments);
+				return this.data = [].concat(this.points || [], this.nodes), A.destroy.apply(this, arguments);
 			}
 			function n() {
 				this.nodes && (this.nodes.forEach((e) => {
 					e.destroy();
-				}), this.nodes.length = 0), h.setData.apply(this, arguments);
+				}), this.nodes.length = 0), A.setData.apply(this, arguments);
 			}
 			function r(e) {
 				let t = arguments, n = this.isNode ? this.linksTo.concat(this.linksFrom) : [this.fromNode, this.toNode];
 				e !== "select" && n.forEach((e) => {
-					e && e.series && (g.setState.apply(e, t), !e.isNode && (e.fromNode.graphic && g.setState.apply(e.fromNode, t), e.toNode && e.toNode.graphic && g.setState.apply(e.toNode, t)));
-				}), g.setState.apply(this, t);
+					e && e.series && (j.setState.apply(e, t), !e.isNode && (e.fromNode.graphic && j.setState.apply(e.fromNode, t), e.toNode && e.toNode.graphic && j.setState.apply(e.toNode, t)));
+				}), j.setState.apply(this, t);
 			}
 			function i(e, t, n, r) {
 				let i = this.series.options.nodes, a = this.series.options.data, o = a?.length || 0, s = a?.[this.index];
-				if (g.update.call(this, e, !this.isNode && t, n, r), this.isNode) {
-					let e = (i || []).reduce((e, t, n) => this.id === t.id ? n : e, -1), r = b(i && i[e] || {}, a?.[this.index] || {});
-					a && (s ? a[this.index] = s : a.length = o), i ? e >= 0 ? i[e] = r : i.push(r) : this.series.options.nodes = [r], x(t, !0) && this.series.chart.redraw(n);
+				if (j.update.call(this, e, !this.isNode && t, n, r), this.isNode) {
+					let e = (i || []).reduce((e, t, n) => this.id === t.id ? n : e, -1), r = E(i && i[e] || {}, a?.[this.index] || {});
+					a && (s ? a[this.index] = s : a.length = o), i ? e >= 0 ? i[e] = r : i.push(r) : this.series.options.nodes = [r], O(t, !0) && this.series.chart.redraw(n);
 				}
 			}
 			e.compose = function(e, a) {
 				let o = e.prototype, s = a.prototype;
 				return o.setNodeState = r, o.setState = r, o.update = i, s.destroy = t, s.setData = n, a;
 			}, e.createNode = function(e) {
-				let t = this.pointClass, n = (e, t) => y(e, (e) => e.id === t), r = n(this.nodes, e), i;
+				let t = this.pointClass, n = (e, t) => x(e, (e) => e.id === t), r = n(this.nodes, e), i;
 				if (!r) {
 					i = this.options.nodes && n(this.options.nodes, e);
-					let a = new t(this, v({
+					let a = new t(this, b({
 						className: "highcharts-node",
 						isNode: !0,
 						id: e,
@@ -97,25 +195,25 @@ var t = /* @__PURE__ */ e(((e, t) => {
 						}), !a.linksTo.length || e !== a.linksTo.length;
 					}, a.index = this.nodes.push(a) - 1, r = a;
 				}
-				return r.formatPrefix = "node", r.name = r.name || r.options.id || "", r.mass = x(r.options.mass, r.options.marker && r.options.marker.radius, this.options.marker && this.options.marker.radius, 4), r;
+				return r.formatPrefix = "node", r.name = r.name || r.options.id || "", r.mass = O(r.options.mass, r.options.marker && r.options.marker.radius, this.options.marker && this.options.marker.radius, 4), r;
 			}, e.destroy = t, e.generatePoints = function() {
 				let e = this.chart, t = {};
-				h.generatePoints.call(this), this.nodes ||= [], this.colorCounter = 0, this.nodes.forEach((e) => {
+				A.generatePoints.call(this), this.nodes ||= [], this.colorCounter = 0, this.nodes.forEach((e) => {
 					e.linksFrom.length = 0, e.linksTo.length = 0, e.level = e.options.level;
 				}), this.points.forEach((n) => {
-					_(n.from) && (t[n.from] || (t[n.from] = this.createNode(n.from)), t[n.from].linksFrom.push(n), n.fromNode = t[n.from], e.styledMode ? n.colorIndex = x(n.options.colorIndex, t[n.from].colorIndex) : n.color = n.options.color || t[n.from].color), _(n.to) && (t[n.to] || (t[n.to] = this.createNode(n.to)), t[n.to].linksTo.push(n), n.toNode = t[n.to]), n.name = n.name || n.id;
+					y(n.from) && (t[n.from] || (t[n.from] = this.createNode(n.from)), t[n.from].linksFrom.push(n), n.fromNode = t[n.from], e.styledMode ? n.colorIndex = O(n.options.colorIndex, t[n.from].colorIndex) : n.color = n.options.color || t[n.from].color), y(n.to) && (t[n.to] || (t[n.to] = this.createNode(n.to)), t[n.to].linksTo.push(n), n.toNode = t[n.to]), n.name = n.name || n.id;
 				}, this), this.nodeLookup = t;
 			}, e.setNodeState = r, e.updateNode = i;
 		})(a ||= {});
-		let S = a;
-		var C = l(260), w = l.n(C);
-		let { column: T } = m().seriesTypes, { defined: E } = f();
-		class D extends T.prototype.pointClass {
+		let M = a;
+		var N = l(260), P = l.n(N);
+		let { column: F } = m().seriesTypes;
+		class I extends F.prototype.pointClass {
 			applyOptions(e, t) {
-				return w().prototype.applyOptions.call(this, e, t), E(this.options.level) && (this.options.column = this.column = this.options.level), this;
+				return P().prototype.applyOptions.call(this, e, t), y(this.options.level) && (this.options.column = this.column = this.options.level), this;
 			}
 			getClassName() {
-				return (this.isNode ? "highcharts-node " : "highcharts-link ") + w().prototype.getClassName.call(this);
+				return (this.isNode ? "highcharts-node " : "highcharts-link ") + P().prototype.getClassName.call(this);
 			}
 			getFromNode() {
 				let e = -1, t;
@@ -129,18 +227,17 @@ var t = /* @__PURE__ */ e(((e, t) => {
 				};
 			}
 			setNodeColumn() {
-				E(this.options.column) || (this.linksTo.length === 0 ? this.column = 0 : this.column = this.getFromNode().fromColumn + 1);
+				y(this.options.column) || (this.linksTo.length === 0 ? this.column = 0 : this.column = this.getFromNode().fromColumn + 1);
 			}
 			isValid() {
 				return this.isNode || typeof this.weight == "number";
 			}
 		}
-		let { defined: O, getAlignFactor: ee, relativeLength: k } = f();
-		var A = o ||= {};
-		A.compose = function(e, t) {
-			return e.sankeyColumn = new j(e, t), e;
+		var L = o ||= {};
+		L.compose = function(e, t) {
+			return e.sankeyColumn = new R(e, t), e;
 		};
-		class j {
+		class R {
 			constructor(e, t) {
 				this.points = e, this.series = t;
 			}
@@ -155,7 +252,12 @@ var t = /* @__PURE__ */ e(((e, t) => {
 			}
 			top(e) {
 				let t = this.series, n = t.nodePadding, r = this.points.reduce((r, i) => (r > 0 && (r += n), r += Math.max(i.getSum() * e, t.options.minLinkWidth || 0)), 0);
-				return ee(t.options.nodeAlignment || "center") * ((t.chart.plotSizeY || 0) - r);
+				return ((e = "") => ({
+					center: .5,
+					right: 1,
+					middle: .5,
+					bottom: 1
+				})[e] || 0)(t.options.nodeAlignment || "center") * ((t.chart.plotSizeY || 0) - r);
 			}
 			left(e) {
 				let t = this.series, n = t.chart, r = t.options.equalNodes, i = n.inverted ? n.plotHeight : n.plotWidth, a = t.nodePadding, o = this.points.reduce((n, o) => (n > 0 && (n += a), n += r ? i / o.series.nodes.length - a : Math.max(o.getSum() * e, t.options.minLinkWidth || 0)), 0);
@@ -169,19 +271,17 @@ var t = /* @__PURE__ */ e(((e, t) => {
 				if (r.is("organization") && e.hangsFrom) return { absoluteTop: e.hangsFrom.nodeY };
 				for (let s = 0; s < n.length; s++) {
 					let c = n[s].getSum(), l = Math.max(c * t, r.options.minLinkWidth || 0), u = e.options[r.chart.inverted ? "offsetHorizontal" : "offsetVertical"], d = e.options.offset || 0;
-					if (o = c ? l + i : 0, n[s] === e) return { relativeTop: a + (O(u) ? k(u, l) : k(d, o)) };
+					if (o = c ? l + i : 0, n[s] === e) return { relativeTop: a + (y(u) ? k(u, l) : k(d, o)) };
 					a += o;
 				}
 			}
 		}
-		A.SankeyColumnAdditions = j;
-		let M = o;
-		var te = l(620), N = l.n(te);
-		let { extend: P, isArray: ne, isNumber: F, isObject: I, merge: L, pick: R, relativeLength: re } = f();
-		var ie = l(28), ae = l.n(ie);
-		let { deg2rad: oe } = f(), { addEvent: z, merge: se, uniqueKey: B, defined: V, extend: H } = f();
-		function U(e, t) {
-			t = se(!0, {
+		L.SankeyColumnAdditions = R;
+		let z = o;
+		var B = l(620), V = l.n(B), H = l(28), U = l.n(H);
+		let { deg2rad: W } = f();
+		function G(e, t) {
+			t = E(!0, {
 				enabled: !0,
 				attributes: {
 					dy: -5,
@@ -191,19 +291,19 @@ var t = /* @__PURE__ */ e(((e, t) => {
 			}, t);
 			let n = this.renderer.url, r = this.text || this, i = r.textPath, { attributes: a, enabled: o } = t;
 			if (e ||= i && i.path, i && i.undo(), e && o) {
-				let t = z(r, "afterModifyTree", (t) => {
+				let t = _(r, "afterModifyTree", (t) => {
 					if (e && o) {
 						let i = e.attr("id");
-						i || e.attr("id", i = B());
+						i || e.attr("id", i = (0, d.uniqueKey)());
 						let o = {
 							x: 0,
 							y: 0
 						};
-						V(a.dx) && (o.dx = a.dx, delete a.dx), V(a.dy) && (o.dy = a.dy, delete a.dy), r.attr(o), this.attr({ transform: "" }), this.box &&= this.box.destroy();
+						y(a.dx) && (o.dx = a.dx, delete a.dx), y(a.dy) && (o.dy = a.dy, delete a.dy), r.attr(o), this.attr({ transform: "" }), this.box &&= this.box.destroy();
 						let s = t.nodes.slice(0);
 						t.nodes.length = 0, t.nodes[0] = {
 							tagName: "textPath",
-							attributes: H(a, {
+							attributes: b(a, {
 								"text-anchor": a.textAnchor,
 								href: `${n}#${i}`
 							}),
@@ -221,11 +321,11 @@ var t = /* @__PURE__ */ e(((e, t) => {
 			}), delete r.textPath;
 			return this.added && (r.textCache = "", this.renderer.buildText(r)), this;
 		}
-		function W(e) {
+		function K(e) {
 			let t = e.bBox, n = this.element?.querySelector("textPath");
 			if (n) {
 				let e = [], { b: r, h: i } = this.renderer.fontMetrics(this.element), a = i - r, o = RegExp("(<tspan>|<tspan(?!\\sclass=\"highcharts-br\")[^>]*>|<\\/tspan>)", "g"), s = n.innerHTML.replace(o, "").split(/<tspan class="highcharts-br"[^>]*>/), c = s.length, l = (e, t) => {
-					let { x: i, y: o } = t, s = (n.getRotationOfChar(e) - 90) * oe, c = Math.cos(s), l = Math.sin(s);
+					let { x: i, y: o } = t, s = (n.getRotationOfChar(e) - 90) * W, c = Math.cos(s), l = Math.sin(s);
 					return [[i - a * c, o - a * l], [i + r * c, o + r * l]];
 				};
 				for (let t = 0, r = 0; r < c; r++) {
@@ -248,16 +348,16 @@ var t = /* @__PURE__ */ e(((e, t) => {
 			}
 			return t;
 		}
-		function G(e) {
+		function q(e) {
 			let t = e.labelOptions, n = e.point, r = t[n.formatPrefix + "TextPath"] || t.textPath;
 			r && !t.useHTML && (this.setTextPath(n.getDataLabelPath?.(this) || n.graphic, r), n.dataLabelPath && !r.enabled && (n.dataLabelPath = n.dataLabelPath.destroy()));
 		}
-		let { column: K, line: ce } = m().seriesTypes, { parse: q } = N(), { getLevelOptions: le, getNodeWidth: ue } = {
+		let { column: J, line: Y } = m().seriesTypes, { parse: X } = V(), { getLevelOptions: Z, getNodeWidth: Q } = {
 			getColor: function(e, t) {
 				let n, r, i, a, o, s, c = t.index, l = t.mapOptionsToLevel, u = t.parentColor, d = t.parentColorIndex, f = t.series, p = t.colors, m = t.siblings, h = f.points, g = f.chart.options.chart;
 				if (e) {
 					let _;
-					n = h[e.i], r = l[e.level] || {}, n && r.colorByPoint && (a = n.index % (p ? p.length : g.colorCount), i = p && p[a]), f.chart.styledMode || (o = R(n && n.options.color, r && r.color, i, u && ((_ = r && r.colorVariation) && _.key === "brightness" && c && m ? N().parse(u).brighten(_.to * (c / m)).get() : u), f.color)), s = R(n && n.options.colorIndex, r && r.colorIndex, a, d, t.colorIndex);
+					n = h[e.i], r = l[e.level] || {}, n && r.colorByPoint && (a = n.index % (p ? p.length : g.colorCount), i = p && p[a]), f.chart.styledMode || (o = O(n && n.options.color, r && r.color, i, u && ((_ = r && r.colorVariation) && _.key === "brightness" && c && m ? V().parse(u).brighten(_.to * (c / m)).get() : u), f.color)), s = O(n && n.options.colorIndex, r && r.colorIndex, a, d, t.colorIndex);
 				}
 				return {
 					color: o,
@@ -266,10 +366,10 @@ var t = /* @__PURE__ */ e(((e, t) => {
 			},
 			getLevelOptions: function(e) {
 				let t, n, r, i, a, o, s = {};
-				if (I(e)) for (i = F(e.from) ? e.from : 1, o = e.levels, n = {}, t = I(e.defaults) ? e.defaults : {}, ne(o) && (n = o.reduce((e, n) => {
+				if (T(e)) for (i = C(e.from) ? e.from : 1, o = e.levels, n = {}, t = T(e.defaults) ? e.defaults : {}, w(o) && (n = o.reduce((e, n) => {
 					let r, a, o;
-					return I(n) && F(n.level) && (a = R((o = L({}, n)).levelIsConstant, t.levelIsConstant), delete o.levelIsConstant, delete o.level, I(e[r = n.level + (a ? 0 : i - 1)]) ? L(!0, e[r], o) : e[r] = o), e;
-				}, {})), a = F(e.to) ? e.to : 1, r = 0; r <= a; r++) s[r] = L({}, t, I(n[r]) ? n[r] : {});
+					return T(n) && C(n.level) && (a = O((o = E({}, n)).levelIsConstant, t.levelIsConstant), delete o.levelIsConstant, delete o.level, T(e[r = n.level + (a ? 0 : i - 1)]) ? E(!0, e[r], o) : e[r] = o), e;
+				}, {})), a = C(e.to) ? e.to : 1, r = 0; r <= a; r++) s[r] = E({}, t, T(n[r]) ? n[r] : {});
 				return s;
 			},
 			getNodeWidth: function(e, t) {
@@ -279,49 +379,55 @@ var t = /* @__PURE__ */ e(((e, t) => {
 					let e = Number(i);
 					return (o + e) / (t || 1) - e;
 				}
-				return re(a, o);
+				return k(a, o);
 			},
 			setTreeValues: function e(t, n) {
 				let r = n.before, i = n.idRoot, a = n.mapIdToNode[i], o = !1 !== n.levelIsConstant, s = n.points[t.i], c = s && s.options || {}, l = [], u = 0;
-				t.levelDynamic = t.level - (o ? 0 : a.level), t.name = R(s && s.name, ""), t.visible = i === t.id || !0 === n.visible, typeof r == "function" && (t = r(t, n)), t.children.forEach((r, i) => {
-					let a = P({}, n);
-					P(a, {
+				t.levelDynamic = t.level - (o ? 0 : a.level), t.name = O(s && s.name, ""), t.visible = i === t.id || !0 === n.visible, typeof r == "function" && (t = r(t, n)), t.children.forEach((r, i) => {
+					let a = b({}, n);
+					b(a, {
 						index: i,
 						siblings: t.children.length,
 						visible: t.visible
 					}), r = e(r, a), l.push(r), r.visible && (u += r.val);
 				});
-				let d = R(c.value, u);
+				let d = O(c.value, u);
 				return t.visible = d >= 0 && (u > 0 || t.visible), t.children = l, t.childrenTotal = u, t.isLeaf = t.visible && !u, t.val = d, t;
 			},
 			updateRootId: function(e) {
 				let t, n;
-				return I(e) && (n = I(e.options) ? e.options : {}, t = R(e.rootNode, n.rootId, ""), I(e.userOptions) && (e.userOptions.rootId = t), e.rootNode = t), t;
+				return T(e) && (n = T(e.options) ? e.options : {}, t = O(e.rootNode, n.rootId, ""), T(e.userOptions) && (e.userOptions.rootId = t), e.rootNode = t), t;
 			}
-		}, { clamp: de, crisp: J, extend: fe, isObject: Y, merge: X, pick: Z, relativeLength: Q, stableSort: pe } = f();
+		};
 		({ compose: function(e) {
-			z(e, "afterGetBBox", W), z(e, "beforeAddingDataLabel", G);
+			_(e, "afterGetBBox", K), _(e, "beforeAddingDataLabel", q);
 			let t = e.prototype;
-			t.setTextPath ||= U;
-		} }).compose(ae());
-		class $ extends K {
+			t.setTextPath ||= G;
+		} }).compose(U());
+		class $ extends J {
 			static getDLOptions(e) {
-				let t = Y(e.optionsPoint) ? e.optionsPoint.dataLabels : {}, n = Y(e.level) ? e.level.dataLabels : {};
-				return X({ style: {} }, n, t, { zIndex: n?.zIndex });
+				let t = T(e.optionsPoint) ? e.optionsPoint.dataLabels : {}, n = T(e.level) ? e.level.dataLabels : {};
+				return E({ style: {} }, n, t, { zIndex: n?.zIndex });
 			}
 			createNodeColumns() {
 				let e = [];
-				for (let t of this.nodes) t.setNodeColumn(), e[t.column] || (e[t.column] = M.compose([], this)), e[t.column].push(t);
-				for (let t = 0; t < e.length; t++) e[t] === void 0 && (e[t] = M.compose([], this));
+				for (let t of this.nodes) t.setNodeColumn(), e[t.column] || (e[t.column] = z.compose([], this)), e[t.column].push(t);
+				for (let t = 0; t < e.length; t++) e[t] === void 0 && (e[t] = z.compose([], this));
 				return e;
 			}
 			order(e, t) {
 				if (e.level === void 0) for (let n of (e.level = t, e.linksFrom)) n.toNode && this.order(n.toNode, t + 1);
 			}
 			generatePoints() {
-				if (S.generatePoints.apply(this, arguments), this.orderNodes) {
+				if (M.generatePoints.apply(this, arguments), this.orderNodes) {
 					for (let e of this.nodes) e.linksTo.length === 0 && this.order(e, 0);
-					pe(this.nodes, (e, t) => e.level - t.level);
+					(function(e, t) {
+						let n, r, i = e.length;
+						for (r = 0; r < i; r++) e[r].safeI = r;
+						for (e.sort(function(e, r) {
+							return (n = t(e, r)) === 0 ? e.safeI - r.safeI : n;
+						}), r = 0; r < i; r++) delete e[r].safeI;
+					})(this.nodes, (e, t) => e.level - t.level);
 				}
 			}
 			getNodePadding() {
@@ -343,7 +449,7 @@ var t = /* @__PURE__ */ e(((e, t) => {
 					"borderWidth",
 					"linkOpacity",
 					"opacity"
-				].reduce((e, t) => (e[t] = Z(o[t], a[t], i[t], n.options[t]), e), {}), c = Z(o.color, a.color, s.colorByPoint ? e.color : i.color);
+				].reduce((e, t) => (e[t] = O(o[t], a[t], i[t], n.options[t]), e), {}), c = O(o.color, a.color, s.colorByPoint ? e.color : i.color);
 				return e.isNode ? {
 					fill: c,
 					stroke: s.borderColor,
@@ -355,18 +461,18 @@ var t = /* @__PURE__ */ e(((e, t) => {
 				};
 			}
 			drawTracker() {
-				K.prototype.drawTracker.call(this, this.points), K.prototype.drawTracker.call(this, this.nodes);
+				J.prototype.drawTracker.call(this, this.points), J.prototype.drawTracker.call(this, this.nodes);
 			}
 			drawPoints() {
-				K.prototype.drawPoints.call(this, this.points), K.prototype.drawPoints.call(this, this.nodes);
+				J.prototype.drawPoints.call(this, this.points), J.prototype.drawPoints.call(this, this.nodes);
 			}
 			drawDataLabels() {
-				K.prototype.drawDataLabels.call(this, this.points), K.prototype.drawDataLabels.call(this, this.nodes);
+				J.prototype.drawDataLabels.call(this, this.points), J.prototype.drawDataLabels.call(this, this.nodes);
 			}
 			translate() {
 				this.generatePoints(), this.nodeColumns = this.createNodeColumns();
 				let e = this, t = this.chart, n = this.options, r = this.nodeColumns, i = r.length;
-				for (let a of (this.nodeWidth = ue(this, i), this.nodePadding = this.getNodePadding(), this.translationFactor = r.reduce((t, n) => Math.min(t, n.sankeyColumn.getTranslationFactor(e)), Infinity), this.colDistance = (t.plotSizeX - this.nodeWidth - n.borderWidth) / Math.max(1, r.length - 1), e.mapOptionsToLevel = le({
+				for (let a of (this.nodeWidth = Q(this, i), this.nodePadding = this.getNodePadding(), this.translationFactor = r.reduce((t, n) => Math.min(t, n.sankeyColumn.getTranslationFactor(e)), Infinity), this.colDistance = (t.plotSizeX - this.nodeWidth - n.borderWidth) / Math.max(1, r.length - 1), e.mapOptionsToLevel = Z({
 					from: 1,
 					levels: n.levels,
 					to: r.length - 1,
@@ -389,7 +495,7 @@ var t = /* @__PURE__ */ e(((e, t) => {
 				let t = (t, n) => {
 					let r = t.offset(e, n) * o;
 					return Math.min(t.nodeY + r, t.nodeY + (t.shapeArgs && t.shapeArgs.height || 0) - p);
-				}, n = e.fromNode, r = e.toNode, i = this.chart, { inverted: a } = i, o = this.translationFactor, s = this.options, c = Z(e.linkColorMode, s.linkColorMode), l = (i.inverted ? -this.colDistance : this.colDistance) * s.curveFactor, u = n.nodeX, d = r.nodeX, f = e.outgoing, p = Math.max(e.weight * o, this.options.minLinkWidth), m = t(n, "linksFrom"), h = t(r, "linksTo"), g = this.nodeWidth, _ = d > u + g;
+				}, n = e.fromNode, r = e.toNode, i = this.chart, { inverted: a } = i, o = this.translationFactor, s = this.options, c = O(e.linkColorMode, s.linkColorMode), l = (i.inverted ? -this.colDistance : this.colDistance) * s.curveFactor, u = n.nodeX, d = r.nodeX, f = e.outgoing, p = Math.max(e.weight * o, this.options.minLinkWidth), m = t(n, "linksFrom"), h = t(r, "linksTo"), g = this.nodeWidth, _ = d > u + g;
 				if (i.inverted && (m = i.plotSizeY - m, h = (i.plotSizeY || 0) - h, g = -g, p = -p, _ = u > d), e.shapeType = "path", e.linkBase = [
 					m,
 					m + p,
@@ -558,7 +664,7 @@ var t = /* @__PURE__ */ e(((e, t) => {
 					if (c === "from") e.color = n.color;
 					else if (c === "to") e.color = r.color;
 					else if (c === "gradient") {
-						let t = q(n.color).get(), i = q(r.color).get();
+						let t = X(n.color).get(), i = X(r.color).get();
 						e.color = {
 							linearGradient: {
 								x1: 1,
@@ -572,10 +678,11 @@ var t = /* @__PURE__ */ e(((e, t) => {
 				}
 			}
 			translateNode(e, t) {
-				let n = this.translationFactor, r = this.chart, i = this.options, { borderRadius: a, borderWidth: o = 0 } = i, s = e.getSum(), c = Math.max(Math.round(s * n), this.options.minLinkWidth), l = Math.round(this.nodeWidth), u = t.sankeyColumn.offset(e, n), d = J(Z(u.absoluteTop, t.sankeyColumn.top(n) + u.relativeTop), o), f = J(this.colDistance * e.column + o / 2, o) + Q(e.options[r.inverted ? "offsetVertical" : "offsetHorizontal"] || 0, l), p = r.inverted ? r.plotSizeX - f : f;
+				let n = this.translationFactor, r = this.chart, i = this.options, { borderRadius: a, borderWidth: o = 0 } = i, s = e.getSum(), c = Math.max(Math.round(s * n), this.options.minLinkWidth), l = Math.round(this.nodeWidth), u = t.sankeyColumn.offset(e, n), d = v(O(u.absoluteTop, t.sankeyColumn.top(n) + u.relativeTop), o), f = v(this.colDistance * e.column + o / 2, o) + k(e.options[r.inverted ? "offsetVertical" : "offsetHorizontal"] || 0, l), p = r.inverted ? r.plotSizeX - f : f;
 				if (e.sum = s, s) {
+					var m, h;
 					e.shapeType = "roundedRect", e.nodeX = p, e.nodeY = d;
-					let t = p, n = d, o = e.options.width || i.width || l, s = e.options.height || i.height || c, u = de(Q(typeof a == "object" ? a.radius : a || 0, o), 0, c / 2);
+					let t = p, n = d, o = e.options.width || i.width || l, s = e.options.height || i.height || c, u = (m = k(typeof a == "object" ? a.radius : a || 0, o), h = c / 2, m > 0 ? m < h ? m : h : 0);
 					r.inverted && (t = p - l, n = r.plotSizeY - d - c, o = e.options.height || i.height || l, s = e.options.width || i.width || c), e.dlOptions = {
 						...$.getDLOptions({
 							level: this.mapOptionsToLevel[e.level],
@@ -593,7 +700,7 @@ var t = /* @__PURE__ */ e(((e, t) => {
 				} else e.dlOptions = { enabled: !1 };
 			}
 		}
-		$.defaultOptions = X(K.defaultOptions, {
+		$.defaultOptions = E(J.defaultOptions, {
 			borderWidth: 0,
 			colorByPoint: !0,
 			curveFactor: .33,
@@ -636,9 +743,9 @@ var t = /* @__PURE__ */ e(((e, t) => {
 				pointFormat: "{point.fromNode.name} → {point.toNode.name}: <b>{point.weight}</b><br/>",
 				nodeFormat: "{point.name}: <b>{point.sum}</b><br/>"
 			}
-		}), S.compose(D, $), fe($.prototype, {
-			animate: ce.prototype.animate,
-			createNode: S.createNode,
+		}), M.compose(I, $), b($.prototype, {
+			animate: Y.prototype.animate,
+			createNode: M.createNode,
 			forceDL: !0,
 			invertible: !0,
 			isCartesian: !1,
@@ -649,10 +756,10 @@ var t = /* @__PURE__ */ e(((e, t) => {
 				"to",
 				"weight"
 			],
-			pointClass: D,
+			pointClass: I,
 			searchPoint: f().noop
 		}), m().registerSeriesType("sankey", $);
-		let me = f();
+		let ee = f();
 		return u.default;
 	})());
 }));
