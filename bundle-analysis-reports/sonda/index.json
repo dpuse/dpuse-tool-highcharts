@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "0.14.0",
-    "generatedAt": "2026-07-15T16:25:37.692Z",
+    "generatedAt": "2026-07-15T19:49:12.394Z",
     "integration": "vite",
     "sources": false,
     "gzip": false,
@@ -21,9 +21,9 @@
       "name": "[unassigned]",
       "type": "other",
       "format": "other",
-      "uncompressed": 62328,
+      "uncompressed": 62362,
       "gzip": 0,
-      "brotli": 1398,
+      "brotli": 1397,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -78,9 +78,9 @@
       "kind": "asset",
       "name": "dist/dpuse-tool-highcharts.es.js",
       "type": "script",
-      "uncompressed": 585856,
+      "uncompressed": 586007,
       "gzip": 0,
-      "brotli": 135962
+      "brotli": 136071
     },
     {
       "kind": "asset",
@@ -145,7 +145,7 @@
       "format": "cjs",
       "uncompressed": 334385,
       "gzip": 0,
-      "brotli": 92891,
+      "brotli": 92949,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -162,7 +162,7 @@
       "format": "cjs",
       "uncompressed": 157315,
       "gzip": 0,
-      "brotli": 35645,
+      "brotli": 35668,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -196,7 +196,7 @@
       "format": "cjs",
       "uncompressed": 9499,
       "gzip": 0,
-      "brotli": 3029,
+      "brotli": 3031,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -247,7 +247,7 @@
       "format": "cjs",
       "uncompressed": 19007,
       "gzip": 0,
-      "brotli": 2201,
+      "brotli": 2202,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -255,16 +255,16 @@
       "name": "src/index.ts",
       "type": "script",
       "format": "esm",
-      "uncompressed": 5197
+      "uncompressed": 5180
     },
     {
       "kind": "chunk",
       "name": "src/index.ts",
       "type": "script",
       "format": "esm",
-      "uncompressed": 3322,
+      "uncompressed": 3439,
       "gzip": 0,
-      "brotli": 797,
+      "brotli": 823,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     }
   ],

@@ -76,29 +76,29 @@ The Bundle Analysis Report is generated automatically on each release using [Son
 
 _Note: Sonda's Vite reports currently exclude CSS files, since Vite does not generate source maps for CSS._
 
-| Chunk/Module/File                                                        | Composition                  |
-| :----------------------------------------------------------------------- | :--------------------------- |
-| dist/dpuse-tool-highcharts.es.js                                         | 572.1 kB · brotli 132.8 kB   |
-| &nbsp;&nbsp;&nbsp;&nbsp;highcharts                                       | `██████████████░░░░░░` 68.9% |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;highcharts.js            | `█████████░░░░░░░░░░░` 44.3% |
+|Chunk/Module/File|Composition|
+|:------ |:-----------|
+| dist/dpuse-tool-highcharts.es.js | 572.3 kB · brotli 132.9 kB |
+| &nbsp;&nbsp;&nbsp;&nbsp;highcharts | `██████████████░░░░░░` 68.9% |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;highcharts.js | `█████████░░░░░░░░░░░` 44.3% |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modules/accessibility.js | `████░░░░░░░░░░░░░░░░` 20.8% |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;themes/adaptive.js       | `█░░░░░░░░░░░░░░░░░░░` 2.5%  |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modules/pattern-fill.js  | `░░░░░░░░░░░░░░░░░░░░` 1.3%  |
-| &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned]                      | `██░░░░░░░░░░░░░░░░░░` 8.3%  |
-| &nbsp;&nbsp;&nbsp;&nbsp;src → index.ts                                   | `░░░░░░░░░░░░░░░░░░░░` 0.4%  |
-| dist/highcharts-more-0p0GqZ8D.js                                         | 128.5 kB · brotli 31.7 kB    |
-| &nbsp;&nbsp;&nbsp;&nbsp;highcharts → highcharts-more.js                  | `███░░░░░░░░░░░░░░░░░` 15.8% |
-| &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned]                      | `░░░░░░░░░░░░░░░░░░░░` 1.6%  |
-| dist/sankey-PXPiVSFg.js                                                  | 23.3 kB · brotli 6.8 kB      |
-| &nbsp;&nbsp;&nbsp;&nbsp;highcharts → modules/sankey.js                   | `█░░░░░░░░░░░░░░░░░░░` 2.7%  |
-| &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned]                      | `░░░░░░░░░░░░░░░░░░░░` 0.4%  |
-| dist/dependency-wheel-BJ8Htyx3.js                                        | 11.6 kB · brotli 3.8 kB      |
-| &nbsp;&nbsp;&nbsp;&nbsp;highcharts → modules/dependency-wheel.js         | `░░░░░░░░░░░░░░░░░░░░` 1.3%  |
-| &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned]                      | `░░░░░░░░░░░░░░░░░░░░` 0.2%  |
-| dist/streamgraph-Di8Fshuv.js                                             | 2.0 kB · brotli 848 B        |
-| &nbsp;&nbsp;&nbsp;&nbsp;highcharts → modules/streamgraph.js              | `░░░░░░░░░░░░░░░░░░░░` 0.2%  |
-| &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned]                      | `░░░░░░░░░░░░░░░░░░░░` 0.0%  |
-| dist/rolldown-runtime-3b4jIN3o.js                                        | 760 B · brotli 406 B         |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;themes/adaptive.js | `█░░░░░░░░░░░░░░░░░░░` 2.5% |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modules/pattern-fill.js | `░░░░░░░░░░░░░░░░░░░░` 1.3% |
+| &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned] | `██░░░░░░░░░░░░░░░░░░` 8.3% |
+| &nbsp;&nbsp;&nbsp;&nbsp;src → index.ts | `░░░░░░░░░░░░░░░░░░░░` 0.5% |
+| dist/highcharts-more-0p0GqZ8D.js | 128.5 kB · brotli 31.7 kB |
+| &nbsp;&nbsp;&nbsp;&nbsp;highcharts → highcharts-more.js | `███░░░░░░░░░░░░░░░░░` 15.8% |
+| &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned] | `░░░░░░░░░░░░░░░░░░░░` 1.6% |
+| dist/sankey-PXPiVSFg.js | 23.3 kB · brotli 6.8 kB |
+| &nbsp;&nbsp;&nbsp;&nbsp;highcharts → modules/sankey.js | `█░░░░░░░░░░░░░░░░░░░` 2.7% |
+| &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned] | `░░░░░░░░░░░░░░░░░░░░` 0.4% |
+| dist/dependency-wheel-BJ8Htyx3.js | 11.6 kB · brotli 3.8 kB |
+| &nbsp;&nbsp;&nbsp;&nbsp;highcharts → modules/dependency-wheel.js | `░░░░░░░░░░░░░░░░░░░░` 1.3% |
+| &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned] | `░░░░░░░░░░░░░░░░░░░░` 0.2% |
+| dist/streamgraph-Di8Fshuv.js | 2.0 kB · brotli 848 B |
+| &nbsp;&nbsp;&nbsp;&nbsp;highcharts → modules/streamgraph.js | `░░░░░░░░░░░░░░░░░░░░` 0.2% |
+| &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned] | `░░░░░░░░░░░░░░░░░░░░` 0.0% |
+| dist/rolldown-runtime-3b4jIN3o.js | 760 B · brotli 406 B |
 
 <!-- BUNDLE_END -->
 

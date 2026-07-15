@@ -13418,25 +13418,29 @@ var s = {
 	areaSpline: "areasplinerange",
 	bar: "columnrange",
 	column: "columnrange"
-}, u = "highcharts", d = !1, f = !1, p = !1, m = class {
+}, u = "highcharts", d = {
+	isDependencyWheelAndSankeyModulesLoaded: !1,
+	isHighchartsMoreLoaded: !1,
+	isStreamgraphModuleLoaded: !1
+}, f = class {
 	renderCartesianChart(e, t, n, r) {
-		let i = s[e], a = [];
-		for (let e of t.data.measures) a.push({
+		let i = s[e], a = Array.from(t.data.measures, (e) => ({
 			type: i,
 			name: e.name,
 			data: e.values
-		});
-		let c = {
+		})), c = {
 			chart: { type: i },
 			plotOptions: { series: { borderColor: "#333" } },
 			series: a,
 			title: { text: t.title.text },
 			xAxis: { categories: t.data.dimension.values.map((e) => e.label?.text ?? "") },
-			yAxis: { title: { text: t.title?.text ?? void 0 } }
+			yAxis: { title: { text: t.title.text } }
 		}, l = o.default.chart(n, c, r);
 		return {
 			chart: l,
-			resize: () => l.reflow(),
+			resize: () => {
+				l.reflow();
+			},
 			vendorId: u
 		};
 	}
@@ -13445,51 +13449,53 @@ var s = {
 		let r = o.default.chart(t, e, n);
 		return {
 			chart: r,
-			resize: () => r.reflow(),
+			resize: () => {
+				r.reflow();
+			},
 			vendorId: u
 		};
 	}
 	async renderPeriodFlowBoundaries(e, t, n) {
 		await this.loadHighchartsMore();
-		let r = [];
-		for (let t of e.data.measures) r.push({
-			type: "waterfall",
-			name: t.name,
-			data: t.values
-		});
-		let i = {
+		let r = {
 			chart: { type: "waterfall" },
 			plotOptions: { series: { borderColor: "#333" } },
-			series: r,
+			series: Array.from(e.data.measures, (e) => ({
+				type: "waterfall",
+				name: e.name,
+				data: e.values
+			})),
 			title: { text: e.title.text },
 			xAxis: { categories: e.data.dimension.values.map((e) => e.label?.text ?? "") },
-			yAxis: { title: { text: e.title?.text ?? void 0 } }
-		}, a = o.default.chart(t, i, n);
+			yAxis: { title: { text: e.title.text } }
+		}, i = o.default.chart(t, r, n);
 		return {
-			chart: a,
-			resize: () => a.reflow(),
+			chart: i,
+			resize: () => {
+				i.reflow();
+			},
 			vendorId: u
 		};
 	}
 	async renderPolarChart(e, t, n, r) {
 		await this.loadHighchartsMore();
-		let i = c[e], a = [];
-		for (let e of t.data.measures) a.push({
-			type: i,
-			name: e.name,
-			data: e.values
-		});
-		let s = {
+		let i = c[e], a = {
 			chart: { polar: !0 },
 			plotOptions: { series: { borderColor: "#333" } },
-			series: a,
+			series: Array.from(t.data.measures, (e) => ({
+				type: i,
+				name: e.name,
+				data: e.values
+			})),
 			title: { text: t.title.text },
 			xAxis: { categories: t.data.dimension.values.map((e) => e.label?.text ?? "") },
-			yAxis: { title: { text: t.title?.text ?? void 0 } }
-		}, l = o.default.chart(n, s, r);
+			yAxis: { title: { text: t.title.text } }
+		}, s = o.default.chart(n, a, r);
 		return {
-			chart: l,
-			resize: () => l.reflow(),
+			chart: s,
+			resize: () => {
+				s.reflow();
+			},
 			vendorId: u
 		};
 	}
@@ -13511,25 +13517,27 @@ var s = {
 			series: a,
 			title: { text: t.title.text },
 			xAxis: { categories: t.data.dimension.values.map((e) => e.label?.text ?? "") },
-			yAxis: { title: { text: t.title?.text ?? void 0 } }
+			yAxis: { title: { text: t.title.text } }
 		}, d = o.default.chart(n, c, r);
 		return {
 			chart: d,
-			resize: () => d.reflow(),
+			resize: () => {
+				d.reflow();
+			},
 			vendorId: u
 		};
 	}
 	async loadDependencyWheelAndSankeyModules() {
-		d ||= (await Promise.all([import("./dependency-wheel-BJ8Htyx3.js").then((t) => /* @__PURE__ */ e(t.default, 1)), import("./sankey-PXPiVSFg.js").then((t) => /* @__PURE__ */ e(t.default, 1))]), !0);
+		d.isDependencyWheelAndSankeyModulesLoaded ||= (await Promise.all([import("./dependency-wheel-BJ8Htyx3.js").then((t) => /* @__PURE__ */ e(t.default, 1)), import("./sankey-PXPiVSFg.js").then((t) => /* @__PURE__ */ e(t.default, 1))]), !0);
 	}
 	async loadHighchartsMore() {
-		f ||= (await import("./highcharts-more-0p0GqZ8D.js").then((t) => /* @__PURE__ */ e(t.default, 1)), !0);
+		d.isHighchartsMoreLoaded ||= (await import("./highcharts-more-0p0GqZ8D.js").then((t) => /* @__PURE__ */ e(t.default, 1)), !0);
 	}
 	async loadStreamGraphModule() {
-		p ||= (await import("./streamgraph-Di8Fshuv.js").then((t) => /* @__PURE__ */ e(t.default, 1)), !0);
+		d.isStreamgraphModuleLoaded ||= (await import("./streamgraph-Di8Fshuv.js").then((t) => /* @__PURE__ */ e(t.default, 1)), !0);
 	}
 };
 //#endregion
-export { m as HighchartsTool };
+export { f as HighchartsTool };
 
 //# sourceMappingURL=dpuse-tool-highcharts.es.js.map
