@@ -1,0 +1,193 @@
+import { J as e, Q as t, j as n, lt as r, m as i, nt as a, t as o, ut as s } from "./SeriesRegistry-BGZZizI3.js";
+import { t as c } from "./SVGElement-0ERYDlUm.js";
+import { n as l, t as u } from "./TextPath-BtwIAWQC.js";
+//#region node_modules/highcharts/es-modules/Series/DependencyWheel/DependencyWheelPoint.js
+var { sankey: { prototype: { pointClass: d } } } = o.seriesTypes, f = class extends d {
+	getSumTo() {
+		let e = 0;
+		for (let t of this.linksFrom) e += t.weightTo || t.weight || 0;
+		for (let t of this.linksTo) e += t.weight || 0;
+		return e;
+	}
+	getDataLabelPath(e) {
+		let n = this, i = n.series.chart.renderer, a = n.shapeArgs, o = n.angle < 0 || n.angle > Math.PI, s = a.start || 0, c = a.end || 0;
+		return n.dataLabelPath ? (n.dataLabelPath = n.dataLabelPath.destroy(), delete n.dataLabelPath) : r(e, "destroy", function(e) {
+			return n.dataLabelPath &&= n.dataLabelPath.destroy(), e.call(this);
+		}), n.dataLabelPath = i.arc({
+			open: !0,
+			longArc: Math.abs(Math.abs(s) - Math.abs(c)) < Math.PI ? 0 : 1
+		}).attr({
+			x: a.x,
+			y: a.y,
+			r: (a.r || 0) + t(e.options?.distance || 0),
+			start: o ? s : c,
+			end: o ? c : s,
+			clockwise: +o
+		}).add(i.defs), n.dataLabelPath;
+	}
+	isValid() {
+		return !0;
+	}
+}, p = {
+	center: [null, null],
+	curveFactor: .6,
+	startAngle: 0,
+	dataLabels: {
+		allowOverlap: !0,
+		textPath: {
+			enabled: !1,
+			attributes: { dy: 5 }
+		}
+	},
+	tooltip: { pointFormat: "{point.fromNode.name} → {point.toNode.name}: <b>{point.weight}</b><br/>{#if point.weightTo}{point.toNode.name} → {point.fromNode.name}: <b>{point.weightTo}</b><br/>{/if}" }
+}, { animObject: m } = i, { deg2rad: h } = s, { pie: g, sankey: _ } = o.seriesTypes;
+u(c);
+var v = class extends _ {
+	animate(e) {
+		let t = this;
+		if (!e) {
+			let e = m(t.options.animation).duration / 2 / t.nodes.length, n = 0;
+			for (let r of t.nodes) {
+				let t = r.graphic;
+				t && (t.attr({ opacity: 0 }), setTimeout(() => {
+					r.graphic && r.graphic.animate({ opacity: 1 }, { duration: e });
+				}, e * n++));
+			}
+			for (let e of t.points) {
+				let n = e.graphic;
+				!e.isNode && n && n.attr({ opacity: 0 }).animate({ opacity: 1 }, t.options.animation);
+			}
+		}
+	}
+	createNode(e) {
+		let t = super.createNode(e);
+		return t.getSum = () => {
+			let e = 0;
+			for (let n of t.linksFrom) e += n.weight || 0;
+			for (let n of t.linksTo) e += n.weightTo || n.weight || 0;
+			return e;
+		}, t.offset = (e) => {
+			let n = (e) => e.fromNode === t ? e.toNode : e.fromNode, r = 0, i = t.linksFrom.concat(t.linksTo), a;
+			i.sort((e, t) => n(e).index - n(t).index);
+			for (let e = 0; e < i.length; e++) if (n(i[e]).index > t.index) {
+				i = i.slice(0, e).reverse().concat(i.slice(e).reverse()), a = !0;
+				break;
+			}
+			a || i.reverse();
+			for (let n = 0; n < i.length; n++) {
+				if (i[n] === e) return r;
+				let a = i[n].weight || 0;
+				r += i[n].to === t.id && i[n].weightTo || a;
+			}
+		}, t;
+	}
+	createNodeColumns() {
+		let e = this, t = [l.compose([], e)];
+		for (let n of e.nodes) n.column = 0, t[0].push(n);
+		return t;
+	}
+	getNodePadding() {
+		return this.options.nodePadding / Math.PI;
+	}
+	translate() {
+		let e = this, t = e.options, n = 2 * Math.PI / (e.chart.plotHeight + e.getNodePadding()), r = e.getCenter(), i = ((t.startAngle || 0) - 90) * h, o = t.borderRadius, s = typeof o == "object" ? o.radius : o;
+		super.translate();
+		for (let e of this.nodeColumns[0]) if (e.sum) {
+			let o = e.shapeArgs, c = r[0], l = r[1], u = r[2] / 2, d = u - a((t.nodeWidth === "auto" ? 20 : t.nodeWidth) || 0, u), f = i + n * (o.y || 0), p = i + n * ((o.y || 0) + (o.height || 0));
+			e.angle = f + (p - f) / 2, e.shapeType = "arc", e.shapeArgs = {
+				x: c,
+				y: l,
+				r: u,
+				innerR: d,
+				start: f,
+				end: p,
+				borderRadius: s
+			}, e.dlBox = {
+				x: c + Math.cos((f + p) / 2) * (u + d) / 2,
+				y: l + Math.sin((f + p) / 2) * (u + d) / 2,
+				width: 1,
+				height: 1
+			};
+			for (let r of e.linksFrom) if (r.linkBase) {
+				let e, a, o = r.linkBase.map((o, s) => {
+					let u = n * o, f = Math.cos(i + u) * (d + 1), p = Math.sin(i + u) * (d + 1);
+					return e = t.curveFactor || 0, a = Math.abs(r.linkBase[3 - s] * n - u), a > Math.PI && (a = 2 * Math.PI - a), a *= d, a < d && (e *= a / d), {
+						x: c + f,
+						y: l + p,
+						cpX: c + (1 - e) * f,
+						cpY: l + (1 - e) * p
+					};
+				});
+				r.shapeArgs = { d: [
+					[
+						"M",
+						o[0].x,
+						o[0].y
+					],
+					[
+						"A",
+						d,
+						d,
+						0,
+						0,
+						1,
+						o[1].x,
+						o[1].y
+					],
+					[
+						"C",
+						o[1].cpX,
+						o[1].cpY,
+						o[2].cpX,
+						o[2].cpY,
+						o[2].x,
+						o[2].y
+					],
+					[
+						"A",
+						d,
+						d,
+						0,
+						0,
+						1,
+						o[3].x,
+						o[3].y
+					],
+					[
+						"C",
+						o[3].cpX,
+						o[3].cpY,
+						o[0].cpX,
+						o[0].cpY,
+						o[0].x,
+						o[0].y
+					]
+				] };
+			}
+		}
+	}
+	translateLink(e) {
+		let t = Math.max((e.weightTo || e.weight || 0) * this.translationFactor, this.options.minLinkWidth || 0), n = this.getY(e, e.toNode, "linksTo", t);
+		super.translateLink(e, n), e.linkBase[3] = n + t;
+	}
+	translateNode(e, t) {
+		super.translateNode(e, t), e.sumTo = e.getSumTo();
+	}
+};
+v.defaultOptions = e(_.defaultOptions, p), n(v.prototype, {
+	orderNodes: !1,
+	pointArrayMap: [
+		"from",
+		"to",
+		"weight",
+		"weightTo"
+	],
+	getCenter: g.prototype.getCenter
+}), v.prototype.pointClass = f, o.registerSeriesType("dependencywheel", v);
+//#endregion
+//#region node_modules/highcharts/es-modules/masters/modules/dependency-wheel.src.js
+var y = s;
+//#endregion
+export { y as default };
+
+//# sourceMappingURL=dependency-wheel.src-Do6WEv1U.js.map

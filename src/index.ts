@@ -3,11 +3,11 @@
 // Templating: https://www.highcharts.com/docs/chart-concepts/templating.
 
 // ── External Dependencies & Registrations
-import 'highcharts/themes/adaptive';
-import 'highcharts/modules/accessibility';
-import 'highcharts/modules/pattern-fill';
-import Highcharts from 'highcharts';
-import type { Chart, Options, SeriesOptionsType } from 'highcharts';
+import 'highcharts/es-modules/masters/themes/adaptive.src.js';
+import 'highcharts/es-modules/masters/modules/accessibility.src.js';
+import 'highcharts/es-modules/masters/modules/pattern-fill.src.js';
+import Highcharts from 'highcharts/es-modules/masters/highcharts.src.js';
+import type { Chart, Options, SeriesOptionsType } from 'highcharts/highcharts.src';
 
 // ── DPUse Framework
 import type {
@@ -191,7 +191,7 @@ export class HighchartsTool {
     private async loadDependencyWheelAndSankeyModules(): Promise<void> {
         if (state.isDependencyWheelAndSankeyModulesLoaded) return;
 
-        await Promise.all([import('highcharts/modules/dependency-wheel'), import('highcharts/modules/sankey')]);
+        await Promise.all([import('highcharts/es-modules/masters/modules/dependency-wheel.src.js'), import('highcharts/es-modules/masters/modules/sankey.src.js')]);
         state.isDependencyWheelAndSankeyModulesLoaded = true;
     }
 
@@ -199,7 +199,7 @@ export class HighchartsTool {
     private async loadHighchartsMore(): Promise<void> {
         if (state.isHighchartsMoreLoaded) return;
 
-        await import('highcharts/highcharts-more');
+        await import('./highchartsMoreCustom');
         state.isHighchartsMoreLoaded = true;
     }
 
@@ -207,7 +207,7 @@ export class HighchartsTool {
     private async loadStreamGraphModule(): Promise<void> {
         if (state.isStreamgraphModuleLoaded) return;
 
-        await import('highcharts/modules/streamgraph');
+        await import('highcharts/es-modules/masters/modules/streamgraph.src.js');
         state.isStreamgraphModuleLoaded = true;
     }
 }
