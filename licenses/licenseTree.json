@@ -1,1 +1,20 @@
-[{"name":"@dpuse/dpuse-shared","installedVersion":"0.3.595","author":"Jonathan Terrell <terrell.jm@gmail.com>","licenseType":"MIT","link":"git+https://github.com/data-positioning/dpuse-shared.git","definedVersion":"^0.3.595","remoteVersion":"0.3.595","alias":"","department":"n/a","relatedTo":"n/a","licensePeriod":"n/a","material":"n/a","requires":[]},{"name":"highcharts","installedVersion":"12.5.0","author":"Highsoft AS <support@highcharts.com> (http://www.highcharts.com/about)","licenseType":"https://www.highcharts.com/license","link":"git+https://github.com/highcharts/highcharts-dist.git","definedVersion":"^12.5.0","remoteVersion":"12.5.0","alias":"","requires":[{"name":"jspdf","installedVersion":"n/a","author":"n/a","licenseType":"n/a","link":"git+https://github.com/parallax/jsPDF.git","definedVersion":"^3.0.0","remoteVersion":"3.0.4","alias":"","department":"n/a","relatedTo":"n/a","licensePeriod":"n/a","material":"n/a","requires":[]},{"name":"svg2pdf.js","installedVersion":"n/a","author":"n/a","licenseType":"n/a","link":"git+https://github.com/yWorks/svg2pdf.js.git","definedVersion":"^2.6.0","remoteVersion":"2.7.0","alias":"","department":"n/a","relatedTo":"n/a","licensePeriod":"n/a","material":"n/a","requires":[]}],"department":"n/a","relatedTo":"n/a","licensePeriod":"n/a","material":"n/a"}]
+{
+  "version": "0.0.52",
+  "name": "@dpuse/dpuse-tool-highcharts",
+  "dependencies": {
+    "@dpuse/dpuse-shared": {
+      "version": "0.3.743",
+      "resolved": "https://registry.npmjs.org/@dpuse/dpuse-shared/-/dpuse-shared-0.3.743.tgz",
+      "overridden": false
+    },
+    "highcharts": {
+      "version": "13.0.0",
+      "resolved": "https://registry.npmjs.org/highcharts/-/highcharts-13.0.0.tgz",
+      "overridden": false,
+      "dependencies": {
+        "jspdf": {},
+        "svg2pdf.js": {}
+      }
+    }
+  }
+}

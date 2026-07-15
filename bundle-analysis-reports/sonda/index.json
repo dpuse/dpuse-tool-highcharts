@@ -1,0 +1,337 @@
+{
+  "metadata": {
+    "version": "0.14.0",
+    "generatedAt": "2026-07-15T16:24:55.857Z",
+    "integration": "vite",
+    "sources": false,
+    "gzip": false,
+    "brotli": true
+  },
+  "resources": [
+    {
+      "kind": "sourcemap",
+      "name": "[unassigned]",
+      "type": "other",
+      "format": "other",
+      "uncompressed": 0,
+      "parent": null
+    },
+    {
+      "kind": "chunk",
+      "name": "[unassigned]",
+      "type": "other",
+      "format": "other",
+      "uncompressed": 62328,
+      "gzip": 0,
+      "brotli": 1398,
+      "parent": "dist/dpuse-tool-highcharts.es.js"
+    },
+    {
+      "kind": "chunk",
+      "name": "[unassigned]",
+      "type": "other",
+      "format": "other",
+      "uncompressed": 1755,
+      "gzip": 0,
+      "brotli": 213,
+      "parent": "dist/dependency-wheel-BJ8Htyx3.js"
+    },
+    {
+      "kind": "chunk",
+      "name": "[unassigned]",
+      "type": "other",
+      "format": "other",
+      "uncompressed": 12136,
+      "gzip": 0,
+      "brotli": 291,
+      "parent": "dist/highcharts-more-0p0GqZ8D.js"
+    },
+    {
+      "kind": "chunk",
+      "name": "[unassigned]",
+      "type": "other",
+      "format": "other",
+      "uncompressed": 3260,
+      "gzip": 0,
+      "brotli": 240,
+      "parent": "dist/sankey-PXPiVSFg.js"
+    },
+    {
+      "kind": "chunk",
+      "name": "[unassigned]",
+      "type": "other",
+      "format": "other",
+      "uncompressed": 363,
+      "gzip": 0,
+      "brotli": 180,
+      "parent": "dist/streamgraph-Di8Fshuv.js"
+    },
+    {
+      "kind": "asset",
+      "name": "dist/dependency-wheel-BJ8Htyx3.js",
+      "type": "script",
+      "uncompressed": 11894,
+      "gzip": 0,
+      "brotli": 3870
+    },
+    {
+      "kind": "asset",
+      "name": "dist/dpuse-tool-highcharts.es.js",
+      "type": "script",
+      "uncompressed": 585856,
+      "gzip": 0,
+      "brotli": 135962
+    },
+    {
+      "kind": "asset",
+      "name": "dist/highcharts-more-0p0GqZ8D.js",
+      "type": "script",
+      "uncompressed": 131550,
+      "gzip": 0,
+      "brotli": 32453
+    },
+    {
+      "kind": "asset",
+      "name": "dist/rolldown-runtime-3b4jIN3o.js",
+      "type": "script",
+      "uncompressed": 760,
+      "gzip": 0,
+      "brotli": 406
+    },
+    {
+      "kind": "asset",
+      "name": "dist/sankey-PXPiVSFg.js",
+      "type": "script",
+      "uncompressed": 23858,
+      "gzip": 0,
+      "brotli": 6996
+    },
+    {
+      "kind": "asset",
+      "name": "dist/streamgraph-Di8Fshuv.js",
+      "type": "script",
+      "uncompressed": 2042,
+      "gzip": 0,
+      "brotli": 848
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/highcharts/highcharts-more.js",
+      "type": "script",
+      "format": "cjs",
+      "uncompressed": 100940
+    },
+    {
+      "kind": "chunk",
+      "name": "node_modules/highcharts/highcharts-more.js",
+      "type": "script",
+      "format": "cjs",
+      "uncompressed": 119414,
+      "gzip": 0,
+      "brotli": 32162,
+      "parent": "dist/highcharts-more-0p0GqZ8D.js"
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/highcharts/highcharts.js",
+      "type": "script",
+      "format": "cjs",
+      "uncompressed": 280197
+    },
+    {
+      "kind": "chunk",
+      "name": "node_modules/highcharts/highcharts.js",
+      "type": "script",
+      "format": "cjs",
+      "uncompressed": 334385,
+      "gzip": 0,
+      "brotli": 92891,
+      "parent": "dist/dpuse-tool-highcharts.es.js"
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/highcharts/modules/accessibility.js",
+      "type": "script",
+      "format": "cjs",
+      "uncompressed": 138033
+    },
+    {
+      "kind": "chunk",
+      "name": "node_modules/highcharts/modules/accessibility.js",
+      "type": "script",
+      "format": "cjs",
+      "uncompressed": 157315,
+      "gzip": 0,
+      "brotli": 35645,
+      "parent": "dist/dpuse-tool-highcharts.es.js"
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/highcharts/modules/dependency-wheel.js",
+      "type": "script",
+      "format": "cjs",
+      "uncompressed": 8808
+    },
+    {
+      "kind": "chunk",
+      "name": "node_modules/highcharts/modules/dependency-wheel.js",
+      "type": "script",
+      "format": "cjs",
+      "uncompressed": 10139,
+      "gzip": 0,
+      "brotli": 3657,
+      "parent": "dist/dependency-wheel-BJ8Htyx3.js"
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/highcharts/modules/pattern-fill.js",
+      "type": "script",
+      "format": "cjs",
+      "uncompressed": 8575
+    },
+    {
+      "kind": "chunk",
+      "name": "node_modules/highcharts/modules/pattern-fill.js",
+      "type": "script",
+      "format": "cjs",
+      "uncompressed": 9499,
+      "gzip": 0,
+      "brotli": 3029,
+      "parent": "dist/dpuse-tool-highcharts.es.js"
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/highcharts/modules/sankey.js",
+      "type": "script",
+      "format": "cjs",
+      "uncompressed": 17489
+    },
+    {
+      "kind": "chunk",
+      "name": "node_modules/highcharts/modules/sankey.js",
+      "type": "script",
+      "format": "cjs",
+      "uncompressed": 20598,
+      "gzip": 0,
+      "brotli": 6756,
+      "parent": "dist/sankey-PXPiVSFg.js"
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/highcharts/modules/streamgraph.js",
+      "type": "script",
+      "format": "cjs",
+      "uncompressed": 1744
+    },
+    {
+      "kind": "chunk",
+      "name": "node_modules/highcharts/modules/streamgraph.js",
+      "type": "script",
+      "format": "cjs",
+      "uncompressed": 1679,
+      "gzip": 0,
+      "brotli": 668,
+      "parent": "dist/streamgraph-Di8Fshuv.js"
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/highcharts/themes/adaptive.js",
+      "type": "script",
+      "format": "cjs",
+      "uncompressed": 20620
+    },
+    {
+      "kind": "chunk",
+      "name": "node_modules/highcharts/themes/adaptive.js",
+      "type": "script",
+      "format": "cjs",
+      "uncompressed": 19007,
+      "gzip": 0,
+      "brotli": 2201,
+      "parent": "dist/dpuse-tool-highcharts.es.js"
+    },
+    {
+      "kind": "filesystem",
+      "name": "src/index.ts",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 5197
+    },
+    {
+      "kind": "chunk",
+      "name": "src/index.ts",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 3322,
+      "gzip": 0,
+      "brotli": 797,
+      "parent": "dist/dpuse-tool-highcharts.es.js"
+    }
+  ],
+  "connections": [
+    {
+      "kind": "dynamic-import",
+      "source": "src/index.ts",
+      "target": "node_modules/highcharts/modules/dependency-wheel.js",
+      "original": null
+    },
+    {
+      "kind": "dynamic-import",
+      "source": "src/index.ts",
+      "target": "node_modules/highcharts/modules/sankey.js",
+      "original": null
+    },
+    {
+      "kind": "dynamic-import",
+      "source": "src/index.ts",
+      "target": "node_modules/highcharts/highcharts-more.js",
+      "original": null
+    },
+    {
+      "kind": "dynamic-import",
+      "source": "src/index.ts",
+      "target": "node_modules/highcharts/modules/streamgraph.js",
+      "original": null
+    },
+    {
+      "kind": "entrypoint",
+      "source": "dist/dpuse-tool-highcharts.es.js",
+      "target": "src/index.ts",
+      "original": null
+    },
+    {
+      "kind": "entrypoint",
+      "source": "dist/dependency-wheel-BJ8Htyx3.js",
+      "target": "node_modules/highcharts/modules/dependency-wheel.js",
+      "original": null
+    },
+    {
+      "kind": "entrypoint",
+      "source": "dist/highcharts-more-0p0GqZ8D.js",
+      "target": "node_modules/highcharts/highcharts-more.js",
+      "original": null
+    },
+    {
+      "kind": "entrypoint",
+      "source": "dist/sankey-PXPiVSFg.js",
+      "target": "node_modules/highcharts/modules/sankey.js",
+      "original": null
+    },
+    {
+      "kind": "entrypoint",
+      "source": "dist/streamgraph-Di8Fshuv.js",
+      "target": "node_modules/highcharts/modules/streamgraph.js",
+      "original": null
+    }
+  ],
+  "dependencies": [
+    {
+      "name": "highcharts",
+      "paths": [
+        "node_modules/highcharts"
+      ]
+    }
+  ],
+  "issues": [],
+  "sourcemaps": []
+}

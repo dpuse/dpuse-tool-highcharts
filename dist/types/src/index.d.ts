@@ -1,5 +1,5 @@
 import { Chart, Options } from 'highcharts';
-import { PresentationCartesianTypeId, PresentationPolarTypeId, PresentationRangeTypeId, PresentationView, PresentationVisualContentConfig } from '@dpuse/dpuse-shared/component/module/presenter/presentation';
+import { PresentationCartesianTypeId, PresentationPolarTypeId, PresentationRangeTypeId, PresentationView, PresentationVisualContentConfig } from '@dpuse/dpuse-shared/component/presentation';
 export interface HighchartsView extends PresentationView {
     chart: Chart;
 }

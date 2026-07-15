@@ -22,7 +22,7 @@ import type {
     PresentationRangeTypeId,
     PresentationView,
     PresentationVisualContentConfig
-} from '@dpuse/dpuse-shared/component/module/presenter/presentation';
+} from '@dpuse/dpuse-shared/component/presentation';
 
 // Types/Interfaces - Highcharts.
 export interface HighchartsView extends PresentationView {

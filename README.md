@@ -1,9 +1,6 @@
 # Data Positioning Highcharts Tool
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
-<span><!-- OWASP_BADGES_START -->
-[![OWASP](https://img.shields.io/badge/OWASP-passed-4CAF50)](https://dpuse.github.io/dpuse-tool-highcharts/dependency-check-reports/dependency-check-report.html)
-<!-- OWASP_BADGES_END --></span>
 
 A TypeScript wrapper for Highcharts that implements the Data Positioning chart-rendering interface. It improves browser memory efficiency by sharing a single Highcharts instance shared across all presenters and loading optional modules on demand.
 
@@ -46,20 +43,64 @@ The OWASP Dependency Check Report identifies known vulnerabilities in project de
 The following table lists top-level production and peer dependencies. All these dependencies (including transitive ones) have been recursively verified to use Apache-2.0, CC0-1.0, or MIT—commercially friendly licenses with minimal restrictions. Developers cloning this repository should independently verify dev and optional dependencies; users of the uploaded library are covered by these checks.
 
 <!-- DEPENDENCY_LICENSES_START -->
-|Name|Type|Installed|Latest|Latest Released|Deps|Document|
-|:-|:-|:-:|:-:|:-|-:|:-|
-|@dpuse/dpuse-shared|MIT|0.3.595|0.3.595|this month: 2026-03-23|0|[LICENSE](https://raw.githubusercontent.com/dpuse/dpuse-shared/main/LICENSE)|
-|highcharts|https://www.highcharts.com/license|12.5.0|12.5.0|2 months ago: 2026-01-12|2|[LICENSE.txt](https://raw.githubusercontent.com/highcharts/highcharts-dist/master/LICENSE.txt)|
+
+License data is collected automatically on each release using [license-checker](https://github.com/RSeidelsohn/license-checker-rseidelsohn). The following table lists all production dependencies. These dependencies (including transitive ones) have been checked and confirmed to use https://www.highcharts.com/license or MIT — all permissive, commercially-friendly licenses. Users of the uploaded library are covered by these checks; developers cloning this repository should independently verify development dependencies.
+
+|Dependency|Version|License(s)|Document|
+|:-|:-:|:-|:-|
+|[@dpuse/dpuse-shared](https://github.com/dpuse/dpuse-shared)|0.3.743|MIT|[LICENSE](licenses/downloads/@dpuse/dpuse-shared@0.3.743-LICENSE.txt)|
+|[highcharts](https://github.com/highcharts/highcharts-dist)|13.0.0|Custom: https://www.highcharts.com/license|[LICENSE](licenses/downloads/highcharts@13.0.0-LICENSE.txt)|
 
 <!-- DEPENDENCY_LICENSES_END -->
 
-**Installed dependencies are kept up-to-date with latest releases.**
+<!-- DEPENDENCY_TREE_START -->
+
+The dependency tree below lists every package in this project — direct and transitive — along with its installed version, release date, and update status. Packages flagged ❗ have a newer version available; ⚠️ indicates a package that hasn't been updated in the last 6 months or longer. Neither flag necessarily indicates a problem: we let new releases stabilise before upgrading, and some packages are simply mature and stable, requiring no active development.
+
+- **[@dpuse/dpuse-shared](https://github.com/dpuse/dpuse-shared)** 0.3.743 — this month: 2026-07-14
+- **[highcharts](https://github.com/highcharts/highcharts-dist)** 13.0.0 — 1 month ago: 2026-06-11
+  - **jspdf** 
+  - **svg2pdf.js**
+
+<!-- DEPENDENCY_TREE_END -->
 
 ### Bundle Analysis Report
 
 The Bundle Analysis Report provides a detailed breakdown of the bundle's composition and module sizes, helping to identify which modules contribute most to the final build. It is generated automatically on each release using the npm package `rollup-plugin-visualizer`.
 
 [View the Bundle Analysis Report](https://dpuse.github.io/dpuse-tool-highcharts/stats/index.html)
+
+<!-- BUNDLE_START -->
+
+The Bundle Analysis Report is generated automatically on each release using [Sonda](https://sonda.dev/), which analyses final source maps to reveal the actual effects of tree-shaking and minification rather than relying on pre-build estimates.
+
+_Note: Sonda's Vite reports currently exclude CSS files, since Vite does not generate source maps for CSS._
+
+| Chunk/Module/File                                                        | Composition                  |
+| :----------------------------------------------------------------------- | :--------------------------- |
+| dist/dpuse-tool-highcharts.es.js                                         | 572.1 kB · brotli 132.8 kB   |
+| &nbsp;&nbsp;&nbsp;&nbsp;highcharts                                       | `██████████████░░░░░░` 68.9% |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;highcharts.js            | `█████████░░░░░░░░░░░` 44.3% |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modules/accessibility.js | `████░░░░░░░░░░░░░░░░` 20.8% |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;themes/adaptive.js       | `█░░░░░░░░░░░░░░░░░░░` 2.5%  |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modules/pattern-fill.js  | `░░░░░░░░░░░░░░░░░░░░` 1.3%  |
+| &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned]                      | `██░░░░░░░░░░░░░░░░░░` 8.3%  |
+| &nbsp;&nbsp;&nbsp;&nbsp;src → index.ts                                   | `░░░░░░░░░░░░░░░░░░░░` 0.4%  |
+| dist/highcharts-more-0p0GqZ8D.js                                         | 128.5 kB · brotli 31.7 kB    |
+| &nbsp;&nbsp;&nbsp;&nbsp;highcharts → highcharts-more.js                  | `███░░░░░░░░░░░░░░░░░` 15.8% |
+| &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned]                      | `░░░░░░░░░░░░░░░░░░░░` 1.6%  |
+| dist/sankey-PXPiVSFg.js                                                  | 23.3 kB · brotli 6.8 kB      |
+| &nbsp;&nbsp;&nbsp;&nbsp;highcharts → modules/sankey.js                   | `█░░░░░░░░░░░░░░░░░░░` 2.7%  |
+| &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned]                      | `░░░░░░░░░░░░░░░░░░░░` 0.4%  |
+| dist/dependency-wheel-BJ8Htyx3.js                                        | 11.6 kB · brotli 3.8 kB      |
+| &nbsp;&nbsp;&nbsp;&nbsp;highcharts → modules/dependency-wheel.js         | `░░░░░░░░░░░░░░░░░░░░` 1.3%  |
+| &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned]                      | `░░░░░░░░░░░░░░░░░░░░` 0.2%  |
+| dist/streamgraph-Di8Fshuv.js                                             | 2.0 kB · brotli 848 B        |
+| &nbsp;&nbsp;&nbsp;&nbsp;highcharts → modules/streamgraph.js              | `░░░░░░░░░░░░░░░░░░░░` 0.2%  |
+| &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned]                      | `░░░░░░░░░░░░░░░░░░░░` 0.0%  |
+| dist/rolldown-runtime-3b4jIN3o.js                                        | 760 B · brotli 406 B         |
+
+<!-- BUNDLE_END -->
 
 ## Repository Management Commands
 

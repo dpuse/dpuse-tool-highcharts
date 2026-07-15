@@ -1,352 +1,212 @@
-import { t as e } from "./chunk-C_CI6nMA.js";
+import { t as e } from "./rolldown-runtime-3b4jIN3o.js";
 //#region node_modules/highcharts/highcharts-more.js
 var t = /* @__PURE__ */ e(((e, t) => {
 	(function(n, r) {
-		typeof e == "object" && typeof t == "object" ? t.exports = r(n._Highcharts, n._Highcharts.SeriesRegistry, n._Highcharts.Series, n._Highcharts.Series.types.column, n._Highcharts.Templating, n._Highcharts.Point, n._Highcharts.Color, n._Highcharts.Chart, n._Highcharts.SVGElement, n._Highcharts.StackItem) : typeof define == "function" && define.amd ? define("highcharts/highcharts-more", ["highcharts/highcharts"], function(e) {
-			return r(e, e.SeriesRegistry, e.Series, e.Series, ["types"], ["column"], e.Templating, e.Point, e.Color, e.Chart, e.SVGElement, e.StackItem);
-		}) : typeof e == "object" ? e["highcharts/highcharts-more"] = r(n._Highcharts, n._Highcharts.SeriesRegistry, n._Highcharts.Series, n._Highcharts.Series.types.column, n._Highcharts.Templating, n._Highcharts.Point, n._Highcharts.Color, n._Highcharts.Chart, n._Highcharts.SVGElement, n._Highcharts.StackItem) : n.Highcharts = r(n.Highcharts, n.Highcharts.SeriesRegistry, n.Highcharts.Series, n.Highcharts.Series.types.column, n.Highcharts.Templating, n.Highcharts.Point, n.Highcharts.Color, n.Highcharts.Chart, n.Highcharts.SVGElement, n.Highcharts.StackItem);
+		typeof e == "object" && typeof t == "object" ? t.exports = r(n._Highcharts, n._Highcharts.SeriesRegistry, n._Highcharts.Series.types.column, n._Highcharts.Templating, n._Highcharts.Point, n._Highcharts.Color, n._Highcharts.Chart, n._Highcharts.SVGElement, n._Highcharts.Series, n._Highcharts.StackItem) : typeof define == "function" && define.amd ? define("highcharts/highcharts-more", ["highcharts/highcharts"], function(e) {
+			return r(e, e.SeriesRegistry, e.Series, ["types"], ["column"], e.Templating, e.Point, e.Color, e.Chart, e.SVGElement, e.Series, e.StackItem);
+		}) : typeof e == "object" ? e["highcharts/highcharts-more"] = r(n._Highcharts, n._Highcharts.SeriesRegistry, n._Highcharts.Series.types.column, n._Highcharts.Templating, n._Highcharts.Point, n._Highcharts.Color, n._Highcharts.Chart, n._Highcharts.SVGElement, n._Highcharts.Series, n._Highcharts.StackItem) : n.Highcharts = r(n.Highcharts, n.Highcharts.SeriesRegistry, n.Highcharts.Series.types.column, n.Highcharts.Templating, n.Highcharts.Point, n.Highcharts.Color, n.Highcharts.Chart, n.Highcharts.SVGElement, n.Highcharts.Series, n.Highcharts.StackItem);
 	})("u" < typeof window ? e : window, (e, t, n, r, i, a, o, s, c, l) => (() => {
-		var u, d, f, p, m = {
+		var u, d, f, p, m, h = {
 			28: (e) => {
-				e.exports = c;
+				e.exports = s;
 			},
 			184: (e) => {
 				e.exports = l;
 			},
 			260: (e) => {
-				e.exports = a;
+				e.exports = i;
 			},
 			448: (e) => {
-				e.exports = r;
+				e.exports = n;
 			},
 			512: (e) => {
 				e.exports = t;
 			},
 			620: (e) => {
-				e.exports = o;
+				e.exports = a;
 			},
 			820: (e) => {
-				e.exports = n;
+				e.exports = c;
 			},
 			944: (t) => {
 				t.exports = e;
 			},
 			960: (e) => {
-				e.exports = s;
+				e.exports = o;
 			},
 			984: (e) => {
-				e.exports = i;
+				e.exports = r;
 			}
-		}, h = {};
-		function g(e) {
-			var t = h[e];
+		}, g = {};
+		function _(e) {
+			var t = g[e];
 			if (t !== void 0) return t.exports;
-			var n = h[e] = { exports: {} };
-			return m[e](n, n.exports, g), n.exports;
+			var n = g[e] = { exports: {} };
+			return h[e](n, n.exports, _), n.exports;
 		}
-		g.n = (e) => {
+		_.n = (e) => {
 			var t = e && e.__esModule ? () => e.default : () => e;
-			return g.d(t, { a: t }), t;
-		}, g.d = (e, t) => {
-			for (var n in t) g.o(t, n) && !g.o(e, n) && Object.defineProperty(e, n, {
+			return _.d(t, { a: t }), t;
+		}, _.d = (e, t) => {
+			for (var n in t) _.o(t, n) && !_.o(e, n) && Object.defineProperty(e, n, {
 				enumerable: !0,
 				get: t[n]
 			});
-		}, g.o = (e, t) => Object.prototype.hasOwnProperty.call(e, t);
-		var _ = {};
-		g.d(_, { default: () => tr });
-		var v = g(944), y = g.n(v), b = g(512), x = g.n(b), S = g(820), C = g.n(S);
-		let { doc: w, win: T } = y();
-		function E(e, t, n, r = {}) {
-			let i = typeof e == "function" && e.prototype || e;
-			Object.hasOwnProperty.call(i, "hcEvents") || (i.hcEvents = {});
-			let a = i.hcEvents;
-			y().Point && e instanceof y().Point && e.series && e.series.chart && (e.series.chart.runTrackerClick = !0);
-			let o = e.addEventListener;
-			o && o.call(e, t, n, !!y().supportsPassiveEvents && {
-				passive: r.passive === void 0 ? t.indexOf("touch") !== -1 : r.passive,
-				capture: !1
-			}), a[t] || (a[t] = []);
-			let s = {
-				fn: n,
-				order: typeof r.order == "number" ? r.order : Infinity
-			};
-			return a[t].push(s), a[t].sort((e, t) => e.order - t.order), function() {
-				(function(e, t, n) {
-					function r(t, n) {
-						let r = e.removeEventListener;
-						r && r.call(e, t, n, !1);
-					}
-					function i(n) {
-						let i, a;
-						e.nodeName && (t ? (i = {})[t] = !0 : i = n, L(i, function(e, t) {
-							if (n[t]) for (a = n[t].length; a--;) r(t, n[t][a].fn);
-						}));
-					}
-					let a = typeof e == "function" && e.prototype || e;
-					if (Object.hasOwnProperty.call(a, "hcEvents")) {
-						let e = a.hcEvents;
-						if (t) {
-							let a = e[t] || [];
-							n ? (e[t] = a.filter(function(e) {
-								return n !== e.fn;
-							}), r(t, n)) : (i(e), e[t] = []);
-						} else i(e), delete a.hcEvents;
-					}
-				})(e, t, n);
-			};
-		}
-		function D(e) {
-			let t = e.length, n = e[0];
-			for (; t--;) e[t] < n && (n = e[t]);
-			return n;
-		}
-		function O(e) {
-			let t = e.length, n = e[0];
-			for (; t--;) e[t] > n && (n = e[t]);
-			return n;
-		}
-		function k(e, t, n) {
-			return e > t ? e < n ? e : n : t;
-		}
-		function A(e, t) {
-			return e > 0x5af3107a4000 ? e : parseFloat(e.toPrecision(t || 14));
-		}
-		function j(e, t = 0, n) {
-			let r = t % 2 / 2, i = n ? -1 : 1;
-			return (Math.round(e * i - r) + r) * i;
-		}
-		function M(e) {
-			return e != null;
-		}
-		function N(e, t) {
-			let n;
-			for (n in e ||= {}, t) e[n] = t[n];
-			return e;
-		}
-		function ee(e, t, n, r) {
-			if (n ||= {}, w?.createEvent && (e.dispatchEvent || e.fireEvent && e !== y())) {
-				let r = w.createEvent("Events");
-				r.initEvent(t, !0, !0), n = N(r, n), e.dispatchEvent ? e.dispatchEvent(n) : e.fireEvent(t, n);
-			} else if (e.hcEvents) {
-				n.target || N(n, {
-					preventDefault: function() {
-						n.defaultPrevented = !0;
-					},
-					target: e,
-					type: t
-				});
-				let r = [], i = e, a = !1;
-				for (; i.hcEvents;) Object.hasOwnProperty.call(i, "hcEvents") && i.hcEvents[t] && (r.length && (a = !0), r.unshift.apply(r, i.hcEvents[t])), i = Object.getPrototypeOf(i);
-				a && r.sort((e, t) => e.order - t.order), r.forEach((t) => {
-					!1 === t.fn.call(e, n, e) && n.preventDefault();
-				});
-			}
-			r && !n.defaultPrevented && r.call(e, n);
-		}
-		let te = Array.prototype.find ? function(e, t) {
-			return e.find(t);
-		} : function(e, t) {
-			let n, r = e.length;
-			for (n = 0; n < r; n++) if (t(e[n], n)) return e[n];
-		};
-		function ne(e) {
-			return F(e) && typeof e.nodeType == "number";
-		}
-		function P(e) {
-			return typeof e == "number" && !isNaN(e) && e < Infinity && e > -Infinity;
-		}
-		function re(e) {
-			let t = Object.prototype.toString.call(e);
-			return t === "[object Array]" || t === "[object Array Iterator]";
-		}
-		function F(e, t) {
-			return !!e && typeof e == "object" && (!t || !re(e));
-		}
-		function I(e, ...t) {
-			let n, r = [e, ...t], i = {}, a = function(e, t) {
-				return typeof e != "object" && (e = {}), L(t, function(n, r) {
-					if (r !== "__proto__" && r !== "constructor") {
-						let i;
-						!F(n, !0) || (i = n?.constructor, F(n, !0) && !ne(n) && i?.name && i.name !== "Object") || ne(n) ? e[r] = t[r] : e[r] = a(e[r] || {}, n);
-					}
-				}), e;
-			};
-			!0 === e && (i = r[1], r = Array.prototype.slice.call(r, 2));
-			let o = r.length;
-			for (n = 0; n < o; n++) i = a(i, r[n]);
-			return i;
-		}
-		function L(e, t, n) {
-			for (let r in e) Object.hasOwnProperty.call(e, r) && t.call(n || e[r], e[r], r, e);
-		}
-		function R() {
-			let e = arguments, t = e.length;
-			for (let n = 0; n < t; n++) {
-				let t = e[n];
-				if (t != null) return t;
-			}
-		}
-		function ie(e, t) {
-			return parseInt(e, t || 10);
-		}
-		function z(e, t) {
-			return 0 > e.indexOf(t) && !!e.push(t);
-		}
-		function B(e, t, n) {
-			return /%$/.test(e) ? t * parseFloat(e) / 100 + (n || 0) : parseFloat(e);
-		}
-		function ae(e) {
-			return re(e) ? e : [e];
-		}
-		function V(e, t, n) {
-			let r = e[t];
-			e[t] = function() {
-				let e = arguments, t = this;
-				return n.apply(this, [function() {
-					return r.apply(t, arguments.length ? arguments : e);
-				}].concat([].slice.call(arguments)));
-			};
-		}
-		let { deg2rad: oe } = y();
-		(u = d ||= {}).getCenter = function() {
+		}, _.o = (e, t) => Object.prototype.hasOwnProperty.call(e, t);
+		var v = {};
+		_.d(v, { default: () => Sn });
+		var y = _(944), b = _.n(y), x = _(512), S = _.n(x);
+		let { deg2rad: C } = b();
+		(u = f ||= {}).getCenter = function() {
 			let e = this.options, t = this.chart, n = 2 * (e.slicedOffset || 0), r = t.plotWidth - 2 * n, i = t.plotHeight - 2 * n, a = e.center, o = Math.min(r, i), s = e.thickness, c, l = e.size, u = e.innerSize || 0, d, f;
 			typeof l == "string" && (l = parseFloat(l)), typeof u == "string" && (u = parseFloat(u));
 			let p = [
-				R(a?.[0], "50%"),
-				R(a?.[1], "50%"),
-				R(l && l < 0 ? void 0 : e.size, "100%"),
-				R(u && u < 0 ? void 0 : e.innerSize || 0, "0%")
+				(0, y.pick)(a?.[0], "50%"),
+				(0, y.pick)(a?.[1], "50%"),
+				(0, y.pick)(l && l < 0 ? void 0 : e.size, "100%"),
+				(0, y.pick)(u && u < 0 ? void 0 : e.innerSize || 0, "0%")
 			];
-			for (!t.angular || this instanceof C() || (p[3] = 0), d = 0; d < 4; ++d) f = p[d], c = d < 2 || d === 2 && /%$/.test(f), p[d] = B(f, [
+			for (d = 0; d < 4; ++d) f = p[d], c = d < 2 || d === 2 && /%$/.test(f), p[d] = (0, y.relativeLength)(f, [
 				r,
 				i,
 				o,
 				p[2]
 			][d]) + (c ? n : 0);
-			return p[3] > p[2] && (p[3] = p[2]), P(s) && 2 * s < p[2] && s > 0 && (p[3] = p[2] - 2 * s), ee(this, "afterGetCenter", { positions: p }), p;
+			return p[3] > p[2] && (p[3] = p[2]), (0, y.isNumber)(s) && 2 * s < p[2] && s > 0 && (p[3] = p[2] - 2 * s), (0, y.fireEvent)(this, "afterGetCenter", { positions: p }), p;
 		}, u.getStartAndEndRadians = function(e, t) {
-			let n = P(e) ? e : 0, r = P(t) && t > n && t - n < 360 ? t : n + 360;
+			let n = (0, y.isNumber)(e) ? e : 0, r = (0, y.isNumber)(t) && t > n && t - n < 360 ? t : n + 360;
 			return {
-				start: oe * (n + -90),
-				end: oe * (r + -90)
+				start: C * (n + -90),
+				end: C * (r + -90)
 			};
 		};
-		let se = d;
-		function ce(e) {
+		let w = f;
+		function T(e) {
 			let t, n = this;
 			return e && n.pane.forEach((r) => {
-				ue(e.chartX - n.plotLeft, e.chartY - n.plotTop, r.center) && (t = r);
+				E(e.chartX - n.plotLeft, e.chartY - n.plotTop, r.center) && (t = r);
 			}), t;
 		}
-		function le({ clipBox: e }) {
-			if (!this.xAxis || !this.yAxis || !this.chart.angular && !this.chart.polar) return;
-			let { plotWidth: t, plotHeight: n } = this.chart, r = Math.min(t, n), i = this.xAxis.pane, a = this.yAxis.pane;
-			i && i.axis && (e.x += i.center[0] - i.center[2] / r * t / 2), a && a.axis && (e.y += a.center[1] - a.center[2] / r * n / 2);
-		}
-		function ue(e, t, n, r, i) {
+		function E(e, t, n, r, i) {
 			let a = !0, o = n[0], s = n[1], c = 2 * Math.PI, l = Math.sqrt((e - o) ** 2 + (t - s) ** 2);
-			if (M(r) && M(i)) {
-				let n = Math.atan2(A(t - s, 8), A(e - o, 8));
+			if ((0, y.defined)(r) && (0, y.defined)(i)) {
+				let n = Math.atan2((0, y.correctFloat)(t - s, 8), (0, y.correctFloat)(e - o, 8));
 				n = (n + c) % c, r = (r + c) % c, Math.abs((i = (i + c) % c) - r) > 1e-6 && (a = r > i ? n >= r || n <= i : n >= r && n <= i);
 			} else a = !0;
 			return l <= Math.ceil(n[2] / 2) && a;
 		}
-		function de(e) {
-			this.polar && (e.options.inverted && ([e.x, e.y] = [e.y, e.x]), e.isInsidePlot = this.pane.some((t) => ue(e.x, e.y, t.center, t.axis && t.axis.normalizedStartAngleRad, t.axis && t.axis.normalizedEndAngleRad)));
+		function D(e) {
+			this.polar && (e.options.inverted && ([e.x, e.y] = [e.y, e.x]), e.isInsidePlot = this.pane.some((t) => E(e.x, e.y, t.center, t.axis && t.axis.normalizedStartAngleRad, t.axis && t.axis.normalizedEndAngleRad)));
 		}
-		function fe(e) {
+		function O(e) {
 			let t = this.chart;
-			e.hoverPoint && e.hoverPoint.plotX && e.hoverPoint.plotY && t.hoverPane && !ue(e.hoverPoint.plotX, e.hoverPoint.plotY, t.hoverPane.center) && (e.hoverPoint = void 0);
+			e.hoverPoint && e.hoverPoint.plotX && e.hoverPoint.plotY && t.hoverPane && !E(e.hoverPoint.plotX, e.hoverPoint.plotY, t.hoverPane.center) && (e.hoverPoint = void 0);
 		}
-		function pe(e) {
+		function k(e) {
 			let t = this.chart;
 			t.polar ? (t.hoverPane = t.getHoverPane(e), e.filter = function(n) {
-				return n.visible && !(!e.shared && n.directTouch) && R(n.options.enableMouseTracking, !0) && (!t.hoverPane || n.xAxis.pane === t.hoverPane);
+				return n.visible && !(!e.shared && n.directTouch) && (0, y.pick)(n.options.enableMouseTracking, !0) && (!t.hoverPane || n.xAxis.pane === t.hoverPane);
 			}) : t.hoverPane = void 0;
 		}
-		let { defaultOptions: me } = y(), he = {
-			shape: "circle",
-			borderRadius: 0,
-			borderWidth: 1,
-			borderColor: "#cccccc",
-			backgroundColor: {
-				linearGradient: {
-					x1: 0,
-					y1: 0,
-					x2: 0,
-					y2: 1
-				},
-				stops: [[0, "#ffffff"], [1, "#e6e6e6"]]
-			},
+		let { defaultOptions: A } = b(), ee = {
+			shape: "arc",
+			borderRadius: void 0,
+			borderWidth: 0,
+			borderColor: "var(--highcharts-neutral-color-20)",
+			backgroundColor: "var(--highcharts-neutral-color-3)",
 			from: -Number.MAX_VALUE,
-			innerRadius: 0,
 			to: Number.MAX_VALUE,
-			outerRadius: "105%"
-		}, ge = {
-			background: he,
-			center: ["50%", "50%"],
-			size: "85%",
-			innerSize: "0%",
-			startAngle: 0
+			outerRadius: "100%"
+		}, te = {
+			borderRadius: 3,
+			margin: void 0
 		};
-		me.pane = ge;
-		class _e {
+		A.pane = te;
+		class j {
 			constructor(e, t) {
 				this.coll = "pane", this.init(e, t);
 			}
 			init(e, t) {
 				this.chart = t, this.background = [], t.pane.push(this), this.setOptions(e);
 			}
+			hasSeriesType(e) {
+				return !!(this.chart.options?.chart?.type === e || this.chart.options?.series?.some((t) => t.type === e));
+			}
 			setOptions(e) {
-				this.options = e = I(ge, { background: this.chart.angular ? {} : void 0 }, e);
+				this.options = (0, y.merge)(te, this.chart.angular ? {
+					background: {},
+					innerSize: "85%"
+				} : {}, e);
 			}
 			render() {
 				let e = this.options, t = this.chart.renderer;
 				this.group ||= t.g("pane-group").attr({ zIndex: e.zIndex || 0 }).add(), this.updateCenter();
 				let n = this.options.background;
 				if (n) {
-					let e = Math.max((n = ae(n)).length, this.background.length || 0);
-					for (let t = 0; t < e; t++) n[t] && this.axis ? this.renderBackground(I(he, n[t]), t) : this.background[t] && (this.background[t] = this.background[t].destroy(), this.background.splice(t, 1));
+					let e = Math.max((n = (0, y.splat)(n)).length, this.background.length || 0);
+					for (let t = 0; t < e; t++) n[t] && this.axis ? this.renderBackground((0, y.merge)(ee, { borderRadius: this.options.borderRadius }, n[t]), t) : this.background[t] && (this.background[t] = this.background[t].destroy(), this.background.splice(t, 1));
 				}
 			}
 			renderBackground(e, t) {
 				let n = { class: "highcharts-pane " + (e.className || "") }, r = "animate";
-				this.chart.styledMode || N(n, {
+				this.chart.styledMode || (0, y.extend)(n, {
 					fill: e.backgroundColor,
 					stroke: e.borderColor,
 					"stroke-width": e.borderWidth
 				}), this.background[t] || (this.background[t] = this.chart.renderer.path().add(this.group), r = "attr"), this.background[t][r]({ d: this.axis.getPlotBandPath(e.from, e.to, e) }).attr(n);
 			}
-			updateCenter(e) {
-				this.center = (e || this.axis || {}).center = se.getCenter.call(this);
+			updateCenter() {
+				let { axis: e, chart: t, options: n } = this, { plotHeight: r, plotWidth: i } = t, a = n.center?.[1], o = n.margin, s = this.axis?.options.labels, c = n.thickness, l = Array.isArray(o) ? o : [
+					o,
+					o,
+					o,
+					o
+				], u = [], d = n.size, f, p = 0, m = 0, h = Math.min(t.series.reduce((e, t) => {
+					if (!t.is("gauge") || t.yAxis?.pane !== this) return e;
+					let n = (0, y.splat)(t.options.dataLabels)[0], r = 0;
+					return n && !1 !== n.enabled && (r = (1 - (0, y.getAlignFactor)(n.verticalAlign)) * 30 + (n.y || 0)), Math.max(e, r);
+				}, 0), .3 * r);
+				if (s?.enabled) {
+					let e = String(s.style?.fontSize || ""), t = (/px$/.test(e) ? parseFloat(e) : /em$/.test(e) ? 12 * parseFloat(e) : 12) * 1.2;
+					m = Math.max(s.distance || 0, 0) + t / 2;
+				}
+				if (l.forEach((e, t) => {
+					u[t] = e ?? Math.max(m || 0);
+				}), e && (d === void 0 || a === void 0)) {
+					let { endAngleRad: t, startAngleRad: a } = e, o = 2 * Math.PI / 360, s = .5 + .5 * Math.max(Math.sin((a < Math.PI / 2 && t > Math.PI / 2 || (0, y.splat)(n.background).some((e) => e?.shape === "circle") ? Math.PI : Math.max(Math.abs(a + Math.PI / 2), Math.abs(t + Math.PI / 2))) - Math.PI / 2), Math.sin(0 * o));
+					if (f = (r - u[0] - u[2]) / s, d === void 0) {
+						let e = (d = Math.max(Math.min(f, i - u[1] - u[3]), 1)) + u[0] + u[2] + 2 * (h - r);
+						e > 0 && (d = Math.max(1, d - (p = e)));
+					}
+				}
+				this.center = (e || {}).center = w.getCenter.call(this), (0, y.isNumber)(d) && d >= 0 && (this.center[2] = d, (0, y.isNumber)(c) ? this.center[3] = this.center[2] - 2 * c : this.center[3] = Math.min(d, (0, y.relativeLength)(n.innerSize || 0, d))), !(0, y.defined)(a) && (n.size ? this.center[1] = r / 2 : (0, y.isNumber)(f) && (this.center[1] = (f + this.center[2] - p) / 4 + u[0]));
 			}
 			update(e, t) {
-				I(!0, this.options, e), this.setOptions(this.options), this.render(), this.chart.axes.forEach(function(e) {
+				(0, y.merge)(!0, this.options, e), this.setOptions(this.options), this.render(), this.chart.axes.forEach(function(e) {
 					e.pane === this && (e.pane = null, e.update({}, t));
 				}, this);
 			}
 		}
-		_e.compose = function(e, t, n) {
-			let r = e.prototype;
-			r.getHoverPane || (r.collectionsWithUpdate.push("pane"), r.getHoverPane = ce, E(e, "afterIsInsidePlot", de), E(t, "afterGetHoverData", fe), E(t, "beforeGetHoverData", pe), E(n, "setClip", le));
+		j.compose = function(e, t) {
+			let n = e.prototype;
+			n.getHoverPane || (n.collectionsWithUpdate.push("pane"), n.getHoverPane = T, (0, y.addEvent)(e, "afterIsInsidePlot", D), (0, y.addEvent)(t, "afterGetHoverData", O), (0, y.addEvent)(t, "beforeGetHoverData", k));
 		};
-		let { area: { prototype: { pointClass: ve, pointClass: { prototype: ye } } } } = x().seriesTypes, be = class extends ve {
+		let { area: { prototype: { pointClass: ne, pointClass: { prototype: M } } } } = S().seriesTypes, re = class extends ne {
 			setState() {
 				let e = this.state, t = this.series, n = t.chart.polar;
-				M(this.plotHigh) || (this.plotHigh = t.yAxis.toPixels(this.high, !0)), M(this.plotLow) || (this.plotLow = this.plotY = t.yAxis.toPixels(this.low, !0)), t.lowerStateMarkerGraphic = t.stateMarkerGraphic, t.stateMarkerGraphic = t.upperStateMarkerGraphic, this.graphic = this.graphics && this.graphics[1], this.plotY = this.plotHigh, n && P(this.plotHighX) && (this.plotX = this.plotHighX), ye.setState.apply(this, arguments), this.state = e, this.plotY = this.plotLow, this.graphic = this.graphics && this.graphics[0], n && P(this.plotLowX) && (this.plotX = this.plotLowX), t.upperStateMarkerGraphic = t.stateMarkerGraphic, t.stateMarkerGraphic = t.lowerStateMarkerGraphic, t.lowerStateMarkerGraphic = void 0;
+				(0, y.defined)(this.plotHigh) || (this.plotHigh = t.yAxis.toPixels(this.high, !0)), (0, y.defined)(this.plotLow) || (this.plotLow = this.plotY = t.yAxis.toPixels(this.low, !0)), t.lowerStateMarkerGraphic = t.stateMarkerGraphic, t.stateMarkerGraphic = t.upperStateMarkerGraphic, this.graphic = this.graphics && this.graphics[1], this.plotY = this.plotHigh, n && (0, y.isNumber)(this.plotHighX) && (this.plotX = this.plotHighX), M.setState.apply(this, arguments), this.state = e, this.plotY = this.plotLow, this.graphic = this.graphics && this.graphics[0], n && (0, y.isNumber)(this.plotLowX) && (this.plotX = this.plotLowX), t.upperStateMarkerGraphic = t.stateMarkerGraphic, t.stateMarkerGraphic = t.lowerStateMarkerGraphic, t.lowerStateMarkerGraphic = void 0;
 				let r = t.modifyMarkerSettings();
-				ye.setState.apply(this, arguments), t.restoreMarkerSettings(r);
+				M.setState.apply(this, arguments), t.restoreMarkerSettings(r);
 			}
 			haloPath() {
 				let e = this.series.chart.polar, t = [];
-				return this.plotY = this.plotLow, e && P(this.plotLowX) && (this.plotX = this.plotLowX), this.isInside && (t = ye.haloPath.apply(this, arguments)), this.plotY = this.plotHigh, e && P(this.plotHighX) && (this.plotX = this.plotHighX), this.isTopInside && (t = t.concat(ye.haloPath.apply(this, arguments))), t;
+				return this.plotY = this.plotLow, e && (0, y.isNumber)(this.plotLowX) && (this.plotX = this.plotLowX), this.isInside && (t = M.haloPath.apply(this, arguments)), this.plotY = this.plotHigh, e && (0, y.isNumber)(this.plotHighX) && (this.plotX = this.plotHighX), this.isTopInside && (t = t.concat(M.haloPath.apply(this, arguments))), t;
 			}
 			isValid() {
-				return P(this.low) && P(this.high);
+				return (0, y.isNumber)(this.low) && (0, y.isNumber)(this.high);
 			}
-		}, { noop: xe } = y(), { area: Se, area: { prototype: H }, column: { prototype: Ce } } = x().seriesTypes;
-		class U extends Se {
+		}, { noop: ie } = b(), { area: ae, area: { prototype: N }, column: { prototype: oe } } = S().seriesTypes;
+		class P extends ae {
 			toYData(e) {
 				return [e.low, e.high];
 			}
@@ -355,7 +215,7 @@ var t = /* @__PURE__ */ e(((e, t) => {
 				e.plotHighX = n.x - t.plotLeft, e.plotHigh = n.y - t.plotTop, e.plotLowX = e.plotX;
 			}
 			getGraphPath(e) {
-				let t = [], n = [], r = H.getGraphPath, i = this.options, a = this.chart.polar, o = a && !1 !== i.connectEnds, s = i.connectNulls, c, l, u, d = i.step;
+				let t = [], n = [], r = N.getGraphPath, i = this.options, a = this.chart.polar, o = a && !1 !== i.connectEnds, s = i.connectNulls, c, l, u, d = i.step;
 				for (c = (e ||= this.points).length; c--;) {
 					l = e[c];
 					let r = a ? {
@@ -371,7 +231,7 @@ var t = /* @__PURE__ */ e(((e, t) => {
 						polarPlotY: l.polarPlotY,
 						rectPlotX: l.rectPlotX,
 						yBottom: l.yBottom,
-						plotX: R(l.plotHighX, l.plotX),
+						plotX: (0, y.pick)(l.plotHighX, l.plotX),
 						plotY: l.plotHigh,
 						isNull: l.isNull
 					}, n.push(u), t.push(u), l.isNull || o || s || e[c - 1] && !e[c - 1].isNull || n.push(r);
@@ -394,19 +254,19 @@ var t = /* @__PURE__ */ e(((e, t) => {
 			drawDataLabels() {
 				let e, t, n, r, i, a = this.points, o = a.length, s = [], c = this.options.dataLabels, l = this.chart.inverted;
 				if (c) {
-					if (re(c) ? (r = c[0] || { enabled: !1 }, i = c[1] || { enabled: !1 }) : ((r = N({}, c)).x = c.xHigh, r.y = c.yHigh, (i = N({}, c)).x = c.xLow, i.y = c.yLow), r.enabled || this.hasDataLabels?.()) {
+					if ((0, y.isArray)(c) ? (r = c[0] || { enabled: !1 }, i = c[1] || { enabled: !1 }) : ((r = (0, y.extend)({}, c)).x = c.xHigh, r.y = c.yHigh, (i = (0, y.extend)({}, c)).x = c.xLow, i.y = c.yLow), r.enabled || this.hasDataLabels?.()) {
 						for (e = o; e--;) if (t = a[e]) {
 							let { plotHigh: i = 0, plotLow: a = 0 } = t;
 							n = r.inside ? i < a : i > a, t.y = t.high, t._plotY = t.plotY, t.plotY = i, s[e] = t.dataLabel, t.dataLabel = t.dataLabelUpper, t.below = n, l ? r.align ||= n ? "right" : "left" : r.verticalAlign ||= n ? "top" : "bottom";
 						}
-						for (this.options.dataLabels = r, H.drawDataLabels && H.drawDataLabels.apply(this, arguments), e = o; e--;) (t = a[e]) && (t.dataLabelUpper = t.dataLabel, t.dataLabel = s[e], delete t.dataLabels, t.y = t.low, t.plotY = t._plotY);
+						for (this.options.dataLabels = r, N.drawDataLabels && N.drawDataLabels.apply(this, arguments), e = o; e--;) (t = a[e]) && (t.dataLabelUpper = t.dataLabel, t.dataLabel = s[e], delete t.dataLabels, t.y = t.low, t.plotY = t._plotY);
 					}
 					if (i.enabled || this.hasDataLabels?.()) {
 						for (e = o; e--;) if (t = a[e]) {
 							let { plotHigh: e = 0, plotLow: r = 0 } = t;
 							n = i.inside ? e < r : e > r, t.below = !n, l ? i.align ||= n ? "left" : "right" : i.verticalAlign ||= n ? "bottom" : "top";
 						}
-						this.options.dataLabels = i, H.drawDataLabels && H.drawDataLabels.apply(this, arguments);
+						this.options.dataLabels = i, N.drawDataLabels && N.drawDataLabels.apply(this, arguments);
 					}
 					if (r.enabled) for (e = o; e--;) (t = a[e]) && (t.dataLabels = [t.dataLabelUpper, t.dataLabel].filter(function(e) {
 						return !!e;
@@ -415,7 +275,7 @@ var t = /* @__PURE__ */ e(((e, t) => {
 				}
 			}
 			alignDataLabel() {
-				Ce.alignDataLabel.apply(this, arguments);
+				oe.alignDataLabel.apply(this, arguments);
 			}
 			modifyMarkerSettings() {
 				let e = {
@@ -424,7 +284,7 @@ var t = /* @__PURE__ */ e(((e, t) => {
 				};
 				if (this.options.lowMarker) {
 					let { options: { marker: e, lowMarker: t } } = this;
-					this.options.marker = I(e, t), t.symbol && (this.symbol = t.symbol);
+					this.options.marker = (0, y.merge)(e, t), t.symbol && (this.symbol = t.symbol);
 				}
 				return e;
 			}
@@ -433,22 +293,22 @@ var t = /* @__PURE__ */ e(((e, t) => {
 			}
 			drawPoints() {
 				let e, t, n = this.points.length, r = this.modifyMarkerSettings();
-				for (H.drawPoints.apply(this, arguments), this.restoreMarkerSettings(r), e = 0; e < n;) (t = this.points[e]).graphics = t.graphics || [], t.origProps = {
+				for (N.drawPoints.apply(this, arguments), this.restoreMarkerSettings(r), e = 0; e < n;) (t = this.points[e]).graphics = t.graphics || [], t.origProps = {
 					plotY: t.plotY,
 					plotX: t.plotX,
 					isInside: t.isInside,
 					negative: t.negative,
 					zone: t.zone,
 					y: t.y
-				}, (t.graphic || t.graphics[0]) && (t.graphics[0] = t.graphic), t.graphic = t.graphics[1], t.plotY = t.plotHigh, M(t.plotHighX) && (t.plotX = t.plotHighX), t.y = R(t.high, t.origProps.y), t.negative = t.y < (this.options.threshold || 0), this.zones.length && (t.zone = t.getZone()), this.chart.polar || (t.isInside = t.isTopInside = t.plotY !== void 0 && t.plotY >= 0 && t.plotY <= this.yAxis.len && t.plotX >= 0 && t.plotX <= this.xAxis.len), e++;
-				for (H.drawPoints.apply(this, arguments), e = 0; e < n;) (t = this.points[e]).graphics = t.graphics || [], (t.graphic || t.graphics[1]) && (t.graphics[1] = t.graphic), t.graphic = t.graphics[0], t.origProps && (N(t, t.origProps), delete t.origProps), e++;
+				}, (t.graphic || t.graphics[0]) && (t.graphics[0] = t.graphic), t.graphic = t.graphics[1], t.plotY = t.plotHigh, (0, y.defined)(t.plotHighX) && (t.plotX = t.plotHighX), t.y = (0, y.pick)(t.high, t.origProps.y), t.negative = t.y < (this.options.threshold || 0), this.zones.length && (t.zone = t.getZone()), this.chart.polar || (t.isInside = t.isTopInside = t.plotY !== void 0 && t.plotY >= 0 && t.plotY <= this.yAxis.len && t.plotX >= 0 && t.plotX <= this.xAxis.len), e++;
+				for (N.drawPoints.apply(this, arguments), e = 0; e < n;) (t = this.points[e]).graphics = t.graphics || [], (t.graphic || t.graphics[1]) && (t.graphics[1] = t.graphic), t.graphic = t.graphics[0], t.origProps && ((0, y.extend)(t, t.origProps), delete t.origProps), e++;
 			}
 			hasMarkerChanged(e, t) {
 				let n = e.lowMarker, r = t.lowMarker || {};
 				return n && (!1 === n.enabled || r.symbol !== n.symbol || r.height !== n.height || r.width !== n.width) || super.hasMarkerChanged(e, t);
 			}
 		}
-		U.defaultOptions = I(Se.defaultOptions, {
+		P.defaultOptions = (0, y.merge)(ae.defaultOptions, {
 			lineWidth: 1,
 			threshold: null,
 			tooltip: { pointFormat: "<span style=\"color:{series.color}\">●</span> {series.name}: <b>{point.low}</b> - <b>{point.high}</b><br/>" },
@@ -461,45 +321,45 @@ var t = /* @__PURE__ */ e(((e, t) => {
 				yLow: 0,
 				yHigh: 0
 			}
-		}), E(U, "afterTranslate", function() {
+		}), (0, y.addEvent)(P, "afterTranslate", function() {
 			this.pointArrayMap.join(",") === "low,high" && this.points.forEach((e) => {
 				let t = e.high, n = e.plotY;
-				e.isNull ? e.plotY = void 0 : (e.plotLow = n, e.plotHigh = P(t) ? this.yAxis.translate(this.dataModify ? this.dataModify.modifyValue(t) : t, !1, !0, void 0, !0) : void 0, this.dataModify && (e.yBottom = e.plotHigh));
+				e.isNull ? e.plotY = void 0 : (e.plotLow = n, e.plotHigh = (0, y.isNumber)(t) ? this.yAxis.translate(this.dataModify ? this.dataModify.modifyValue(t) : t, !1, !0, void 0, !0) : void 0, this.dataModify && (e.yBottom = e.plotHigh));
 			});
-		}, { order: 0 }), E(U, "afterTranslate", function() {
+		}, { order: 0 }), (0, y.addEvent)(P, "afterTranslate", function() {
 			this.points.forEach((e) => {
 				if (this.chart.polar) this.highToXY(e), e.plotLow = e.plotY, e.tooltipPos = [((e.plotHighX || 0) + (e.plotLowX || 0)) / 2, ((e.plotHigh || 0) + (e.plotLow || 0)) / 2];
 				else {
-					let t = e.pos(!1, e.plotLow), n = e.pos(!1, e.plotHigh);
+					let t = e.pos(!1, void 0, e.plotLow), n = e.pos(!1, void 0, e.plotHigh);
 					t && n && (t[0] = (t[0] + n[0]) / 2, t[1] = (t[1] + n[1]) / 2), e.tooltipPos = t;
 				}
 			});
-		}, { order: 3 }), N(U.prototype, {
+		}, { order: 3 }), (0, y.extend)(P.prototype, {
 			deferTranslatePolar: !0,
 			pointArrayMap: ["low", "high"],
-			pointClass: be,
+			pointClass: re,
 			pointValKey: "low",
-			setStackedPoints: xe
-		}), x().registerSeriesType("arearange", U);
-		let we = U, { spline: { prototype: Te } } = x().seriesTypes;
-		class Ee extends we {}
-		Ee.defaultOptions = I(we.defaultOptions), N(Ee.prototype, { getPointSpline: Te.getPointSpline }), x().registerSeriesType("areasplinerange", Ee);
-		var De = g(448), Oe = g.n(De);
-		let { noop: ke } = y();
-		class Ae extends Oe() {
+			setStackedPoints: ie
+		}), S().registerSeriesType("arearange", P);
+		let se = P, { spline: { prototype: ce } } = S().seriesTypes;
+		class le extends se {}
+		le.defaultOptions = (0, y.merge)(se.defaultOptions), (0, y.extend)(le.prototype, { getPointSpline: ce.getPointSpline }), S().registerSeriesType("areasplinerange", le);
+		var ue = _(448), F = _.n(ue);
+		let { noop: de } = b();
+		class I extends F() {
 			pointAttribs() {
-				return {};
+				return { fill: this.color };
 			}
 			getWhiskerPair(e, t, n, r, i) {
 				let a = i.whiskers.strokeWidth(), o = (n, r) => {
-					let i = B(n, 2 * e) / 2, o = j(r, a);
+					let i = (0, y.relativeLength)(n, 2 * e) / 2, o = (0, y.crisp)(r, a);
 					return [[
 						"M",
-						j(t - i),
+						(0, y.crisp)(t - i),
 						o
 					], [
 						"L",
-						j(t + i),
+						(0, y.crisp)(t + i),
 						o
 					]];
 				};
@@ -516,38 +376,38 @@ var t = /* @__PURE__ */ e(((e, t) => {
 			drawPoints() {
 				let e, t, n, r, i, a, o, s, c, l = this.points, u = this.options, d = this.chart, f = d.renderer, p = !1 !== this.doQuartiles, m = this.options.whiskerLength;
 				for (let h of l) {
-					let l = (a = h.graphic) ? "animate" : "attr", g = h.shapeArgs, _ = {}, v = {}, y = {}, b = {}, x = h.color || this.color, S = h.options.whiskerLength || m;
+					let l = (a = h.graphic) ? "animate" : "attr", g = h.shapeArgs, _ = {}, v = {}, b = {}, x = {}, S = h.color || this.color, C = h.options.whiskerLength || m;
 					if (h.plotY !== void 0) {
-						let C;
-						o = g.width, c = (s = g.x) + o, e = p ? h.q1Plot : h.lowPlot, t = p ? h.q3Plot : h.lowPlot, n = h.highPlot, r = h.lowPlot, a || (h.graphic = a = f.g("point").add(this.group), h.stem = f.path().addClass("highcharts-boxplot-stem").add(a), m && (h.whiskers = f.path().addClass("highcharts-boxplot-whisker").add(a)), p && (h.box = f.path(void 0).addClass("highcharts-boxplot-box").add(a)), h.medianShape = f.path(void 0).addClass("highcharts-boxplot-median").add(a)), d.styledMode || (v.stroke = h.stemColor || u.stemColor || x, v["stroke-width"] = R(h.stemWidth, u.stemWidth, u.lineWidth), v.dashstyle = h.stemDashStyle || u.stemDashStyle || u.dashStyle, h.stem.attr(v), S && (y.stroke = h.whiskerColor || u.whiskerColor || x, y["stroke-width"] = R(h.whiskerWidth, u.whiskerWidth, u.lineWidth), y.dashstyle = h.whiskerDashStyle || u.whiskerDashStyle || u.dashStyle, h.whiskers.attr(y)), p && (_.fill = h.fillColor || u.fillColor || x, _.stroke = u.lineColor || x, _["stroke-width"] = u.lineWidth || 0, _.dashstyle = h.boxDashStyle || u.boxDashStyle || u.dashStyle, h.box.attr(_)), b.stroke = h.medianColor || u.medianColor || x, b["stroke-width"] = R(h.medianWidth, u.medianWidth, u.lineWidth), b.dashstyle = h.medianDashStyle || u.medianDashStyle || u.dashStyle, h.medianShape.attr(b));
-						let w = j((h.plotX || 0) + (this.pointXOffset || 0) + (this.barW || 0) / 2, h.stem.strokeWidth());
-						if (C = [
+						let w;
+						o = g.width, c = (s = g.x) + o, e = p ? h.q1Plot : h.lowPlot, t = p ? h.q3Plot : h.lowPlot, n = h.highPlot, r = h.lowPlot, a || (h.graphic = a = f.g("point").add(this.group), h.stem = f.path().addClass("highcharts-boxplot-stem").add(a), m && (h.whiskers = f.path().addClass("highcharts-boxplot-whisker").add(a)), p && (h.box = f.path(void 0).addClass("highcharts-boxplot-box").add(a)), h.medianShape = f.path(void 0).addClass("highcharts-boxplot-median").add(a)), d.styledMode || (v.stroke = h.stemColor || u.stemColor || S, v["stroke-width"] = (0, y.pick)(h.stemWidth, u.stemWidth, u.lineWidth), v.dashstyle = h.stemDashStyle || u.stemDashStyle || u.dashStyle, h.stem.attr(v), C && (b.stroke = h.whiskerColor || u.whiskerColor || S, b["stroke-width"] = (0, y.pick)(h.whiskerWidth, u.whiskerWidth, u.lineWidth), b.dashstyle = h.whiskerDashStyle || u.whiskerDashStyle || u.dashStyle, h.whiskers.attr(b)), p && (_.fill = h.fillColor || u.fillColor || S, _.stroke = u.lineColor || S, _["stroke-width"] = u.lineWidth || 0, _.dashstyle = h.boxDashStyle || u.boxDashStyle || u.dashStyle, h.box.attr(_)), x.stroke = h.medianColor || u.medianColor || S, x["stroke-width"] = (0, y.pick)(h.medianWidth, u.medianWidth, u.lineWidth), x.dashstyle = h.medianDashStyle || u.medianDashStyle || u.dashStyle, h.medianShape.attr(x));
+						let T = (0, y.crisp)((h.plotX || 0) + (this.pointXOffset || 0) + (this.barW || 0) / 2, h.stem.strokeWidth());
+						if (w = [
 							[
 								"M",
-								w,
+								T,
 								t
 							],
 							[
 								"L",
-								w,
+								T,
 								n
 							],
 							[
 								"M",
-								w,
+								T,
 								e
 							],
 							[
 								"L",
-								w,
+								T,
 								r
 							]
-						], h.stem[l]({ d: C }), p) {
+						], h.stem[l]({ d: w }), p) {
 							let n = h.box.strokeWidth();
-							e = j(e, n), t = j(t, n), C = [
+							e = (0, y.crisp)(e, n), t = (0, y.crisp)(t, n), w = [
 								[
 									"M",
-									s = j(s, n),
+									s = (0, y.crisp)(s, n),
 									t
 								],
 								[
@@ -557,7 +417,7 @@ var t = /* @__PURE__ */ e(((e, t) => {
 								],
 								[
 									"L",
-									c = j(c, n),
+									c = (0, y.crisp)(c, n),
 									e
 								],
 								[
@@ -571,21 +431,21 @@ var t = /* @__PURE__ */ e(((e, t) => {
 									t
 								],
 								["Z"]
-							], h.box[l]({ d: C });
+							], h.box[l]({ d: w });
 						}
-						if (S) {
-							let e = o / 2, t = this.getWhiskerPair(e, w, h.upperWhiskerLength ?? u.upperWhiskerLength ?? S, h.lowerWhiskerLength ?? u.lowerWhiskerLength ?? S, h);
+						if (C) {
+							let e = o / 2, t = this.getWhiskerPair(e, T, h.upperWhiskerLength ?? u.upperWhiskerLength ?? C, h.lowerWhiskerLength ?? u.lowerWhiskerLength ?? C, h);
 							h.whiskers[l]({ d: t });
 						}
-						C = [[
+						w = [[
 							"M",
 							s,
-							i = j(h.medianPlot, h.medianShape.strokeWidth())
+							i = (0, y.crisp)(h.medianPlot, h.medianShape.strokeWidth())
 						], [
 							"L",
 							c,
 							i
-						]], h.medianShape[l]({ d: C });
+						]], h.medianShape[l]({ d: w });
 					}
 				}
 			}
@@ -599,15 +459,15 @@ var t = /* @__PURE__ */ e(((e, t) => {
 				];
 			}
 		}
-		Ae.defaultOptions = I(Oe().defaultOptions, {
+		I.defaultOptions = (0, y.merge)(F().defaultOptions, {
 			threshold: null,
 			tooltip: { pointFormat: "<span style=\"color:{point.color}\">●</span> <b>{series.name}</b><br/>Maximum: {point.high}<br/>Upper quartile: {point.q3}<br/>Median: {point.median}<br/>Lower quartile: {point.q1}<br/>Minimum: {point.low}<br/>" },
 			whiskerLength: "50%",
-			fillColor: "#ffffff",
+			fillColor: "var(--highcharts-background-color)",
 			lineWidth: 1,
 			medianWidth: 2,
 			whiskerWidth: 2
-		}), N(Ae.prototype, {
+		}), (0, y.extend)(I.prototype, {
 			pointArrayMap: [
 				"low",
 				"q1",
@@ -616,10 +476,10 @@ var t = /* @__PURE__ */ e(((e, t) => {
 				"high"
 			],
 			pointValKey: "high",
-			drawDataLabels: ke,
-			setStackedPoints: ke
-		}), x().registerSeriesType("boxplot", Ae);
-		let je = Ae, Me = {
+			drawDataLabels: de,
+			setStackedPoints: de
+		}), S().registerSeriesType("boxplot", I);
+		let fe = I, pe = {
 			borderColor: void 0,
 			borderWidth: 2,
 			className: void 0,
@@ -637,7 +497,7 @@ var t = /* @__PURE__ */ e(((e, t) => {
 				align: "right",
 				style: {
 					fontSize: "0.9em",
-					color: "#000000"
+					color: "var(--highcharts-neutral-color-100)"
 				},
 				x: 0,
 				y: 0
@@ -656,10 +516,10 @@ var t = /* @__PURE__ */ e(((e, t) => {
 			zIndex: 1,
 			zThreshold: 0
 		};
-		var Ne = g(984), Pe = g.n(Ne);
-		let { noop: Fe } = y(), Ie = class {
+		var me = _(984), he = _.n(me);
+		let { noop: ge } = b(), _e = class {
 			constructor(e, t) {
-				this.setState = Fe, this.init(e, t);
+				this.setState = ge, this.init(e, t);
 			}
 			init(e, t) {
 				this.options = e, this.visible = !0, this.chart = t.chart, this.legend = t;
@@ -668,18 +528,12 @@ var t = /* @__PURE__ */ e(((e, t) => {
 				e.splice(this.options.legendIndex, 0, this);
 			}
 			drawLegendSymbol(e) {
-				let t, n = R(e.options.itemDistance, 20), r = this.legendItem || {}, i = this.options, a = i.ranges, o = i.connectorDistance;
-				if (!a || !a.length || !P(a[0].value)) {
+				let t, n = (0, y.pick)(e.options.itemDistance, 20), r = this.legendItem || {}, i = this.options, a = i.ranges, o = i.connectorDistance;
+				if (!a || !a.length || !(0, y.isNumber)(a[0].value)) {
 					e.options.bubbleLegend.autoRanges = !0;
 					return;
 				}
-				(function(e, t) {
-					let n, r, i = e.length;
-					for (r = 0; r < i; r++) e[r].safeI = r;
-					for (e.sort(function(e, r) {
-						return (n = t(e, r)) === 0 ? e.safeI - r.safeI : n;
-					}), r = 0; r < i; r++) delete e[r].safeI;
-				})(a, function(e, t) {
+				(0, y.stableSort)(a, function(e, t) {
 					return t.value - e.value;
 				}), this.ranges = a, this.setOptions(), this.render();
 				let s = this.getMaxLabelSize(), c = this.ranges[0].radius, l = 2 * c;
@@ -697,9 +551,9 @@ var t = /* @__PURE__ */ e(((e, t) => {
 					zIndex: t.zIndex
 				}, s = n.options.marker.fillOpacity, c = this.chart.styledMode;
 				e.forEach(function(l, u) {
-					c || (i.stroke = R(l.borderColor, t.borderColor, n.color), i.fill = l.color || t.color, i.fill || (i.fill = n.color, i["fill-opacity"] = s ?? 1), a.stroke = R(l.connectorColor, t.connectorColor, n.color)), e[u].radius = this.getRangeRadius(l.value), e[u] = I(e[u], { center: e[0].radius - e[u].radius + r }), c || I(!0, e[u], {
-						bubbleAttribs: I(i),
-						connectorAttribs: I(a),
+					c || (i.stroke = (0, y.pick)(l.borderColor, t.borderColor, n.color), i.fill = l.color || t.color, i.fill || (i.fill = n.color, i["fill-opacity"] = s ?? 1), a.stroke = (0, y.pick)(l.connectorColor, t.connectorColor, n.color)), e[u].radius = this.getRangeRadius(l.value), e[u] = (0, y.merge)(e[u], { center: e[0].radius - e[u].radius + r }), c || (0, y.merge)(!0, e[u], {
+						bubbleAttribs: (0, y.merge)(i),
+						connectorAttribs: (0, y.merge)(a),
 						labelAttribs: o
 					});
 				}, this);
@@ -742,7 +596,7 @@ var t = /* @__PURE__ */ e(((e, t) => {
 			}
 			formatLabel(e) {
 				let t = this.options, n = t.labels.formatter, r = t.labels.format, { numberFormatter: i } = this.chart;
-				return r ? Pe().format(r, e, this.chart) : n ? n.call(e, e) : i(e.value, 1);
+				return r ? he().format(r, e, this.chart) : n ? n.call(e, e) : i(e.value, 1);
 			}
 			hideOverlappingLabels() {
 				let e = this.chart, t = this.options.labels.allowOverlap, n = this.symbols;
@@ -753,7 +607,7 @@ var t = /* @__PURE__ */ e(((e, t) => {
 			getRanges() {
 				let e = this.legend.bubbleLegend, t = e.chart.series, n = e.options.ranges, r, i, a = Number.MAX_VALUE, o = -Number.MAX_VALUE;
 				return t.forEach(function(e) {
-					e.isBubble && !e.ignoreSeries && (i = e.getColumn("z").filter(P)).length && (a = R(e.options.zMin, Math.min(a, Math.max(D(i), !1 === e.options.displayNegative ? e.options.zThreshold : -Number.MAX_VALUE))), o = R(e.options.zMax, Math.max(o, O(i))));
+					e.isBubble && !e.ignoreSeries && (i = e.getColumn("z").filter(y.isNumber)).length && (a = (0, y.pick)(e.options.zMin, Math.min(a, Math.max((0, y.arrayMin)(i), !1 === e.options.displayNegative ? e.options.zThreshold : -Number.MAX_VALUE))), o = (0, y.pick)(e.options.zMax, Math.max(o, (0, y.arrayMax)(i))));
 				}), r = a === o ? [{ value: o }] : [
 					{ value: a },
 					{ value: (a + o) / 2 },
@@ -762,7 +616,7 @@ var t = /* @__PURE__ */ e(((e, t) => {
 						autoRanges: !0
 					}
 				], n.length && n[0].radius && r.reverse(), r.forEach(function(e, t) {
-					n && n[t] && (r[t] = I(n[t], e));
+					n && n[t] && (r[t] = (0, y.merge)(n[t], e));
 				}), r;
 			}
 			predictBubbleSizes() {
@@ -777,18 +631,18 @@ var t = /* @__PURE__ */ e(((e, t) => {
 				let e = this.legend, t = this.chart.series[this.options.seriesIndex].getPxExtremes();
 				Math.abs(Math.ceil(t.maxPxSize) - this.options.maxSize) > 1 && (this.updateRanges(this.options.minSize, t.maxPxSize), e.render());
 			}
-		}, { setOptions: Le } = y(), { composed: Re } = y();
-		function ze(e, t, n) {
-			let r, i, a, o = this.legend, s = Be(this) >= 0;
+		}, { setOptions: ve } = b(), { composed: ye } = b();
+		function be(e, t, n) {
+			let r, i, a, o = this.legend, s = xe(this) >= 0;
 			o && o.options.enabled && o.bubbleLegend && o.options.bubbleLegend.autoRanges && s ? (r = o.bubbleLegend.options, i = o.bubbleLegend.predictBubbleSizes(), o.bubbleLegend.updateRanges(i[0], i[1]), r.placed || (o.group.placed = !1, o.allItems.forEach((e) => {
 				(a = e.legendItem || {}).group && (a.group.translateY = void 0);
 			})), o.render(), r.placed || (this.getMargins(), this.axes.forEach((e) => {
-				e.setScale(), e.updateNames(), L(e.ticks, function(e) {
+				e.setScale(), e.updateNames(), (0, y.objectEach)(e.ticks, function(e) {
 					e.isNew = !0, e.isNewLabel = !0;
 				});
 			}), this.getMargins()), r.placed = !0, e.call(this, t, n), o.bubbleLegend.correctSizes()) : (e.call(this, t, n), o && o.options.enabled && o.bubbleLegend && o.render());
 		}
-		function Be(e) {
+		function xe(e) {
 			let t = e.series, n = 0;
 			for (; n < t.length;) {
 				if (t[n] && t[n].isBubble && t[n].visible && t[n].dataTable.rowCount) return n;
@@ -796,11 +650,11 @@ var t = /* @__PURE__ */ e(((e, t) => {
 			}
 			return -1;
 		}
-		function Ve(e) {
-			let t = this.bubbleLegend, n = this.options, r = n.bubbleLegend, i = Be(this.chart);
-			t && t.ranges && t.ranges.length && (r.ranges.length && (r.autoRanges = !!r.ranges[0].autoRanges), this.destroyItem(t)), i >= 0 && n.enabled && r.enabled && (r.seriesIndex = i, this.bubbleLegend = new Ie(r, this), this.bubbleLegend.addToLegend(e.allItems));
+		function Se(e) {
+			let t = this.bubbleLegend, n = this.options, r = n.bubbleLegend, i = xe(this.chart);
+			t && t.ranges && t.ranges.length && (r.ranges.length && (r.autoRanges = !!r.ranges[0].autoRanges), this.destroyItem(t)), i >= 0 && n.enabled && r.enabled && (r.seriesIndex = i, this.bubbleLegend = new _e(r, this), this.bubbleLegend.addToLegend(e.allItems));
 		}
-		function He() {
+		function Ce() {
 			if (this.bubbleLegend) {
 				let e = this.allItems, t = this.options.rtl, n = function(e) {
 					let t = e.allItems, n = [], r = t.length, i, a, o, s = 0, c = 0;
@@ -815,30 +669,30 @@ var t = /* @__PURE__ */ e(((e, t) => {
 				});
 			}
 		}
-		function Ue(e) {
+		function we(e) {
 			let t;
 			if (e.defaultPrevented) return !1;
 			let n = e.legendItem, r = this.chart, i = n.visible;
-			this && this.bubbleLegend && (n.visible = !i, n.ignoreSeries = i, t = Be(r) >= 0, this.bubbleLegend.visible !== t && (this.update({ bubbleLegend: { enabled: t } }), this.bubbleLegend.visible = t), n.visible = i);
+			this && this.bubbleLegend && (n.visible = !i, n.ignoreSeries = i, t = xe(r) >= 0, this.bubbleLegend.visible !== t && (this.update({ bubbleLegend: { enabled: t } }), this.bubbleLegend.visible = t), n.visible = i);
 		}
-		let We = function(e, t) {
-			z(Re, "Series.BubbleLegend") && (Le({ legend: { bubbleLegend: Me } }), V(e.prototype, "drawChartBox", ze), E(t, "afterGetAllItems", Ve), E(t, "afterRender", He), E(t, "itemClick", Ue));
+		let Te = function(e, t) {
+			(0, y.pushUnique)(ye, "Series.BubbleLegend") && (ve({ legend: { bubbleLegend: pe } }), (0, y.wrap)(e.prototype, "drawChartBox", be), (0, y.addEvent)(t, "afterGetAllItems", Se), (0, y.addEvent)(t, "afterRender", Ce), (0, y.addEvent)(t, "itemClick", we));
 		};
-		var Ge = g(260), W = g.n(Ge);
-		let { seriesTypes: { scatter: { prototype: { pointClass: Ke } } } } = x();
-		class qe extends Ke {
+		var Ee = _(260), L = _.n(Ee);
+		let { seriesTypes: { scatter: { prototype: { pointClass: De } } } } = S();
+		class Oe extends De {
 			haloPath(e) {
 				let t = (e && this.marker && this.marker.radius || 0) + e;
 				if (this.series.chart.inverted) {
 					let e = this.pos() || [0, 0], { xAxis: n, yAxis: r, chart: i } = this.series, a = 2 * t;
 					return i.renderer.symbols.circle((n?.len || 0) - e[1] - t, (r?.len || 0) - e[0] - t, a, a);
 				}
-				return W().prototype.haloPath.call(this, t);
+				return L().prototype.haloPath.call(this, t);
 			}
 		}
-		N(qe.prototype, { ttBelow: !1 });
-		let { composed: Je, noop: Ye } = y(), { series: Xe, seriesTypes: { column: { prototype: Ze }, scatter: Qe } } = x();
-		function $e() {
+		(0, y.extend)(Oe.prototype, { ttBelow: !1 });
+		let { composed: ke, noop: Ae } = b(), { series: je, seriesTypes: { column: { prototype: Me }, scatter: Ne } } = S();
+		function Pe() {
 			let e = this.len, { coll: t, isXAxis: n, min: r } = this, i = (this.max || 0) - (r || 0), a = 0, o = e, s = e / i, c;
 			(t === "xAxis" || t === "yAxis") && (this.series.forEach((e) => {
 				if (e.bubblePadding && e.reserveSpace()) {
@@ -846,7 +700,7 @@ var t = /* @__PURE__ */ e(((e, t) => {
 					let t = e.getColumn(n ? "x" : "y");
 					if (n && ((e.onPoint || e).getRadii(0, 0, e), e.onPoint && (e.radii = e.onPoint.radii)), i > 0) {
 						let n = t.length;
-						for (; n--;) if (P(t[n]) && this.dataMin <= t[n] && t[n] <= this.max) {
+						for (; n--;) if ((0, y.isNumber)(t[n]) && this.dataMin <= t[n] && t[n] <= this.max) {
 							let i = e.radii && e.radii[n] || 0;
 							a = Math.min((t[n] - r) * s - i, a), o = Math.max((t[n] - r) * s + i, o);
 						}
@@ -861,10 +715,10 @@ var t = /* @__PURE__ */ e(((e, t) => {
 				"userMax",
 				o
 			]].forEach((e) => {
-				R(this.options[e[0]], this[e[1]]) === void 0 && (this[e[0]] += e[2] / s);
+				(0, y.pick)(this.options[e[0]], this[e[1]]) === void 0 && (this[e[0]] += e[2] / s);
 			})));
 		}
-		function et() {
+		function Fe() {
 			let { ticks: e, tickPositions: t, dataMin: n = 0, dataMax: r = 0, categories: i } = this, a = this.options.type;
 			if ((i?.length || a === "category") && this.series.find((e) => e.bubblePadding)) {
 				let i = t.length;
@@ -874,9 +728,9 @@ var t = /* @__PURE__ */ e(((e, t) => {
 				}
 			}
 		}
-		class G extends Qe {
+		class R extends Ne {
 			static compose(e, t, n) {
-				We(t, n), z(Je, "Series.Bubble") && (E(e, "foundExtremes", $e), E(e, "afterRender", et));
+				Te(t, n), (0, y.pushUnique)(ke, "Series.Bubble") && ((0, y.addEvent)(e, "foundExtremes", Pe), (0, y.addEvent)(e, "afterRender", Fe));
 			}
 			animate(e) {
 				!e && this.points.length < this.options.animationLimit && this.points.forEach(function(e) {
@@ -890,13 +744,13 @@ var t = /* @__PURE__ */ e(((e, t) => {
 				}, this);
 			}
 			getRadii() {
-				let e = this.getColumn("z"), t = this.getColumn("y"), n = [], r, i, a, o = this.chart.bubbleZExtremes, { minPxSize: s, maxPxSize: c } = this.getPxExtremes();
+				let e = [...this.getColumn("z", !1, !0)], t = this.getColumn("y"), n = [], r, i, a, o = this.chart.bubbleZExtremes, { minPxSize: s, maxPxSize: c } = this.getPxExtremes();
 				if (!o) {
 					let e, t = Number.MAX_VALUE, n = -Number.MAX_VALUE;
 					this.chart.series.forEach((r) => {
 						if (r.bubblePadding && r.reserveSpace()) {
 							let i = (r.onPoint || r).getZExtremes();
-							i && (t = Math.min(R(t, i.zMin), i.zMin), n = Math.max(R(n, i.zMax), i.zMax), e = !0);
+							i && (t = Math.min((0, y.pick)(t, i.zMin), i.zMin), n = Math.max((0, y.pick)(n, i.zMax), i.zMax), e = !0);
 						}
 					}), e ? (o = {
 						zMin: t,
@@ -912,7 +766,7 @@ var t = /* @__PURE__ */ e(((e, t) => {
 			getRadius(e, t, n, r, i, a) {
 				let o = this.options, s = o.sizeBy !== "width", c = o.zThreshold, l = t - e, u = .5;
 				if (a === null || i === null) return null;
-				if (P(i)) {
+				if ((0, y.isNumber)(i)) {
 					if (o.sizeByAbsoluteValue && (i = Math.abs(i - c), t = l = Math.max(t - c, Math.abs(e - c)), e = 0), i < e) return n / 2 - 1;
 					l > 0 && (u = (i - e) / l);
 				}
@@ -923,66 +777,66 @@ var t = /* @__PURE__ */ e(((e, t) => {
 			}
 			markerAttribs(e, t) {
 				let n = super.markerAttribs(e, t), { height: r = 0, width: i = 0 } = n;
-				return this.chart.inverted ? N(n, {
+				return this.chart.inverted ? (0, y.extend)(n, {
 					x: (e.plotX || 0) - i / 2,
 					y: (e.plotY || 0) - r / 2
 				}) : n;
 			}
 			pointAttribs(e, t) {
-				let n = this.options.marker?.fillOpacity, r = Xe.prototype.pointAttribs.call(this, e, t);
+				let n = this.options.marker?.fillOpacity, r = je.prototype.pointAttribs.call(this, e, t);
 				return r["fill-opacity"] = n ?? 1, r;
 			}
 			translate() {
 				super.translate.call(this), this.getRadii(), this.translateBubble();
 			}
 			translateBubble() {
-				let { data: e, options: t, radii: n } = this, { minPxSize: r } = this.getPxExtremes(), i = e.length;
-				for (; i--;) {
-					let a = e[i], o = n ? n[i] : 0;
-					this.zoneAxis === "z" && (a.negative = (a.z || 0) < (t.zThreshold || 0)), P(o) && (a.marker = N(a.marker, {
-						radius: o,
-						width: 2 * o,
-						height: 2 * o
-					})), P(o) && o >= r / 2 ? a.dlBox = {
-						x: a.plotX - o,
-						y: a.plotY - o,
-						width: 2 * o,
-						height: 2 * o
-					} : (a.shapeArgs = a.plotY = a.dlBox = void 0, a.isInside = !1);
-				}
+				let { options: e, radii: t } = this, { minPxSize: n } = this.getPxExtremes();
+				this.data.concat(this.condemnedPoints).forEach((r, i) => {
+					let { plotX: a = 0, plotY: o = 0 } = r, s = r.condemned ? r.marker?.radius || 0 : t ? t[i] : 0;
+					this.zoneAxis === "z" && (r.negative = (r.z || 0) < (e.zThreshold || 0)), (0, y.isNumber)(s) && (r.marker = (0, y.extend)(r.marker, {
+						radius: s,
+						width: 2 * s,
+						height: 2 * s
+					})), (0, y.isNumber)(s) && s >= n / 2 ? r.dlBox = {
+						x: a - s,
+						y: o - s,
+						width: 2 * s,
+						height: 2 * s
+					} : (r.shapeArgs = r.plotY = r.dlBox = void 0, r.isInside = !1);
+				});
 			}
 			getPxExtremes() {
 				let e = Math.min(this.chart.plotWidth, this.chart.plotHeight), t = (t) => {
 					let n;
 					return typeof t == "string" && (n = /%$/.test(t), t = parseInt(t, 10)), n ? e * t / 100 : t;
-				}, n = t(R(this.options.minSize, 8));
+				}, n = t((0, y.pick)(this.options.minSize, 8));
 				return {
 					minPxSize: n,
-					maxPxSize: Math.max(t(R(this.options.maxSize, "20%")), n)
+					maxPxSize: Math.max(t((0, y.pick)(this.options.maxSize, "20%")), n)
 				};
 			}
 			getZExtremes() {
-				let e = this.options, t = this.getColumn("z").filter(P);
+				let e = this.options, t = this.getColumn("z").filter(y.isNumber);
 				if (t.length) {
-					let n = R(e.zMin, k(D(t), !1 === e.displayNegative ? e.zThreshold || 0 : -Number.MAX_VALUE, Number.MAX_VALUE)), r = R(e.zMax, O(t));
-					if (P(n) && P(r)) return {
+					let n = (0, y.pick)(e.zMin, (0, y.clamp)((0, y.arrayMin)(t), !1 === e.displayNegative ? e.zThreshold || 0 : -Number.MAX_VALUE, Number.MAX_VALUE)), r = (0, y.pick)(e.zMax, (0, y.arrayMax)(t));
+					if ((0, y.isNumber)(n) && (0, y.isNumber)(r)) return {
 						zMin: n,
 						zMax: r
 					};
 				}
 			}
-			searchKDTree(e, t, n, r = Ye, i = Ye) {
+			searchKDTree(e, t, n, r = Ae, i = Ae) {
 				return r = (e, t, n) => {
 					let r = e[n] || 0, i = t[n] || 0, a, o = !1;
 					return r === i ? a = e.index > t.index ? e : t : r < 0 && i < 0 ? (a = r - (e.marker?.radius || 0) >= i - (t.marker?.radius || 0) ? e : t, o = !0) : a = r < i ? e : t, [a, o];
 				}, i = (e, t, n) => !n && e > t || e < t, super.searchKDTree(e, t, n, r, i);
 			}
 		}
-		G.defaultOptions = I(Qe.defaultOptions, {
+		R.defaultOptions = (0, y.merge)(Ne.defaultOptions, {
 			dataLabels: {
 				formatter: function() {
 					let { numberFormatter: e } = this.series.chart, { z: t } = this.point;
-					return P(t) ? e(t, -1) : "";
+					return (0, y.isNumber)(t) ? e(t, -1) : "";
 				},
 				inside: !0,
 				verticalAlign: "middle"
@@ -1004,14 +858,14 @@ var t = /* @__PURE__ */ e(((e, t) => {
 			turboThreshold: 0,
 			zThreshold: 0,
 			zoneAxis: "z"
-		}), N(G.prototype, {
-			alignDataLabel: Ze.alignDataLabel,
-			applyZones: Ye,
+		}), (0, y.extend)(R.prototype, {
+			alignDataLabel: Me.alignDataLabel,
+			applyZones: Ae,
 			bubblePadding: !0,
 			isBubble: !0,
 			keysAffectYAxis: ["y"],
 			pointArrayMap: ["y", "z"],
-			pointClass: qe,
+			pointClass: Oe,
 			parallelArrays: [
 				"x",
 				"y",
@@ -1020,47 +874,50 @@ var t = /* @__PURE__ */ e(((e, t) => {
 			trackerGroups: ["group", "dataLabelsGroup"],
 			specialGroup: "group",
 			zoneAxis: "z"
-		}), E(G, "updatedData", (e) => {
+		}), (0, y.addEvent)(R, "updatedData", (e) => {
 			delete e.target.chart.bubbleZExtremes;
-		}), E(G, "remove", (e) => {
+		}), (0, y.addEvent)(R, "remove", (e) => {
 			delete e.target.chart.bubbleZExtremes;
-		}), E(G, "update", (e) => {
+		}), (0, y.addEvent)(R, "update", (e) => {
 			let t = e.target.options;
-			(M(t.zMin) || M(t.zMax)) && delete e.target.chart.bubbleZExtremes;
-		}), x().registerSeriesType("bubble", G);
-		let { seriesTypes: { column: { prototype: { pointClass: { prototype: tt } } }, arearange: { prototype: { pointClass: nt } } } } = x();
-		class rt extends nt {
+			((0, y.defined)(t.zMin) || (0, y.defined)(t.zMax)) && delete e.target.chart.bubbleZExtremes;
+		}), S().registerSeriesType("bubble", R);
+		let { seriesTypes: { column: { prototype: { pointClass: { prototype: Ie } } }, arearange: { prototype: { pointClass: Le } } } } = S();
+		class Re extends Le {
 			isValid() {
-				return P(this.low);
+				return (0, y.isNumber)(this.low);
 			}
 		}
-		N(rt.prototype, { setState: tt.setState });
-		let { noop: it } = y(), { seriesTypes: { arearange: at, column: ot, column: { prototype: K } } } = x();
-		class q extends at {
+		(0, y.extend)(Re.prototype, { setState: Ie.setState });
+		let { noop: ze } = b(), { seriesTypes: { arearange: Be, column: Ve, column: { prototype: z } } } = S();
+		class B extends Be {
 			setOptions() {
-				return I(!0, arguments[0], { stacking: void 0 }), at.prototype.setOptions.apply(this, arguments);
+				return (0, y.merge)(!0, arguments[0], { stacking: void 0 }), Be.prototype.setOptions.apply(this, arguments);
 			}
 			translate() {
-				return K.translate.apply(this);
+				return z.translate.apply(this);
 			}
 			pointAttribs() {
-				return K.pointAttribs.apply(this, arguments);
+				return z.pointAttribs.apply(this, arguments);
 			}
 			translate3dPoints() {
-				return K.translate3dPoints.apply(this, arguments);
+				return z.translate3dPoints.apply(this, arguments);
 			}
 			translate3dShapes() {
-				return K.translate3dShapes.apply(this, arguments);
+				return z.translate3dShapes.apply(this, arguments);
 			}
 			afterColumnTranslate() {
 				let e, t, n, r, i = this.yAxis, a = this.xAxis, o = a.startAngleRad, s = this.chart, c = this.xAxis.isRadial, l = Math.max(s.chartWidth, s.chartHeight) + 999;
-				this.points.forEach((u) => {
-					let d = u.shapeArgs || {}, f = this.options.minPointLength, p = u.plotY, m = i.translate(u.high, 0, 1, 0, 1);
-					if (P(m) && P(p)) if (u.plotHigh = k(m, -l, l), u.plotLow = k(p, -l, l), r = u.plotHigh, Math.abs(e = R(u.rectPlotY, u.plotY) - u.plotHigh) < f ? (t = f - e, e += t, r -= t / 2) : e < 0 && (e *= -1, r -= e), c && this.polar) n = u.barX + o, u.shapeType = "arc", u.shapeArgs = this.polar.arc(r + e, r, n, n + (u.pointWidth || 0));
+				function u(e) {
+					return (0, y.clamp)(e, -l, l);
+				}
+				this.points.forEach((l) => {
+					let d = l.shapeArgs || {}, f = this.options.minPointLength, p = l.plotY, m = i.translate(l.high, 0, 1, 0, 1);
+					if ((0, y.isNumber)(m) && (0, y.isNumber)(p)) if (l.plotHigh = u(m), l.plotLow = u(p), r = l.plotHigh, Math.abs(e = (0, y.pick)(l.rectPlotY, l.plotY) - l.plotHigh) < f ? (t = f - e, e += t, r -= t / 2) : e < 0 && (e *= -1, r -= e), c && this.polar) n = l.barX + o, l.shapeType = "arc", l.shapeArgs = this.polar.arc(r + e, r, n, n + (l.pointWidth || 0));
 					else {
 						d.height = e, d.y = r;
 						let { x: t = 0, width: n = 0 } = d;
-						u.shapeArgs = I(u.shapeArgs, this.crispCol(t, r, n, e)), u.tooltipPos = s.inverted ? [
+						l.shapeArgs = (0, y.merge)(l.shapeArgs, this.crispCol(t, r, n, e)), l.tooltipPos = s.inverted ? [
 							i.len + i.pos - s.plotLeft - r - e / 2,
 							a.len + a.pos - s.plotTop - t - n / 2,
 							e
@@ -1073,33 +930,33 @@ var t = /* @__PURE__ */ e(((e, t) => {
 				});
 			}
 		}
-		q.defaultOptions = I(ot.defaultOptions, at.defaultOptions, {
+		B.defaultOptions = (0, y.merge)(Ve.defaultOptions, Be.defaultOptions, {
 			borderRadius: { where: "all" },
 			pointRange: null,
 			legendSymbol: "rectangle",
 			marker: null,
 			states: { hover: { halo: !1 } }
-		}), E(q, "afterColumnTranslate", function() {
-			q.prototype.afterColumnTranslate.apply(this);
-		}, { order: 5 }), N(q.prototype, {
+		}), (0, y.addEvent)(B, "afterColumnTranslate", function() {
+			B.prototype.afterColumnTranslate.apply(this);
+		}, { order: 5 }), (0, y.extend)(B.prototype, {
 			directTouch: !0,
-			pointClass: rt,
+			pointClass: Re,
 			trackerGroups: ["group", "dataLabelsGroup"],
-			adjustForMissingColumns: K.adjustForMissingColumns,
-			animate: K.animate,
-			crispCol: K.crispCol,
-			drawGraph: it,
-			drawPoints: K.drawPoints,
-			getSymbol: it,
-			drawTracker: K.drawTracker,
-			getColumnMetrics: K.getColumnMetrics
-		}), x().registerSeriesType("columnrange", q);
-		let { column: st } = x().seriesTypes;
-		class ct extends st {
+			adjustForMissingColumns: z.adjustForMissingColumns,
+			animate: z.animate,
+			crispCol: z.crispCol,
+			drawGraph: ze,
+			drawPoints: z.drawPoints,
+			getSymbol: ze,
+			drawTracker: z.drawTracker,
+			getColumnMetrics: z.getColumnMetrics
+		}), S().registerSeriesType("columnrange", B);
+		let { column: He } = S().seriesTypes;
+		class Ue extends He {
 			translate() {
-				let e = this.chart, t = this.options, n = this.dense = this.closestPointRange * this.xAxis.transA < 2, r = this.borderWidth = R(t.borderWidth, +!n), i = this.yAxis, a = t.threshold, o = R(t.minPointLength, 5), s = this.getColumnMetrics(), c = s.width, l = this.pointXOffset = s.offset, u = this.translatedThreshold = i.getThreshold(a), d = this.barW = Math.max(c, 1 + 2 * r);
+				let e = this.chart, t = this.options, n = this.dense = this.closestPointRange * this.xAxis.transA < 2, r = this.borderWidth = (0, y.pick)(t.borderWidth, +!n), i = this.yAxis, a = t.threshold, o = (0, y.pick)(t.minPointLength, 5), s = this.getColumnMetrics(), c = s.width, l = this.pointXOffset = s.offset, u = this.translatedThreshold = i.getThreshold(a), d = this.barW = Math.max(c, 1 + 2 * r);
 				for (let n of (e.inverted && (u -= .5), t.pointPadding && (d = Math.ceil(d)), super.translate(), this.points)) {
-					let r = R(n.yBottom, u), f = 999 + Math.abs(r), p = k(n.plotY, -f, i.len + f), m = d / 2, h = Math.min(p, r), g = Math.max(p, r) - h, _ = n.plotX + l, v, y, b, x, S, C, w, T, E, D, O;
+					let r = (0, y.pick)(n.yBottom, u), f = 999 + Math.abs(r), p = (0, y.clamp)(n.plotY, -f, i.len + f), m = d / 2, h = Math.min(p, r), g = Math.max(p, r) - h, _ = n.plotX + l, v, b, x, S, C, w, T, E, D, O, k;
 					t.centerInCategory && (_ = this.adjustForMissingColumns(_, c, n, s)), n.barX = _, n.pointWidth = c, n.tooltipPos = e.inverted ? [
 						i.len + i.pos - e.plotLeft - p,
 						this.xAxis.len - _ - m,
@@ -1110,21 +967,16 @@ var t = /* @__PURE__ */ e(((e, t) => {
 						g
 					], v = a + (n.total || n.y), t.stacking === "percent" && (v = a + (n.y < 0) ? -100 : 100);
 					let A = i.toPixels(v, !0);
-					b = (y = e.plotHeight - A - (e.plotHeight - u)) ? m * (h - A) / y : 0, x = y ? m * (h + g - A) / y : 0, C = _ - b + m, w = _ + b + m, T = _ + x + m, E = _ - x + m, D = h - o, O = h + g, n.y < 0 && (D = h, O = h + g + o), e.inverted && (S = i.width - h, y = A - (i.width - u), b = m * (A - S) / y, x = m * (A - (S - g)) / y, w = (C = _ + m + b) - 2 * b, T = _ - x + m, E = _ + x + m, D = h, O = h + g - o, n.y < 0 && (O = h + g + o)), n.shapeType = "path", n.shapeArgs = {
-						x: C,
-						y: D,
-						width: w - C,
+					x = (b = e.plotHeight - A - (e.plotHeight - u)) ? m * (h - A) / b : 0, S = b ? m * (h + g - A) / b : 0, w = _ - x + m, T = _ + x + m, E = _ + S + m, D = _ - S + m, O = h - o, k = h + g, n.y < 0 && (O = h, k = h + g + o), e.inverted && (C = i.width - h, b = A - (i.width - u), x = m * (A - C) / b, S = m * (A - (C - g)) / b, T = (w = _ + m + x) - 2 * x, E = _ - S + m, D = _ + S + m, O = h, k = h + g - o, n.y < 0 && (k = h + g + o)), n.shapeType = "path", n.shapeArgs = {
+						x: w,
+						y: O,
+						width: T - w,
 						height: g,
 						d: [
 							[
 								"M",
-								C,
-								D
-							],
-							[
-								"L",
 								w,
-								D
+								O
 							],
 							[
 								"L",
@@ -1134,7 +986,12 @@ var t = /* @__PURE__ */ e(((e, t) => {
 							[
 								"L",
 								E,
-								O
+								k
+							],
+							[
+								"L",
+								D,
+								k
 							],
 							["Z"]
 						]
@@ -1142,44 +999,45 @@ var t = /* @__PURE__ */ e(((e, t) => {
 				}
 			}
 		}
-		ct.defaultOptions = I(st.defaultOptions, {}), x().registerSeriesType("columnpyramid", ct);
-		let { arearange: lt } = x().seriesTypes;
-		class ut extends je {
+		Ue.defaultOptions = (0, y.merge)(He.defaultOptions, {}), S().registerSeriesType("columnpyramid", Ue);
+		let { arearange: We } = S().seriesTypes;
+		class V extends fe {
 			getColumnMetrics() {
-				return this.linkedParent && this.linkedParent.columnMetrics || Oe().prototype.getColumnMetrics.call(this);
+				return this.linkedParent && this.linkedParent.columnMetrics || F().prototype.getColumnMetrics.call(this);
 			}
 			drawDataLabels() {
 				let e = this.pointValKey;
-				if (lt) for (let t of (lt.prototype.drawDataLabels.call(this), this.points)) t.y = t[e];
+				if (We) for (let t of (We.prototype.drawDataLabels.call(this), this.points)) t.y = t[e];
 			}
 			toYData(e) {
 				return [e.low, e.high];
 			}
 		}
-		ut.defaultOptions = I(je.defaultOptions, {
-			color: "#000000",
+		V.defaultOptions = (0, y.merge)(fe.defaultOptions, {
+			color: "var(--highcharts-neutral-color-100)",
 			grouping: !1,
 			linkedTo: ":previous",
 			tooltip: { pointFormat: "<span style=\"color:{point.color}\">●</span> {series.name}: <b>{point.low}</b> - <b>{point.high}</b><br/>" },
 			whiskerWidth: null
-		}), E(ut, "afterTranslate", function() {
+		}), (0, y.addEvent)(V, "afterTranslate", function() {
 			for (let e of this.points) e.plotLow = e.plotY;
-		}, { order: 0 }), N(ut.prototype, {
+		}, { order: 0 }), (0, y.extend)(V.prototype, {
 			pointArrayMap: ["low", "high"],
 			pointValKey: "high",
 			doQuartiles: !1
-		}), x().registerSeriesType("errorbar", ut);
-		let { series: { prototype: { pointClass: dt } } } = x(), { noop: ft } = y(), { series: pt, seriesTypes: { column: mt } } = x();
-		class ht extends pt {
+		}), S().registerSeriesType("errorbar", V);
+		let { series: { prototype: { pointClass: Ge } } } = S(), { noop: Ke } = b(), { series: qe, seriesTypes: { column: Je } } = S();
+		class Ye extends qe {
 			translate() {
 				let e = this.yAxis, t = this.options, n = e.center;
 				this.generatePoints(), this.points.forEach((r) => {
-					let i = I(t.dial, r.dial), a = ie(i.radius) * n[2] / 200, o = ie(i.baseLength) * a / 100, s = ie(i.rearLength) * a / 100, c = i.baseWidth, l = i.topWidth, u = t.overshoot, d = e.startAngleRad + e.translate(r.y, void 0, void 0, void 0, !0);
-					(P(u) || !1 === t.wrap) && (u = P(u) ? u / 180 * Math.PI : 0, d = k(d, e.startAngleRad - u, e.endAngleRad + u)), d = 180 * d / Math.PI, r.shapeType = "path", r.shapeArgs = {
+					if (!(0, y.isNumber)(r.y)) return;
+					let i = (0, y.merge)(t.dial, r.dial), a = (0, y.relativeLength)(i.radius, n[2] / 2), o = (0, y.relativeLength)(i.baseLength, a), s = Math.min((0, y.relativeLength)(i.rearLength, a), a), c = Math.min((0, y.relativeLength)(i.baseWidth, a), a), l = (0, y.relativeLength)(i.topWidth, a), u = (0, y.relativeLength)(i.borderRadius, a), d = Math.min(u, c / 2), f = Math.min(u, l / 2), p = t.wrap ?? e.endAngleRad - e.startAngleRad > 2 * Math.PI - .01, m = t.overshoot, h = e.startAngleRad + e.translate(r.y, void 0, void 0, void 0, !0);
+					((0, y.isNumber)(m) || !p) && (m = (0, y.isNumber)(m) ? m / 180 * Math.PI : 0, h = (0, y.clamp)(h, e.startAngleRad - m, e.endAngleRad + m)), r.tooltipPos = [n[0] + Math.cos(h) * a, n[1] + Math.sin(h) * a], h = 180 * h / Math.PI, r.shapeType = "path", r.shapeArgs = {
 						d: i.path || [
 							[
 								"M",
-								-s,
+								d - s,
 								-c / 2
 							],
 							[
@@ -1189,12 +1047,32 @@ var t = /* @__PURE__ */ e(((e, t) => {
 							],
 							[
 								"L",
-								a,
+								a - f,
 								-l / 2
+							],
+							[
+								"A",
+								f,
+								f,
+								0,
+								0,
+								1,
+								a,
+								-l / 2 + f
 							],
 							[
 								"L",
 								a,
+								l / 2 - f
+							],
+							[
+								"A",
+								f,
+								f,
+								0,
+								0,
+								1,
+								a - f,
 								l / 2
 							],
 							[
@@ -1204,30 +1082,58 @@ var t = /* @__PURE__ */ e(((e, t) => {
 							],
 							[
 								"L",
-								-s,
+								d - s,
 								c / 2
+							],
+							[
+								"A",
+								d,
+								d,
+								0,
+								0,
+								1,
+								-s,
+								c / 2 - d
+							],
+							[
+								"L",
+								-s,
+								d - c / 2
+							],
+							[
+								"A",
+								d,
+								d,
+								0,
+								0,
+								1,
+								d - s,
+								-c / 2
 							],
 							["Z"]
 						],
 						translateX: n[0],
 						translateY: n[1],
-						rotation: d
-					}, r.plotX = n[0], r.plotY = n[1], M(r.y) && e.max - e.min && (r.percentage = (r.y - e.min) / (e.max - e.min) * 100);
+						rotation: h
+					}, r.plotX = n[0], r.plotY = n[1], (0, y.defined)(r.y) && e.max - e.min && (r.percentage = (r.y - e.min) / (e.max - e.min) * 100);
 				});
 			}
 			drawPoints() {
-				let e = this, t = e.chart, n = e.yAxis.center, r = e.pivot, i = e.options, a = i.pivot, o = t.renderer;
+				let e = this, t = e.chart, n = e.yAxis.center, r = e.pivot, i = e.options, a = i.pivot, o = t.renderer, s = (0, y.relativeLength)(a?.radius || 0, n[2] / 2);
 				e.points.forEach((n) => {
-					let r = n.graphic, a = n.shapeArgs, s = a.d, c = I(i.dial, n.dial);
-					r ? (r.animate(a), a.d = s) : n.graphic = o[n.shapeType](a).addClass("highcharts-dial").add(e.group), t.styledMode || n.graphic[r ? "animate" : "attr"]({
-						stroke: c.borderColor,
-						"stroke-width": c.borderWidth,
-						fill: c.backgroundColor
-					});
+					if ((0, y.isNumber)(n.y)) {
+						let r = n.graphic, a = n.shapeArgs, s = a.d, c = (0, y.merge)(i.dial, n.dial);
+						r ? (r.animate(a), a.d = s) : n.graphic = o[n.shapeType](a).addClass("highcharts-dial").add(e.group), !t.styledMode && n.graphic && n.graphic[r ? "animate" : "attr"]({
+							stroke: c.borderColor,
+							"stroke-width": c.borderWidth,
+							fill: c.backgroundColor
+						});
+					}
 				}), r ? r.animate({
 					translateX: n[0],
-					translateY: n[1]
-				}) : a && (e.pivot = o.circle(0, 0, a.radius).attr({ zIndex: 2 }).addClass("highcharts-pivot").translate(n[0], n[1]).add(e.group), t.styledMode || e.pivot.attr({
+					translateY: n[1],
+					r: s
+				}) : a && (e.pivot = o.circle(0, 0, s).attr({ zIndex: 2 }).addClass("highcharts-pivot").translate(n[0], n[1]).add(e.group), t.styledMode || e.pivot.attr({
 					fill: a.backgroundColor,
 					stroke: a.borderColor,
 					"stroke-width": a.borderWidth
@@ -1240,74 +1146,75 @@ var t = /* @__PURE__ */ e(((e, t) => {
 					n && (n.attr({ rotation: 180 * t.yAxis.startAngleRad / Math.PI }), n.animate({ rotation: e.shapeArgs.rotation }, t.options.animation));
 				});
 			}
-			render() {
-				this.group = this.plotGroup("group", "series", this.visible ? "inherit" : "hidden", this.options.zIndex, this.chart.seriesGroup), pt.prototype.render.call(this), this.group.clip(this.chart.clipRect);
-			}
 			setData(e, t) {
-				pt.prototype.setData.call(this, e, !1), this.processData(), this.generatePoints(), R(t, !0) && this.chart.redraw();
+				qe.prototype.setData.call(this, e, !1), this.processData(), this.generatePoints(), (0, y.pick)(t, !0) && this.chart.redraw();
 			}
 			hasData() {
 				return !!this.points.length;
 			}
 		}
-		ht.defaultOptions = I(pt.defaultOptions, {
+		Ye.defaultOptions = (0, y.merge)(qe.defaultOptions, {
+			clip: !1,
+			color: "var(--highcharts-neutral-color-20)",
 			dataLabels: {
-				borderColor: "#cccccc",
-				borderRadius: 3,
-				borderWidth: 1,
 				crop: !1,
 				defer: !1,
+				distance: 0,
 				enabled: !0,
+				padding: 5,
 				verticalAlign: "top",
-				y: 15,
+				style: { fontSize: "1.4em" },
+				y: 25,
 				zIndex: 2
 			},
 			dial: {
-				backgroundColor: "#000000",
-				baseLength: "70%",
-				baseWidth: 3,
-				borderColor: "#cccccc",
+				backgroundColor: "var(--highcharts-neutral-color-100)",
+				baseLength: 0,
+				baseWidth: "18%",
+				borderColor: "var(--highcharts-neutral-color-20)",
+				borderRadius: "9%",
 				borderWidth: 0,
-				radius: "80%",
-				rearLength: "10%",
-				topWidth: 1
+				radius: "70%",
+				rearLength: "9%",
+				topWidth: "4%"
 			},
 			pivot: {
-				radius: 5,
-				borderWidth: 0,
-				borderColor: "#cccccc",
-				backgroundColor: "#000000"
+				radius: "4%",
+				borderWidth: 2,
+				borderColor: "var(--highcharts-neutral-color-100)",
+				backgroundColor: "var(--highcharts-background-color)"
 			},
+			threshold: 0,
 			tooltip: { headerFormat: "" },
 			showInLegend: !1
-		}), N(ht.prototype, {
+		}), (0, y.extend)(Ye.prototype, {
 			angular: !0,
 			directTouch: !0,
-			drawGraph: ft,
-			drawTracker: mt.prototype.drawTracker,
+			drawGraph: Ke,
+			drawTracker: Je.prototype.drawTracker,
 			fixedBox: !0,
 			forceDL: !0,
 			noSharedTooltip: !0,
-			pointClass: class extends dt {
+			pointClass: class extends Ge {
 				setState(e) {
 					this.state = e;
 				}
 			},
 			trackerGroups: ["group", "dataLabelsGroup"]
-		}), x().registerSeriesType("gauge", ht);
-		var gt = g(620), _t = g.n(gt);
-		let { composed: vt } = y();
-		function yt() {
+		}), S().registerSeriesType("gauge", Ye);
+		var Xe = _(620), Ze = _.n(Xe);
+		let { composed: Qe } = b();
+		function $e() {
 			let e, t, n, r, i = this;
-			i.container && (e = E(i.container, "mousedown", (e) => {
-				t && t(), n && n(), (r = i.hoverPoint) && r.series && r.series.hasDraggableNodes && r.series.options.draggable && (r.series.onMouseDown(r, e), t = E(i.container, "mousemove", (e) => r && r.series && r.series.onMouseMove(r, e)), n = E(i.container.ownerDocument, "mouseup", (e) => (t(), n(), r && r.series && r.series.onMouseUp(r, e))));
-			})), E(i, "destroy", function() {
+			i.container && (e = (0, y.addEvent)(i.container, "mousedown", (e) => {
+				t && t(), n && n(), (r = i.hoverPoint) && r.series && r.series.hasDraggableNodes && r.series.options.draggable && (r.series.onMouseDown(r, e), t = (0, y.addEvent)(i.container, "mousemove", (e) => r && r.series && r.series.onMouseMove(r, e)), n = (0, y.addEvent)(i.container.ownerDocument, "mouseup", (e) => (t(), n(), r && r.series && r.series.onMouseUp(r, e))));
+			})), (0, y.addEvent)(i, "destroy", function() {
 				e();
 			});
 		}
-		let J = {
+		let H = {
 			compose: function(e) {
-				z(vt, "DragNodes") && E(e, "load", yt);
+				(0, y.pushUnique)(Qe, "DragNodes") && (0, y.addEvent)(e, "load", $e);
 			},
 			onMouseDown: function(e, t) {
 				let { panKey: n } = this.chart.options.chart;
@@ -1334,56 +1241,56 @@ var t = /* @__PURE__ */ e(((e, t) => {
 			redrawHalo: function(e) {
 				e && this.halo && this.halo.attr({ d: e.haloPath(this.options.states.hover.halo.size) });
 			}
-		}, { setAnimation: bt } = y(), { composed: xt } = y();
-		function St() {
+		}, { setAnimation: et } = b(), { composed: tt } = b();
+		function nt() {
 			this.graphLayoutsLookup && (this.graphLayoutsLookup.forEach((e) => {
 				e.updateSimulation();
 			}), this.redraw());
 		}
-		function Ct() {
+		function rt() {
 			this.graphLayoutsLookup && (this.graphLayoutsLookup.forEach((e) => {
 				e.updateSimulation(!1);
 			}), this.redraw());
 		}
-		function wt() {
+		function it() {
 			this.graphLayoutsLookup && this.graphLayoutsLookup.forEach((e) => {
 				e.stop();
 			});
 		}
-		function Tt() {
+		function at() {
 			let e, t = !1, n = (n) => {
 				n.maxIterations-- && isFinite(n.temperature) && !n.isStable() && !n.enableSimulation && (n.beforeStep && n.beforeStep(), n.step(), e = !1, t = !0);
 			};
 			if (this.graphLayoutsLookup && !this.pointer?.hasDragged) {
-				for (bt(!1, this), this.graphLayoutsLookup.forEach((e) => e.start()); !e;) e = !0, this.graphLayoutsLookup.forEach(n);
+				for (et(!1, this), this.graphLayoutsLookup.forEach((e) => e.start()); !e;) e = !0, this.graphLayoutsLookup.forEach(n);
 				t && this.series.forEach((e) => {
 					e && e.layout && e.render();
 				});
 			}
 		}
-		let Et = function(e) {
-			z(xt, "GraphLayout") && (E(e, "afterPrint", St), E(e, "beforePrint", Ct), E(e, "predraw", wt), E(e, "render", Tt));
-		}, Dt = {}, Ot = {};
-		var kt = g(960), At = g.n(kt);
-		let { seriesTypes: { bubble: { prototype: { pointClass: jt } } } } = x(), Mt = class extends jt {
+		let ot = function(e) {
+			(0, y.pushUnique)(tt, "GraphLayout") && ((0, y.addEvent)(e, "afterPrint", nt), (0, y.addEvent)(e, "beforePrint", rt), (0, y.addEvent)(e, "predraw", it), (0, y.addEvent)(e, "render", at));
+		}, U = {}, W = {};
+		var st = _(960), ct = _.n(st);
+		let { seriesTypes: { bubble: { prototype: { pointClass: lt } } } } = S(), ut = class extends lt {
 			destroy() {
-				return this.series?.layout && this.series.layout.removeElementFromCollection(this, this.series.layout.nodes), W().prototype.destroy.apply(this, arguments);
+				return this.series?.layout && this.series.layout.removeElementFromCollection(this, this.series.layout.nodes), L().prototype.destroy.apply(this, arguments);
 			}
 			firePointEvent() {
 				let e = this.series.options;
 				if (this.isParentNode && e.parentNode) {
 					let t = e.allowPointSelect;
-					e.allowPointSelect = e.parentNode.allowPointSelect, W().prototype.firePointEvent.apply(this, arguments), e.allowPointSelect = t;
-				} else W().prototype.firePointEvent.apply(this, arguments);
+					e.allowPointSelect = e.parentNode.allowPointSelect, L().prototype.firePointEvent.apply(this, arguments), e.allowPointSelect = t;
+				} else L().prototype.firePointEvent.apply(this, arguments);
 			}
 			select() {
 				let e = this.series.chart;
-				this.isParentNode ? (e.getSelectedPoints = e.getSelectedParentNodes, W().prototype.select.apply(this, arguments), e.getSelectedPoints = At().prototype.getSelectedPoints) : W().prototype.select.apply(this, arguments);
+				this.isParentNode ? (e.getSelectedPoints = e.getSelectedParentNodes, L().prototype.select.apply(this, arguments), e.getSelectedPoints = ct().prototype.getSelectedPoints) : L().prototype.select.apply(this, arguments);
 			}
 			setState(e, t) {
 				this?.graphic?.parentGroup?.element && super.setState(e, t);
 			}
-		}, Nt = {
+		}, dt = {
 			attractive: function(e, t, n) {
 				let r = e.getMass(), i = -n.x * t * this.diffTemperature, a = -n.y * t * this.diffTemperature;
 				e.fromNode.fixedPosition || (e.fromNode.plotX -= i * r.fromNode / e.fromNode.degree, e.fromNode.plotY -= a * r.fromNode / e.fromNode.degree), e.toNode.fixedPosition || (e.toNode.plotX += i * r.toNode / e.toNode.degree, e.toNode.plotY += a * r.toNode / e.toNode.degree);
@@ -1414,7 +1321,7 @@ var t = /* @__PURE__ */ e(((e, t) => {
 			repulsiveForceFunction: function(e, t) {
 				return (t - e) / e * (t > e);
 			}
-		}, { noop: Pt } = y(), Ft = {
+		}, { noop: ft } = b(), pt = {
 			barycenter: function() {
 				let e, t, n = this.options.gravitationalConstant || 0, r = this.box, i = this.nodes, a = Math.sqrt(i.length);
 				for (let o of i) if (!o.fixedPosition) {
@@ -1422,8 +1329,8 @@ var t = /* @__PURE__ */ e(((e, t) => {
 					this.resolveSplitSeries(o) && u && !o.isParentNode ? (e = u.plotX || 0, t = u.plotY || 0) : (e = r.width / 2, t = r.height / 2), o.plotX = s - (s - e) * n / i, o.plotY = c - (c - t) * n / i, l.chart.hoverPoint === o && l.redrawHalo && l.halo && l.redrawHalo(o);
 				}
 			},
-			getK: Pt,
-			integrate: Nt.integrate,
+			getK: ft,
+			integrate: dt.integrate,
 			repulsive: function(e, t, n, r) {
 				let i = t * this.diffTemperature / e.mass / e.degree, a = n.x * i, o = n.y * i;
 				e.fixedPosition || (e.plotX += a, e.plotY += o), r.fixedPosition || (r.plotX -= a, r.plotY -= o);
@@ -1431,7 +1338,7 @@ var t = /* @__PURE__ */ e(((e, t) => {
 			repulsiveForceFunction: function(e, t, n, r) {
 				return Math.min(e, (n.marker.radius + r.marker.radius) / 2);
 			}
-		}, It = {
+		}, mt = {
 			attractive: function(e, t, n, r) {
 				let i = e.getMass(), a = n.x / r * t, o = n.y / r * t;
 				e.fromNode.fixedPosition || (e.fromNode.dispX -= a * i.fromNode / e.fromNode.degree, e.fromNode.dispY -= o * i.fromNode / e.fromNode.degree), e.toNode.fixedPosition || (e.toNode.dispX += a * i.toNode / e.toNode.degree, e.toNode.dispY += o * i.toNode / e.toNode.degree);
@@ -1466,28 +1373,28 @@ var t = /* @__PURE__ */ e(((e, t) => {
 				return t * t / e;
 			}
 		};
-		class Y {
+		class G {
 			constructor(e) {
 				this.body = !1, this.isEmpty = !1, this.isInternal = !1, this.nodes = [], this.box = e, this.boxSize = Math.min(e.width, e.height);
 			}
 			divideBox() {
 				let e = this.box.width / 2, t = this.box.height / 2;
-				this.nodes[0] = new Y({
+				this.nodes[0] = new G({
 					left: this.box.left,
 					top: this.box.top,
 					width: e,
 					height: t
-				}), this.nodes[1] = new Y({
+				}), this.nodes[1] = new G({
 					left: this.box.left + e,
 					top: this.box.top,
 					width: e,
 					height: t
-				}), this.nodes[2] = new Y({
+				}), this.nodes[2] = new G({
 					left: this.box.left + e,
 					top: this.box.top + t,
 					width: e,
 					height: t
-				}), this.nodes[3] = new Y({
+				}), this.nodes[3] = new G({
 					left: this.box.left,
 					top: this.box.top + t,
 					width: e,
@@ -1500,7 +1407,7 @@ var t = /* @__PURE__ */ e(((e, t) => {
 			}
 			insert(e, t) {
 				let n;
-				this.isInternal ? this.nodes[this.getBoxPosition(e)].insert(e, t - 1) : (this.isEmpty = !1, this.body ? t ? (this.isInternal = !0, this.divideBox(), !0 !== this.body && (this.nodes[this.getBoxPosition(this.body)].insert(this.body, t - 1), this.body = !0), this.nodes[this.getBoxPosition(e)].insert(e, t - 1)) : ((n = new Y({
+				this.isInternal ? this.nodes[this.getBoxPosition(e)].insert(e, t - 1) : (this.isEmpty = !1, this.body ? t ? (this.isInternal = !0, this.divideBox(), !0 !== this.body && (this.nodes[this.getBoxPosition(this.body)].insert(this.body, t - 1), this.body = !0), this.nodes[this.getBoxPosition(e)].insert(e, t - 1)) : ((n = new G({
 					top: e.plotX || NaN,
 					left: e.plotY || NaN,
 					width: .1,
@@ -1516,14 +1423,14 @@ var t = /* @__PURE__ */ e(((e, t) => {
 				this.mass = e, this.plotX = t, this.plotY = n;
 			}
 		}
-		let Lt = class {
+		let ht = class {
 			constructor(e, t, n, r) {
 				this.box = {
 					left: e,
 					top: t,
 					width: n,
 					height: r
-				}, this.maxDepth = 25, this.root = new Y(this.box), this.root.isInternal = !0, this.root.isRoot = !0, this.root.divideBox();
+				}, this.maxDepth = 25, this.root = new G(this.box), this.root.isInternal = !0, this.root.isRoot = !0, this.root.divideBox();
 			}
 			calculateMassAndCenter() {
 				this.visitNodeRecursive(null, null, function(e) {
@@ -1546,13 +1453,13 @@ var t = /* @__PURE__ */ e(((e, t) => {
 					e === this.root && n && n(e);
 				}
 			}
-		}, { win: Rt } = y();
-		class zt {
+		}, { win: gt } = b();
+		class _t {
 			constructor() {
 				this.box = {}, this.currentStep = 0, this.initialRendering = !0, this.links = [], this.nodes = [], this.series = [], this.simulation = !1;
 			}
 			static compose(e) {
-				Et(e), Dt.euler = It, Dt.verlet = Nt, Ot["reingold-fruchterman"] = zt;
+				ot(e), U.euler = mt, U.verlet = dt, W["reingold-fruchterman"] = _t;
 			}
 			init(e) {
 				this.options = e, this.nodes = [], this.links = [], this.series = [], this.box = {
@@ -1560,10 +1467,10 @@ var t = /* @__PURE__ */ e(((e, t) => {
 					y: 0,
 					width: 0,
 					height: 0
-				}, this.setInitialRendering(!0), this.integration = Dt[e.integration], this.enableSimulation = e.enableSimulation, this.attractiveForce = R(e.attractiveForce, this.integration.attractiveForceFunction), this.repulsiveForce = R(e.repulsiveForce, this.integration.repulsiveForceFunction), this.approximation = e.approximation;
+				}, this.setInitialRendering(!0), this.integration = U[e.integration], this.enableSimulation = e.enableSimulation, this.attractiveForce = (0, y.pick)(e.attractiveForce, this.integration.attractiveForceFunction), this.repulsiveForce = (0, y.pick)(e.repulsiveForce, this.integration.repulsiveForceFunction), this.approximation = e.approximation;
 			}
 			updateSimulation(e) {
-				this.enableSimulation = R(e, this.options.enableSimulation);
+				this.enableSimulation = (0, y.pick)(e, this.options.enableSimulation);
 			}
 			start() {
 				let e = this.series, t = this.options;
@@ -1576,13 +1483,13 @@ var t = /* @__PURE__ */ e(((e, t) => {
 				for (let e of (this.currentStep++, this.approximation === "barnes-hut" && (this.createQuadTree(), this.quadTree.calculateMassAndCenter()), this.forces || [])) this[e + "Forces"](this.temperature);
 				if (this.applyLimits(), this.temperature = this.coolDown(this.startTemperature, this.diffTemperature, this.currentStep), this.prevSystemTemperature = this.systemTemperature, this.systemTemperature = this.getSystemTemperature(), this.enableSimulation) {
 					for (let t of e) t.chart && t.render();
-					this.maxIterations-- && isFinite(this.temperature) && !this.isStable() ? (this.simulation && Rt.cancelAnimationFrame(this.simulation), this.simulation = Rt.requestAnimationFrame(() => this.step())) : (this.simulation = !1, this.series.forEach((e) => {
-						ee(e, "afterSimulation");
+					this.maxIterations-- && isFinite(this.temperature) && !this.isStable() ? (this.simulation && gt.cancelAnimationFrame(this.simulation), this.simulation = gt.requestAnimationFrame(() => this.step())) : (this.simulation = !1, this.series.forEach((e) => {
+						(0, y.fireEvent)(e, "afterSimulation");
 					}));
 				}
 			}
 			stop() {
-				this.simulation && Rt.cancelAnimationFrame(this.simulation);
+				this.simulation && gt.cancelAnimationFrame(this.simulation);
 			}
 			setArea(e, t, n, r) {
 				this.box = {
@@ -1612,7 +1519,7 @@ var t = /* @__PURE__ */ e(((e, t) => {
 				this.simulation ? this.resetSimulation() : (this.setInitialRendering(!1), this.enableSimulation ? this.start() : this.setMaxIterations(1), this.chart && this.chart.redraw(), this.setInitialRendering(!0));
 			}
 			setMaxIterations(e) {
-				this.maxIterations = R(e, this.options.maxIterations);
+				this.maxIterations = (0, y.pick)(e, this.options.maxIterations);
 			}
 			setTemperature() {
 				this.temperature = this.startTemperature = Math.sqrt(this.nodes.length);
@@ -1624,11 +1531,11 @@ var t = /* @__PURE__ */ e(((e, t) => {
 				this.initialRendering = e;
 			}
 			createQuadTree() {
-				this.quadTree = new Lt(this.box.left, this.box.top, this.box.width, this.box.height), this.quadTree.insertNodes(this.nodes);
+				this.quadTree = new ht(this.box.left, this.box.top, this.box.width, this.box.height), this.quadTree.insertNodes(this.nodes);
 			}
 			initPositions() {
 				let e = this.options.initialPositions;
-				if (typeof e == "function") for (let t of (e.call(this), this.nodes)) M(t.prevX) || (t.prevX = t.plotX), M(t.prevY) || (t.prevY = t.plotY), t.dispX = 0, t.dispY = 0;
+				if ((0, y.isFunction)(e)) for (let t of (e.call(this), this.nodes)) (0, y.defined)(t.prevX) || (t.prevX = t.plotX), (0, y.defined)(t.prevY) || (t.prevY = t.plotY), t.dispX = 0, t.dispY = 0;
 				else e === "circle" ? this.setCircularPositions() : this.setRandomPositions();
 			}
 			setCircularPositions() {
@@ -1640,14 +1547,14 @@ var t = /* @__PURE__ */ e(((e, t) => {
 				for (let e of i) c.push(e), s(e);
 				if (c.length) for (let e of n) c.indexOf(e) === -1 && c.push(e);
 				else c = n;
-				for (let n = 0, i = c.length; n < i; ++n) (e = c[n]).plotX = e.prevX = R(e.plotX, t.width / 2 + o * Math.cos(n * r)), e.plotY = e.prevY = R(e.plotY, t.height / 2 + o * Math.sin(n * r)), e.dispX = 0, e.dispY = 0;
+				for (let n = 0, i = c.length; n < i; ++n) (e = c[n]).plotX = e.prevX = (0, y.pick)(e.plotX, t.width / 2 + o * Math.cos(n * r)), e.plotY = e.prevY = (0, y.pick)(e.plotY, t.height / 2 + o * Math.sin(n * r)), e.dispX = 0, e.dispY = 0;
 			}
 			setRandomPositions() {
 				let e, t = this.box, n = this.nodes, r = n.length + 1, i = (e) => {
 					let t = e * e / Math.PI;
 					return t - Math.floor(t);
 				};
-				for (let a = 0, o = n.length; a < o; ++a) (e = n[a]).plotX = e.prevX = R(e.plotX, t.width * i(a)), e.plotY = e.prevY = R(e.plotY, t.height * i(r + a)), e.dispX = 0, e.dispY = 0;
+				for (let a = 0, o = n.length; a < o; ++a) (e = n[a]).plotX = e.prevX = (0, y.pick)(e.plotX, t.width * i(a)), e.plotY = e.prevY = (0, y.pick)(e.plotY, t.height * i(r + a)), e.dispX = 0, e.dispY = 0;
 			}
 			force(e, ...t) {
 				this.integration[e].apply(this, t);
@@ -1685,7 +1592,7 @@ var t = /* @__PURE__ */ e(((e, t) => {
 			}
 			applyLimitBox(e, t) {
 				let n = e.radius;
-				e.plotX = k(e.plotX, t.left + n, t.width - n), e.plotY = k(e.plotY, t.top + n, t.height - n);
+				e.plotX = (0, y.clamp)(e.plotX, t.left + n, t.width - n), e.plotY = (0, y.clamp)(e.plotY, t.top + n, t.height - n);
 			}
 			coolDown(e, t, n) {
 				return e - t * n;
@@ -1715,24 +1622,24 @@ var t = /* @__PURE__ */ e(((e, t) => {
 				};
 			}
 		}
-		let Bt = zt;
-		function Vt() {
+		let vt = _t;
+		function yt() {
 			let e = this.series, t = [];
 			return e.forEach((e) => {
 				e.parentNode && e.parentNode.selected && t.push(e.parentNode);
 			}), t;
 		}
-		function Ht() {
+		function bt() {
 			this.allDataPoints && delete this.allDataPoints;
 		}
-		class Ut extends Bt {
+		class xt extends vt {
 			constructor() {
 				super(...arguments), this.index = NaN, this.nodes = [], this.series = [];
 			}
 			static compose(e) {
-				Bt.compose(e), Dt.packedbubble = Ft, Ot.packedbubble = Ut;
+				vt.compose(e), U.packedbubble = pt, W.packedbubble = xt;
 				let t = e.prototype;
-				t.getSelectedParentNodes ||= (E(e, "beforeRedraw", Ht), Vt), t.allParentNodes ||= [];
+				t.getSelectedParentNodes ||= ((0, y.addEvent)(e, "beforeRedraw", bt), yt), t.allParentNodes ||= [];
 			}
 			beforeStep() {
 				this.options.marker && this.series.forEach((e) => {
@@ -1745,7 +1652,7 @@ var t = /* @__PURE__ */ e(((e, t) => {
 			}
 			setCircularPositions() {
 				let e = this.box, t = [...this.nodes, ...this?.chart?.allParentNodes || []], n = 2 * Math.PI / (t.length + 1), r = this.options.initialPositionRadius, i, a, o = 0;
-				for (let s of t) this.resolveSplitSeries(s) && !s.isParentNode ? (i = s.series.parentNode.plotX, a = s.series.parentNode.plotY) : (i = e.width / 2, a = e.height / 2), s.plotX = s.prevX = R(s.plotX, i + r * Math.cos(s.index || o * n)), s.plotY = s.prevY = R(s.plotY, a + r * Math.sin(s.index || o * n)), s.dispX = 0, s.dispY = 0, o++;
+				for (let s of t) this.resolveSplitSeries(s) && !s.isParentNode ? (i = s.series.parentNode.plotX, a = s.series.parentNode.plotY) : (i = e.width / 2, a = e.height / 2), s.plotX = s.prevX = (0, y.pick)(s.plotX, i + r * Math.cos(s.index || o * n)), s.plotY = s.prevY = (0, y.pick)(s.plotY, a + r * Math.sin(s.index || o * n)), s.dispX = 0, s.dispY = 0, o++;
 			}
 			repulsiveForces() {
 				let { options: e, k: t } = this, { bubblePadding: n = 0, seriesInteraction: r } = e, i = [...this.nodes, ...this?.chart?.allParentNodes || []];
@@ -1762,63 +1669,40 @@ var t = /* @__PURE__ */ e(((e, t) => {
 			}
 			resolveSplitSeries(e) {
 				let t = e.series?.options?.layoutAlgorithm?.splitSeries;
-				return !M(t) && e.series.chart?.options?.plotOptions?.packedbubble?.layoutAlgorithm?.splitSeries || t || !1;
+				return !(0, y.defined)(t) && e.series.chart?.options?.plotOptions?.packedbubble?.layoutAlgorithm?.splitSeries || t || !1;
 			}
 			applyLimitBox(e, t) {
 				let n, r;
 				this.resolveSplitSeries(e) && !e.isParentNode && this.options.parentNodeLimit && (n = this.getDistXY(e, e.series.parentNode), (r = e.series.parentNodeRadius - e.marker.radius - this.vectorLength(n)) < 0 && r > -2 * e.marker.radius && (e.plotX -= .01 * n.x, e.plotY -= .01 * n.y)), super.applyLimitBox(e, t);
 			}
 		}
-		Ot.packedbubble = Ut;
-		let { animObject: Wt } = y();
-		var Gt = g(28), Kt = g.n(Gt);
-		let { deg2rad: qt } = y();
-		function Jt(e, t) {
-			t = I(!0, {
-				enabled: !0,
-				attributes: {
-					dy: -5,
-					startOffset: "50%",
-					textAnchor: "middle"
+		W.packedbubble = xt;
+		let { animObject: St } = b();
+		var Ct = _(28), wt = _.n(Ct);
+		let { composed: Tt, deg2rad: Et } = b(), { parse: Dt } = Ze(), { noop: Ot } = b(), { series: { prototype: K }, seriesTypes: { bubble: kt } } = S(), { initDataLabels: At, initDataLabelsDefer: jt } = {
+			initDataLabels: function() {
+				let e = this.options.dataLabels;
+				if (!this.dataLabelsGroup) {
+					let t = this.initDataLabelsGroup(0, e);
+					return !this.chart.styledMode && e?.style && t.css(e.style), t.attr({ opacity: 0 }), this.visible && (this.options.animation && e?.animation ? t.animate({ opacity: 1 }, e.animation) : t.attr({ opacity: 1 }), t.show()), t;
 				}
-			}, t);
-			let n = this.renderer.url, r = this.text || this, i = r.textPath, { attributes: a, enabled: o } = t;
-			if (e ||= i && i.path, i && i.undo(), e && o) {
-				let t = E(r, "afterModifyTree", (t) => {
-					if (e && o) {
-						let i = e.attr("id");
-						i || e.attr("id", i = (0, v.uniqueKey)());
-						let o = {
-							x: 0,
-							y: 0
-						};
-						M(a.dx) && (o.dx = a.dx, delete a.dx), M(a.dy) && (o.dy = a.dy, delete a.dy), r.attr(o), this.attr({ transform: "" }), this.box &&= this.box.destroy();
-						let s = t.nodes.slice(0);
-						t.nodes.length = 0, t.nodes[0] = {
-							tagName: "textPath",
-							attributes: N(a, {
-								"text-anchor": a.textAnchor,
-								href: `${n}#${i}`
-							}),
-							children: s
-						};
-					}
-				});
-				r.textPath = {
-					path: e,
-					undo: t
-				};
-			} else r.attr({
-				dx: 0,
-				dy: 0
-			}), delete r.textPath;
-			return this.added && (r.textCache = "", this.renderer.buildText(r)), this;
-		}
-		function Yt(e) {
+				return this.dataLabelsGroup.attr({
+					opacity: 1,
+					...this.getPlotBox("data-labels")
+				}), this.dataLabelsGroup;
+			},
+			initDataLabelsDefer: function() {
+				let e = this.options.dataLabels;
+				e?.defer && this.options.layoutAlgorithm?.enableSimulation ? (0, y.syncTimeout)(() => {
+					this.deferDataLabels = !1;
+				}, e ? St(e.animation).defer : 0) : this.deferDataLabels = !1;
+			}
+		};
+		d = wt(), (0, y.pushUnique)(Tt, "TextPath") && ((0, y.addEvent)(d, "afterGetBBox", function(e) {
 			let t = e.bBox, n = this.element?.querySelector("textPath");
 			if (n) {
 				let e = [], { b: r, h: i } = this.renderer.fontMetrics(this.element), a = i - r, o = RegExp("(<tspan>|<tspan(?!\\sclass=\"highcharts-br\")[^>]*>|<\\/tspan>)", "g"), s = n.innerHTML.replace(o, "").split(/<tspan class="highcharts-br"[^>]*>/), c = s.length, l = (e, t) => {
-					let { x: i, y: o } = t, s = (n.getRotationOfChar(e) - 90) * qt, c = Math.cos(s), l = Math.sin(s);
+					let { x: i, y: o } = t, s = (n.getRotationOfChar(e) - 90) * Et, c = Math.cos(s), l = Math.sin(s);
 					return [[i - a * c, o - a * l], [i + r * c, o + r * l]];
 				};
 				for (let t = 0, r = 0; r < c; r++) {
@@ -1840,44 +1724,55 @@ var t = /* @__PURE__ */ e(((e, t) => {
 				e.length && e.push(e[0].slice()), t.polygon = e;
 			}
 			return t;
-		}
-		function Xt(e) {
+		}), (0, y.addEvent)(d, "beforeAddingDataLabel", function(e) {
 			let t = e.labelOptions, n = e.point, r = t[n.formatPrefix + "TextPath"] || t.textPath;
 			r && !t.useHTML && (this.setTextPath(n.getDataLabelPath?.(this) || n.graphic, r), n.dataLabelPath && !r.enabled && (n.dataLabelPath = n.dataLabelPath.destroy()));
-		}
-		let { parse: Zt } = _t(), { noop: Qt } = y(), { series: { prototype: X }, seriesTypes: { bubble: $t } } = x(), { initDataLabels: en, initDataLabelsDefer: tn } = {
-			initDataLabels: function() {
-				let e = this.options.dataLabels;
-				if (!this.dataLabelsGroup) {
-					let t = this.initDataLabelsGroup(0, e);
-					return !this.chart.styledMode && e?.style && t.css(e.style), t.attr({ opacity: 0 }), this.visible && (this.options.animation && e?.animation ? t.animate({ opacity: 1 }, e.animation) : t.attr({ opacity: 1 }), t.show()), t;
+		}), d.prototype.setTextPath = d.prototype.setTextPath ?? function(e, t) {
+			let n = this.renderer.url, r = this.text || this, i = r.textPath, { attributes: a, enabled: o } = (0, y.merge)({
+				enabled: !0,
+				attributes: {
+					dy: -5,
+					startOffset: "50%",
+					textAnchor: "middle"
 				}
-				return this.dataLabelsGroup.attr({
-					opacity: 1,
-					...this.getPlotBox("data-labels")
-				}), this.dataLabelsGroup;
-			},
-			initDataLabelsDefer: function() {
-				let e = this.options.dataLabels;
-				if (e?.defer && this.options.layoutAlgorithm?.enableSimulation) {
-					var t = () => {
-						this.deferDataLabels = !1;
-					}, n;
-					(n = e ? Wt(e.animation).defer : 0) > 0 ? setTimeout(t, n, void 0) : t.call(0, void 0);
-				} else this.deferDataLabels = !1;
-			}
-		};
-		({ compose: function(e) {
-			E(e, "afterGetBBox", Yt), E(e, "beforeAddingDataLabel", Xt);
-			let t = e.prototype;
-			t.setTextPath ||= Jt;
-		} }).compose(Kt());
-		class nn extends $t {
+			}, t);
+			if (e ||= i && i.path, i?.undo(), e && o) {
+				let t = (0, y.addEvent)(r, "afterModifyTree", (t) => {
+					if (e && o) {
+						let i = e.attr("id");
+						i || e.attr("id", i = (0, y.uniqueKey)());
+						let o = {
+							x: 0,
+							y: 0
+						};
+						(0, y.defined)(a.dx) && (o.dx = a.dx, delete a.dx), (0, y.defined)(a.dy) && (o.dy = a.dy, delete a.dy), r.attr(o), this.attr({ transform: "" }), this.box &&= this.box.destroy();
+						let s = t.nodes.slice(0);
+						t.nodes.length = 0, t.nodes[0] = {
+							tagName: "textPath",
+							attributes: (0, y.extend)(a, {
+								"text-anchor": a.textAnchor,
+								href: `${n}#${i}`
+							}),
+							children: s
+						};
+					}
+				});
+				r.textPath = {
+					path: e,
+					undo: t
+				};
+			} else r.attr({
+				dx: 0,
+				dy: 0
+			}), delete r.textPath;
+			return this.added && (r.textCache = "", this.renderer.buildText(r)), this;
+		});
+		class q extends kt {
 			constructor() {
 				super(...arguments), this.parentNodeMass = 0, this.deferDataLabels = !0;
 			}
 			static compose(e, t, n) {
-				$t.compose(e, t, n), J.compose(t), Ut.compose(t);
+				kt.compose(e, t, n), H.compose(t), xt.compose(t);
 			}
 			accumulateAllPoints() {
 				let e = this.chart, t = [];
@@ -1899,25 +1794,25 @@ var t = /* @__PURE__ */ e(((e, t) => {
 			}
 			addLayout() {
 				let e = this.options.layoutAlgorithm = this.options.layoutAlgorithm || {}, t = e.type || "packedbubble", n = this.chart.options.chart, r = this.chart.graphLayoutsStorage, i = this.chart.graphLayoutsLookup, a;
-				r || (this.chart.graphLayoutsStorage = r = {}, this.chart.graphLayoutsLookup = i = []), (a = r[t]) || (e.enableSimulation = M(n.forExport) ? !n.forExport : e.enableSimulation, r[t] = a = new Ot[t](), a.init(e), i.splice(a.index, 0, a)), this.layout = a, this.points.forEach((e) => {
+				r || (this.chart.graphLayoutsStorage = r = {}, this.chart.graphLayoutsLookup = i = []), (a = r[t]) || (e.enableSimulation = (0, y.defined)(n.forExport) ? !n.forExport : e.enableSimulation, r[t] = a = new W[t](), a.init(e), i.splice(a.index, 0, a)), this.layout = a, this.points.forEach((e) => {
 					e.mass = 2, e.degree = 1, e.collisionNmb = 1;
 				}), a.setArea(0, 0, this.chart.plotWidth, this.chart.plotHeight), a.addElementsToCollection([this], a.series), a.addElementsToCollection(this.points, a.nodes);
 			}
 			addSeriesLayout() {
-				let e = this.options.layoutAlgorithm = this.options.layoutAlgorithm || {}, t = e.type || "packedbubble", n = this.chart.graphLayoutsStorage, r = this.chart.graphLayoutsLookup, i = I(e, e.parentNodeOptions, { enableSimulation: this.layout.options.enableSimulation }), a = n[t + "-series"];
-				a || (n[t + "-series"] = a = new Ot[t](), a.init(i), r.splice(a.index, 0, a)), this.parentNodeLayout = a, this.createParentNodes();
+				let e = this.options.layoutAlgorithm = this.options.layoutAlgorithm || {}, t = e.type || "packedbubble", n = this.chart.graphLayoutsStorage, r = this.chart.graphLayoutsLookup, i = (0, y.merge)(e, e.parentNodeOptions, { enableSimulation: this.layout.options.enableSimulation }), a = n[t + "-series"];
+				a || (n[t + "-series"] = a = new W[t](), a.init(i), r.splice(a.index, 0, a)), this.parentNodeLayout = a, this.createParentNodes();
 			}
 			calculateParentRadius() {
 				let e = this.seriesBox();
-				this.parentNodeRadius = k(Math.sqrt(2 * this.parentNodeMass / Math.PI) + 20, 20, e ? Math.max(Math.sqrt(e.width ** 2 + e.height ** 2) / 2 + 20, 20) : Math.sqrt(2 * this.parentNodeMass / Math.PI) + 20), this.parentNode && (this.parentNode.marker.radius = this.parentNode.radius = this.parentNodeRadius);
+				this.parentNodeRadius = (0, y.clamp)(Math.sqrt(2 * this.parentNodeMass / Math.PI) + 20, 20, e ? Math.max(Math.sqrt(e.width ** 2 + e.height ** 2) / 2 + 20, 20) : Math.sqrt(2 * this.parentNodeMass / Math.PI) + 20), this.parentNode && (this.parentNode.marker.radius = this.parentNode.radius = this.parentNodeRadius);
 			}
 			calculateZExtremes() {
 				let e = this.chart.series, t = this.options.zMin, n = this.options.zMax, r = Infinity, i = -Infinity;
 				return t && n ? [t, n] : (e.forEach((e) => {
 					e.getColumn("value").forEach((e) => {
-						M(e) && (e > i && (i = e), e < r && (r = e));
+						(0, y.defined)(e) && (e > i && (i = e), e < r && (r = e));
 					});
-				}), [t = R(t, r), n = R(n, i)]);
+				}), [t = (0, y.pick)(t, r), n = (0, y.pick)(n, i)]);
 			}
 			checkOverlap(e, t) {
 				let n = e[0] - t[0], r = e[1] - t[1];
@@ -1927,9 +1822,9 @@ var t = /* @__PURE__ */ e(((e, t) => {
 				let e = this.pointClass, t = this.chart, n = this.parentNodeLayout, r = this.layout.options, i, a = this.parentNode, o = {
 					radius: this.parentNodeRadius,
 					lineColor: this.color,
-					fillColor: Zt(this.color).brighten(.4).get()
+					fillColor: Dt(this.color).brighten(.4).get()
 				};
-				r.parentNodeOptions && (o = I(r.parentNodeOptions.marker || {}, o)), this.parentNodeMass = 0, this.points.forEach((e) => {
+				r.parentNodeOptions && (o = (0, y.merge)(r.parentNodeOptions.marker || {}, o)), this.parentNodeMass = 0, this.points.forEach((e) => {
 					this.parentNodeMass += Math.PI * e.marker.radius ** 2;
 				}), this.calculateParentRadius(), n.nodes.forEach((e) => {
 					e.seriesIndex === this.index && (i = !0);
@@ -1954,20 +1849,20 @@ var t = /* @__PURE__ */ e(((e, t) => {
 			destroy() {
 				this.chart.graphLayoutsLookup && this.chart.graphLayoutsLookup.forEach((e) => {
 					e.removeElementFromCollection(this, e.series);
-				}, this), this.parentNode && this.parentNodeLayout && (this.parentNodeLayout.removeElementFromCollection(this.parentNode, this.parentNodeLayout.nodes), this.parentNode.dataLabel && (this.parentNode.dataLabel = this.parentNode.dataLabel.destroy())), X.destroy.apply(this, arguments);
+				}, this), this.parentNode && this.parentNodeLayout && (this.parentNodeLayout.removeElementFromCollection(this.parentNode, this.parentNodeLayout.nodes), this.parentNode.dataLabel && (this.parentNode.dataLabel = this.parentNode.dataLabel.destroy())), K.destroy.apply(this, arguments);
 			}
 			drawDataLabels() {
-				!this.deferDataLabels && (X.drawDataLabels.call(this, this.points), this.parentNode && (this.parentNode.formatPrefix = "parentNode", X.drawDataLabels.call(this, [this.parentNode])));
+				!this.deferDataLabels && (K.drawDataLabels.call(this, this.points), this.parentNode && (this.parentNode.formatPrefix = "parentNode", K.drawDataLabels.call(this, [this.parentNode])));
 			}
 			drawGraph() {
 				if (!this.layout || !this.layout.options.splitSeries) return;
 				let e = this.chart, t = this.layout.options.parentNodeOptions.marker, n = {
-					fill: t.fillColor || Zt(this.color).brighten(.4).get(),
+					fill: t.fillColor || Dt(this.color).brighten(.4).get(),
 					opacity: t.fillOpacity,
 					stroke: t.lineColor || this.color,
-					"stroke-width": R(t.lineWidth, this.options.lineWidth)
+					"stroke-width": (0, y.pick)(t.lineWidth, this.options.lineWidth)
 				}, r = {};
-				this.parentNodesGroup = this.plotGroup("parentNodesGroup", "parentNode", this.visible ? "inherit" : "hidden", .1, e.seriesGroup), this.group?.attr({ zIndex: 2 }), this.calculateParentRadius(), this.parentNode && M(this.parentNode.plotX) && M(this.parentNode.plotY) && M(this.parentNodeRadius) && (r = I({
+				this.parentNodesGroup = this.plotGroup("parentNodesGroup", "parentNode", this.visible ? "inherit" : "hidden", .1, e.seriesGroup), this.group?.attr({ zIndex: 2 }), this.calculateParentRadius(), this.parentNode && (0, y.defined)(this.parentNode.plotX) && (0, y.defined)(this.parentNode.plotY) && (0, y.defined)(this.parentNodeRadius) && (r = (0, y.merge)({
 					x: this.parentNode.plotX - this.parentNodeRadius,
 					y: this.parentNode.plotY - this.parentNodeRadius,
 					width: 2 * this.parentNodeRadius,
@@ -1976,23 +1871,23 @@ var t = /* @__PURE__ */ e(((e, t) => {
 			}
 			drawTracker() {
 				let e, t = this.parentNode;
-				super.drawTracker(), t && (e = re(t.dataLabels) ? t.dataLabels : t.dataLabel ? [t.dataLabel] : [], t.graphic && (t.graphic.element.point = t), e.forEach((e) => {
+				super.drawTracker(), t && (e = (0, y.isArray)(t.dataLabels) ? t.dataLabels : t.dataLabel ? [t.dataLabel] : [], t.graphic && (t.graphic.element.point = t), e.forEach((e) => {
 					(e.div || e.element).point = t;
 				}));
 			}
 			getPointRadius() {
 				let e, t, n, r, i = this.chart, a = i.plotWidth, o = i.plotHeight, s = this.options, c = s.useSimulation, l = Math.min(a, o), u = {}, d = [], f = i.allDataPoints || [], p = f.length;
 				["minSize", "maxSize"].forEach((e) => {
-					let t = parseInt(s[e], 10);
-					u[e] = /%$/.test(s[e]) ? l * t / 100 : t * Math.sqrt(p);
+					let t = parseInt(s[e], 10), n = /%$/.test(s[e]);
+					u[e] = n ? l * t / 100 : t * Math.sqrt(p);
 				}), i.minRadius = e = u.minSize / Math.sqrt(p), i.maxRadius = t = u.maxSize / Math.sqrt(p);
 				let m = c ? this.calculateZExtremes() : [e, t];
 				f.forEach((i, a) => {
-					n = c ? k(i[2], m[0], m[1]) : i[2], (r = this.getRadius(m[0], m[1], e, t, n)) === 0 && (r = null), f[a][2] = r, d.push(r);
+					n = c ? (0, y.clamp)(i[2], m[0], m[1]) : i[2], (r = this.getRadius(m[0], m[1], e, t, n)) === 0 && (r = null), f[a][2] = r, d.push(r);
 				}), this.radii = d;
 			}
 			init() {
-				return X.init.apply(this, arguments), tn.call(this), this.eventsToUnbind.push(E(this, "updatedData", function() {
+				return K.init.apply(this, arguments), jt.call(this), this.eventsToUnbind.push((0, y.addEvent)(this, "updatedData", function() {
 					this.chart.series.forEach((e) => {
 						e.type === this.type && (e.isDirty = !0);
 					}, this);
@@ -2002,11 +1897,11 @@ var t = /* @__PURE__ */ e(((e, t) => {
 				if (e.fixedPosition && !e.removed) {
 					let t, n = this.layout, r = this.parentNodeLayout;
 					!e.isParentNode && r && n.options.dragBetweenSeries && r.nodes.forEach((r) => {
-						e && e.marker && r !== e.series.parentNode && (t = n.getDistXY(e, r), n.vectorLength(t) - r.marker.radius - e.marker.radius < 0 && (r.series.addPoint(I(e.options, {
+						e && e.marker && r !== e.series.parentNode && (t = n.getDistXY(e, r), n.vectorLength(t) - r.marker.radius - e.marker.radius < 0 && (r.series.addPoint((0, y.merge)(e.options, {
 							plotX: e.plotX,
 							plotY: e.plotY
 						}), !1), n.removeElementFromCollection(e, n.nodes), e.remove()));
-					}), J.onMouseUp.apply(this, arguments);
+					}), H.onMouseUp.apply(this, arguments);
 				}
 			}
 			placeBubbles(e) {
@@ -2032,7 +1927,7 @@ var t = /* @__PURE__ */ e(((e, t) => {
 			pointAttribs(e, t) {
 				let n = this.options, r = e && e.isParentNode, i = n.marker;
 				r && n.layoutAlgorithm && n.layoutAlgorithm.parentNodeOptions && (i = n.layoutAlgorithm.parentNodeOptions.marker);
-				let a = i.fillOpacity, o = X.pointAttribs.call(this, e, t);
+				let a = i.fillOpacity, o = K.pointAttribs.call(this, e, t);
 				return a !== 1 && (o["fill-opacity"] = a), o;
 			}
 			positionBubble(e, t, n) {
@@ -2047,8 +1942,8 @@ var t = /* @__PURE__ */ e(((e, t) => {
 			}
 			render() {
 				let e = [];
-				X.render.apply(this, arguments), !this.options.dataLabels.allowOverlap && (this.data.forEach((t) => {
-					re(t.dataLabels) && t.dataLabels.forEach((t) => {
+				K.render.apply(this, arguments), !this.options.dataLabels.allowOverlap && (this.data.forEach((t) => {
+					(0, y.isArray)(t.dataLabels) && t.dataLabels.forEach((t) => {
 						e.push(t);
 					});
 				}), this.options.useSimulation && this.chart.hideOverlappingLabels(e));
@@ -2070,26 +1965,26 @@ var t = /* @__PURE__ */ e(((e, t) => {
 					t.plotTop + t.plotHeight
 				];
 				return n.forEach((t) => {
-					M(t.plotX) && M(t.plotY) && t.marker.radius && (e = t.marker.radius, a[0] = i(a[0], t.plotX - e), a[1] = r(a[1], t.plotX + e), a[2] = i(a[2], t.plotY - e), a[3] = r(a[3], t.plotY + e));
-				}), P(a.width / a.height) ? a : null;
+					(0, y.defined)(t.plotX) && (0, y.defined)(t.plotY) && t.marker.radius && (e = t.marker.radius, a[0] = i(a[0], t.plotX - e), a[1] = r(a[1], t.plotX + e), a[2] = i(a[2], t.plotY - e), a[3] = r(a[3], t.plotY + e));
+				}), (0, y.isNumber)(a.width / a.height) ? a : null;
 			}
 			setVisible() {
 				let e = this;
-				X.setVisible.apply(e, arguments), e.parentNodeLayout && e.graph ? e.visible ? (e.graph.show(), e.parentNode.dataLabel && e.parentNode.dataLabel.show()) : (e.graph.hide(), e.parentNodeLayout.removeElementFromCollection(e.parentNode, e.parentNodeLayout.nodes), e.parentNode.dataLabel && e.parentNode.dataLabel.hide()) : e.layout && (e.visible ? e.layout.addElementsToCollection(e.points, e.layout.nodes) : e.points.forEach((t) => {
+				K.setVisible.apply(e, arguments), e.parentNodeLayout && e.graph ? e.visible ? (e.graph.show(), e.parentNode.dataLabel && e.parentNode.dataLabel.show()) : (e.graph.hide(), e.parentNodeLayout.removeElementFromCollection(e.parentNode, e.parentNodeLayout.nodes), e.parentNode.dataLabel && e.parentNode.dataLabel.hide()) : e.layout && (e.visible ? e.layout.addElementsToCollection(e.points, e.layout.nodes) : e.points.forEach((t) => {
 					e.layout.removeElementFromCollection(t, e.layout.nodes);
 				}));
 			}
 			translate() {
 				let e, t, n, r = this.chart, i = this.data, a = this.index, o = this.options.useSimulation;
-				for (let s of (this.generatePoints(), M(r.allDataPoints) || (r.allDataPoints = this.accumulateAllPoints(), this.getPointRadius()), o ? n = r.allDataPoints : (n = this.placeBubbles(r.allDataPoints), this.options.draggable = !1), n)) s[3] === a && (e = i[s[4]], t = R(s[2], void 0), o || (e.plotX = s[0] - r.plotLeft + r.diffX, e.plotY = s[1] - r.plotTop + r.diffY), P(t) && (e.marker = N(e.marker, {
+				for (let s of (this.generatePoints(), (0, y.defined)(r.allDataPoints) || (r.allDataPoints = this.accumulateAllPoints(), this.getPointRadius()), o ? n = r.allDataPoints : (n = this.placeBubbles(r.allDataPoints), this.options.draggable = !1), n)) s[3] === a && (e = i[s[4]], t = (0, y.pick)(s[2], void 0), o || (e.plotX = s[0] - r.plotLeft + r.diffX, e.plotY = s[1] - r.plotTop + r.diffY), (0, y.isNumber)(t) && (e.marker = (0, y.extend)(e.marker, {
 					radius: t,
 					width: 2 * t,
 					height: 2 * t
 				}), e.radius = t));
-				o && this.deferLayout(), ee(this, "afterTranslate");
+				o && this.deferLayout(), (0, y.fireEvent)(this, "afterTranslate");
 			}
 		}
-		nn.defaultOptions = I($t.defaultOptions, {
+		q.defaultOptions = (0, y.merge)(kt.defaultOptions, {
 			minSize: "10%",
 			maxSize: "50%",
 			sizeBy: "area",
@@ -2102,7 +1997,7 @@ var t = /* @__PURE__ */ e(((e, t) => {
 			dataLabels: {
 				formatter: function() {
 					let { numberFormatter: e } = this.series.chart, { value: t } = this.point;
-					return P(t) ? e(t, -1) : "";
+					return (0, y.isNumber)(t) ? e(t, -1) : "";
 				},
 				parentNodeFormatter: function() {
 					return this.name || "";
@@ -2142,8 +2037,8 @@ var t = /* @__PURE__ */ e(((e, t) => {
 				friction: -.981
 			},
 			stickyTracking: !1
-		}), N(nn.prototype, {
-			pointClass: Mt,
+		}), (0, y.extend)(q.prototype, {
+			pointClass: ut,
 			axisTypes: [],
 			directTouch: !0,
 			forces: ["barycenter", "repulsive"],
@@ -2159,26 +2054,26 @@ var t = /* @__PURE__ */ e(((e, t) => {
 				"dataLabelsGroup",
 				"parentNodesGroup"
 			],
-			initDataLabels: en,
-			alignDataLabel: X.alignDataLabel,
-			indexateNodes: Qt,
-			onMouseDown: J.onMouseDown,
-			onMouseMove: J.onMouseMove,
-			redrawHalo: J.redrawHalo,
-			searchPoint: Qt
-		}), x().registerSeriesType("packedbubble", nn);
-		let { noop: rn } = y(), { area: an, line: on, scatter: sn } = x().seriesTypes;
-		class cn extends sn {
+			initDataLabels: At,
+			alignDataLabel: K.alignDataLabel,
+			indexateNodes: Ot,
+			onMouseDown: H.onMouseDown,
+			onMouseMove: H.onMouseMove,
+			redrawHalo: H.redrawHalo,
+			searchPoint: Ot
+		}), S().registerSeriesType("packedbubble", q);
+		let { noop: Mt } = b(), { area: Nt, line: Pt, scatter: Ft } = S().seriesTypes;
+		class It extends Ft {
 			getGraphPath() {
-				let e = on.prototype.getGraphPath.call(this), t = e.length + 1;
+				let e = Pt.prototype.getGraphPath.call(this), t = e.length + 1;
 				for (; t--;) (t === e.length || e[t][0] === "M") && t > 0 && e.splice(t, 0, ["Z"]);
 				return this.areaPath = e, e;
 			}
 			drawGraph() {
-				this.options.fillColor = this.color, an.prototype.drawGraph.call(this);
+				this.options.fillColor = this.color, Nt.prototype.drawGraph.call(this);
 			}
 		}
-		cn.defaultOptions = I(sn.defaultOptions, {
+		It.defaultOptions = (0, y.merge)(Ft.defaultOptions, {
 			marker: {
 				enabled: !1,
 				states: { hover: { enabled: !1 } }
@@ -2190,133 +2085,21 @@ var t = /* @__PURE__ */ e(((e, t) => {
 			},
 			trackByArea: !0,
 			legendSymbol: "rectangle"
-		}), N(cn.prototype, {
+		}), (0, y.extend)(It.prototype, {
 			type: "polygon",
-			drawTracker: on.prototype.drawTracker,
-			setStackedPoints: rn
-		}), x().registerSeriesType("polygon", cn);
-		let { defaultOptions: ln } = y(), { noop: un } = y(), dn = {
+			drawTracker: Pt.prototype.drawTracker,
+			setStackedPoints: Mt
+		}), S().registerSeriesType("polygon", It);
+		let { defaultOptions: Lt } = b(), { noop: Rt } = b(), zt = {
 			radius: 0,
 			scope: "stack",
 			where: void 0
-		}, fn = un, pn = un;
-		function mn(e, t, n, r, i = {}) {
-			let a = fn(e, t, n, r, i), { brStart: o = !0, brEnd: s = !0, innerR: c = 0, r: l = n, start: u = 0, end: d = 0 } = i;
-			if (i.open || !i.borderRadius) return a;
-			let f = d - u, p = Math.sin(f / 2), m = Math.max(Math.min(B(i.borderRadius || 0, l - c), (l - c) / 2, l * p / (1 + p)), 0), h = Math.min(m, f / Math.PI * 2 * c), g = a.length - 1;
-			for (; g--;) (o || g !== 0 && g !== 3) && (s || g !== 1 && g !== 2) && function(e, t, n) {
-				let r, i, a, o = e[t], s = e[t + 1];
-				if (s[0] === "Z" && (s = e[0]), (o[0] === "M" || o[0] === "L") && s[0] === "A" ? (r = o, i = s, a = !0) : o[0] === "A" && (s[0] === "M" || s[0] === "L") && (r = s, i = o), r && i && i.params) {
-					let o = i[1], s = i[5], c = i.params, { start: l, end: u, cx: d, cy: f } = c, p = s ? o - n : o + n, m = p ? Math.asin(n / p) : 0, h = s ? m : -m, g = Math.cos(m) * p;
-					a ? (c.start = l + h, r[1] = d + g * Math.cos(l), r[2] = f + g * Math.sin(l), e.splice(t + 1, 0, [
-						"A",
-						n,
-						n,
-						0,
-						0,
-						1,
-						d + o * Math.cos(c.start),
-						f + o * Math.sin(c.start)
-					])) : (c.end = u - h, i[6] = d + o * Math.cos(c.end), i[7] = f + o * Math.sin(c.end), e.splice(t + 1, 0, [
-						"A",
-						n,
-						n,
-						0,
-						0,
-						1,
-						d + g * Math.cos(u),
-						f + g * Math.sin(u)
-					])), i[4] = Math.abs(c.end - c.start) < Math.PI ? 0 : 1;
-				}
-			}(a, g, g > 1 ? h : m);
-			return a;
+		};
+		function Bt(e, t) {
+			return (0, y.isObject)(e) || (e = { radius: e || 0 }), (0, y.merge)(zt, t, e);
 		}
-		function hn() {
-			if (this.options.borderRadius && !(this.chart.is3d && this.chart.is3d())) {
-				let { options: e, yAxis: t } = this, n = e.stacking === "percent", r = ln.plotOptions?.[this.type]?.borderRadius, i = gn(e.borderRadius, F(r) ? r : {}), a = t.options.reversed;
-				for (let r of this.points) {
-					let { shapeArgs: o } = r;
-					if (r.shapeType === "roundedRect" && o) {
-						let { width: s = 0, height: c = 0, y: l = 0 } = o, u = l, d = c;
-						if (i.scope === "stack" && r.stackTotal) {
-							let i = t.translate(n ? 100 : r.stackTotal, !1, !0, !1, !0), a = t.translate(e.threshold || 0, !1, !0, !1, !0), o = this.crispCol(0, Math.min(i, a), 0, Math.abs(i - a));
-							u = o.y, d = o.height;
-						}
-						let f = (r.negative ? -1 : 1) * (a ? -1 : 1) == -1, p = i.where;
-						!p && this.is("waterfall") && Math.abs((r.yBottom || 0) - (this.translatedThreshold || 0)) > this.borderWidth && (p = "all"), p ||= "end";
-						let m = Math.min(B(i.radius, s), s / 2, p === "all" ? d / 2 : Infinity) || 0;
-						p === "end" && (f && (u -= m), d += m), N(o, {
-							brBoxHeight: d,
-							brBoxY: u,
-							r: m
-						});
-					}
-				}
-			}
-		}
-		function gn(e, t) {
-			return F(e) || (e = { radius: e || 0 }), I(dn, t, e);
-		}
-		function _n() {
-			let e = gn(this.options.borderRadius);
-			for (let t of this.points) {
-				let n = t.shapeArgs;
-				n && (n.borderRadius = B(e.radius, (n.r || 0) - (n.innerR || 0)));
-			}
-		}
-		function vn(e, t, n, r, i = {}) {
-			let a = pn(e, t, n, r, i), { r: o = 0, brBoxHeight: s = r, brBoxY: c = t } = i, l = t - c, u = c + s - (t + r), d = l - o > -.1 ? 0 : o, f = u - o > -.1 ? 0 : o, p = Math.max(d && l, 0), m = Math.max(f && u, 0), h = [e + d, t], g = [e + n - d, t], _ = [e + n, t + d], v = [e + n, t + r - f], y = [e + n - f, t + r], b = [e + f, t + r], x = [e, t + r - f], S = [e, t + d], C = (e, t) => Math.sqrt(e ** 2 - t ** 2);
-			if (p) {
-				let e = C(d, d - p);
-				h[0] -= e, g[0] += e, _[1] = S[1] = t + d - p;
-			}
-			if (r < d - p) {
-				let i = C(d, d - p - r);
-				_[0] = v[0] = e + n - d + i, y[0] = Math.min(_[0], y[0]), b[0] = Math.max(v[0], b[0]), x[0] = S[0] = e + d - i, _[1] = S[1] = t + r;
-			}
-			if (m) {
-				let e = C(f, f - m);
-				y[0] += e, b[0] -= e, v[1] = x[1] = t + r - f + m;
-			}
-			if (r < f - m) {
-				let i = C(f, f - m - r);
-				_[0] = v[0] = e + n - f + i, g[0] = Math.min(_[0], g[0]), h[0] = Math.max(v[0], h[0]), x[0] = S[0] = e + f - i, v[1] = x[1] = t;
-			}
-			return a.length = 0, a.push(["M", ...h], ["L", ...g], [
-				"A",
-				d,
-				d,
-				0,
-				0,
-				1,
-				..._
-			], ["L", ...v], [
-				"A",
-				f,
-				f,
-				0,
-				0,
-				1,
-				...y
-			], ["L", ...b], [
-				"A",
-				f,
-				f,
-				0,
-				0,
-				1,
-				...x
-			], ["L", ...S], [
-				"A",
-				d,
-				d,
-				0,
-				0,
-				1,
-				...h
-			], ["Z"]), a;
-		}
-		let yn = {
+		var Vt = _(820), Ht = _.n(Vt);
+		let Ut = {
 			circular: {
 				gridLineWidth: 1,
 				labels: {
@@ -2346,35 +2129,32 @@ var t = /* @__PURE__ */ e(((e, t) => {
 				}
 			},
 			radialGauge: {
-				endOnTick: !1,
 				gridLineWidth: 0,
 				labels: {
 					align: "center",
-					distance: -25,
+					distance: 15,
 					x: 0,
 					y: void 0
 				},
-				lineWidth: 1,
 				minorGridLineWidth: 0,
-				minorTickInterval: "auto",
-				minorTickLength: 10,
+				minorTickLength: 5,
 				minorTickPosition: "inside",
+				minorTicksPerMajor: 10,
 				minorTickWidth: 1,
-				startOnTick: !1,
-				tickLength: 10,
+				tickLength: void 0,
+				tickWidth: 2,
 				tickPixelInterval: 100,
 				tickPosition: "inside",
-				tickWidth: 2,
 				title: {
 					rotation: 0,
 					text: ""
 				},
 				zIndex: 2
 			}
-		}, { defaultOptions: Z } = y(), { composed: bn, noop: xn } = y();
+		}, { defaultOptions: J } = b(), { composed: Wt, noop: Y } = b();
 		(function(e) {
 			function t() {
-				this.autoConnect = this.isCircular && R(this.userMax, this.options.max) === void 0 && A(this.endAngleRad - this.startAngleRad) === A(2 * Math.PI), !this.isCircular && this.chart.inverted && this.max++, this.autoConnect && (this.max += this.categories && 1 || this.pointRange || this.closestPointRange || 0);
+				this.autoConnect = this.isCircular && (0, y.pick)(this.userMax, this.options.max) === void 0 && (0, y.correctFloat)(this.endAngleRad - this.startAngleRad) === (0, y.correctFloat)(2 * Math.PI), !this.isCircular && this.chart.inverted && this.max++, this.autoConnect && (0, y.isNumber)(this.max) && (this.max += this.categories && 1 || this.pointRange || this.closestPointRange || 0);
 			}
 			function n() {
 				return () => {
@@ -2382,24 +2162,24 @@ var t = /* @__PURE__ */ e(((e, t) => {
 				};
 			}
 			function r() {
-				return xn;
+				return Y;
 			}
 			function i(e, t, n) {
 				let r = this.pane.center, i = e.value, a, o, s;
-				return this.isCircular ? (M(i) ? e.point && (e.point.shapeArgs || {}).start && (i = this.chart.inverted ? this.translate(e.point.rectPlotY, !0) : e.point.x) : (o = e.chartX || 0, s = e.chartY || 0, i = this.translate(Math.atan2(s - n, o - t) - this.startAngleRad, !0)), o = (a = this.getPosition(i)).x, s = a.y) : (M(i) || (o = e.chartX, s = e.chartY), M(o) && M(s) && (n = r[1] + this.chart.plotTop, i = this.translate(Math.min(Math.sqrt((o - t) ** 2 + (s - n) ** 2), r[2] / 2) - r[3] / 2, !0))), [
+				return this.isCircular ? ((0, y.defined)(i) ? e.point && (e.point.shapeArgs || {}).start && (i = this.chart.inverted ? this.translate(e.point.rectPlotY, !0) : e.point.x) : (o = e.chartX || 0, s = e.chartY || 0, i = this.translate(Math.atan2(s - n, o - t) - this.startAngleRad, !0)), o = (a = this.getPosition(i)).x, s = a.y) : ((0, y.defined)(i) || (o = e.chartX, s = e.chartY), (0, y.defined)(o) && (0, y.defined)(s) && (n = r[1] + this.chart.plotTop, i = this.translate(Math.min(Math.sqrt((o - t) ** 2 + (s - n) ** 2), r[2] / 2) - r[3] / 2, !0))), [
 					i,
 					o || 0,
 					s || 0
 				];
 			}
 			function a(e, t, n) {
-				let r = this.pane.center, i = this.chart, a = this.left || 0, o = this.top || 0, s, c = R(t, r[2] / 2 - this.offset), l;
-				return n === void 0 && (n = this.horiz ? 0 : this.center && -this.center[3] / 2), n && (c += n), this.isCircular || t !== void 0 ? ((l = this.chart.renderer.symbols.arc(a + r[0], o + r[1], c, c, {
+				let r = this.pane.center, i = this.chart, a = this.left || 0, o = this.top || 0, s, c, l = (0, y.pick)(t, r[2] / 2 - this.offset);
+				return n ??= this.horiz ? 0 : this.center && -this.center[3] / 2, n && n > 0 && (l += n), this.isCircular || t !== void 0 ? ((c = this.chart.renderer.symbols.arc(a + r[0], o + r[1], l, l, {
 					start: this.startAngleRad,
 					end: this.endAngleRad,
 					open: !0,
 					innerR: 0
-				})).xBounds = [a + r[0]], l.yBounds = [o + r[1] - c]) : (s = this.postTranslate(this.angleRad, c), l = [[
+				})).xBounds = [a + r[0]], c.yBounds = [o + r[1] - l]) : (s = this.postTranslate(this.angleRad, l), c = [[
 					"M",
 					this.center[0] + i.plotLeft,
 					this.center[1] + i.plotTop
@@ -2407,69 +2187,74 @@ var t = /* @__PURE__ */ e(((e, t) => {
 					"L",
 					s.x,
 					s.y
-				]]), l;
+				]]), c;
 			}
 			function o() {
-				this.constructor.prototype.getOffset.call(this), this.chart.axisOffset[this.side] = 0;
+				this.constructor.prototype.getOffset.call(this);
+				let e = this.options.offset ?? (this.pane.hasSeriesType("gauge") ? "-20%" : void 0);
+				(0, y.defined)(e) && (this.offset = -1 * (0, y.relativeLength)(e, this.center[2] / 2)), this.chart.axisOffset[this.side] = 0;
 			}
 			function s(e, t, n) {
 				let r = this.chart, i = (e) => {
 					if (typeof e == "string") {
 						let t = parseInt(e, 10);
-						return f.test(e) && (t = t * c / 100), t;
+						return p.test(e) && (t = t * l / 100), t;
 					}
 					return e;
-				}, a = this.center, o = this.startAngleRad, s = n.borderRadius, c = a[2] / 2, l = Math.min(this.offset, 0), u = this.left || 0, d = this.top || 0, f = /%$/, p = this.isCircular, m = this.options.plotBands || [], h = m.indexOf(n), g, _, v, y, b, x, S = R(i(n.outerRadius), c), C = i(n.innerRadius), w = R(i(n.thickness), 10), T = !0, E = !0;
-				if (s && h > -1 && (m[h - 1] && m[h - 1].to === e && (T = !1), m[h + 1] && m[h + 1].from === t && (E = !1)), this.options.gridLineInterpolation === "polygon") x = this.getPlotLinePath({ value: e }).concat(this.getPlotLinePath({
+				}, a = this.center, { endAngleRad: o, startAngleRad: s } = this, c = Bt(n.borderRadius ?? this.pane.options.borderRadius), l = a[2] / 2, u = Math.min(this.offset || 0, 0), d = this.left || 0, f = this.top || 0, p = /%$/, m = this.isCircular, h = this.options.plotBands || [], g = h.indexOf(n), _, v, b, x, S, C, w = (0, y.pick)(i(n.outerRadius), l), T = i(n.innerRadius), E = i(n.thickness), D = !0, O = !0;
+				if (c.radius && c.scope === "stack" && g > -1 && (h[g - 1] && h[g - 1].to === e && (D = !1), h[g + 1] && h[g + 1].from === t && (O = !1)), this.options.gridLineInterpolation === "polygon") C = this.getPlotLinePath({ value: e }).concat(this.getPlotLinePath({
 					value: t,
 					reverse: !0
 				}));
 				else {
-					e = Math.max(e, this.min), t = Math.min(t, this.max);
-					let i = this.translate(e), c = this.translate(t);
-					p || (S = i || 0, C = c || 0), n.shape !== "circle" && p ? (g = o + (i || 0), _ = o + (c || 0)) : (g = -Math.PI / 2, _ = 1.5 * Math.PI, b = !0), S -= l, w -= l, x = r.renderer.symbols.arc(u + a[0], d + a[1], S, S, {
-						start: Math.min(g, _),
-						end: Math.max(g, _),
-						innerR: R(C, S - w),
-						open: b,
-						borderRadius: s,
-						brStart: T,
-						brEnd: E
-					}), p && (v = (_ + g) / 2, y = u + a[0] + a[2] / 2 * Math.cos(v), x.xBounds = v > -Math.PI / 2 && v < Math.PI / 2 ? [y, r.plotWidth] : [0, y], x.yBounds = [d + a[1] + a[2] / 2 * Math.sin(v)], x.yBounds[0] += v > -Math.PI && v < 0 || v > Math.PI ? -10 : 10);
-				}
-				return x;
-			}
-			function c(e) {
-				let t = this.pane.center, n = this.chart, r = n.inverted, i = e.reverse, a = this.pane.options.background, o = a ? ae(a)[0] : {}, s = o.innerRadius || "0%", c = o.outerRadius || "100%", l = t[0] + n.plotLeft, u = t[1] + n.plotTop, d = this.height, f = e.isCrosshair, p = t[3] / 2, m = e.value, h, g, _, v, y, b, x, S, C, w = this.getPosition(m), T = w.x, E = w.y;
-				if (f && (m = (S = this.getCrosshairPosition(e, l, u))[0], T = S[1], E = S[2]), this.isCircular) g = Math.sqrt((T - l) ** 2 + (E - u) ** 2), _ = typeof s == "string" ? B(s, 1) : s / g, v = typeof c == "string" ? B(c, 1) : c / g, t && p && (_ < (h = p / g) && (_ = h), v < h && (v = h)), C = [[
-					"M",
-					l + _ * (T - l),
-					u - _ * (u - E)
-				], [
-					"L",
-					T - (1 - v) * (T - l),
-					E + (1 - v) * (u - E)
-				]];
-				else if ((m = this.translate(m)) && (m < 0 || m > d) && (m = 0), this.options.gridLineInterpolation === "circle") C = this.getLinePath(0, m, p);
-				else if (C = [], n[r ? "yAxis" : "xAxis"].forEach((e) => {
-					e.pane === this.pane && (y = e);
-				}), y) {
-					x = y.tickPositions, y.autoConnect && (x = x.concat([x[0]])), i && (x = x.slice().reverse()), m && (m += p);
-					for (let e = 0; e < x.length; e++) b = y.getPosition(x[e], m), C.push(e ? [
-						"L",
-						b.x,
-						b.y
-					] : [
-						"M",
-						b.x,
-						b.y
-					]);
+					(0, y.isNumber)(this.min) && (e = Math.max(e, this.min)), (0, y.isNumber)(this.max) && (t = Math.min(t, this.max));
+					let i = this.translate(e), l = this.translate(t);
+					m || (w = i || 0, T = l || 0), (0, y.isNumber)(this.min) || (0, y.isNumber)(this.max) || n.color || n.className ? n.shape !== "circle" && m ? (_ = s + (i || 0), v = s + (l || 0)) : (_ = -Math.PI / 2, v = 1.5 * Math.PI, S = !0) : (_ = s, v = o), w -= u, (0, y.isNumber)(E) && (E -= u), C = r.renderer.symbols.arc(d + a[0], f + a[1], w, w, {
+						start: Math.min(_, v),
+						end: Math.max(_, v),
+						innerR: (0, y.pick)(T, (0, y.isNumber)(E) ? w - E : void 0, this.center[3] / 2),
+						open: S,
+						borderRadius: c.radius,
+						brStart: D,
+						brEnd: O
+					}), m && (b = (v + _) / 2, x = d + a[0] + a[2] / 2 * Math.cos(b), C.xBounds = b > -Math.PI / 2 && b < Math.PI / 2 ? [x, r.plotWidth] : [0, x], C.yBounds = [f + a[1] + a[2] / 2 * Math.sin(b)], C.yBounds[0] += b > -Math.PI && b < 0 || b > Math.PI ? -10 : 10);
 				}
 				return C;
 			}
+			function c(e) {
+				let t = this.pane.center, n = this.chart, r = n.inverted, i = e.reverse, a = this.pane.options.background, o = a ? (0, y.splat)(a)[0] : {}, s = o.innerRadius || "0%", c = o.outerRadius || "100%", l = t[0] + n.plotLeft, u = t[1] + n.plotTop, d = this.height, f = e.isCrosshair, p = t[3] / 2, m = n.time.parse(e.value) || 0, h, g, _, v, b, x, S, C, w, T = this.getPosition(m, t[2] / 2 + (this.isCircular ? this.offset : 0)), E = T.x, D = T.y;
+				if (f && (m = (C = this.getCrosshairPosition(e, l, u))[0] || 0, E = C[1], D = C[2]), this.isCircular) g = Math.sqrt((E - l) ** 2 + (D - u) ** 2), _ = typeof s == "string" ? (0, y.relativeLength)(s, 1) : s / g, v = typeof c == "string" ? (0, y.relativeLength)(c, 1) : c / g, t && p && (_ < (h = p / g) && (_ = h), v < h && (v = h)), w = [[
+					"M",
+					l + _ * (E - l),
+					u - _ * (u - D)
+				], [
+					"L",
+					E - (1 - v) * (E - l),
+					D + (1 - v) * (u - D)
+				]];
+				else {
+					let e = this.translate(m);
+					if (e && (e < 0 || e > d) && (e = 0), this.options.gridLineInterpolation === "circle") w = this.getLinePath(0, e, p);
+					else if (w = [], n[r ? "yAxis" : "xAxis"].forEach((e) => {
+						e.pane === this.pane && (b = e);
+					}), b) {
+						S = b.tickPositions, b.autoConnect && (S = S.concat([S[0]])), i && (S = S.slice().reverse()), e && (e += p);
+						for (let t = 0; t < S.length; t++) x = b.getPosition(S[t], e), w.push(t ? [
+							"L",
+							x.x,
+							x.y
+						] : [
+							"M",
+							x.x,
+							x.y
+						]);
+					}
+				}
+				return w;
+			}
 			function l(e, t) {
 				let n = this.translate(e);
-				return this.postTranslate(this.isCircular ? n : this.angleRad, R(this.isCircular ? t : n < 0 ? 0 : n, this.center[2] / 2) - this.offset);
+				return this.postTranslate(this.isCircular ? n : this.angleRad, (0, y.pick)(this.isCircular ? t : n < 0 ? 0 : n, this.center[2] / 2) - this.offset);
 			}
 			function u() {
 				let e = this.center, t = this.chart, n = this.options.title;
@@ -2483,73 +2268,82 @@ var t = /* @__PURE__ */ e(((e, t) => {
 				};
 			}
 			function d(e) {
-				e.beforeSetTickPositions = t, e.createLabelCollector = n, e.getCrosshairPosition = i, e.getLinePath = a, e.getOffset = o, e.getPlotBandPath = s, e.getPlotLinePath = c, e.getPosition = l, e.getTitlePosition = u, e.postTranslate = x, e.setAxisSize = C, e.setAxisTranslation = w, e.setOptions = T;
+				e.beforeSetTickPositions = t, e.createLabelCollector = n, e.getCrosshairPosition = i, e.getLinePath = a, e.getOffset = o, e.getPlotBandPath = s, e.getPlotLinePath = c, e.getPosition = l, e.getTitlePosition = u, e.postTranslate = C, e.setAxisSize = T, e.setAxisTranslation = E, e.setOptions = D;
 			}
 			function f() {
 				let e = this.chart, t = this.options, n = e.angular && this.isXAxis, r = this.pane, i = r?.options;
 				if (!n && r && (e.angular || e.polar)) {
-					let e = 2 * Math.PI, n = (R(i.startAngle, 0) - 90) * Math.PI / 180, r = (R(i.endAngle, R(i.startAngle, 0) + 360) - 90) * Math.PI / 180;
-					this.angleRad = (t.angle || 0) * Math.PI / 180, this.startAngleRad = n, this.endAngleRad = r, this.offset = t.offset || 0;
-					let a = (n % e + e) % e, o = (r % e + e) % e;
-					a > Math.PI && (a -= e), o > Math.PI && (o -= e), this.normalizedStartAngleRad = a, this.normalizedEndAngleRad = o;
+					let n = 2 * Math.PI, r = i.startAngle ?? (e.angular ? -135 : 0), a = (r - 90) * Math.PI / 180, o = ((0, y.pick)(i.endAngle, r + (e.angular ? 270 : 360)) - 90) * Math.PI / 180;
+					this.angleRad = (t.angle || 0) * Math.PI / 180, this.startAngleRad = a, this.endAngleRad = o;
+					let s = (a % n + n) % n, c = (o % n + n) % n;
+					s > Math.PI && (s -= n), c > Math.PI && (c -= n), this.normalizedStartAngleRad = s, this.normalizedEndAngleRad = c;
 				}
 			}
 			function p(e) {
+				if (this.chart.angular) {
+					let { options: t, pane: n } = this;
+					n.hasSeriesType("gauge") && (e.tickSize = [t[`${e.prefix}Length`] ?? 10, t[`${e.prefix}Width`] ?? 1], t[`${e.prefix}Position`] === "inside" && (e.tickSize[0] *= -1));
+				}
+			}
+			function m(e) {
 				this.isRadial && (e.align = void 0, e.preventDefault());
 			}
-			function m() {
+			function h() {
 				if (this.chart?.labelCollectors) {
 					let e = this.labelCollector ? this.chart.labelCollectors.indexOf(this.labelCollector) : -1;
 					e >= 0 && this.chart.labelCollectors.splice(e, 1);
 				}
 			}
-			function h(e) {
+			function g(e) {
 				let t, n = this.chart, i = n.angular, a = n.polar, o = this.isXAxis, s = this.coll, c = e.userOptions.pane || 0, l = this.pane = n.pane && n.pane[c];
 				if (s === "colorAxis") {
 					this.isRadial = !1;
 					return;
 				}
-				i ? (i && o ? (this.isHidden = !0, this.createLabelCollector = r, this.getOffset = xn, this.redraw = S, this.render = S, this.setScale = xn, this.setCategories = xn, this.setTitle = xn) : d(this), t = !o) : a && (d(this), t = this.horiz), i || a ? (this.isRadial = !0, this.labelCollector ||= this.createLabelCollector(), this.labelCollector && n.labelCollectors.push(this.labelCollector)) : this.isRadial = !1, l && t && (l.axis = this), this.isCircular = t;
+				i ? (i && o ? (this.isHidden = !0, this.createLabelCollector = r, this.getOffset = Y, this.redraw = w, this.render = w, this.setCategories = Y, this.setTitle = Y) : d(this), t = !o) : a && (d(this), t = this.horiz), i || a ? (this.isRadial = !0, this.labelCollector ||= this.createLabelCollector(), this.labelCollector && n.labelCollectors.push(this.labelCollector)) : this.isRadial = !1, l && t && (l.axis = this), this.isCircular = t;
 			}
-			function g() {
-				this.isRadial && this.beforeSetTickPositions();
-			}
-			function _(e) {
-				let t = this.label;
-				if (!t) return;
-				let n = this.axis, r = t.getBBox(), i = n.options.labels, a = (n.translate(this.pos) + n.startAngleRad + Math.PI / 2) / Math.PI * 180 % 360, o = Math.round(a), s = M(i.y) ? 0 : -(.3 * r.height), c = i.y, l, u = 20, d = i.align, f = "end", p = o < 0 ? o + 360 : o, m = p, h = 0, g = 0;
-				n.isRadial && (l = n.getPosition(this.pos, n.center[2] / 2 + B(R(i.distance, -25), n.center[2] / 2, -n.center[2] / 2)), i.rotation === "auto" ? t.attr({ rotation: a }) : M(c) || (c = n.chart.renderer.fontMetrics(t).b - r.height / 2), M(d) || (n.isCircular ? (r.width > n.len * n.tickInterval / (n.max - n.min) && (u = 0), d = a > u && a < 180 - u ? "left" : a > 180 + u && a < 360 - u ? "right" : "center") : d = "center", t.attr({ align: d })), d === "auto" && n.tickPositions.length === 2 && n.isCircular && (p > 90 && p < 180 ? p = 180 - p : p > 270 && p <= 360 && (p = 540 - p), m > 180 && m <= 360 && (m = 360 - m), (n.pane.options.startAngle === o || n.pane.options.startAngle === o + 360 || n.pane.options.startAngle === o - 360) && (f = "start"), d = o >= -90 && o <= 90 || o >= -360 && o <= -270 || o >= 270 && o <= 360 ? f === "start" ? "right" : "left" : f === "start" ? "left" : "right", m > 70 && m < 110 && (d = "center"), p < 15 || p >= 180 && p < 195 ? h = .3 * r.height : p >= 15 && p <= 35 ? h = f === "start" ? 0 : .75 * r.height : p >= 195 && p <= 215 ? h = f === "start" ? .75 * r.height : 0 : p > 35 && p <= 90 ? h = f === "start" ? -(.25 * r.height) : r.height : p > 215 && p <= 270 && (h = f === "start" ? r.height : -(.25 * r.height)), m < 15 ? g = f === "start" ? -(.15 * r.height) : .15 * r.height : m > 165 && m <= 180 && (g = f === "start" ? .15 * r.height : -(.15 * r.height)), t.attr({ align: d }), t.translate(g, h + s)), e.pos.x = l.x + (i.x || 0), e.pos.y = l.y + (c || 0));
+			function _() {
+				this.isRadial && this.beforeSetTickPositions?.();
 			}
 			function v(e) {
-				this.axis.getPosition && N(e.pos, this.axis.getPosition(this.pos));
+				let t = this.label;
+				if (!t) return;
+				let n = this.axis, r = t.getBBox(), i = n.options.labels, a = (n.translate(this.pos) + n.startAngleRad + Math.PI / 2) / Math.PI * 180 % 360, o = Math.round(a), s = (0, y.defined)(i.y) ? 0 : -(.3 * r.height), c = i.y, l, u = 20, d = i.align, f = "end", p = o < 0 ? o + 360 : o, m = p, h = 0, g = 0;
+				n.isRadial && (l = n.getPosition(this.pos, n.center[2] / 2 + (0, y.relativeLength)(i.distance ?? -25, n.center[2] / 2) + n.offset), i.rotation === "auto" ? t.attr({ rotation: a }) : (0, y.defined)(c) || (c = n.chart.renderer.fontMetrics(t).b - r.height / 2), (0, y.defined)(d) || (n.isCircular ? (r.width > n.len * n.tickInterval / (n.max - n.min) && (u = 0), d = a > u && a < 180 - u ? "left" : a > 180 + u && a < 360 - u ? "right" : "center") : d = "center", t.attr({ align: d })), d === "auto" && n.tickPositions.length === 2 && n.isCircular && (p > 90 && p < 180 ? p = 180 - p : p > 270 && p <= 360 && (p = 540 - p), m > 180 && m <= 360 && (m = 360 - m), (n.pane.options.startAngle === o || n.pane.options.startAngle === o + 360 || n.pane.options.startAngle === o - 360) && (f = "start"), d = o >= -90 && o <= 90 || o >= -360 && o <= -270 || o >= 270 && o <= 360 ? f === "start" ? "right" : "left" : f === "start" ? "left" : "right", m > 70 && m < 110 && (d = "center"), p < 15 || p >= 180 && p < 195 ? h = .3 * r.height : p >= 15 && p <= 35 ? h = f === "start" ? 0 : .75 * r.height : p >= 195 && p <= 215 ? h = f === "start" ? .75 * r.height : 0 : p > 35 && p <= 90 ? h = f === "start" ? -(.25 * r.height) : r.height : p > 215 && p <= 270 && (h = f === "start" ? r.height : -(.25 * r.height)), m < 15 ? g = f === "start" ? -(.15 * r.height) : .15 * r.height : m > 165 && m <= 180 && (g = f === "start" ? .15 * r.height : -(.15 * r.height)), t.attr({ align: d }), t.translate(g, h + s)), e.pos.x = l.x + (i.x || 0), e.pos.y = l.y + (c || 0));
 			}
-			function b({ options: t }) {
-				t.xAxis && I(!0, e.radialDefaultOptions.circular, t.xAxis), t.yAxis && I(!0, e.radialDefaultOptions.radialGauge, t.yAxis);
+			function x(e) {
+				this.axis.getPosition && (0, y.extend)(e.pos, this.axis.getPosition(this.pos));
 			}
-			function x(e, t) {
+			function S({ options: t }) {
+				t.xAxis && (0, y.merge)(!0, e.radialDefaultOptions.circular, t.xAxis), t.yAxis && (0, y.merge)(!0, e.radialDefaultOptions.radialGauge, t.yAxis);
+			}
+			function C(e, t) {
 				let n = this.chart, r = this.center;
 				return e = this.startAngleRad + e, {
 					x: n.plotLeft + r[0] + Math.cos(e) * t,
 					y: n.plotTop + r[1] + Math.sin(e) * t
 				};
 			}
-			function S() {
+			function w() {
 				this.isDirty = !1;
 			}
-			function C() {
+			function T() {
 				let e, t;
-				this.constructor.prototype.setAxisSize.call(this), this.isRadial && (this.pane.updateCenter(this), e = this.center = this.pane.center.slice(), this.isCircular ? this.sector = this.endAngleRad - this.startAngleRad : (t = this.postTranslate(this.angleRad, e[3] / 2), e[0] = t.x - this.chart.plotLeft, e[1] = t.y - this.chart.plotTop), this.len = this.width = this.height = (e[2] - e[3]) * R(this.sector, 1) / 2);
+				this.constructor.prototype.setAxisSize.call(this), this.isRadial && (this.pane.updateCenter(), e = this.center = this.pane.center.slice(), this.isCircular ? (this.sector = this.endAngleRad - this.startAngleRad, this.len = this.width = this.height = e[2] * this.sector / 2) : (t = this.postTranslate(this.angleRad, e[3] / 2), e[0] = t.x - this.chart.plotLeft, e[1] = t.y - this.chart.plotTop, this.len = this.width = this.height = (e[2] - e[3]) / 2));
 			}
-			function w() {
+			function E() {
 				this.constructor.prototype.setAxisTranslation.call(this), this.center && (this.isCircular ? this.transA = (this.endAngleRad - this.startAngleRad) / (this.max - this.min || 1) : this.transA = (this.center[2] - this.center[3]) / 2 / (this.max - this.min || 1), this.isXAxis ? this.minPixelPadding = this.transA * this.minPointOffset : this.minPixelPadding = 0);
 			}
-			function T(t) {
+			function D(t) {
 				let { coll: n } = this, { angular: r, inverted: i, polar: a } = this.chart, o = {};
-				r ? this.isXAxis || (o = I(Z.yAxis, e.radialDefaultOptions.radialGauge)) : a && (o = this.horiz ? I(Z.xAxis, e.radialDefaultOptions.circular) : I(n === "xAxis" ? Z.xAxis : Z.yAxis, e.radialDefaultOptions.radial)), i && n === "yAxis" && (o.stackLabels = F(Z.yAxis, !0) ? Z.yAxis.stackLabels : {}, o.reversedStacks = !0);
-				let s = this.options = I(o, t);
-				s.plotBands ||= [], ee(this, "afterSetOptions");
+				r ? this.isXAxis || (o = (0, y.merge)(J.yAxis, e.radialDefaultOptions.radialGauge)) : a && (o = this.horiz ? (0, y.merge)(J.xAxis, e.radialDefaultOptions.circular) : (0, y.merge)(n === "xAxis" ? J.xAxis : J.yAxis, e.radialDefaultOptions.radial)), i && n === "yAxis" && (o.stackLabels = (0, y.isObject)(J.yAxis, !0) ? J.yAxis.stackLabels : {}, o.reversedStacks = !0);
+				let s = this.options = (0, y.merge)(o, t);
+				s.plotBands ||= [], (0, y.fireEvent)(this, "afterSetOptions");
 			}
-			function D(e, t, n, r, i, a, o) {
+			function O(e) {
+				return !(0, y.defined)(this.options.minorTicks) && this.pane.hasSeriesType("gauge") ? "auto" : e.apply(this, Array.prototype.slice.call(arguments, 1));
+			}
+			function k(e, t, n, r, i, a, o) {
 				let s, c = this.axis;
 				return c.isRadial ? [
 					"M",
@@ -2560,35 +2354,26 @@ var t = /* @__PURE__ */ e(((e, t) => {
 					s.y
 				] : e.call(this, t, n, r, i, a, o);
 			}
-			e.radialDefaultOptions = I(yn), e.compose = function(e, t) {
-				return z(bn, "Axis.Radial") && (E(e, "afterInit", f), E(e, "autoLabelAlign", p), E(e, "destroy", m), E(e, "init", h), E(e, "initialAxisTranslation", g), E(t, "afterGetLabelPosition", _), E(t, "afterGetPosition", v), E(y(), "setOptions", b), V(t.prototype, "getMarkPath", D)), e;
+			e.radialDefaultOptions = (0, y.merge)(Ut), e.compose = function(e, t) {
+				return (0, y.pushUnique)(Wt, "Axis.Radial") && ((0, y.addEvent)(e, "afterInit", f), (0, y.addEvent)(e, "afterTickSize", p), (0, y.addEvent)(e, "autoLabelAlign", m), (0, y.addEvent)(e, "destroy", h), (0, y.addEvent)(e, "init", g), (0, y.addEvent)(e, "initialAxisTranslation", _), (0, y.addEvent)(t, "afterGetLabelPosition", v), (0, y.addEvent)(t, "afterGetPosition", x), (0, y.addEvent)(b(), "setOptions", S), (0, y.wrap)(e.prototype, "getMinorTickInterval", O), (0, y.wrap)(t.prototype, "getMarkPath", k)), e;
 			};
-		})(f ||= {});
-		let Sn = f, { animObject: Cn } = y(), { optionsToObject: wn } = {
-			compose: function(e, t, n) {
-				let r = e.types.pie;
-				if (!t.symbolCustomAttribs.includes("borderRadius")) {
-					let i = n.prototype.symbols;
-					E(e, "afterColumnTranslate", hn, { order: 9 }), E(r, "afterTranslate", _n), t.symbolCustomAttribs.push("borderRadius", "brBoxHeight", "brBoxY", "brEnd", "brStart"), fn = i.arc, pn = i.roundedRect, i.arc = mn, i.roundedRect = vn;
-				}
-			},
-			optionsToObject: gn
-		}, { defaultOptions: Tn } = y(), { composed: En } = y();
-		function Dn() {
+		})(p ||= {});
+		let Gt = p, { animObject: Kt } = b(), { defaultOptions: qt } = b(), { composed: Jt } = b();
+		function Yt() {
 			(this.pane || []).forEach((e) => {
 				e.render();
 			});
 		}
-		function On(e) {
+		function Xt(e) {
 			let t = e.args[0].xAxis, n = e.args[0].yAxis, r = e.args[0].chart;
 			t && n && (n.gridLineInterpolation === "polygon" ? (t.startOnTick = !0, t.endOnTick = !0) : t.gridLineInterpolation === "polygon" && r.inverted && (n.startOnTick = !0, n.endOnTick = !0));
 		}
-		function kn() {
-			this.pane ||= [], this.options.pane = ae(this.options.pane || {}), ae(this.userOptions.pane || {}).forEach((e) => {
-				new _e(e, this);
+		function Zt() {
+			this.pane ||= [], this.options.pane = (0, y.splat)(this.options.pane || {}), (0, y.splat)(this.userOptions.pane || {}).forEach((e) => {
+				new j(e, this);
 			}, this);
 		}
-		function An(e) {
+		function Qt(e) {
 			let t = e.args.marker, n = this.chart.xAxis[0], r = this.chart.yAxis[0], i = this.chart.inverted, a = i ? r : n, o = i ? n : r;
 			if (this.chart.polar) {
 				e.preventDefault();
@@ -2596,7 +2381,7 @@ var t = /* @__PURE__ */ e(((e, t) => {
 				e.result.x = n + a.pos, e.result.width = i - n, e.result.y = o.len + o.pos - r, e.result.height = r - s;
 			}
 		}
-		function jn(e) {
+		function $t(e) {
 			let t = this.chart;
 			if (t.polar && t.hoverPane && t.hoverPane.axis) {
 				e.preventDefault();
@@ -2615,7 +2400,7 @@ var t = /* @__PURE__ */ e(((e, t) => {
 							let { min: t, max: n } = e.getExtremes();
 							o = n - (t - o);
 						}
-						o < a && (o = [a, a = o][0]), (i = In(i, a, o, e)).push([
+						o < a && (o = [a, a = o][0]), (i = an(i, a, o, e)).push([
 							"L",
 							n[0] + t.plotLeft,
 							t.plotTop + n[1]
@@ -2638,20 +2423,20 @@ var t = /* @__PURE__ */ e(((e, t) => {
 						let e = d.d.slice(0, d.d.length / 2), n = d.d.slice(d.d.length / 2, d.d.length);
 						n = [...n].reverse();
 						let r = t.hoverPane.axis;
-						e = In(e, a, o, r), (n = In(n, a, o, r)) && (n[0][0] = "L"), n = [...n].reverse(), d.d = e.concat(n), f = "path";
+						e = an(e, a, o, r), (n = an(n, a, o, r)) && (n[0][0] = "L"), n = [...n].reverse(), d.d = e.concat(n), f = "path";
 					}
 				}
 				e.attrs = d, e.shapeType = f;
 			}
 		}
-		function Mn() {
+		function en() {
 			let e = this.chart;
-			e.polar && (this.polar = new Kn(this), e.inverted && (this.isRadialSeries = !0, this.is("column") && (this.isRadialBar = !0)));
+			e.polar && (this.polar = new hn(this), e.inverted && (this.isRadialSeries = !0, this.is("column") && (this.isRadialBar = !0)));
 		}
-		function Nn() {
+		function tn() {
 			let { chart: e, options: t, yAxis: n } = this;
 			if (t.borderRadius && e.polar && e.inverted) {
-				let e = Tn.plotOptions?.[this.type]?.borderRadius, { scope: r, where: i = "end" } = wn(t.borderRadius, F(e) ? e : {});
+				let e = qt.plotOptions?.[this.type]?.borderRadius, { scope: r, where: i = "end" } = Bt(t.borderRadius, (0, y.isObject)(e) ? e : {});
 				for (let e of this.points) {
 					let { shapeArgs: a } = e;
 					if (e.shapeType === "arc" && a) {
@@ -2661,13 +2446,13 @@ var t = /* @__PURE__ */ e(((e, t) => {
 				}
 			}
 		}
-		function Pn() {
+		function nn() {
 			if (this.chart.polar && this.xAxis) {
 				let { xAxis: e, yAxis: t } = this, n = this.chart;
-				this.kdByAngle = n.tooltip && n.tooltip.shared, this.kdByAngle || n.inverted ? this.searchPoint = Fn : this.options.findNearestPointBy = "xy";
+				this.kdByAngle = n.tooltip && n.tooltip.shared, this.kdByAngle || n.inverted ? this.searchPoint = rn : this.options.findNearestPointBy = "xy";
 				let r = this.points, i = r.length;
-				for (; i--;) this.is("column") || this.is("columnrange") || this.polar.toXY(r[i]), n.hasParallelCoordinates || this.yAxis.reversed || (R(r[i].y, 5e-324) < t.min || r[i].x < e.min || r[i].x > e.max ? (r[i].isNull = !0, r[i].plotY = NaN) : r[i].isNull = r[i].isValid && !r[i].isValid());
-				this.hasClipCircleSetter ||= !!this.eventsToUnbind.push(E(this, "afterRender", function() {
+				for (; i--;) this.is("column") || this.is("columnrange") || this.polar.toXY(r[i]), n.hasParallelCoordinates || this.yAxis.reversed || ((0, y.pick)(r[i].y, 5e-324) < t.min || r[i].x < e.min || r[i].x > e.max ? (r[i].isNull = !0, r[i].plotY = NaN) : r[i].isNull = r[i].isValid && !r[i].isValid());
+				this.hasClipCircleSetter ||= !!this.eventsToUnbind.push((0, y.addEvent)(this, "afterRender", function() {
 					let e;
 					if (n.polar && !1 !== this.options.clip) {
 						if (e = this.yAxis.pane.center, this.clipCircle) this.clipCircle.animate({
@@ -2679,64 +2464,64 @@ var t = /* @__PURE__ */ e(((e, t) => {
 						else {
 							var t, r, i, a, o;
 							let s, c, l;
-							this.clipCircle = (t = n.renderer, r = e[0], i = e[1], a = e[2] / 2, o = e[3] / 2, s = (0, v.uniqueKey)(), c = t.createElement("clipPath").attr({ id: s }).add(t.defs), (l = o ? t.arc(r, i, a, o, 0, 2 * Math.PI).add(c) : t.circle(r, i, a).add(c)).id = s, l.clipPath = c, l);
+							this.clipCircle = (t = n.renderer, r = e[0], i = e[1], a = e[2] / 2, o = e[3] / 2, s = (0, y.uniqueKey)(), c = t.createElement("clipPath").attr({ id: s }).add(t.defs), (l = o ? t.arc(r, i, a, o, 0, 2 * Math.PI).add(c) : t.circle(r, i, a).add(c)).id = s, l.clipPath = c, l);
 						}
-						this.group.clip(this.clipCircle), this.setClip = y().noop;
+						this.group.clip(this.clipCircle), this.setClip = b().noop;
 					}
 				}));
 			}
 		}
-		function Fn(e) {
+		function rn(e) {
 			let t = this.chart, n = this.xAxis, r = this.yAxis, i = n.pane && n.pane.center, a = e.chartX - (i && i[0] || 0) - t.plotLeft, o = e.chartY - (i && i[1] || 0) - t.plotTop, s = t.inverted ? {
 				clientX: e.chartX - r.pos,
 				plotY: e.chartY - n.pos
 			} : { clientX: 180 + -180 / Math.PI * Math.atan2(a, o) };
 			return this.searchKDTree(s);
 		}
-		function In(e, t, n, r) {
-			let i = r.tickInterval, a = r.tickPositions, o = te(a, (e) => e >= n), s = te([...a].reverse(), (e) => e <= t);
-			return M(o) || (o = a[a.length - 1]), M(s) || (s = a[0], o += i, e[0][0] = "L", e.unshift(e[e.length - 3])), (e = e.slice(a.indexOf(s), a.indexOf(o) + 1))[0][0] = "M", e;
+		function an(e, t, n, r) {
+			let i = r.tickInterval, a = r.tickPositions, o = (0, y.find)(a, (e) => e >= n), s = (0, y.find)([...a].reverse(), (e) => e <= t);
+			return (0, y.defined)(o) || (o = a[a.length - 1]), (0, y.defined)(s) || (s = a[0], o += i, e[0][0] = "L", e.unshift(e[e.length - 3])), (e = e.slice(a.indexOf(s), a.indexOf(o) + 1))[0][0] = "M", e;
 		}
-		function Ln(e, t) {
-			return te(this.pane || [], (e) => e.options.id === t) || e.call(this, t);
+		function on(e, t) {
+			return (0, y.find)(this.pane || [], (e) => e.options.id === t) || e.call(this, t);
 		}
-		function Rn(e, t, n, r, i, a) {
-			let o, s, c, l = this.chart, u = R(r.inside, !!this.options.stacking);
+		function sn(e, t, n, r, i, a) {
+			let o, s, c, l = this.chart, u = (0, y.pick)(r.inside, !!this.options.stacking);
 			if (l.polar) {
-				if (o = t.rectPlotX / Math.PI * 180, l.inverted) this.forceDL = l.isInsidePlot(t.plotX, t.plotY), u && t.shapeArgs ? (s = t.shapeArgs, i = I(i, {
-					x: (c = this.yAxis.postTranslate(((s.start || 0) + (s.end || 0)) / 2 - this.xAxis.startAngleRad, t.barX + (t.pointWidth || 0) / 2)).x - l.plotLeft,
+				if (o = t.rectPlotX / Math.PI * 180, l.inverted) this.forceDL = l.isInsidePlot(t.plotX, t.plotY), u && t.shapeArgs ? (s = t.shapeArgs, c = this.yAxis.postTranslate(((s.start || 0) + (s.end || 0)) / 2 - this.xAxis.startAngleRad, t.barX + (t.pointWidth || 0) / 2), i = (0, y.merge)(i, {
+					x: c.x - l.plotLeft,
 					y: c.y - l.plotTop
-				})) : t.tooltipPos && (i = I(i, {
+				})) : t.tooltipPos && (i = (0, y.merge)(i, {
 					x: t.tooltipPos[0],
 					y: t.tooltipPos[1]
-				})), r.align = R(r.align, "center"), r.verticalAlign = R(r.verticalAlign, "middle");
+				})), r.align = (0, y.pick)(r.align, "center"), r.verticalAlign = (0, y.pick)(r.verticalAlign, "middle");
 				else {
 					var d;
 					(d = r).align === null && (d.align = o > 20 && o < 160 ? "left" : o > 200 && o < 340 ? "right" : "center"), d.verticalAlign === null && (d.verticalAlign = o < 45 || o > 315 ? "bottom" : o > 135 && o < 225 ? "top" : "middle"), r = d;
 				}
-				C().prototype.alignDataLabel.call(this, t, n, r, i, a), this.isRadialBar && t.shapeArgs && t.shapeArgs.start === t.shapeArgs.end ? n.hide() : n.show();
+				Ht().prototype.alignDataLabel.call(this, t, n, r, i, a), this.isRadialBar && t.shapeArgs && t.shapeArgs.start === t.shapeArgs.end ? n.hide() : n.show();
 			} else e.call(this, t, n, r, i, a);
 		}
-		function zn() {
-			let e = this.options, t = e.stacking, n = this.chart, r = this.xAxis, i = this.yAxis, a = i.reversed, o = i.center, s = r.startAngleRad, c = r.endAngleRad - s, l = e.threshold, u = 0, d, f, p, m, h, g = 0, _ = 0, v, y, b, x, S, C, w, T;
-			if (r.isRadial) for (p = (d = this.points).length, m = i.translate(i.min), h = i.translate(i.max), l = e.threshold || 0, n.inverted && P(l) && M(u = i.translate(l)) && (u < 0 ? u = 0 : u > c && (u = c), this.translatedThreshold = u + s); p--;) {
-				if (C = (f = d[p]).barX, y = f.x, b = f.y, f.shapeType = "arc", n.inverted) {
-					f.plotY = i.translate(b), t && i.stacking ? (S = i.stacking.stacks[(b < 0 ? "-" : "") + this.stackKey], this.visible && S && S[y] && !f.isNull && (x = S[y].points[this.getStackIndicator(void 0, y, this.index).key], g = i.translate(x[0]), _ = i.translate(x[1]), M(g) && (g = k(g, 0, c)))) : (g = u, _ = f.plotY), g > _ && (_ = [g, g = _][0]), a ? _ > m ? _ = m : g < h ? g = h : (g > m || _ < h) && (g = _ = c) : g < m ? g = m : _ > h ? _ = h : (_ < m || g > h) && (g = _ = 0), i.min > i.max && (g = _ = a ? c : 0), g += s, _ += s, o && (f.barX = C += o[3] / 2), w = Math.max(C, 0), T = Math.max(C + (f.pointWidth || 0), 0);
-					let n = e.borderRadius, r = B((typeof n == "object" ? n.radius : n) || 0, T - w);
+		function cn() {
+			let e = this.options, t = e.stacking, n = this.chart, r = this.xAxis, i = this.yAxis, a = i.reversed, o = i.center, s = r.startAngleRad, c = r.endAngleRad - s, l = e.threshold, u = 0, d, f, p, m, h, g = 0, _ = 0, v, b, x, S, C, w, T, E;
+			if (r.isRadial) for (p = (d = this.points).length, m = i.translate(i.min), h = i.translate(i.max), l = e.threshold || 0, n.inverted && (0, y.isNumber)(l) && (u = i.translate(l), (0, y.defined)(u) && (u < 0 ? u = 0 : u > c && (u = c), this.translatedThreshold = u + s)); p--;) {
+				if (w = (f = d[p]).barX, b = f.x, x = f.y, f.shapeType = "arc", n.inverted) {
+					f.plotY = i.translate(x), t && i.stacking ? (C = i.stacking.stacks[(x < 0 ? "-" : "") + this.stackKey], this.visible && C && C[b] && !f.isNull && (S = C[b].points[this.getStackIndicator(void 0, b, this.index).key], g = i.translate(S[0]), _ = i.translate(S[1]), (0, y.defined)(g) && (g = (0, y.clamp)(g, 0, c)))) : (g = u, _ = f.plotY), g > _ && (_ = [g, g = _][0]), a ? _ > m ? _ = m : g < h ? g = h : (g > m || _ < h) && (g = _ = c) : g < m ? g = m : _ > h ? _ = h : (_ < m || g > h) && (g = _ = 0), i.min > i.max && (g = _ = a ? c : 0), g += s, _ += s, o && (f.barX = w += o[3] / 2), T = Math.max(w, 0), E = Math.max(w + (f.pointWidth || 0), 0);
+					let n = e.borderRadius, r = typeof n == "object" ? n.radius : n, l = (0, y.relativeLength)(r || 0, E - T);
 					f.shapeArgs = {
 						x: o[0],
 						y: o[1],
-						r: T,
-						innerR: w,
+						r: E,
+						innerR: T,
 						start: g,
 						end: _,
-						borderRadius: r
-					}, f.opacity = g === _ ? 0 : void 0, f.plotY = (M(this.translatedThreshold) && (g < this.translatedThreshold ? g : _)) - s;
-				} else g = C + s, f.shapeArgs = this.polar.arc(f.yBottom, f.plotY, g, g + (f.pointWidth || 0)), f.shapeArgs.borderRadius = 0;
-				this.polar.toXY(f), n.inverted ? (v = i.postTranslate(f.rectPlotY, C + (f.pointWidth || 0) / 2), f.tooltipPos = [v.x - n.plotLeft, v.y - n.plotTop]) : f.tooltipPos = [f.plotX, f.plotY], o && (f.ttBelow = f.plotY > o[1]);
+						borderRadius: l
+					}, f.opacity = g === _ ? 0 : void 0, f.plotY = ((0, y.defined)(this.translatedThreshold) && (g < this.translatedThreshold ? g : _)) - s;
+				} else g = w + s, f.shapeArgs = this.polar.arc(f.yBottom, f.plotY, g, g + (f.pointWidth || 0)), f.shapeArgs.borderRadius = 0;
+				this.polar.toXY(f), n.inverted ? (v = i.postTranslate(f.rectPlotY, w + (f.pointWidth || 0) / 2), f.tooltipPos = [v.x - n.plotLeft, v.y - n.plotTop]) : f.tooltipPos = [f.plotX, f.plotY], o && (f.ttBelow = f.plotY > o[1]);
 			}
 		}
-		function Bn(e, t) {
+		function ln(e, t) {
 			let n, r, i = this;
 			if (this.chart.polar) {
 				t ||= this.points;
@@ -2751,7 +2536,7 @@ var t = /* @__PURE__ */ e(((e, t) => {
 			let a = e.apply(this, [].slice.call(arguments, 1));
 			return r && t.pop(), a;
 		}
-		function Vn(e, t) {
+		function un(e, t) {
 			let n = this.chart, r = {
 				xAxis: [],
 				yAxis: []
@@ -2765,12 +2550,12 @@ var t = /* @__PURE__ */ e(((e, t) => {
 				});
 			}) : r = e.call(this, t), r;
 		}
-		function Hn(e, t) {
+		function dn(e, t) {
 			this.chart.polar || e.call(this, t);
 		}
-		function Un(e, t) {
+		function fn(e, t) {
 			let n = this, r = this.chart, i = this.group, a = this.markerGroup, o = this.xAxis && this.xAxis.center, s = r.plotLeft, c = r.plotTop, l = this.options.animation, u, d, f, p, m, h;
-			r.polar ? n.isRadialBar ? t || (n.startAngleRad = R(n.translatedThreshold, n.xAxis.startAngleRad), y().seriesTypes.pie.prototype.animate.call(n, t)) : (l = Cn(l), n.is("column") ? t || (d = o[3] / 2, n.points.forEach((e) => {
+			r.polar ? n.isRadialBar ? t || (n.startAngleRad = (0, y.pick)(n.translatedThreshold, n.xAxis.startAngleRad), b().seriesTypes.pie.prototype.animate.call(n, t)) : (l = Kt(l), n.is("column") ? t || (d = o[3] / 2, n.points.forEach((e) => {
 				f = e.graphic, m = (p = e.shapeArgs) && p.r, h = p && p.innerR, f && p && (f.attr({
 					r: d,
 					innerR: d
@@ -2790,7 +2575,7 @@ var t = /* @__PURE__ */ e(((e, t) => {
 				scaleY: 1
 			}, i.animate(u, l), a && a.animate(u, l))) : e.call(this, t);
 		}
-		function Wn(e, t, n, r) {
+		function pn(e, t, n, r) {
 			let i, a;
 			if (this.chart.polar) if (r) {
 				let e = (a = function e(t, n, r, i) {
@@ -2810,10 +2595,10 @@ var t = /* @__PURE__ */ e(((e, t) => {
 				}(t, r, !0, this.connectEnds)).prevPointCont && a.prevPointCont.rightContX, n = a.prevPointCont && a.prevPointCont.rightContY;
 				i = [
 					"C",
-					P(e) ? e : a.plotX,
-					P(n) ? n : a.plotY,
-					P(a.leftContX) ? a.leftContX : a.plotX,
-					P(a.leftContY) ? a.leftContY : a.plotY,
+					(0, y.isNumber)(e) ? e : a.plotX,
+					(0, y.isNumber)(n) ? n : a.plotY,
+					(0, y.isNumber)(a.leftContX) ? a.leftContX : a.plotX,
+					(0, y.isNumber)(a.leftContY) ? a.leftContY : a.plotY,
 					a.plotX,
 					a.plotY
 				];
@@ -2825,23 +2610,25 @@ var t = /* @__PURE__ */ e(((e, t) => {
 			else i = e.call(this, t, n, r);
 			return i;
 		}
-		function Gn(e, t, n = this.plotY) {
-			if (!this.destroyed) {
-				let { plotX: r, series: i } = this, { chart: a } = i;
-				return a.polar && P(r) && P(n) ? [r + (t ? a.plotLeft : 0), n + (t ? a.plotTop : 0)] : e.call(this, t, n);
-			}
+		function mn(e, t, n = this.plotX, r = this.plotY) {
+			let { series: i } = this, { chart: a } = i || {};
+			return a?.polar && (0, y.isNumber)(n) && (0, y.isNumber)(r) ? [n + (t ? a.plotLeft : 0), r + (t ? a.plotTop : 0)] : e.call(this, t, n, r);
 		}
-		class Kn {
+		class hn {
 			static compose(e, t, n, r, i, a, o, s, c, l) {
-				if (_e.compose(t, n, r), Sn.compose(e, i), z(En, "Polar")) {
+				if (j.compose(t, n), Gt.compose(e, i), (0, y.pushUnique)(Jt, "Polar")) {
 					let e = t.prototype, i = a.prototype, u = n.prototype, d = r.prototype;
-					if (E(t, "afterDrawChartBox", Dn), E(t, "createAxes", kn), E(t, "init", On), V(e, "get", Ln), V(u, "getCoordinates", Vn), V(u, "pinch", Hn), E(n, "getSelectionMarkerAttrs", jn), E(n, "getSelectionBox", An), E(r, "afterInit", Mn), E(r, "afterColumnTranslate", Nn, { order: 9 }), E(r, "afterTranslate", Pn, { order: 2 }), E(r, "afterColumnTranslate", zn, { order: 4 }), V(d, "animate", Un), V(i, "pos", Gn), s) {
+					if ((0, y.addEvent)(t, "afterDrawChartBox", Yt), (0, y.addEvent)(t, "createAxes", Zt), (0, y.addEvent)(t, "init", Xt), (0, y.wrap)(e, "get", on), (0, y.wrap)(u, "getCoordinates", un), (0, y.wrap)(u, "pinch", dn), (0, y.addEvent)(n, "getSelectionMarkerAttrs", $t), (0, y.addEvent)(n, "getSelectionBox", Qt), (0, y.addEvent)(r, "afterInit", en), (0, y.addEvent)(r, "afterColumnTranslate", tn, { order: 9 }), (0, y.addEvent)(r, "afterTranslate", nn, { order: 2 }), (0, y.addEvent)(r, "afterColumnTranslate", cn, { order: 4 }), (0, y.wrap)(d, "animate", fn), (0, y.wrap)(i, "pos", mn), s) {
 						let e = s.prototype;
-						V(e, "alignDataLabel", Rn), V(e, "animate", Un);
+						(0, y.wrap)(e, "alignDataLabel", sn), (0, y.wrap)(e, "animate", fn);
 					}
-					if (c && V(c.prototype, "getGraphPath", Bn), l) {
+					if (c) {
+						let e = c.prototype;
+						(0, y.wrap)(e, "getGraphPath", ln);
+					}
+					if (l) {
 						let e = l.prototype;
-						V(e, "getPointSpline", Wn), o && (o.prototype.getPointSpline = e.getPointSpline);
+						(0, y.wrap)(e, "getPointSpline", pn), o && (o.prototype.getPointSpline = e.getPointSpline);
 					}
 				}
 			}
@@ -2849,7 +2636,7 @@ var t = /* @__PURE__ */ e(((e, t) => {
 				this.series = e;
 			}
 			arc(e, t, n, r) {
-				let i = this.series, a = i.xAxis.center, o = i.yAxis.len, s = a[3] / 2, c = o - t + s, l = o - R(e, o) + s;
+				let i = this.series, a = i.xAxis.center, o = i.yAxis.len, s = a[3] / 2, c = o - t + s, l = o - (0, y.pick)(e, o) + s;
 				return i.yAxis.reversed && (c < 0 && (c = s), l < 0 && (l = s)), {
 					x: a[0],
 					y: a[1],
@@ -2861,15 +2648,15 @@ var t = /* @__PURE__ */ e(((e, t) => {
 			}
 			toXY(e) {
 				let t = this.series, n = t.chart, r = t.xAxis, i = t.yAxis, a = e.plotX, o = n.inverted, s = e.y, c = e.plotY, l = o ? a : i.len - c, u;
-				if (o && t && !t.isRadialBar && (e.plotY = c = P(s) ? i.translate(s) : 0), e.rectPlotX = a, e.rectPlotY = c, i.center && (l += i.center[3] / 2), P(c)) {
+				if (o && t && !t.isRadialBar && (e.plotY = c = (0, y.isNumber)(s) ? i.translate(s) : 0), e.rectPlotX = a, e.rectPlotY = c, i.center && (l += i.center[3] / 2), (0, y.isNumber)(c)) {
 					let t = o ? i.postTranslate(c, l) : r.postTranslate(a, l);
 					e.plotX = e.polarPlotX = t.x - n.plotLeft, e.plotY = e.polarPlotY = t.y - n.plotTop;
 				}
-				t.kdByAngle ? ((u = (a / Math.PI * 180 + r.pane.options.startAngle) % 360) < 0 && (u += 360), e.clientX = u) : e.clientX = e.plotX;
+				t.kdByAngle ? ((u = (a / Math.PI * 180 + (r.pane.options.startAngle || 0)) % 360) < 0 && (u += 360), e.clientX = u) : e.clientX = e.plotX;
 			}
 		}
-		var qn = g(184), Jn = g.n(qn);
-		let { composed: Yn } = y();
+		var gn = _(184), _n = _.n(gn);
+		let { composed: vn } = b();
 		(function(e) {
 			function t() {
 				let e = this.waterfall?.stacks;
@@ -2889,59 +2676,59 @@ var t = /* @__PURE__ */ e(((e, t) => {
 				}
 			}
 			e.compose = function(e, a) {
-				z(Yn, "Axis.Waterfall") && (E(e, "init", r), E(e, "afterBuildStacks", t), E(e, "afterRender", n), E(a, "beforeRedraw", i));
+				(0, y.pushUnique)(vn, "Axis.Waterfall") && ((0, y.addEvent)(e, "init", r), (0, y.addEvent)(e, "afterBuildStacks", t), (0, y.addEvent)(e, "afterRender", n), (0, y.addEvent)(a, "beforeRedraw", i));
 			};
 			class a {
 				constructor(e) {
 					this.axis = e, this.stacks = { changed: !1 };
 				}
 				renderStackTotals() {
-					let e = this.axis, t = e.waterfall?.stacks, n = e.stacking?.stackTotalGroup, r = new (Jn())(e, e.options.stackLabels || {}, !1, 0, void 0);
-					this.dummyStackItem = r, n && L(t, (e) => {
-						L(e, (e, t) => {
-							r.total = e.stackTotal, r.x = +t, e.label && (r.label = e.label), Jn().prototype.render.call(r, n), e.label = r.label, delete r.label;
+					let e = this.axis, t = e.waterfall?.stacks, n = e.stacking?.stackTotalGroup, r = new (_n())(e, e.options.stackLabels || {}, !1, 0, void 0);
+					this.dummyStackItem = r, n && (0, y.objectEach)(t, (e) => {
+						(0, y.objectEach)(e, (e, t) => {
+							r.total = e.stackTotal, r.x = +t, e.label && (r.label = e.label), _n().prototype.render.call(r, n), e.label = r.label, delete r.label;
 						});
 					}), r.total = null;
 				}
 			}
 			e.Composition = a;
-		})(p ||= {});
-		let Xn = p;
-		class Zn extends Oe().prototype.pointClass {
+		})(m ||= {});
+		let yn = m;
+		class bn extends F().prototype.pointClass {
 			getClassName() {
-				let e = W().prototype.getClassName.call(this);
+				let e = L().prototype.getClassName.call(this);
 				return this.isSum ? e += " highcharts-sum" : this.isIntermediateSum && (e += " highcharts-intermediate-sum"), e;
 			}
 			isValid() {
-				return P(this.y) || this.isSum || !!this.isIntermediateSum;
+				return (0, y.isNumber)(this.y) || this.isSum || !!this.isIntermediateSum;
 			}
 		}
-		let { column: Qn, line: $n } = x().seriesTypes;
-		function er(e, t) {
+		let { column: X, line: xn } = S().seriesTypes;
+		function Z(e, t) {
 			return Object.hasOwnProperty.call(e, t);
 		}
-		class Q extends Qn {
+		class Q extends X {
 			generatePoints() {
-				Qn.prototype.generatePoints.apply(this);
+				X.prototype.generatePoints.apply(this);
 				let e = this.getColumn("y", !0);
 				for (let t = 0, n = this.points.length; t < n; t++) {
 					let n = this.points[t], r = e[t];
-					P(r) && (n.isIntermediateSum || n.isSum) && (n.y = A(r));
+					(0, y.isNumber)(r) && (n.isIntermediateSum || n.isSum) && (n.y = (0, y.correctFloat)(r));
 				}
 			}
 			processData(e) {
-				let t, n, r, i, a, o, s = this.options, c = this.getColumn("y"), l = s.data, u = c.length, d = s.threshold || 0;
-				r = n = i = a = 0;
-				for (let e = 0; e < u; e++) o = c[e], t = l?.[e] || {}, o === "sum" || t.isSum ? c[e] = A(r) : o === "intermediateSum" || t.isIntermediateSum ? (c[e] = A(n), n = 0) : (r += o, n += o), i = Math.min(r, i), a = Math.max(r, a);
-				super.processData.call(this, e), s.stacking || (this.dataMin = i + d, this.dataMax = a);
+				let t, n, r, i, a, o = this.options, s = this.getColumn("y"), c = this.getColumn("isSum"), l = this.getColumn("isIntermediateSum"), u = s.length, d = o.threshold || 0;
+				n = t = r = i = 0;
+				for (let e = 0; e < u; e++) (a = s[e]) === "sum" || c[e] ? s[e] = (0, y.correctFloat)(n) : a === "intermediateSum" || l[e] ? (s[e] = (0, y.correctFloat)(t), t = 0) : (n += a, t += a), r = Math.min(n, r), i = Math.max(n, i);
+				super.processData.call(this, e), o.stacking || (this.dataMin = r + d, this.dataMax = i);
 			}
 			toYData(e) {
 				return e.isSum ? "sum" : e.isIntermediateSum ? "intermediateSum" : e.y;
 			}
 			pointAttribs(e, t) {
 				let n = this.options.upColor;
-				n && !e.options.color && P(e.y) && (e.color = e.y > 0 ? n : void 0);
-				let r = Qn.prototype.pointAttribs.call(this, e, t);
+				n && !e.options.color && (0, y.isNumber)(e.y) && (e.color = e.y > 0 ? n : void 0);
+				let r = X.prototype.pointAttribs.call(this, e, t);
 				return delete r.dashstyle, r;
 			}
 			getGraphPath() {
@@ -2952,15 +2739,15 @@ var t = /* @__PURE__ */ e(((e, t) => {
 				]];
 			}
 			getCrispPath() {
-				let e = this.points.filter((e) => P(e.y)), t = this.yAxis, n = e.length, r = this.graph?.strokeWidth() || 0, i = this.xAxis.reversed, a = this.yAxis.reversed, o = this.options.stacking, s = [];
+				let e = this.points.filter((e) => (0, y.isNumber)(e.y)), t = this.yAxis, n = e.length, r = this.graph?.strokeWidth() || 0, i = this.xAxis.reversed, a = this.yAxis.reversed, o = this.options.stacking, s = [];
 				for (let c = 1; c < n; c++) {
-					if (!(this.options.connectNulls || P(this.data[e[c].index - 1].y))) continue;
+					if (!(this.options.connectNulls || (0, y.isNumber)(this.data[e[c].index - 1].y))) continue;
 					let n = e[c].box, l = e[c - 1], u = l.y || 0, d = e[c - 1].box;
 					if (!n || !d) continue;
 					let f = t.waterfall?.stacks[this.stackKey], p = u > 0 ? -d.height : 0;
 					if (f && d && n) {
 						let e, u = f[c - 1];
-						e = j(o ? t.translate(u.connectorThreshold || 0, !1, !0, !1, !0) + (a ? p : 0) : d.y + (l.minPointLengthOffset || 0), r), s.push([
+						e = o ? (0, y.crisp)(t.translate(u.connectorThreshold || 0, !1, !0, !1, !0) + (a ? p : 0), r) : (0, y.crisp)(d.y + (l.minPointLengthOffset || 0), r), s.push([
 							"M",
 							(d.x || 0) + (i ? 0 : d.width || 0),
 							e
@@ -2980,10 +2767,10 @@ var t = /* @__PURE__ */ e(((e, t) => {
 				return s;
 			}
 			drawGraph() {
-				$n.prototype.drawGraph.call(this), this.graph?.animate({ d: this.getCrispPath() });
+				xn.prototype.drawGraph.call(this), this.graph?.animate({ d: this.getCrispPath() });
 			}
 			setStackedPoints(e) {
-				let t = this.options, n = e.waterfall?.stacks, r = t.threshold || 0, i = this.stackKey, a = this.getColumn("x"), o = this.getColumn("y"), s = a.length, c = r, l = c, u, d = 0, f = 0, p = 0, m, h, g, _, v, y, b, x, S = (e, t, n, r) => {
+				let t = this.options, n = e.waterfall?.stacks, r = t.threshold || 0, i = this.stackKey, a = this.getColumn("x"), o = this.getColumn("y"), s = a.length, c = r, l = c, u, d = 0, f = 0, p = 0, m, h, g, _, v, b, x, S, C = (e, t, n, r) => {
 					if (u) {
 						if (m) for (; n < m; n++) u.stackState[n] += r;
 						else u.stackState[0] = e, m = u.stackState.length;
@@ -2991,77 +2778,79 @@ var t = /* @__PURE__ */ e(((e, t) => {
 					}
 				};
 				if (e.stacking && n && this.reserveSpace()) {
-					x = n.changed, (b = n.alreadyChanged) && 0 > b.indexOf(i) && (x = !0), n[i] || (n[i] = {});
+					S = n.changed, (x = n.alreadyChanged) && 0 > x.indexOf(i) && (S = !0), n[i] || (n[i] = {});
 					let e = n[i];
-					if (e) for (let n = 0; n < s; n++) (!e[y = a[n]] || x) && (e[y] = {
+					if (e) for (let n = 0; n < s; n++) (!e[b = a[n]] || S) && (e[b] = {
 						negTotal: 0,
 						posTotal: 0,
 						stackTotal: 0,
 						threshold: 0,
 						stateIndex: 0,
 						stackState: [],
-						label: x && e[y] ? e[y].label : void 0
-					}), u = e[y], (v = o[n]) >= 0 ? u.posTotal += v : u.negTotal += v, _ = t.data[n], h = u.absolutePos = u.posTotal, g = u.absoluteNeg = u.negTotal, u.stackTotal = h + g, m = u.stackState.length, _?.isIntermediateSum ? (S(p, f, 0, p), p = f, f = r, c ^= l, l ^= c, c ^= l) : _?.isSum ? (S(r, d, m, 0), c = r) : (S(c, v, 0, d), _ && (d += v, f += v)), u.stateIndex++, u.threshold = c, c += u.stackTotal;
+						label: S && e[b] ? e[b].label : void 0
+					}), u = e[b], (v = o[n]) >= 0 ? u.posTotal += v : u.negTotal += v, _ = t.data?.[n], h = u.absolutePos = u.posTotal, g = u.absoluteNeg = u.negTotal, u.stackTotal = h + g, m = u.stackState.length, (0, y.isObject)(_, !0) && _.isIntermediateSum ? (C(p, f, 0, p), p = f, f = r, c ^= l, l ^= c, c ^= l) : (0, y.isObject)(_, !0) && _.isSum ? (C(r, d, m, 0), c = r) : (C(c, v, 0, d), _ && (d += v, f += v)), u.stateIndex++, u.threshold = c, c += u.stackTotal;
 					n.changed = !1, n.alreadyChanged ||= [], n.alreadyChanged.push(i);
 				}
 			}
 			getExtremes() {
 				let e, t, n = this.options.stacking, r = this.yAxis.waterfall?.stacks;
-				return n && r ? (e = this.stackedYNeg = [], t = this.stackedYPos = [], n === "overlap" ? L(r[this.stackKey], function(n) {
-					e.push(D(n.stackState)), t.push(O(n.stackState));
-				}) : L(r[this.stackKey], function(n) {
+				return n && r ? (e = this.stackedYNeg = [], t = this.stackedYPos = [], n === "overlap" ? (0, y.objectEach)(r[this.stackKey], function(n) {
+					e.push((0, y.arrayMin)(n.stackState)), t.push((0, y.arrayMax)(n.stackState));
+				}) : (0, y.objectEach)(r[this.stackKey], function(n) {
 					e.push(n.negTotal + n.threshold), t.push(n.posTotal + n.threshold);
 				}), {
-					dataMin: D(e),
-					dataMax: O(t)
+					dataMin: (0, y.arrayMin)(e),
+					dataMax: (0, y.arrayMax)(t)
 				}) : {
 					dataMin: this.dataMin,
 					dataMax: this.dataMax
 				};
 			}
 		}
-		Q.defaultOptions = I(Qn.defaultOptions, {
+		Q.defaultOptions = (0, y.merge)(X.defaultOptions, {
 			dataLabels: { inside: !0 },
 			lineWidth: 1,
-			lineColor: "#333333",
+			lineColor: "var(--highcharts-neutral-color-80)",
 			dashStyle: "Dot",
-			borderColor: "#333333",
+			borderColor: "var(--highcharts-neutral-color-80)",
 			states: { hover: { lineWidthPlus: 0 } }
-		}), Q.compose = Xn.compose, N(Q.prototype, {
+		}), Q.compose = yn.compose, (0, y.extend)(Q.prototype, {
 			pointValKey: "y",
 			showLine: !0,
-			pointClass: Zn
-		}), E(Q, "afterColumnTranslate", function() {
-			let { options: e, points: t, yAxis: n } = this, r = R(e.minPointLength, 5), i = r / 2, a = e.threshold || 0, o = e.stacking, s = n.waterfall?.stacks[this.stackKey], c = this.getColumn("y", !0), l = a, u = a, d, f, p;
+			pointClass: bn
+		}), (0, y.addEvent)(Q, "afterColumnTranslate", function() {
+			let { options: e, points: t, yAxis: n } = this, r = (0, y.pick)(e.minPointLength, 5), i = r / 2, a = e.threshold || 0, o = e.stacking, s = n.waterfall?.stacks[this.stackKey], c = this.getColumn("y", !0), l = a, u = a, d, f, p;
 			for (let e = 0; e < t.length; e++) {
-				let m = t[e], h = c[e], g = N({
+				let m = t[e], h = c[e], g = m.shapeArgs, _ = (0, y.extend)({
 					x: 0,
 					y: 0,
 					width: 0,
 					height: 0
-				}, m.shapeArgs || {});
-				m.box = g;
-				let _ = [0, h], v = m.y || 0;
+				}, g || {});
+				m.box = _;
+				let v = [0, h], b = m.y || 0;
 				if (o) {
 					if (s) {
 						let t = s[e];
-						o === "overlap" ? (f = t.stackState[t.stateIndex--], d = v >= 0 ? f : f - v, er(t, "absolutePos") && delete t.absolutePos, er(t, "absoluteNeg") && delete t.absoluteNeg) : (v >= 0 ? (f = t.threshold + t.posTotal, t.posTotal -= v, d = f) : (f = t.threshold + t.negTotal, t.negTotal -= v, d = f - v), !t.posTotal && P(t.absolutePos) && er(t, "absolutePos") && (t.posTotal = t.absolutePos, delete t.absolutePos), !t.negTotal && P(t.absoluteNeg) && er(t, "absoluteNeg") && (t.negTotal = t.absoluteNeg, delete t.absoluteNeg)), m.isSum || (t.connectorThreshold = t.threshold + t.stackTotal), p = d - Math.abs(v), n.reversed && ([d, p] = [p, d]), m.below = d <= a, g.y = n.translate(d, !1, !0, !1, !0), g.height = n.translate(p, !1, !0, !1, !0) - g.y;
+						o === "overlap" ? (f = t.stackState[t.stateIndex--], d = b >= 0 ? f : f - b, Z(t, "absolutePos") && delete t.absolutePos, Z(t, "absoluteNeg") && delete t.absoluteNeg) : (b >= 0 ? (f = t.threshold + t.posTotal, t.posTotal -= b, d = f) : (f = t.threshold + t.negTotal, t.negTotal -= b, d = f - b), !t.posTotal && (0, y.isNumber)(t.absolutePos) && Z(t, "absolutePos") && (t.posTotal = t.absolutePos, delete t.absolutePos), !t.negTotal && (0, y.isNumber)(t.absoluteNeg) && Z(t, "absoluteNeg") && (t.negTotal = t.absoluteNeg, delete t.absoluteNeg)), m.isSum || (t.connectorThreshold = t.threshold + t.stackTotal), p = d - Math.abs(b), n.reversed && ([d, p] = [p, d]), m.below = d <= a, _.y = n.translate(d, !1, !0, !1, !0), _.height = n.translate(p, !1, !0, !1, !0) - _.y;
 						let r = n.waterfall?.dummyStackItem;
 						r && (r.x = e, r.label = s[e].label, r.setOffset(this.pointXOffset || 0, this.barW || 0, this.stackedYNeg[e], this.stackedYPos[e], void 0, this.xAxis));
 					}
-				} else d = Math.max(u, u + v) + _[0], g.y = n.translate(d, !1, !0, !1, !0), m.isSum ? (g.y = n.translate(_[1], !1, !0, !1, !0), g.height = Math.min(n.translate(_[0], !1, !0, !1, !0), n.len) - g.y, m.below = _[1] <= a) : m.isIntermediateSum ? (v >= 0 ? (d = _[1] + l, p = l) : (d = l, p = _[1] + l), n.reversed && ([d, p] = [p, d]), g.y = n.translate(d, !1, !0, !1, !0), g.height = Math.abs(g.y - Math.min(n.translate(p, !1, !0, !1, !0), n.len)), l += _[1], m.below = d <= a) : (g.height = h > 0 ? n.translate(u, !1, !0, !1, !0) - g.y : n.translate(u + h, !1, !0, !1, !0) - n.translate(u, !1, !0, !1, !0), m.below = (u += h) < a);
-				g.height < 0 && (g.y += g.height, g.height *= -1), m.plotY = g.y, m.yBottom = g.y + g.height, g.height <= r && !m.isNull ? (g.height = r, g.y -= i, m.yBottom = g.y + g.height, m.plotY = g.y, v < 0 ? m.minPointLengthOffset = -i : m.minPointLengthOffset = i) : (m.isNull && (g.width = 0), m.minPointLengthOffset = 0);
-				let y = m.plotY + (m.negative ? g.height : 0);
-				m.below && (m.plotY += g.height), m.tooltipPos && (this.chart.inverted ? m.tooltipPos[0] = n.len - y : m.tooltipPos[1] = y), m.isInside = this.isPointInside(m);
-				let b = j(m.yBottom, this.borderWidth);
-				g.y = j(g.y, this.borderWidth), g.height = b - g.y, I(!0, m.shapeArgs, g);
+				} else d = Math.max(u, u + b) + v[0], _.y = n.translate(d, !1, !0, !1, !0), m.isSum ? (_.y = n.translate(v[1], !1, !0, !1, !0), _.height = Math.min(n.translate(v[0], !1, !0, !1, !0), n.len) - _.y, m.below = v[1] <= a) : m.isIntermediateSum ? (b >= 0 ? (d = v[1] + l, p = l) : (d = l, p = v[1] + l), n.reversed && ([d, p] = [p, d]), _.y = n.translate(d, !1, !0, !1, !0), _.height = Math.abs(_.y - Math.min(n.translate(p, !1, !0, !1, !0), n.len)), l += v[1], m.below = d <= a) : (_.height = h > 0 ? n.translate(u, !1, !0, !1, !0) - _.y : n.translate(u + h, !1, !0, !1, !0) - n.translate(u, !1, !0, !1, !0), m.below = (u += h) < a);
+				_.height < 0 && (_.y += _.height, _.height *= -1), m.plotY = _.y, m.yBottom = _.y + _.height, _.height <= r && !m.isNull ? (_.height = r, _.y -= i, m.yBottom = _.y + _.height, m.plotY = _.y, b < 0 ? m.minPointLengthOffset = -i : m.minPointLengthOffset = i) : (m.isNull && (_.width = 0), m.minPointLengthOffset = 0);
+				let x = m.plotY + (m.negative ? _.height : 0);
+				m.below && (m.plotY += _.height), m.tooltipPos && (this.chart.inverted ? m.tooltipPos[0] = n.len - x : m.tooltipPos[1] = x), m.isInside = this.isPointInside(m);
+				let S = (0, y.crisp)(m.yBottom, this.borderWidth);
+				_.y = (0, y.crisp)(_.y, this.borderWidth), _.height = S - _.y, (0, y.merge)(!0, m.shapeArgs, _);
 			}
-		}, { order: 2 }), x().registerSeriesType("waterfall", Q);
-		let $ = y();
-		$.RadialAxis = Sn, G.compose($.Axis, $.Chart, $.Legend), nn.compose($.Axis, $.Chart, $.Legend), _e.compose($.Chart, $.Pointer, $.Series), Kn.compose($.Axis, $.Chart, $.Pointer, $.Series, $.Tick, $.Point, x().seriesTypes.areasplinerange, x().seriesTypes.column, x().seriesTypes.line, x().seriesTypes.spline), Q.compose($.Axis, $.Chart);
-		let tr = $;
-		return _.default;
+		}, { order: 2 }), S().registerSeriesType("waterfall", Q);
+		let $ = b();
+		$.RadialAxis = Gt, R.compose($.Axis, $.Chart, $.Legend), q.compose($.Axis, $.Chart, $.Legend), j.compose($.Chart, $.Pointer), hn.compose($.Axis, $.Chart, $.Pointer, $.Series, $.Tick, $.Point, S().seriesTypes.areasplinerange, S().seriesTypes.column, S().seriesTypes.line, S().seriesTypes.spline), Q.compose($.Axis, $.Chart);
+		let Sn = $;
+		return v.default;
 	})());
 }));
 //#endregion
 export default t();
+
+//# sourceMappingURL=highcharts-more-0p0GqZ8D.js.map
