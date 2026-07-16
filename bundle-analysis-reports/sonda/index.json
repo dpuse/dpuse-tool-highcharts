@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "0.14.0",
-    "generatedAt": "2026-07-15T20:47:27.183Z",
+    "generatedAt": "2026-07-16T08:21:32.494Z",
     "integration": "vite",
     "sources": false,
     "gzip": false,
@@ -21,9 +21,9 @@
       "name": "[unassigned]",
       "type": "other",
       "format": "other",
-      "uncompressed": 28439,
+      "uncompressed": 28106,
       "gzip": 0,
-      "brotli": 981,
+      "brotli": 966,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -31,152 +31,188 @@
       "name": "[unassigned]",
       "type": "other",
       "format": "other",
-      "uncompressed": 4349,
+      "uncompressed": 3267,
       "gzip": 0,
-      "brotli": 415,
-      "parent": "dist/BorderRadius-BO3V-8GG.js"
+      "brotli": 357,
+      "parent": "dist/AnimationUtilities-CfxhHVEw.js"
     },
     {
       "kind": "chunk",
       "name": "[unassigned]",
       "type": "other",
       "format": "other",
-      "uncompressed": 1368,
+      "uncompressed": 4398,
       "gzip": 0,
-      "brotli": 268,
-      "parent": "dist/SVGElement-0ERYDlUm.js"
+      "brotli": 427,
+      "parent": "dist/BorderRadius-7nQt-8g5.js"
     },
     {
       "kind": "chunk",
       "name": "[unassigned]",
       "type": "other",
       "format": "other",
-      "uncompressed": 4160,
+      "uncompressed": 1374,
       "gzip": 0,
-      "brotli": 397,
-      "parent": "dist/SeriesRegistry-BGZZizI3.js"
+      "brotli": 275,
+      "parent": "dist/SVGElement-B5kGfp8c.js"
     },
     {
       "kind": "chunk",
       "name": "[unassigned]",
       "type": "other",
       "format": "other",
-      "uncompressed": 617,
+      "uncompressed": 1303,
       "gzip": 0,
-      "brotli": 197,
-      "parent": "dist/TextPath-BtwIAWQC.js"
+      "brotli": 277,
+      "parent": "dist/SeriesRegistry-Drf7P7c8.js"
     },
     {
       "kind": "chunk",
       "name": "[unassigned]",
       "type": "other",
       "format": "other",
-      "uncompressed": 1099,
+      "uncompressed": 619,
       "gzip": 0,
-      "brotli": 243,
-      "parent": "dist/dependency-wheel.src-Do6WEv1U.js"
+      "brotli": 215,
+      "parent": "dist/TextPath-lds_aJTY.js"
     },
     {
       "kind": "chunk",
       "name": "[unassigned]",
       "type": "other",
       "format": "other",
-      "uncompressed": 2704,
+      "uncompressed": 1149,
       "gzip": 0,
-      "brotli": 336,
-      "parent": "dist/highchartsMoreCustom-BbFIr2hA.js"
+      "brotli": 264,
+      "parent": "dist/dependency-wheel.src-dRVAmx_u.js"
     },
     {
       "kind": "chunk",
       "name": "[unassigned]",
       "type": "other",
       "format": "other",
-      "uncompressed": 2055,
+      "uncompressed": 2747,
       "gzip": 0,
-      "brotli": 295,
-      "parent": "dist/sankey.src-B6FOI3xv.js"
+      "brotli": 365,
+      "parent": "dist/highchartsMoreCustom-B8EuHJut.js"
     },
     {
       "kind": "chunk",
       "name": "[unassigned]",
       "type": "other",
       "format": "other",
-      "uncompressed": 247,
+      "uncompressed": 604,
       "gzip": 0,
-      "brotli": 142,
-      "parent": "dist/streamgraph.src-DAf1Z8NV.js"
+      "brotli": 224,
+      "parent": "dist/pattern-fill.src-CvycQkcy.js"
+    },
+    {
+      "kind": "chunk",
+      "name": "[unassigned]",
+      "type": "other",
+      "format": "other",
+      "uncompressed": 2104,
+      "gzip": 0,
+      "brotli": 311,
+      "parent": "dist/sankey.src-DCYYFonz.js"
+    },
+    {
+      "kind": "chunk",
+      "name": "[unassigned]",
+      "type": "other",
+      "format": "other",
+      "uncompressed": 298,
+      "gzip": 0,
+      "brotli": 175,
+      "parent": "dist/streamgraph.src-DzwaRGXG.js"
     },
     {
       "kind": "asset",
-      "name": "dist/BorderRadius-BO3V-8GG.js",
+      "name": "dist/AnimationUtilities-CfxhHVEw.js",
       "type": "script",
-      "uncompressed": 63574,
+      "uncompressed": 34484,
       "gzip": 0,
-      "brotli": 19406
+      "brotli": 10872
     },
     {
       "kind": "asset",
-      "name": "dist/dependency-wheel.src-Do6WEv1U.js",
+      "name": "dist/BorderRadius-7nQt-8g5.js",
       "type": "script",
-      "uncompressed": 5623,
+      "uncompressed": 63621,
       "gzip": 0,
-      "brotli": 2014
+      "brotli": 19440
+    },
+    {
+      "kind": "asset",
+      "name": "dist/dependency-wheel.src-dRVAmx_u.js",
+      "type": "script",
+      "uncompressed": 5673,
+      "gzip": 0,
+      "brotli": 2032
     },
     {
       "kind": "asset",
       "name": "dist/dpuse-tool-highcharts.es.js",
       "type": "script",
-      "uncompressed": 421083,
+      "uncompressed": 412547,
       "gzip": 0,
-      "brotli": 101110
+      "brotli": 98722
     },
     {
       "kind": "asset",
-      "name": "dist/highchartsMoreCustom-BbFIr2hA.js",
+      "name": "dist/highchartsMoreCustom-B8EuHJut.js",
       "type": "script",
-      "uncompressed": 38788,
+      "uncompressed": 38831,
       "gzip": 0,
-      "brotli": 11401
+      "brotli": 11399
     },
     {
       "kind": "asset",
-      "name": "dist/sankey.src-B6FOI3xv.js",
+      "name": "dist/pattern-fill.src-CvycQkcy.js",
       "type": "script",
-      "uncompressed": 16312,
+      "uncompressed": 8933,
       "gzip": 0,
-      "brotli": 5183
+      "brotli": 2892
     },
     {
       "kind": "asset",
-      "name": "dist/SeriesRegistry-BGZZizI3.js",
+      "name": "dist/sankey.src-DCYYFonz.js",
       "type": "script",
-      "uncompressed": 54339,
+      "uncompressed": 16361,
       "gzip": 0,
-      "brotli": 17263
+      "brotli": 5193
     },
     {
       "kind": "asset",
-      "name": "dist/streamgraph.src-DAf1Z8NV.js",
+      "name": "dist/SeriesRegistry-Drf7P7c8.js",
       "type": "script",
-      "uncompressed": 737,
+      "uncompressed": 20200,
       "gzip": 0,
-      "brotli": 404
+      "brotli": 7194
     },
     {
       "kind": "asset",
-      "name": "dist/SVGElement-0ERYDlUm.js",
+      "name": "dist/streamgraph.src-DzwaRGXG.js",
       "type": "script",
-      "uncompressed": 16623,
+      "uncompressed": 788,
       "gzip": 0,
-      "brotli": 5562
+      "brotli": 432
     },
     {
       "kind": "asset",
-      "name": "dist/TextPath-BtwIAWQC.js",
+      "name": "dist/SVGElement-B5kGfp8c.js",
       "type": "script",
-      "uncompressed": 4772,
+      "uncompressed": 16629,
       "gzip": 0,
-      "brotli": 1885
+      "brotli": 5557
+    },
+    {
+      "kind": "asset",
+      "name": "dist/TextPath-lds_aJTY.js",
+      "type": "script",
+      "uncompressed": 4774,
+      "gzip": 0,
+      "brotli": 1887
     },
     {
       "kind": "filesystem",
@@ -192,7 +228,7 @@
       "format": "esm",
       "uncompressed": 1962,
       "gzip": 0,
-      "brotli": 637,
+      "brotli": 641,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -209,7 +245,7 @@
       "format": "esm",
       "uncompressed": 4625,
       "gzip": 0,
-      "brotli": 1104,
+      "brotli": 1100,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -226,7 +262,7 @@
       "format": "esm",
       "uncompressed": 765,
       "gzip": 0,
-      "brotli": 285,
+      "brotli": 281,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -243,7 +279,7 @@
       "format": "esm",
       "uncompressed": 1660,
       "gzip": 0,
-      "brotli": 520,
+      "brotli": 522,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -258,9 +294,9 @@
       "name": "node_modules/highcharts/es-modules/Accessibility/Components/ContainerComponent.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1879,
+      "uncompressed": 1880,
       "gzip": 0,
-      "brotli": 507,
+      "brotli": 504,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -275,7 +311,7 @@
       "name": "node_modules/highcharts/es-modules/Accessibility/Components/InfoRegionsComponent.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 9450,
+      "uncompressed": 9449,
       "gzip": 0,
       "brotli": 2053,
       "parent": "dist/dpuse-tool-highcharts.es.js"
@@ -294,7 +330,7 @@
       "format": "esm",
       "uncompressed": 6741,
       "gzip": 0,
-      "brotli": 1708,
+      "brotli": 1700,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -309,9 +345,9 @@
       "name": "node_modules/highcharts/es-modules/Accessibility/Components/MenuComponent.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 5132,
+      "uncompressed": 5133,
       "gzip": 0,
-      "brotli": 1140,
+      "brotli": 1133,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -328,7 +364,7 @@
       "format": "esm",
       "uncompressed": 3667,
       "gzip": 0,
-      "brotli": 966,
+      "brotli": 959,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -343,9 +379,9 @@
       "name": "node_modules/highcharts/es-modules/Accessibility/Components/RangeSelectorComponent.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 6218,
+      "uncompressed": 6220,
       "gzip": 0,
-      "brotli": 1357,
+      "brotli": 1350,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -362,7 +398,7 @@
       "format": "esm",
       "uncompressed": 2668,
       "gzip": 0,
-      "brotli": 633,
+      "brotli": 631,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -379,7 +415,7 @@
       "format": "esm",
       "uncompressed": 3540,
       "gzip": 0,
-      "brotli": 881,
+      "brotli": 892,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -396,7 +432,7 @@
       "format": "esm",
       "uncompressed": 1254,
       "gzip": 0,
-      "brotli": 348,
+      "brotli": 347,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -413,7 +449,7 @@
       "format": "esm",
       "uncompressed": 7608,
       "gzip": 0,
-      "brotli": 1706,
+      "brotli": 1701,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -428,9 +464,9 @@
       "name": "node_modules/highcharts/es-modules/Accessibility/Components/SeriesComponent/SeriesKeyboardNavigation.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 8444,
+      "uncompressed": 8445,
       "gzip": 0,
-      "brotli": 2000,
+      "brotli": 1987,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -445,9 +481,9 @@
       "name": "node_modules/highcharts/es-modules/Accessibility/Components/ZoomComponent.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 4185,
+      "uncompressed": 4187,
       "gzip": 0,
-      "brotli": 1037,
+      "brotli": 1038,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -464,7 +500,7 @@
       "format": "esm",
       "uncompressed": 3372,
       "gzip": 0,
-      "brotli": 916,
+      "brotli": 918,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -481,7 +517,7 @@
       "format": "esm",
       "uncompressed": 1230,
       "gzip": 0,
-      "brotli": 425,
+      "brotli": 435,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -530,9 +566,9 @@
       "name": "node_modules/highcharts/es-modules/Accessibility/KeyboardNavigationHandler.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 486,
+      "uncompressed": 487,
       "gzip": 0,
-      "brotli": 206,
+      "brotli": 219,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -549,7 +585,7 @@
       "format": "esm",
       "uncompressed": 1499,
       "gzip": 0,
-      "brotli": 472,
+      "brotli": 473,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -566,7 +602,7 @@
       "format": "esm",
       "uncompressed": 3593,
       "gzip": 0,
-      "brotli": 787,
+      "brotli": 780,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -583,7 +619,7 @@
       "format": "esm",
       "uncompressed": 9680,
       "gzip": 0,
-      "brotli": 1413,
+      "brotli": 1408,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -600,7 +636,7 @@
       "format": "esm",
       "uncompressed": 3001,
       "gzip": 0,
-      "brotli": 905,
+      "brotli": 896,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -617,7 +653,7 @@
       "format": "esm",
       "uncompressed": 4159,
       "gzip": 0,
-      "brotli": 947,
+      "brotli": 943,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -634,7 +670,7 @@
       "format": "esm",
       "uncompressed": 1105,
       "gzip": 0,
-      "brotli": 327,
+      "brotli": 328,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -651,7 +687,7 @@
       "format": "esm",
       "uncompressed": 3786,
       "gzip": 0,
-      "brotli": 1044,
+      "brotli": 1051,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -668,7 +704,7 @@
       "format": "esm",
       "uncompressed": 373,
       "gzip": 0,
-      "brotli": 139,
+      "brotli": 146,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -702,7 +738,7 @@
       "format": "esm",
       "uncompressed": 3499,
       "gzip": 0,
-      "brotli": 983,
+      "brotli": 978,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -717,10 +753,10 @@
       "name": "node_modules/highcharts/es-modules/Core/Animation/AnimationUtilities.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1393,
+      "uncompressed": 1390,
       "gzip": 0,
       "brotli": 579,
-      "parent": "dist/SeriesRegistry-BGZZizI3.js"
+      "parent": "dist/AnimationUtilities-CfxhHVEw.js"
     },
     {
       "kind": "filesystem",
@@ -734,10 +770,10 @@
       "name": "node_modules/highcharts/es-modules/Core/Animation/Fx.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 3264,
+      "uncompressed": 3261,
       "gzip": 0,
-      "brotli": 1109,
-      "parent": "dist/SeriesRegistry-BGZZizI3.js"
+      "brotli": 1115,
+      "parent": "dist/AnimationUtilities-CfxhHVEw.js"
     },
     {
       "kind": "filesystem",
@@ -751,9 +787,9 @@
       "name": "node_modules/highcharts/es-modules/Core/Axis/Axis.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 33957,
+      "uncompressed": 33951,
       "gzip": 0,
-      "brotli": 8646,
+      "brotli": 8632,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -770,7 +806,7 @@
       "format": "esm",
       "uncompressed": 2229,
       "gzip": 0,
-      "brotli": 592,
+      "brotli": 591,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -787,7 +823,7 @@
       "format": "esm",
       "uncompressed": 1430,
       "gzip": 0,
-      "brotli": 519,
+      "brotli": 517,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -804,7 +840,7 @@
       "format": "esm",
       "uncompressed": 1565,
       "gzip": 0,
-      "brotli": 559,
+      "brotli": 555,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -821,7 +857,7 @@
       "format": "esm",
       "uncompressed": 1099,
       "gzip": 0,
-      "brotli": 409,
+      "brotli": 412,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -838,7 +874,7 @@
       "format": "esm",
       "uncompressed": 3331,
       "gzip": 0,
-      "brotli": 1155,
+      "brotli": 1146,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -855,7 +891,7 @@
       "format": "esm",
       "uncompressed": 2037,
       "gzip": 0,
-      "brotli": 580,
+      "brotli": 579,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -872,8 +908,8 @@
       "format": "esm",
       "uncompressed": 12145,
       "gzip": 0,
-      "brotli": 3341,
-      "parent": "dist/highchartsMoreCustom-BbFIr2hA.js"
+      "brotli": 3323,
+      "parent": "dist/highchartsMoreCustom-B8EuHJut.js"
     },
     {
       "kind": "filesystem",
@@ -889,8 +925,8 @@
       "format": "esm",
       "uncompressed": 669,
       "gzip": 0,
-      "brotli": 239,
-      "parent": "dist/highchartsMoreCustom-BbFIr2hA.js"
+      "brotli": 238,
+      "parent": "dist/highchartsMoreCustom-B8EuHJut.js"
     },
     {
       "kind": "filesystem",
@@ -906,7 +942,7 @@
       "format": "esm",
       "uncompressed": 2758,
       "gzip": 0,
-      "brotli": 790,
+      "brotli": 791,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -923,7 +959,7 @@
       "format": "esm",
       "uncompressed": 4606,
       "gzip": 0,
-      "brotli": 1420,
+      "brotli": 1418,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -940,8 +976,8 @@
       "format": "esm",
       "uncompressed": 3110,
       "gzip": 0,
-      "brotli": 1137,
-      "parent": "dist/BorderRadius-BO3V-8GG.js"
+      "brotli": 1144,
+      "parent": "dist/BorderRadius-7nQt-8g5.js"
     },
     {
       "kind": "filesystem",
@@ -957,7 +993,7 @@
       "format": "esm",
       "uncompressed": 7250,
       "gzip": 0,
-      "brotli": 2211,
+      "brotli": 2206,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -974,8 +1010,8 @@
       "format": "esm",
       "uncompressed": 1158,
       "gzip": 0,
-      "brotli": 413,
-      "parent": "dist/highchartsMoreCustom-BbFIr2hA.js"
+      "brotli": 414,
+      "parent": "dist/highchartsMoreCustom-B8EuHJut.js"
     },
     {
       "kind": "filesystem",
@@ -989,9 +1025,9 @@
       "name": "node_modules/highcharts/es-modules/Core/Chart/Chart.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 30480,
+      "uncompressed": 30468,
       "gzip": 0,
-      "brotli": 7829,
+      "brotli": 7804,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -1006,10 +1042,10 @@
       "name": "node_modules/highcharts/es-modules/Core/Chart/ChartDefaults.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 657,
+      "uncompressed": 656,
       "gzip": 0,
-      "brotli": 288,
-      "parent": "dist/SeriesRegistry-BGZZizI3.js"
+      "brotli": 276,
+      "parent": "dist/AnimationUtilities-CfxhHVEw.js"
     },
     {
       "kind": "filesystem",
@@ -1023,10 +1059,10 @@
       "name": "node_modules/highcharts/es-modules/Core/Color/Color.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 2809,
+      "uncompressed": 2805,
       "gzip": 0,
-      "brotli": 959,
-      "parent": "dist/SeriesRegistry-BGZZizI3.js"
+      "brotli": 966,
+      "parent": "dist/AnimationUtilities-CfxhHVEw.js"
     },
     {
       "kind": "filesystem",
@@ -1040,9 +1076,9 @@
       "name": "node_modules/highcharts/es-modules/Core/Color/Palette.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 2072,
+      "uncompressed": 2068,
       "gzip": 0,
-      "brotli": 751,
+      "brotli": 755,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -1057,10 +1093,10 @@
       "name": "node_modules/highcharts/es-modules/Core/Color/PaletteDefaults.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 242,
+      "uncompressed": 241,
       "gzip": 0,
-      "brotli": 106,
-      "parent": "dist/SeriesRegistry-BGZZizI3.js"
+      "brotli": 105,
+      "parent": "dist/AnimationUtilities-CfxhHVEw.js"
     },
     {
       "kind": "filesystem",
@@ -1074,10 +1110,10 @@
       "name": "node_modules/highcharts/es-modules/Core/Defaults.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 4413,
+      "uncompressed": 4407,
       "gzip": 0,
-      "brotli": 1240,
-      "parent": "dist/SeriesRegistry-BGZZizI3.js"
+      "brotli": 1242,
+      "parent": "dist/AnimationUtilities-CfxhHVEw.js"
     },
     {
       "kind": "filesystem",
@@ -1091,10 +1127,10 @@
       "name": "node_modules/highcharts/es-modules/Core/Foundation.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 332,
+      "uncompressed": 333,
       "gzip": 0,
-      "brotli": 158,
-      "parent": "dist/BorderRadius-BO3V-8GG.js"
+      "brotli": 150,
+      "parent": "dist/BorderRadius-7nQt-8g5.js"
     },
     {
       "kind": "filesystem",
@@ -1110,7 +1146,7 @@
       "format": "esm",
       "uncompressed": 639,
       "gzip": 0,
-      "brotli": 264,
+      "brotli": 262,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -1127,8 +1163,8 @@
       "format": "esm",
       "uncompressed": 1280,
       "gzip": 0,
-      "brotli": 473,
-      "parent": "dist/SeriesRegistry-BGZZizI3.js"
+      "brotli": 475,
+      "parent": "dist/AnimationUtilities-CfxhHVEw.js"
     },
     {
       "kind": "filesystem",
@@ -1142,9 +1178,9 @@
       "name": "node_modules/highcharts/es-modules/Core/Legend/Legend.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 15784,
+      "uncompressed": 15783,
       "gzip": 0,
-      "brotli": 3957,
+      "brotli": 3942,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -1161,8 +1197,8 @@
       "format": "esm",
       "uncompressed": 1240,
       "gzip": 0,
-      "brotli": 538,
-      "parent": "dist/BorderRadius-BO3V-8GG.js"
+      "brotli": 539,
+      "parent": "dist/BorderRadius-7nQt-8g5.js"
     },
     {
       "kind": "filesystem",
@@ -1178,7 +1214,7 @@
       "format": "esm",
       "uncompressed": 15746,
       "gzip": 0,
-      "brotli": 3826,
+      "brotli": 3815,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -1193,10 +1229,10 @@
       "name": "node_modules/highcharts/es-modules/Core/Renderer/HTML/AST.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 3798,
+      "uncompressed": 3791,
       "gzip": 0,
-      "brotli": 1459,
-      "parent": "dist/SeriesRegistry-BGZZizI3.js"
+      "brotli": 1566,
+      "parent": "dist/SeriesRegistry-Drf7P7c8.js"
     },
     {
       "kind": "filesystem",
@@ -1210,9 +1246,9 @@
       "name": "node_modules/highcharts/es-modules/Core/Renderer/HTML/HTMLElement.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 3144,
+      "uncompressed": 3145,
       "gzip": 0,
-      "brotli": 954,
+      "brotli": 944,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -1227,9 +1263,9 @@
       "name": "node_modules/highcharts/es-modules/Core/Renderer/RendererUtilities.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1659,
+      "uncompressed": 1663,
       "gzip": 0,
-      "brotli": 571,
+      "brotli": 572,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -1246,8 +1282,8 @@
       "format": "esm",
       "uncompressed": 15255,
       "gzip": 0,
-      "brotli": 5294,
-      "parent": "dist/SVGElement-0ERYDlUm.js"
+      "brotli": 5282,
+      "parent": "dist/SVGElement-B5kGfp8c.js"
     },
     {
       "kind": "filesystem",
@@ -1263,7 +1299,7 @@
       "format": "esm",
       "uncompressed": 5777,
       "gzip": 0,
-      "brotli": 1439,
+      "brotli": 1428,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -1280,7 +1316,7 @@
       "format": "esm",
       "uncompressed": 10558,
       "gzip": 0,
-      "brotli": 3163,
+      "brotli": 3159,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -1297,7 +1333,7 @@
       "format": "esm",
       "uncompressed": 3144,
       "gzip": 0,
-      "brotli": 736,
+      "brotli": 743,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -1314,7 +1350,7 @@
       "format": "esm",
       "uncompressed": 5285,
       "gzip": 0,
-      "brotli": 1524,
+      "brotli": 1520,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -1331,7 +1367,7 @@
       "format": "esm",
       "uncompressed": 1280,
       "gzip": 0,
-      "brotli": 403,
+      "brotli": 399,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -1346,9 +1382,9 @@
       "name": "node_modules/highcharts/es-modules/Core/Series/DataLabel.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 7718,
+      "uncompressed": 7719,
       "gzip": 0,
-      "brotli": 2242,
+      "brotli": 2239,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -1365,7 +1401,7 @@
       "format": "esm",
       "uncompressed": 2834,
       "gzip": 0,
-      "brotli": 904,
+      "brotli": 902,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -1380,10 +1416,10 @@
       "name": "node_modules/highcharts/es-modules/Core/Series/Point.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 10783,
+      "uncompressed": 10769,
       "gzip": 0,
-      "brotli": 3249,
-      "parent": "dist/SeriesRegistry-BGZZizI3.js"
+      "brotli": 3517,
+      "parent": "dist/SeriesRegistry-Drf7P7c8.js"
     },
     {
       "kind": "filesystem",
@@ -1397,10 +1433,10 @@
       "name": "node_modules/highcharts/es-modules/Core/Series/Series.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 37157,
+      "uncompressed": 37158,
       "gzip": 0,
-      "brotli": 10920,
-      "parent": "dist/BorderRadius-BO3V-8GG.js"
+      "brotli": 10931,
+      "parent": "dist/BorderRadius-7nQt-8g5.js"
     },
     {
       "kind": "filesystem",
@@ -1417,7 +1453,7 @@
       "uncompressed": 1265,
       "gzip": 0,
       "brotli": 451,
-      "parent": "dist/BorderRadius-BO3V-8GG.js"
+      "parent": "dist/BorderRadius-7nQt-8g5.js"
     },
     {
       "kind": "filesystem",
@@ -1431,10 +1467,10 @@
       "name": "node_modules/highcharts/es-modules/Core/Series/SeriesRegistry.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 661,
+      "uncompressed": 652,
       "gzip": 0,
-      "brotli": 264,
-      "parent": "dist/SeriesRegistry-BGZZizI3.js"
+      "brotli": 281,
+      "parent": "dist/SeriesRegistry-Drf7P7c8.js"
     },
     {
       "kind": "filesystem",
@@ -1448,10 +1484,10 @@
       "name": "node_modules/highcharts/es-modules/Core/Templating.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 3702,
+      "uncompressed": 3685,
       "gzip": 0,
-      "brotli": 1440,
-      "parent": "dist/SeriesRegistry-BGZZizI3.js"
+      "brotli": 1553,
+      "parent": "dist/SeriesRegistry-Drf7P7c8.js"
     },
     {
       "kind": "filesystem",
@@ -1465,10 +1501,10 @@
       "name": "node_modules/highcharts/es-modules/Core/Time.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 2140,
+      "uncompressed": 2139,
       "gzip": 0,
-      "brotli": 737,
-      "parent": "dist/SeriesRegistry-BGZZizI3.js"
+      "brotli": 765,
+      "parent": "dist/AnimationUtilities-CfxhHVEw.js"
     },
     {
       "kind": "filesystem",
@@ -1482,9 +1518,9 @@
       "name": "node_modules/highcharts/es-modules/Core/Tooltip.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 15488,
+      "uncompressed": 15489,
       "gzip": 0,
-      "brotli": 4345,
+      "brotli": 4342,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -1499,10 +1535,10 @@
       "name": "node_modules/highcharts/es-modules/Core/Utilities.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1526,
+      "uncompressed": 1530,
       "gzip": 0,
-      "brotli": 664,
-      "parent": "dist/SeriesRegistry-BGZZizI3.js"
+      "brotli": 668,
+      "parent": "dist/AnimationUtilities-CfxhHVEw.js"
     },
     {
       "kind": "filesystem",
@@ -1516,10 +1552,10 @@
       "name": "node_modules/highcharts/es-modules/Data/ColumnUtils.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 738,
+      "uncompressed": 736,
       "gzip": 0,
       "brotli": 316,
-      "parent": "dist/BorderRadius-BO3V-8GG.js"
+      "parent": "dist/BorderRadius-7nQt-8g5.js"
     },
     {
       "kind": "filesystem",
@@ -1535,8 +1571,8 @@
       "format": "esm",
       "uncompressed": 1787,
       "gzip": 0,
-      "brotli": 615,
-      "parent": "dist/BorderRadius-BO3V-8GG.js"
+      "brotli": 613,
+      "parent": "dist/BorderRadius-7nQt-8g5.js"
     },
     {
       "kind": "filesystem",
@@ -1552,8 +1588,8 @@
       "format": "esm",
       "uncompressed": 4254,
       "gzip": 0,
-      "brotli": 1472,
-      "parent": "dist/BorderRadius-BO3V-8GG.js"
+      "brotli": 1475,
+      "parent": "dist/BorderRadius-7nQt-8g5.js"
     },
     {
       "kind": "filesystem",
@@ -1569,8 +1605,8 @@
       "format": "esm",
       "uncompressed": 3135,
       "gzip": 0,
-      "brotli": 1094,
-      "parent": "dist/highchartsMoreCustom-BbFIr2hA.js"
+      "brotli": 1087,
+      "parent": "dist/highchartsMoreCustom-B8EuHJut.js"
     },
     {
       "kind": "filesystem",
@@ -1586,8 +1622,8 @@
       "format": "esm",
       "uncompressed": 1478,
       "gzip": 0,
-      "brotli": 547,
-      "parent": "dist/highchartsMoreCustom-BbFIr2hA.js"
+      "brotli": 540,
+      "parent": "dist/highchartsMoreCustom-B8EuHJut.js"
     },
     {
       "kind": "filesystem",
@@ -1604,7 +1640,7 @@
       "uncompressed": 353,
       "gzip": 0,
       "brotli": 162,
-      "parent": "dist/highchartsMoreCustom-BbFIr2hA.js"
+      "parent": "dist/highchartsMoreCustom-B8EuHJut.js"
     },
     {
       "kind": "filesystem",
@@ -1618,10 +1654,10 @@
       "name": "node_modules/highcharts/es-modules/Extensions/PatternFill.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 8300,
+      "uncompressed": 8265,
       "gzip": 0,
-      "brotli": 2134,
-      "parent": "dist/dpuse-tool-highcharts.es.js"
+      "brotli": 2601,
+      "parent": "dist/pattern-fill.src-CvycQkcy.js"
     },
     {
       "kind": "filesystem",
@@ -1635,9 +1671,9 @@
       "name": "node_modules/highcharts/es-modules/Extensions/ScrollablePlotArea.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 5207,
+      "uncompressed": 5211,
       "gzip": 0,
-      "brotli": 1410,
+      "brotli": 1421,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -1654,8 +1690,8 @@
       "format": "esm",
       "uncompressed": 2306,
       "gzip": 0,
-      "brotli": 985,
-      "parent": "dist/TextPath-BtwIAWQC.js"
+      "brotli": 974,
+      "parent": "dist/TextPath-lds_aJTY.js"
     },
     {
       "kind": "filesystem",
@@ -1671,7 +1707,7 @@
       "format": "esm",
       "uncompressed": 20558,
       "gzip": 0,
-      "brotli": 1869,
+      "brotli": 1861,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -1686,9 +1722,9 @@
       "name": "node_modules/highcharts/es-modules/masters/highcharts.src.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 2184,
+      "uncompressed": 2183,
       "gzip": 0,
-      "brotli": 636,
+      "brotli": 634,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -1703,9 +1739,9 @@
       "name": "node_modules/highcharts/es-modules/masters/modules/accessibility.src.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 270,
+      "uncompressed": 271,
       "gzip": 0,
-      "brotli": 132,
+      "brotli": 137,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -1723,7 +1759,7 @@
       "uncompressed": 11,
       "gzip": 0,
       "brotli": 14,
-      "parent": "dist/dependency-wheel.src-Do6WEv1U.js"
+      "parent": "dist/dependency-wheel.src-dRVAmx_u.js"
     },
     {
       "kind": "filesystem",
@@ -1737,10 +1773,10 @@
       "name": "node_modules/highcharts/es-modules/masters/modules/pattern-fill.src.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 71,
+      "uncompressed": 64,
       "gzip": 0,
-      "brotli": 58,
-      "parent": "dist/dpuse-tool-highcharts.es.js"
+      "brotli": 67,
+      "parent": "dist/pattern-fill.src-CvycQkcy.js"
     },
     {
       "kind": "filesystem",
@@ -1757,7 +1793,7 @@
       "uncompressed": 11,
       "gzip": 0,
       "brotli": 14,
-      "parent": "dist/sankey.src-B6FOI3xv.js"
+      "parent": "dist/sankey.src-DCYYFonz.js"
     },
     {
       "kind": "filesystem",
@@ -1780,7 +1816,7 @@
       "format": "esm",
       "uncompressed": 34,
       "gzip": 0,
-      "brotli": 31,
+      "brotli": 30,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -1797,7 +1833,7 @@
       "format": "esm",
       "uncompressed": 3740,
       "gzip": 0,
-      "brotli": 1246,
+      "brotli": 1238,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -1831,8 +1867,8 @@
       "format": "esm",
       "uncompressed": 1405,
       "gzip": 0,
-      "brotli": 345,
-      "parent": "dist/highchartsMoreCustom-BbFIr2hA.js"
+      "brotli": 347,
+      "parent": "dist/highchartsMoreCustom-B8EuHJut.js"
     },
     {
       "kind": "filesystem",
@@ -1848,8 +1884,8 @@
       "format": "esm",
       "uncompressed": 5739,
       "gzip": 0,
-      "brotli": 1633,
-      "parent": "dist/highchartsMoreCustom-BbFIr2hA.js"
+      "brotli": 1628,
+      "parent": "dist/highchartsMoreCustom-B8EuHJut.js"
     },
     {
       "kind": "filesystem",
@@ -1865,7 +1901,7 @@
       "format": "esm",
       "uncompressed": 298,
       "gzip": 0,
-      "brotli": 139,
+      "brotli": 136,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -1882,8 +1918,8 @@
       "format": "esm",
       "uncompressed": 214,
       "gzip": 0,
-      "brotli": 112,
-      "parent": "dist/highchartsMoreCustom-BbFIr2hA.js"
+      "brotli": 114,
+      "parent": "dist/highchartsMoreCustom-B8EuHJut.js"
     },
     {
       "kind": "filesystem",
@@ -1916,8 +1952,8 @@
       "format": "esm",
       "uncompressed": 978,
       "gzip": 0,
-      "brotli": 467,
-      "parent": "dist/BorderRadius-BO3V-8GG.js"
+      "brotli": 466,
+      "parent": "dist/BorderRadius-7nQt-8g5.js"
     },
     {
       "kind": "filesystem",
@@ -1933,7 +1969,7 @@
       "format": "esm",
       "uncompressed": 1111,
       "gzip": 0,
-      "brotli": 421,
+      "brotli": 422,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -1948,10 +1984,10 @@
       "name": "node_modules/highcharts/es-modules/Series/Column/ColumnSeries.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 7852,
+      "uncompressed": 7851,
       "gzip": 0,
-      "brotli": 2694,
-      "parent": "dist/BorderRadius-BO3V-8GG.js"
+      "brotli": 2704,
+      "parent": "dist/BorderRadius-7nQt-8g5.js"
     },
     {
       "kind": "filesystem",
@@ -1965,10 +2001,10 @@
       "name": "node_modules/highcharts/es-modules/Series/Column/ColumnSeriesDefaults.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 512,
+      "uncompressed": 511,
       "gzip": 0,
-      "brotli": 222,
-      "parent": "dist/BorderRadius-BO3V-8GG.js"
+      "brotli": 223,
+      "parent": "dist/BorderRadius-7nQt-8g5.js"
     },
     {
       "kind": "filesystem",
@@ -1984,8 +2020,8 @@
       "format": "esm",
       "uncompressed": 232,
       "gzip": 0,
-      "brotli": 117,
-      "parent": "dist/highchartsMoreCustom-BbFIr2hA.js"
+      "brotli": 116,
+      "parent": "dist/highchartsMoreCustom-B8EuHJut.js"
     },
     {
       "kind": "filesystem",
@@ -2001,8 +2037,8 @@
       "format": "esm",
       "uncompressed": 2145,
       "gzip": 0,
-      "brotli": 774,
-      "parent": "dist/highchartsMoreCustom-BbFIr2hA.js"
+      "brotli": 772,
+      "parent": "dist/highchartsMoreCustom-B8EuHJut.js"
     },
     {
       "kind": "filesystem",
@@ -2018,8 +2054,8 @@
       "format": "esm",
       "uncompressed": 870,
       "gzip": 0,
-      "brotli": 377,
-      "parent": "dist/dependency-wheel.src-Do6WEv1U.js"
+      "brotli": 375,
+      "parent": "dist/dependency-wheel.src-dRVAmx_u.js"
     },
     {
       "kind": "filesystem",
@@ -2035,8 +2071,8 @@
       "format": "esm",
       "uncompressed": 3294,
       "gzip": 0,
-      "brotli": 1200,
-      "parent": "dist/dependency-wheel.src-Do6WEv1U.js"
+      "brotli": 1198,
+      "parent": "dist/dependency-wheel.src-dRVAmx_u.js"
     },
     {
       "kind": "filesystem",
@@ -2053,7 +2089,7 @@
       "uncompressed": 349,
       "gzip": 0,
       "brotli": 181,
-      "parent": "dist/dependency-wheel.src-Do6WEv1U.js"
+      "parent": "dist/dependency-wheel.src-dRVAmx_u.js"
     },
     {
       "kind": "filesystem",
@@ -2069,7 +2105,7 @@
       "format": "esm",
       "uncompressed": 2105,
       "gzip": 0,
-      "brotli": 777,
+      "brotli": 778,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -2086,8 +2122,8 @@
       "format": "esm",
       "uncompressed": 3251,
       "gzip": 0,
-      "brotli": 1033,
-      "parent": "dist/sankey.src-B6FOI3xv.js"
+      "brotli": 1038,
+      "parent": "dist/sankey.src-DCYYFonz.js"
     },
     {
       "kind": "filesystem",
@@ -2103,7 +2139,7 @@
       "format": "esm",
       "uncompressed": 6230,
       "gzip": 0,
-      "brotli": 1821,
+      "brotli": 1801,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -2120,7 +2156,7 @@
       "format": "esm",
       "uncompressed": 2220,
       "gzip": 0,
-      "brotli": 749,
+      "brotli": 746,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -2137,7 +2173,7 @@
       "format": "esm",
       "uncompressed": 4132,
       "gzip": 0,
-      "brotli": 1300,
+      "brotli": 1289,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -2154,7 +2190,7 @@
       "format": "esm",
       "uncompressed": 618,
       "gzip": 0,
-      "brotli": 260,
+      "brotli": 262,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -2171,8 +2207,8 @@
       "format": "esm",
       "uncompressed": 78,
       "gzip": 0,
-      "brotli": 57,
-      "parent": "dist/highchartsMoreCustom-BbFIr2hA.js"
+      "brotli": 56,
+      "parent": "dist/highchartsMoreCustom-B8EuHJut.js"
     },
     {
       "kind": "filesystem",
@@ -2188,8 +2224,8 @@
       "format": "esm",
       "uncompressed": 1849,
       "gzip": 0,
-      "brotli": 703,
-      "parent": "dist/TextPath-BtwIAWQC.js"
+      "brotli": 698,
+      "parent": "dist/TextPath-lds_aJTY.js"
     },
     {
       "kind": "filesystem",
@@ -2205,8 +2241,8 @@
       "format": "esm",
       "uncompressed": 798,
       "gzip": 0,
-      "brotli": 314,
-      "parent": "dist/sankey.src-B6FOI3xv.js"
+      "brotli": 308,
+      "parent": "dist/sankey.src-DCYYFonz.js"
     },
     {
       "kind": "filesystem",
@@ -2222,8 +2258,8 @@
       "format": "esm",
       "uncompressed": 6967,
       "gzip": 0,
-      "brotli": 2243,
-      "parent": "dist/sankey.src-B6FOI3xv.js"
+      "brotli": 2241,
+      "parent": "dist/sankey.src-DCYYFonz.js"
     },
     {
       "kind": "filesystem",
@@ -2239,8 +2275,8 @@
       "format": "esm",
       "uncompressed": 815,
       "gzip": 0,
-      "brotli": 337,
-      "parent": "dist/sankey.src-B6FOI3xv.js"
+      "brotli": 335,
+      "parent": "dist/sankey.src-DCYYFonz.js"
     },
     {
       "kind": "filesystem",
@@ -2256,7 +2292,7 @@
       "format": "esm",
       "uncompressed": 1027,
       "gzip": 0,
-      "brotli": 425,
+      "brotli": 423,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -2273,7 +2309,7 @@
       "format": "esm",
       "uncompressed": 304,
       "gzip": 0,
-      "brotli": 145,
+      "brotli": 143,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -2290,7 +2326,7 @@
       "format": "esm",
       "uncompressed": 1057,
       "gzip": 0,
-      "brotli": 378,
+      "brotli": 377,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -2307,8 +2343,8 @@
       "format": "esm",
       "uncompressed": 403,
       "gzip": 0,
-      "brotli": 197,
-      "parent": "dist/streamgraph.src-DAf1Z8NV.js"
+      "brotli": 193,
+      "parent": "dist/streamgraph.src-DzwaRGXG.js"
     },
     {
       "kind": "filesystem",
@@ -2324,8 +2360,8 @@
       "format": "esm",
       "uncompressed": 87,
       "gzip": 0,
-      "brotli": 65,
-      "parent": "dist/streamgraph.src-DAf1Z8NV.js"
+      "brotli": 64,
+      "parent": "dist/streamgraph.src-DzwaRGXG.js"
     },
     {
       "kind": "filesystem",
@@ -2341,8 +2377,8 @@
       "format": "esm",
       "uncompressed": 2415,
       "gzip": 0,
-      "brotli": 947,
-      "parent": "dist/sankey.src-B6FOI3xv.js"
+      "brotli": 946,
+      "parent": "dist/sankey.src-DCYYFonz.js"
     },
     {
       "kind": "filesystem",
@@ -2359,7 +2395,7 @@
       "uncompressed": 298,
       "gzip": 0,
       "brotli": 136,
-      "parent": "dist/highchartsMoreCustom-BbFIr2hA.js"
+      "parent": "dist/highchartsMoreCustom-B8EuHJut.js"
     },
     {
       "kind": "filesystem",
@@ -2375,8 +2411,8 @@
       "format": "esm",
       "uncompressed": 6825,
       "gzip": 0,
-      "brotli": 1985,
-      "parent": "dist/highchartsMoreCustom-BbFIr2hA.js"
+      "brotli": 1991,
+      "parent": "dist/highchartsMoreCustom-B8EuHJut.js"
     },
     {
       "kind": "filesystem",
@@ -2392,8 +2428,8 @@
       "format": "esm",
       "uncompressed": 210,
       "gzip": 0,
-      "brotli": 110,
-      "parent": "dist/highchartsMoreCustom-BbFIr2hA.js"
+      "brotli": 109,
+      "parent": "dist/highchartsMoreCustom-B8EuHJut.js"
     },
     {
       "kind": "filesystem",
@@ -2407,10 +2443,10 @@
       "name": "node_modules/highcharts/es-modules/Shared/TimeBase.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 5082,
+      "uncompressed": 5081,
       "gzip": 0,
-      "brotli": 1767,
-      "parent": "dist/SeriesRegistry-BGZZizI3.js"
+      "brotli": 1781,
+      "parent": "dist/AnimationUtilities-CfxhHVEw.js"
     },
     {
       "kind": "filesystem",
@@ -2424,10 +2460,10 @@
       "name": "node_modules/highcharts/es-modules/Shared/Utilities.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 8429,
+      "uncompressed": 8427,
       "gzip": 0,
-      "brotli": 2532,
-      "parent": "dist/SeriesRegistry-BGZZizI3.js"
+      "brotli": 2542,
+      "parent": "dist/AnimationUtilities-CfxhHVEw.js"
     },
     {
       "kind": "filesystem",
@@ -2443,7 +2479,7 @@
       "format": "esm",
       "uncompressed": 2234,
       "gzip": 0,
-      "brotli": 633,
+      "brotli": 632,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -2477,7 +2513,7 @@
       "format": "esm",
       "uncompressed": 396,
       "gzip": 0,
-      "brotli": 173,
+      "brotli": 171,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -2494,7 +2530,7 @@
       "format": "esm",
       "uncompressed": 1820,
       "gzip": 0,
-      "brotli": 524,
+      "brotli": 523,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -2511,7 +2547,7 @@
       "format": "esm",
       "uncompressed": 357,
       "gzip": 0,
-      "brotli": 174,
+      "brotli": 178,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -2528,7 +2564,7 @@
       "format": "esm",
       "uncompressed": 7992,
       "gzip": 0,
-      "brotli": 1881,
+      "brotli": 1865,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -2545,7 +2581,7 @@
       "format": "esm",
       "uncompressed": 666,
       "gzip": 0,
-      "brotli": 190,
+      "brotli": 182,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -2562,7 +2598,7 @@
       "format": "esm",
       "uncompressed": 186,
       "gzip": 0,
-      "brotli": 100,
+      "brotli": 98,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -2577,16 +2613,16 @@
       "name": "src/index.ts",
       "type": "script",
       "format": "esm",
-      "uncompressed": 5125
+      "uncompressed": 5309
     },
     {
       "kind": "chunk",
       "name": "src/index.ts",
       "type": "script",
       "format": "esm",
-      "uncompressed": 3253,
+      "uncompressed": 3426,
       "gzip": 0,
-      "brotli": 665,
+      "brotli": 696,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     }
   ],
@@ -2612,6 +2648,12 @@
     {
       "kind": "dynamic-import",
       "source": "src/index.ts",
+      "target": "node_modules/highcharts/es-modules/masters/modules/pattern-fill.src.js",
+      "original": null
+    },
+    {
+      "kind": "dynamic-import",
+      "source": "src/index.ts",
       "target": "node_modules/highcharts/es-modules/masters/modules/streamgraph.src.js",
       "original": null
     },
@@ -2623,25 +2665,31 @@
     },
     {
       "kind": "entrypoint",
-      "source": "dist/dependency-wheel.src-Do6WEv1U.js",
+      "source": "dist/dependency-wheel.src-dRVAmx_u.js",
       "target": "node_modules/highcharts/es-modules/masters/modules/dependency-wheel.src.js",
       "original": null
     },
     {
       "kind": "entrypoint",
-      "source": "dist/highchartsMoreCustom-BbFIr2hA.js",
+      "source": "dist/highchartsMoreCustom-B8EuHJut.js",
       "target": "src/highchartsMoreCustom.ts",
       "original": null
     },
     {
       "kind": "entrypoint",
-      "source": "dist/sankey.src-B6FOI3xv.js",
+      "source": "dist/pattern-fill.src-CvycQkcy.js",
+      "target": "node_modules/highcharts/es-modules/masters/modules/pattern-fill.src.js",
+      "original": null
+    },
+    {
+      "kind": "entrypoint",
+      "source": "dist/sankey.src-DCYYFonz.js",
       "target": "node_modules/highcharts/es-modules/masters/modules/sankey.src.js",
       "original": null
     },
     {
       "kind": "entrypoint",
-      "source": "dist/streamgraph.src-DAf1Z8NV.js",
+      "source": "dist/streamgraph.src-DzwaRGXG.js",
       "target": "node_modules/highcharts/es-modules/masters/modules/streamgraph.src.js",
       "original": null
     }

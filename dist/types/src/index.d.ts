@@ -11,5 +11,6 @@ export declare class HighchartsTool {
     renderRangeChart(typeId: PresentationRangeTypeId, contentConfig: PresentationVisualContentConfig, renderTo: HTMLElement, callback?: () => void): Promise<HighchartsView>;
     private loadDependencyWheelAndSankeyModules;
     private loadHighchartsMore;
+    private loadPatternFill;
     private loadStreamGraphModule;
 }

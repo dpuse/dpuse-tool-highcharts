@@ -3,10 +3,12 @@
 // Templating: https://www.highcharts.com/docs/chart-concepts/templating.
 
 // ── External Dependencies & Registrations
+// This order is load-bearing, not stylistic: the adaptive theme and accessibility modules assume `Highcharts.Chart`,
+// `.Legend`, etc. are already set on the shared instance by the time their own top-level compose() calls run.
+import Highcharts from 'highcharts/es-modules/masters/highcharts.src.js';
+
 import 'highcharts/es-modules/masters/themes/adaptive.src.js';
 import 'highcharts/es-modules/masters/modules/accessibility.src.js';
-import 'highcharts/es-modules/masters/modules/pattern-fill.src.js';
-import Highcharts from 'highcharts/es-modules/masters/highcharts.src.js';
 import type { Chart, Options, SeriesOptionsType } from 'highcharts/highcharts.src';
 
 // ── DPUse Framework
@@ -56,6 +58,7 @@ const HIGHCHARTS_ID = 'highcharts';
 const state = {
     isDependencyWheelAndSankeyModulesLoaded: false,
     isHighchartsMoreLoaded: false,
+    isPatternFillLoaded: false,
     isStreamgraphModuleLoaded: false
 };
 
@@ -86,7 +89,7 @@ export class HighchartsTool {
 
     // Actions - Render.
     async render(options: Options, renderTo: HTMLElement, callback?: () => void): Promise<unknown> {
-        await this.loadHighchartsMore();
+        await Promise.all([this.loadHighchartsMore(), this.loadPatternFill()]);
 
         const chart = Highcharts.chart(renderTo, options, callback);
         return {
@@ -201,6 +204,14 @@ export class HighchartsTool {
 
         await import('./highchartsMoreCustom');
         state.isHighchartsMoreLoaded = true;
+    }
+
+    // Helpers - Load pattern fill module.
+    private async loadPatternFill(): Promise<void> {
+        if (state.isPatternFillLoaded) return;
+
+        await import('highcharts/es-modules/masters/modules/pattern-fill.src.js');
+        state.isPatternFillLoaded = true;
     }
 
     // Helpers - Load stream graph module.

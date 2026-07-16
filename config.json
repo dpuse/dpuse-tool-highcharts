@@ -1,12 +1,14 @@
 {
     "id": "dpuse-tool-highcharts",
     "label": {
-        "en-gb": "Highcharts Tool"
+        "en": "Highcharts Tool"
     },
     "description": {
-        "en-gb": "..."
+        "en": [
+            "..."
+        ]
     },
     "statusId": "alpha",
     "typeId": "tool",
-    "version": "0.0.58"
+    "version": "0.0.59"
 }

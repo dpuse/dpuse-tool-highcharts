@@ -1,13 +1,13 @@
-import { E as e, F as t, J as n, _ as r, j as i, nt as a, tt as o, u as s, ut as c } from "./SeriesRegistry-BGZZizI3.js";
+import { A as e, E as t, U as n, X as r, Z as i, f as a, ot as o, u as s, x as c } from "./AnimationUtilities-CfxhHVEw.js";
 //#region node_modules/highcharts/es-modules/Series/Sankey/SankeyColumnComposition.js
 var l;
-(function(n) {
-	function r(e, t) {
+(function(t) {
+	function n(e, t) {
 		let n = e;
-		return n.sankeyColumn = new i(n, t), n;
+		return n.sankeyColumn = new r(n, t), n;
 	}
-	n.compose = r;
-	class i {
+	t.compose = n;
+	class r {
 		constructor(e, t) {
 			this.points = e, this.series = t;
 		}
@@ -21,13 +21,13 @@ var l;
 			for (let e of n) t.push(e);
 			return o;
 		}
-		top(e) {
-			let n = this.series, r = n.nodePadding, i = this.points.reduce((t, i) => {
-				t > 0 && (t += r);
-				let a = Math.max(i.getSum() * e, n.options.minLinkWidth || 0);
-				return t += a, t;
+		top(t) {
+			let n = this.series, r = n.nodePadding, i = this.points.reduce((e, i) => {
+				e > 0 && (e += r);
+				let a = Math.max(i.getSum() * t, n.options.minLinkWidth || 0);
+				return e += a, e;
 			}, 0);
-			return t(n.options.nodeAlignment || "center") * ((n.chart.plotSizeY || 0) - i);
+			return e(n.options.nodeAlignment || "center") * ((n.chart.plotSizeY || 0) - i);
 		}
 		left(e) {
 			let t = this.series, n = t.chart, r = t.options.equalNodes, i = n.inverted ? n.plotHeight : n.plotWidth, a = t.nodePadding, o = this.points.reduce((n, o) => {
@@ -40,58 +40,58 @@ var l;
 		sum() {
 			return this.points.reduce((e, t) => e + t.getSum(), 0);
 		}
-		offset(t, n) {
-			let r = this.points, i = this.series, o = i.nodePadding, s = 0, c;
-			if (i.is("organization") && t.hangsFrom) return { absoluteTop: t.hangsFrom.nodeY };
-			for (let l = 0; l < r.length; l++) {
-				let u = r[l].getSum(), d = Math.max(u * n, i.options.minLinkWidth || 0), f = t.options[i.chart.inverted ? "offsetHorizontal" : "offsetVertical"], p = t.options.offset || 0;
-				if (c = u ? d + o : 0, r[l] === t) return { relativeTop: s + (e(f) ? a(f, d) : a(p, c)) };
-				s += c;
+		offset(e, t) {
+			let n = this.points, r = this.series, a = r.nodePadding, o = 0, s;
+			if (r.is("organization") && e.hangsFrom) return { absoluteTop: e.hangsFrom.nodeY };
+			for (let l = 0; l < n.length; l++) {
+				let u = n[l].getSum(), d = Math.max(u * t, r.options.minLinkWidth || 0), f = e.options[r.chart.inverted ? "offsetHorizontal" : "offsetVertical"], p = e.options.offset || 0;
+				if (s = u ? d + a : 0, n[l] === e) return { relativeTop: o + (c(f) ? i(f, d) : i(p, s)) };
+				o += s;
 			}
 		}
 	}
-	n.SankeyColumnAdditions = i;
+	t.SankeyColumnAdditions = r;
 })(l ||= {});
-var u = l, { composed: d, deg2rad: f } = c;
-function p(t, a) {
-	let o = this.renderer.url, c = this.text || this, l = c.textPath, { attributes: u, enabled: d } = n({
+var u = l, { composed: d, deg2rad: f } = o;
+function p(e, r) {
+	let i = this.renderer.url, o = this.text || this, l = o.textPath, { attributes: u, enabled: d } = n({
 		enabled: !0,
 		attributes: {
 			dy: -5,
 			startOffset: "50%",
 			textAnchor: "middle"
 		}
-	}, a);
-	if (t ||= l && l.path, l?.undo(), t && d) {
-		let n = r(c, "afterModifyTree", (n) => {
-			if (t && d) {
-				let r = t.attr("id");
-				r || t.attr("id", r = s());
+	}, r);
+	if (e ||= l && l.path, l?.undo(), e && d) {
+		let n = a(o, "afterModifyTree", (n) => {
+			if (e && d) {
+				let r = e.attr("id");
+				r || e.attr("id", r = s());
 				let a = {
 					x: 0,
 					y: 0
 				};
-				e(u.dx) && (a.dx = u.dx, delete u.dx), e(u.dy) && (a.dy = u.dy, delete u.dy), c.attr(a), this.attr({ transform: "" }), this.box &&= this.box.destroy();
+				c(u.dx) && (a.dx = u.dx, delete u.dx), c(u.dy) && (a.dy = u.dy, delete u.dy), o.attr(a), this.attr({ transform: "" }), this.box &&= this.box.destroy();
 				let l = n.nodes.slice(0);
 				n.nodes.length = 0, n.nodes[0] = {
 					tagName: "textPath",
-					attributes: i(u, {
+					attributes: t(u, {
 						"text-anchor": u.textAnchor,
-						href: `${o}#${r}`
+						href: `${i}#${r}`
 					}),
 					children: l
 				};
 			}
 		});
-		c.textPath = {
-			path: t,
+		o.textPath = {
+			path: e,
 			undo: n
 		};
-	} else c.attr({
+	} else o.attr({
 		dx: 0,
 		dy: 0
-	}), delete c.textPath;
-	return this.added && (c.textCache = "", this.renderer.buildText(c)), this;
+	}), delete o.textPath;
+	return this.added && (o.textCache = "", this.renderer.buildText(o)), this;
 }
 function m(e) {
 	let t = e.bBox, n = this.element?.querySelector("textPath");
@@ -125,9 +125,9 @@ function h(e) {
 	r && !t.useHTML && (this.setTextPath(n.getDataLabelPath?.(this) || n.graphic, r), n.dataLabelPath && !r.enabled && (n.dataLabelPath = n.dataLabelPath.destroy()));
 }
 function g(e) {
-	o(d, "TextPath") && (r(e, "afterGetBBox", m), r(e, "beforeAddingDataLabel", h), e.prototype.setTextPath = e.prototype.setTextPath ?? p);
+	r(d, "TextPath") && (a(e, "afterGetBBox", m), a(e, "beforeAddingDataLabel", h), e.prototype.setTextPath = e.prototype.setTextPath ?? p);
 }
 //#endregion
 export { u as n, g as t };
 
-//# sourceMappingURL=TextPath-BtwIAWQC.js.map
+//# sourceMappingURL=TextPath-lds_aJTY.js.map

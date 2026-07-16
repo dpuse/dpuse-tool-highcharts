@@ -1,4 +1,5 @@
-import { J as e, _ as t, j as n, t as r } from "./SeriesRegistry-BGZZizI3.js";
+import { E as e, U as t, f as n } from "./AnimationUtilities-CfxhHVEw.js";
+import { t as r } from "./SeriesRegistry-Drf7P7c8.js";
 //#region node_modules/highcharts/es-modules/Series/Streamgraph/StreamgraphSeriesDefaults.js
 var i = {
 	fillOpacity: 1,
@@ -10,9 +11,9 @@ var i = {
 		e[0] -= t.total / 2, e[1] -= t.total / 2, this.stackedYData && (this.stackedYData[n] = Math.max.apply(0, e));
 	}
 };
-o.defaultOptions = e(a.defaultOptions, i), t(o, "afterGetExtremes", (e) => {
+o.defaultOptions = t(a.defaultOptions, i), n(o, "afterGetExtremes", (e) => {
 	e.dataExtremes.dataMin = -e.dataExtremes.dataMax;
-}), n(o.prototype, { negStacks: !1 }), r.registerSeriesType("streamgraph", o);
+}), e(o.prototype, { negStacks: !1 }), r.registerSeriesType("streamgraph", o);
 //#endregion
 
-//# sourceMappingURL=streamgraph.src-DAf1Z8NV.js.map
+//# sourceMappingURL=streamgraph.src-DzwaRGXG.js.map
