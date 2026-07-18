@@ -10,6 +10,7 @@ import Highcharts from 'highcharts/es-modules/masters/highcharts.src.js';
 import 'highcharts/es-modules/masters/themes/adaptive.src.js';
 import 'highcharts/es-modules/masters/modules/accessibility.src.js';
 import type { Chart, Options, SeriesOptionsType } from 'highcharts/highcharts.src';
+export type { Options as HighchartsOptions } from 'highcharts/highcharts.src';
 
 // ── DPUse Framework
 import type {
