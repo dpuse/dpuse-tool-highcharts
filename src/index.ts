@@ -103,7 +103,7 @@ export class HighchartsTool {
     }
 
     // Actions - Render period flow & boundaries chart.
-    async renderPeriodFlowBoundaries(contentConfig: PresentationVisualContentConfig, renderTo: HTMLElement, callback?: () => void): Promise<unknown> {
+    async renderPeriodFlowBoundaries(contentConfig: PresentationVisualContentConfig, renderTo: HTMLElement, callback?: () => void): Promise<HighchartsView> {
         await this.loadHighchartsMore();
 
         const series: SeriesOptionsType[] = Array.from(contentConfig.data.measures, (measure) => ({ type: 'waterfall', name: measure.name, data: measure.values }));
