@@ -10139,6 +10139,9 @@ var mc = {
 	async loadStreamGraphModule() {
 		vc.isStreamgraphModuleLoaded ||= (await import("./streamgraph.src-DzwaRGXG.js"), !0);
 	}
+	setColorMode(e) {
+		typeof document > "u" || (document.documentElement.classList.toggle("highcharts-dark", e === "dark"), document.documentElement.classList.toggle("highcharts-light", e !== "dark"));
+	}
 };
 //#endregion
 export { yc as HighchartsTool };

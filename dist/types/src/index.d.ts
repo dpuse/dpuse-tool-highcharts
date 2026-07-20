@@ -14,4 +14,5 @@ export declare class HighchartsTool {
     private loadHighchartsMore;
     private loadPatternFill;
     private loadStreamGraphModule;
+    setColorMode(colorModeId: string): void;
 }

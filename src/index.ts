@@ -222,4 +222,17 @@ export class HighchartsTool {
         await import('highcharts/es-modules/masters/modules/streamgraph.src.js');
         state.isStreamgraphModuleLoaded = true;
     }
+
+    // Set color mode.
+    // The adaptive theme (see the reference at the top of this file) reacts to the OS-level prefers-color-scheme
+    // media query on its own, but has no idea about an in-app light/dark toggle. Its CSS also recognises the
+    // 'highcharts-light'/'highcharts-dark' classes on any ancestor, so toggling them on <html> is all that's needed
+    // to override the OS setting for already-rendered charts too - Highcharts' theme is CSS-variable based, so no
+    // chart re-render is required.
+    setColorMode(colorModeId: string): void {
+        if (typeof document === 'undefined') return;
+
+        document.documentElement.classList.toggle('highcharts-dark', colorModeId === 'dark');
+        document.documentElement.classList.toggle('highcharts-light', colorModeId !== 'dark');
+    }
 }

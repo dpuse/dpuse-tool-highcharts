@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "0.14.0",
-    "generatedAt": "2026-07-18T14:08:39.309Z",
+    "generatedAt": "2026-07-20T14:34:38.464Z",
     "integration": "vite",
     "sources": false,
     "gzip": false,
@@ -21,7 +21,7 @@
       "name": "[unassigned]",
       "type": "other",
       "format": "other",
-      "uncompressed": 28106,
+      "uncompressed": 28110,
       "gzip": 0,
       "brotli": 966,
       "parent": "dist/dpuse-tool-highcharts.es.js"
@@ -154,9 +154,9 @@
       "kind": "asset",
       "name": "dist/dpuse-tool-highcharts.es.js",
       "type": "script",
-      "uncompressed": 412547,
+      "uncompressed": 412751,
       "gzip": 0,
-      "brotli": 98722
+      "brotli": 98764
     },
     {
       "kind": "asset",
@@ -415,7 +415,7 @@
       "format": "esm",
       "uncompressed": 3540,
       "gzip": 0,
-      "brotli": 892,
+      "brotli": 891,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -636,7 +636,7 @@
       "format": "esm",
       "uncompressed": 3001,
       "gzip": 0,
-      "brotli": 896,
+      "brotli": 895,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -789,7 +789,7 @@
       "format": "esm",
       "uncompressed": 33951,
       "gzip": 0,
-      "brotli": 8632,
+      "brotli": 8631,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -1027,7 +1027,7 @@
       "format": "esm",
       "uncompressed": 30468,
       "gzip": 0,
-      "brotli": 7804,
+      "brotli": 7803,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -1248,7 +1248,7 @@
       "format": "esm",
       "uncompressed": 3145,
       "gzip": 0,
-      "brotli": 944,
+      "brotli": 943,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -1673,7 +1673,7 @@
       "format": "esm",
       "uncompressed": 5211,
       "gzip": 0,
-      "brotli": 1421,
+      "brotli": 1420,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     },
     {
@@ -2613,16 +2613,16 @@
       "name": "src/index.ts",
       "type": "script",
       "format": "esm",
-      "uncompressed": 5309
+      "uncompressed": 5565
     },
     {
       "kind": "chunk",
       "name": "src/index.ts",
       "type": "script",
       "format": "esm",
-      "uncompressed": 3426,
+      "uncompressed": 3626,
       "gzip": 0,
-      "brotli": 696,
+      "brotli": 746,
       "parent": "dist/dpuse-tool-highcharts.es.js"
     }
   ],

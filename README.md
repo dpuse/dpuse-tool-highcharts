@@ -102,9 +102,9 @@ _Note: Sonda's Vite reports currently exclude CSS files, since Vite does not gen
 
 |Chunk/Module/File|Composition|
 |:------ |:-----------|
-| dist/dpuse-tool-highcharts.es.js | 402.9 kB · brotli 96.4 kB |
+| dist/dpuse-tool-highcharts.es.js | 403.1 kB · brotli 96.4 kB |
 | &nbsp;&nbsp;&nbsp;&nbsp;highcharts | `████████████░░░░░░░░` 61.2% |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Core/Axis/Axis.js | `█░░░░░░░░░░░░░░░░░░░` 5.5% |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Core/Axis/Axis.js | `█░░░░░░░░░░░░░░░░░░░` 5.4% |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Core/Chart/Chart.js | `█░░░░░░░░░░░░░░░░░░░` 4.9% |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Extensions/Themes/Adaptive.js | `█░░░░░░░░░░░░░░░░░░░` 3.3% |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Stock/Navigator/Navigator.js | `█░░░░░░░░░░░░░░░░░░░` 3.2% |

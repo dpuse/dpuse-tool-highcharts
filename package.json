@@ -1,6 +1,6 @@
 {
     "name": "@dpuse/dpuse-tool-highcharts",
-    "version": "0.0.65",
+    "version": "0.0.66",
     "private": false,
     "description": "A TypeScript wrapper for Highcharts that implements the Data Positioning chart-rendering interface. It optimizes browser memory usage by maintaining a single Highcharts instance shared across all presenters, loading optional modules only as needed.",
     "license": "MIT",
@@ -55,7 +55,7 @@
         "test": "node -e \"import('@dpuse/dpuse-development').then(m => m.testProject())\""
     },
     "dependencies": {
-        "@dpuse/dpuse-shared": "^0.3.743",
+        "@dpuse/dpuse-shared": "^0.3.745",
         "highcharts": "^13.0.0"
     },
     "devDependencies": {
@@ -63,7 +63,7 @@
         "@dpuse/eslint-config-dpuse": "^1.0.113",
         "@types/node": "^26.1.1",
         "eslint": "^10.7.0",
-        "happy-dom": "^20.10.6",
+        "happy-dom": "^20.11.0",
         "prettier": "^3.9.5",
         "sonda": "^0.14.0",
         "typescript": "^5.9.3",
