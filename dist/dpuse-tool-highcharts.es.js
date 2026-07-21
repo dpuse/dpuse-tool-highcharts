@@ -10127,20 +10127,20 @@ var mc = {
 			vendorId: _c
 		};
 	}
+	setColorMode(e) {
+		typeof document > "u" || (document.documentElement.classList.toggle("highcharts-dark", e === "dark"), document.documentElement.classList.toggle("highcharts-light", e !== "dark"));
+	}
 	async loadDependencyWheelAndSankeyModules() {
 		vc.isDependencyWheelAndSankeyModulesLoaded ||= (await Promise.all([import("./dependency-wheel.src-dRVAmx_u.js"), import("./sankey.src-DCYYFonz.js")]), !0);
 	}
 	async loadHighchartsMore() {
-		vc.isHighchartsMoreLoaded ||= (await import("./highchartsMoreCustom-B8EuHJut.js"), !0);
+		vc.isHighchartsMoreLoaded ||= (await import("./highchartsMoreCustom-Bi7S8DFN.js"), !0);
 	}
 	async loadPatternFill() {
 		vc.isPatternFillLoaded ||= (await import("./pattern-fill.src-CvycQkcy.js"), !0);
 	}
 	async loadStreamGraphModule() {
 		vc.isStreamgraphModuleLoaded ||= (await import("./streamgraph.src-DzwaRGXG.js"), !0);
-	}
-	setColorMode(e) {
-		typeof document > "u" || (document.documentElement.classList.toggle("highcharts-dark", e === "dark"), document.documentElement.classList.toggle("highcharts-light", e !== "dark"));
 	}
 };
 //#endregion

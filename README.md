@@ -102,23 +102,23 @@ _Note: Sonda's Vite reports currently exclude CSS files, since Vite does not gen
 
 |Chunk/Module/File|Composition|
 |:------ |:-----------|
-| dist/dpuse-tool-highcharts.es.js | 403.1 kB · brotli 96.4 kB |
-| &nbsp;&nbsp;&nbsp;&nbsp;highcharts | `████████████░░░░░░░░` 61.2% |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Core/Axis/Axis.js | `█░░░░░░░░░░░░░░░░░░░` 5.4% |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Core/Chart/Chart.js | `█░░░░░░░░░░░░░░░░░░░` 4.9% |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Extensions/Themes/Adaptive.js | `█░░░░░░░░░░░░░░░░░░░` 3.3% |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Stock/Navigator/Navigator.js | `█░░░░░░░░░░░░░░░░░░░` 3.2% |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Core/Legend/Legend.js | `█░░░░░░░░░░░░░░░░░░░` 2.5% |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Core/Pointer.js | `█░░░░░░░░░░░░░░░░░░░` 2.5% |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Core/Tooltip.js | `░░░░░░░░░░░░░░░░░░░░` 2.5% |
+| dist/dpuse-tool-highcharts.es.js | 403.1 kB · brotli 96.5 kB |
+| &nbsp;&nbsp;&nbsp;&nbsp;highcharts | `████████████░░░░░░░░` 59.7% |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Core/Axis/Axis.js | `█░░░░░░░░░░░░░░░░░░░` 5.3% |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Core/Chart/Chart.js | `█░░░░░░░░░░░░░░░░░░░` 4.8% |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Extensions/Themes/Adaptive.js | `█░░░░░░░░░░░░░░░░░░░` 3.2% |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Stock/Navigator/Navigator.js | `█░░░░░░░░░░░░░░░░░░░` 3.1% |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Core/Legend/Legend.js | `░░░░░░░░░░░░░░░░░░░░` 2.5% |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Core/Pointer.js | `░░░░░░░░░░░░░░░░░░░░` 2.5% |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Core/Tooltip.js | `░░░░░░░░░░░░░░░░░░░░` 2.4% |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Core/Renderer/SVG/SVGRenderer.js | `░░░░░░░░░░░░░░░░░░░░` 1.7% |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Accessibility/Options/LangDefaults.js | `░░░░░░░░░░░░░░░░░░░░` 1.6% |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Accessibility/Options/LangDefaults.js | `░░░░░░░░░░░░░░░░░░░░` 1.5% |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Accessibility/Components/InfoRegionsComponent.js | `░░░░░░░░░░░░░░░░░░░░` 1.5% |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Accessibility/Components/SeriesComponent/SeriesKeyboardNavigation.js | `░░░░░░░░░░░░░░░░░░░░` 1.4% |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Accessibility/Components/SeriesComponent/SeriesKeyboardNavigation.js | `░░░░░░░░░░░░░░░░░░░░` 1.3% |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Stock/Scrollbar/Scrollbar.js | `░░░░░░░░░░░░░░░░░░░░` 1.3% |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Core/Series/DataLabel.js | `░░░░░░░░░░░░░░░░░░░░` 1.2% |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Accessibility/Components/SeriesComponent/SeriesDescriber.js | `░░░░░░░░░░░░░░░░░░░░` 1.2% |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Core/Axis/Tick.js | `░░░░░░░░░░░░░░░░░░░░` 1.2% |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Core/Axis/Tick.js | `░░░░░░░░░░░░░░░░░░░░` 1.1% |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Accessibility/Components/LegendComponent.js | `░░░░░░░░░░░░░░░░░░░░` 1.1% |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Series/Pie/PieDataLabel.js | `░░░░░░░░░░░░░░░░░░░░` 1.0% |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Accessibility/Components/RangeSelectorComponent.js | `░░░░░░░░░░░░░░░░░░░░` 1.0% |
@@ -131,26 +131,26 @@ _Note: Sonda's Vite reports currently exclude CSS files, since Vite does not gen
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Core/Axis/Stacking/StackingAxis.js | `░░░░░░░░░░░░░░░░░░░░` 0.7% |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Accessibility/Components/ZoomComponent.js | `░░░░░░░░░░░░░░░░░░░░` 0.7% |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Accessibility/ProxyProvider.js | `░░░░░░░░░░░░░░░░░░░░` 0.7% |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Series/Pie/PieSeries.js | `░░░░░░░░░░░░░░░░░░░░` 0.7% |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Series/Pie/PieSeries.js | `░░░░░░░░░░░░░░░░░░░░` 0.6% |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Accessibility/Utils/ChartUtilities.js | `░░░░░░░░░░░░░░░░░░░░` 0.6% |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Series/Area/AreaSeries.js | `░░░░░░░░░░░░░░░░░░░░` 0.6% |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Accessibility/Components/NavigatorComponent.js | `░░░░░░░░░░░░░░░░░░░░` 0.6% |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Accessibility/Options/DeprecatedOptions.js | `░░░░░░░░░░░░░░░░░░░░` 0.6% |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Accessibility/Components/SeriesComponent/NewDataAnnouncer.js | `░░░░░░░░░░░░░░░░░░░░` 0.6% |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Accessibility/Utils/HTMLUtilities.js | `░░░░░░░░░░░░░░░░░░░░` 0.6% |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Accessibility/Utils/HTMLUtilities.js | `░░░░░░░░░░░░░░░░░░░░` 0.5% |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Accessibility/FocusBorder.js | `░░░░░░░░░░░░░░░░░░░░` 0.5% |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Core/Axis/PlotLineOrBand/PlotLineOrBand.js | `░░░░░░░░░░░░░░░░░░░░` 0.5% |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Core/Renderer/HTML/HTMLElement.js | `░░░░░░░░░░░░░░░░░░░░` 0.5% |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Core/Renderer/SVG/Symbols.js | `░░░░░░░░░░░░░░░░░░░░` 0.5% |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Accessibility/ProxyElement.js | `░░░░░░░░░░░░░░░░░░░░` 0.5% |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Core/Series/OverlappingDataLabels.js | `░░░░░░░░░░░░░░░░░░░░` 0.5% |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Core/Series/OverlappingDataLabels.js | `░░░░░░░░░░░░░░░░░░░░` 0.4% |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Core/Axis/ScrollbarAxis.js | `░░░░░░░░░░░░░░░░░░░░` 0.4% |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Accessibility/Components/SeriesComponent/ForcedMarkers.js | `░░░░░░░░░░░░░░░░░░░░` 0.4% |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Accessibility/HighContrastTheme.js | `░░░░░░░░░░░░░░░░░░░░` 0.4% |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Stock/Navigator/ChartNavigatorComposition.js | `░░░░░░░░░░░░░░░░░░░░` 0.4% |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Core/Axis/AxisDefaults.js | `░░░░░░░░░░░░░░░░░░░░` 0.4% |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Series/Pie/PiePoint.js | `░░░░░░░░░░░░░░░░░░░░` 0.4% |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/masters/highcharts.src.js | `░░░░░░░░░░░░░░░░░░░░` 0.4% |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Core/Axis/AxisDefaults.js | `░░░░░░░░░░░░░░░░░░░░` 0.3% |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Series/Pie/PiePoint.js | `░░░░░░░░░░░░░░░░░░░░` 0.3% |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/masters/highcharts.src.js | `░░░░░░░░░░░░░░░░░░░░` 0.3% |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Series/Line/LineSeries.js | `░░░░░░░░░░░░░░░░░░░░` 0.3% |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Core/Color/Palette.js | `░░░░░░░░░░░░░░░░░░░░` 0.3% |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Core/Axis/PlotLineOrBand/PlotLineOrBandAxis.js | `░░░░░░░░░░░░░░░░░░░░` 0.3% |
@@ -159,7 +159,7 @@ _Note: Sonda's Vite reports currently exclude CSS files, since Vite does not gen
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Stock/Navigator/NavigatorDefaults.js | `░░░░░░░░░░░░░░░░░░░░` 0.3% |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Core/Renderer/RendererUtilities.js | `░░░░░░░░░░░░░░░░░░░░` 0.3% |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Accessibility/Components/AnnotationsA11y.js | `░░░░░░░░░░░░░░░░░░░░` 0.3% |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Core/Axis/LogarithmicAxis.js | `░░░░░░░░░░░░░░░░░░░░` 0.3% |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Core/Axis/LogarithmicAxis.js | `░░░░░░░░░░░░░░░░░░░░` 0.2% |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Accessibility/Options/A11yDefaults.js | `░░░░░░░░░░░░░░░░░░░░` 0.2% |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Core/Axis/DateTimeAxis.js | `░░░░░░░░░░░░░░░░░░░░` 0.2% |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Core/Responsive.js | `░░░░░░░░░░░░░░░░░░░░` 0.2% |
@@ -186,12 +186,12 @@ _Note: Sonda's Vite reports currently exclude CSS files, since Vite does not gen
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Series/Bar/BarSeries.js | `░░░░░░░░░░░░░░░░░░░░` 0.0% |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Series/Area/AreaSeriesDefaults.js | `░░░░░░░░░░░░░░░░░░░░` 0.0% |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/masters/themes/adaptive.src.js | `░░░░░░░░░░░░░░░░░░░░` 0.0% |
-| &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned] | `█░░░░░░░░░░░░░░░░░░░` 4.5% |
+| &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned] | `█░░░░░░░░░░░░░░░░░░░` 4.4% |
 | &nbsp;&nbsp;&nbsp;&nbsp;src → index.ts | `░░░░░░░░░░░░░░░░░░░░` 0.6% |
 | dist/BorderRadius-7nQt-8g5.js | 62.1 kB · brotli 19.0 kB |
-| &nbsp;&nbsp;&nbsp;&nbsp;highcharts | `██░░░░░░░░░░░░░░░░░░` 9.5% |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Core/Series/Series.js | `█░░░░░░░░░░░░░░░░░░░` 6.0% |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Series/Column/ColumnSeries.js | `░░░░░░░░░░░░░░░░░░░░` 1.3% |
+| &nbsp;&nbsp;&nbsp;&nbsp;highcharts | `██░░░░░░░░░░░░░░░░░░` 9.3% |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Core/Series/Series.js | `█░░░░░░░░░░░░░░░░░░░` 5.8% |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Series/Column/ColumnSeries.js | `░░░░░░░░░░░░░░░░░░░░` 1.2% |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Extensions/BorderRadius.js | `░░░░░░░░░░░░░░░░░░░░` 0.7% |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Core/Axis/Stacking/StackItem.js | `░░░░░░░░░░░░░░░░░░░░` 0.5% |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Data/DataTableCore.js | `░░░░░░░░░░░░░░░░░░░░` 0.3% |
@@ -202,8 +202,9 @@ _Note: Sonda's Vite reports currently exclude CSS files, since Vite does not gen
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Series/Column/ColumnSeriesDefaults.js | `░░░░░░░░░░░░░░░░░░░░` 0.1% |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Core/Foundation.js | `░░░░░░░░░░░░░░░░░░░░` 0.1% |
 | &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned] | `░░░░░░░░░░░░░░░░░░░░` 0.7% |
-| dist/highchartsMoreCustom-B8EuHJut.js | 37.9 kB · brotli 11.1 kB |
-| &nbsp;&nbsp;&nbsp;&nbsp;highcharts | `█░░░░░░░░░░░░░░░░░░░` 5.8% |
+| dist/highchartsMoreCustom-Bi7S8DFN.js | 52.5 kB · brotli 15.2 kB |
+| &nbsp;&nbsp;&nbsp;&nbsp;highcharts | `██░░░░░░░░░░░░░░░░░░` 7.9% |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Series/PolarComposition.js | `░░░░░░░░░░░░░░░░░░░░` 2.2% |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Core/Axis/RadialAxis.js | `░░░░░░░░░░░░░░░░░░░░` 1.9% |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Series/Waterfall/WaterfallSeries.js | `░░░░░░░░░░░░░░░░░░░░` 1.1% |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Series/AreaRange/AreaRangeSeries.js | `░░░░░░░░░░░░░░░░░░░░` 0.9% |
@@ -218,15 +219,15 @@ _Note: Sonda's Vite reports currently exclude CSS files, since Vite does not gen
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Series/ColumnRange/ColumnRangePoint.js | `░░░░░░░░░░░░░░░░░░░░` 0.0% |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Series/AreaSplineRange/AreaSplineRangeSeries.js | `░░░░░░░░░░░░░░░░░░░░` 0.0% |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Series/Waterfall/WaterfallSeriesDefaults.js | `░░░░░░░░░░░░░░░░░░░░` 0.0% |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Series/PolarComposition.js | `░░░░░░░░░░░░░░░░░░░░` 0.0% |
-| &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned] | `░░░░░░░░░░░░░░░░░░░░` 0.4% |
+| &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned] | `░░░░░░░░░░░░░░░░░░░░` 0.5% |
+| &nbsp;&nbsp;&nbsp;&nbsp;src → highchartsMoreCustom.ts | `░░░░░░░░░░░░░░░░░░░░` 0.0% |
 | dist/AnimationUtilities-CfxhHVEw.js | 33.7 kB · brotli 10.6 kB |
-| &nbsp;&nbsp;&nbsp;&nbsp;highcharts | `█░░░░░░░░░░░░░░░░░░░` 5.0% |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Shared/Utilities.js | `░░░░░░░░░░░░░░░░░░░░` 1.4% |
+| &nbsp;&nbsp;&nbsp;&nbsp;highcharts | `█░░░░░░░░░░░░░░░░░░░` 4.9% |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Shared/Utilities.js | `░░░░░░░░░░░░░░░░░░░░` 1.3% |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Shared/TimeBase.js | `░░░░░░░░░░░░░░░░░░░░` 0.8% |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Core/Defaults.js | `░░░░░░░░░░░░░░░░░░░░` 0.7% |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Core/Animation/Fx.js | `░░░░░░░░░░░░░░░░░░░░` 0.5% |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Core/Color/Color.js | `░░░░░░░░░░░░░░░░░░░░` 0.5% |
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Core/Color/Color.js | `░░░░░░░░░░░░░░░░░░░░` 0.4% |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Core/Time.js | `░░░░░░░░░░░░░░░░░░░░` 0.3% |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Core/Utilities.js | `░░░░░░░░░░░░░░░░░░░░` 0.2% |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Core/Animation/AnimationUtilities.js | `░░░░░░░░░░░░░░░░░░░░` 0.2% |
@@ -245,7 +246,7 @@ _Note: Sonda's Vite reports currently exclude CSS files, since Vite does not gen
 | &nbsp;&nbsp;&nbsp;&nbsp;highcharts → es-modules/Core/Renderer/SVG/SVGElement.js | `░░░░░░░░░░░░░░░░░░░░` 2.4% |
 | &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned] | `░░░░░░░░░░░░░░░░░░░░` 0.2% |
 | dist/sankey.src-DCYYFonz.js | 16.0 kB · brotli 5.1 kB |
-| &nbsp;&nbsp;&nbsp;&nbsp;highcharts | `░░░░░░░░░░░░░░░░░░░░` 2.3% |
+| &nbsp;&nbsp;&nbsp;&nbsp;highcharts | `░░░░░░░░░░░░░░░░░░░░` 2.2% |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Series/Sankey/SankeySeries.js | `░░░░░░░░░░░░░░░░░░░░` 1.1% |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Series/NodesComposition.js | `░░░░░░░░░░░░░░░░░░░░` 0.5% |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;es-modules/Series/TreeUtilities.js | `░░░░░░░░░░░░░░░░░░░░` 0.4% |

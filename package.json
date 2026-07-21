@@ -1,12 +1,12 @@
 {
     "name": "@dpuse/dpuse-tool-highcharts",
-    "version": "0.0.67",
+    "version": "0.0.68",
     "private": false,
     "description": "A TypeScript wrapper for Highcharts that implements the Data Positioning chart-rendering interface. It optimizes browser memory usage by maintaining a single Highcharts instance shared across all presenters, loading optional modules only as needed.",
     "license": "MIT",
     "author": "Jonathan Terrell <terrell.jm@gmail.com>",
     "type": "module",
-    "sideEffects": false,
+    "sideEffects": true,
     "homepage": "https://www.dpuse.app",
     "bugs": {
         "url": "https://github.com/data-positioning/dpuse-tool-highcharts/issues"
@@ -55,7 +55,7 @@
         "test": "node -e \"import('@dpuse/dpuse-development').then(m => m.testProject())\""
     },
     "dependencies": {
-        "@dpuse/dpuse-shared": "^0.3.745",
+        "@dpuse/dpuse-shared": "^0.3.747",
         "highcharts": "^13.0.0"
     },
     "devDependencies": {
@@ -64,7 +64,7 @@
         "@types/node": "^26.1.1",
         "eslint": "^10.7.0",
         "happy-dom": "^20.11.0",
-        "prettier": "^3.9.5",
+        "prettier": "^3.9.6",
         "sonda": "^0.14.0",
         "typescript": "^5.9.3",
         "vite": "^8.1.5",

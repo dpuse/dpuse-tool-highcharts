@@ -10,9 +10,9 @@ export declare class HighchartsTool {
     renderPeriodFlowBoundaries(contentConfig: PresentationVisualContentConfig, renderTo: HTMLElement, callback?: () => void): Promise<HighchartsView>;
     renderPolarChart(typeId: PresentationPolarTypeId, contentConfig: PresentationVisualContentConfig, renderTo: HTMLElement, callback?: () => void): Promise<HighchartsView>;
     renderRangeChart(typeId: PresentationRangeTypeId, contentConfig: PresentationVisualContentConfig, renderTo: HTMLElement, callback?: () => void): Promise<HighchartsView>;
+    setColorMode(colorModeId: string): void;
     private loadDependencyWheelAndSankeyModules;
     private loadHighchartsMore;
     private loadPatternFill;
     private loadStreamGraphModule;
-    setColorMode(colorModeId: string): void;
 }
